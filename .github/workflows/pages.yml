@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # The site uses root-relative links for production at civitaslearning.com.
+      # GitHub Pages serves this repo at /wb_web/, so rewrite those links in the
+      # build output only. The source is not changed.
+      - name: Rewrite root-relative URLs for the /wb_web/ base path
+        run: |
+          find dist \( -name '*.html' -o -name '*.css' -o -name '*.js' -o -name '*.xml' \) -print0 \
+            | xargs -0 sed -i -E 's#(href|src|content|action|poster)="/([^/]|$)#\1="/wb_web/\2#g; s#url\(/([^/])#url(/wb_web/\1#g'
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
