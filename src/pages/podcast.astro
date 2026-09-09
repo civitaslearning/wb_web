@@ -4,12 +4,12 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import ResCard from '../components/ResCard.astro';
 import FinalCta from '../components/FinalCta.astro';
-const eps = (await getCollection('podcast')).sort((a, b) => a.data.order - b.data.order);
+const eps = (await getCollection('podcast')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || '') || a.data.order - b.data.order);
 ---
 <Base title="Next Practices Podcast" description="How higher-ed leaders tackle student success with creative, data-informed approaches.">
   <PageHero eyebrow="Next Practices · Higher Education Podcast" title="How leaders tackle student success with creative, data-informed approaches." sub="Conversations with provosts, deans, and the people running the work — on what moved the numbers and what didn't." crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Podcast' }]} ctas={false} />
   <section><div class="wrap">
-    <div class="res-list">{eps.map((e) => <ResCard title={e.data.title} type="Episode" url={e.data.url} guest={e.data.guest} description={e.data.description} cta="Listen →" />)}</div>
+    <div class="res-list">{eps.map((e) => <ResCard title={e.data.title} type="Episode" url={`/podcast/${e.id}/`} guest={e.data.guest} description={e.data.description} cta="Listen →" />)}</div>
   </div></section>
   <FinalCta />
 </Base>

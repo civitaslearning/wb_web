@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ResCard from '../../components/ResCard.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const eps = await getCollection('podcast');
+  return eps.map((e) => ({ params: { slug: e.id }, props: { ep: e } }));
+}
+const { ep } = Astro.props;
+const d = ep.data;
+const { Content } = await render(ep);
+const fmt = (s: string) => new Date(s + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const related = (await getCollection('podcast')).filter((e) => e.id !== ep.id).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || '')).slice(0, 3);
+---
+<Base title={d.title} description={d.description} seoTitle={d.seoTitle} image={d.image} noindex={d.noindex} type="article" published={d.date} modified={d.updated}>
+  <header class="post-head"><div class="wrap">
+    <div class="crumbs on-paper"><a href="/">Home</a> / <a href="/podcast/">Podcast</a></div>
+    <span class="eyebrow">Next Practices · Higher Education Podcast</span>
+    <h1 style="margin-top:12px;max-width:22em">{d.title}</h1>
+    <div class="post-meta">{d.date && <span>{fmt(d.date)}</span>}{d.guest && <span>With {d.guest}</span>}</div>
+  </div></header>
+  <section style="padding-top:24px"><div class="wrap post-grid">
+    <div class="article"><Content /></div>
+    <aside class="aside">
+      {d.image && <img src={d.image} alt={d.imageAlt || ''} style="border-radius:10px" />}
+      <a class="btn btn-primary" href="/contact/">Book a demo</a>
+    </aside>
+  </div></section>
+  <section class="tint"><div class="wrap">
+    <span class="eyebrow">More episodes</span>
+    <div class="res-list" style="margin-top:22px">{related.map((e) => <ResCard title={e.data.title} type="Episode" url={`/podcast/${e.id}/`} guest={e.data.guest} description={e.data.description} cta="Listen →" />)}</div>
+  </div></section>
+  <FinalCta />
+</Base>

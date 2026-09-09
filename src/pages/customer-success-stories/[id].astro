@@ -11,12 +11,13 @@ export async function getStaticPaths() {
 const { story } = Astro.props;
 const d = story.data;
 const { Content } = await render(story);
+const who = d.institution || 'Civitas Learning partner';
 const others = (await getCollection('stories')).filter((s) => s.id !== story.id).sort((a, b) => a.data.order - b.data.order).slice(0, 3);
 ---
-<Base title={`${d.institution} — Customer Story`} description={d.summary}>
+<Base title={`${who} — Customer Story`} description={d.summary} seoTitle={d.seoTitle} image={d.image} noindex={d.noindex} type="article" published={d.date} modified={d.updated}>
   <section class="phero story-hero"><div class="wrap">
     <div>
-      <div class="crumbs"><a href="/">Home</a> / <a href="/customer-success-stories/">Customer Stories</a> / {d.institution}</div>
+      <div class="crumbs"><a href="/">Home</a> / <a href="/customer-success-stories/">Customer Stories</a> / {who}</div>
       <span class="eyebrow">{d.type}</span>
       <h1 style="margin-top:12px">{d.headline}</h1>
       <p class="sub">{d.summary}</p>
@@ -24,7 +25,9 @@ const others = (await getCollection('stories')).filter((s) => s.id !== story.id)
     {d.logo && <div class="logo-box"><img src={`/assets/${d.logo}`} alt={d.institution} /></div>}
   </div></section>
   <section><div class="wrap story-body">
-    <div class="prose"><Content />
+    <div class="prose article">
+      {d.image && !d.logo && <img class="post-hero-img" style="margin:0 0 28px" src={d.image} alt={d.imageAlt || who} />}
+      <Content />
       {d.quote && (
         <>
           <h2>In their words</h2>
@@ -39,7 +42,7 @@ const others = (await getCollection('stories')).filter((s) => s.id !== story.id)
       )}
     </div>
     <aside class="aside">
-      <span class="eyebrow">Outcomes</span>
+      {d.outcomes.length > 0 && <span class="eyebrow">Outcomes</span>}
       {d.outcomes.slice(0, 4).map((o) => <div class="card"><div class="n">{o.value}</div><div class="m">{o.metric}</div></div>)}
       <a class="btn btn-primary" href="/contact/">See this at your institution</a>
     </aside>

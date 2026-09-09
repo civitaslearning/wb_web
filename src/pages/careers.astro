@@ -14,7 +14,7 @@ const ben = d.sections.find((s) => s.heading === 'Benefits & Perks') ?? { bullet
       <div><h2>How we work</h2><p class="prose-wide" style="margin-top:12px">{how.body}</p><ul class="agents" style="margin-top:18px">{how.bullets.map((x) => <li><span>value</span><span>{x}</span></li>)}</ul></div>
       <div><h2>Benefits &amp; perks</h2><div class="checks" style="grid-template-columns:1fr;margin-top:18px">{ben.bullets.map((x) => <div class="check"><span>{x}</span></div>)}</div></div>
     </div>
-    <div style="margin-top:40px"><a class="btn btn-navy" href="https://www.civitaslearning.com/open-positions/">See open positions</a></div>
+    <div style="margin-top:40px"><a class="btn btn-navy" href="/open-positions/">See open positions</a></div>
   </div></section>
   <FinalCta />
 </Base>

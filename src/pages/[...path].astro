@@ -1,0 +1,28 @@
+---
+/**
+ * Pages imported from the old site that have no template of their own:
+ * legal pages, EduStream, open positions, and the gated resource pages.
+ * Each keeps the path it had on www.civitaslearning.com.
+ */
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import FinalCta from '../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((p) => ({ params: { path: p.data.path.replace(/^\/|\/$/g, '') }, props: { page: p } }));
+}
+const { page } = Astro.props;
+const d = page.data;
+const { Content } = await render(page);
+const parts = d.path.replace(/^\/|\/$/g, '').split('/');
+const crumbs = [{ text: 'Home', href: '/' }, ...parts.slice(0, -1).map((p, i) => ({ text: p.replace(/-/g, ' '), href: '/' + parts.slice(0, i + 1).join('/') + '/' })), { text: d.title }];
+---
+<Base title={d.title} description={d.description} seoTitle={d.seoTitle} noindex={d.noindex} modified={d.updated}>
+  <PageHero eyebrow="Civitas Learning" title={d.title} sub={d.description} crumbs={crumbs} ctas={false} />
+  <section><div class="wrap">
+    <div class="article" style="max-width:80ch"><Content /></div>
+  </div></section>
+  <FinalCta />
+</Base>

@@ -332,3 +332,35 @@ footer{padding:56px 0 32px;background:var(--tint);border-top:1px solid var(--lin
 .card.imgcard p{padding-bottom:22px}
 .card img.icon{width:44px;height:44px}
 .role .role-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:8px;margin-bottom:16px}
+/* articles: blog posts, episodes, news, imported pages */
+.post-head{padding:56px 0 24px}
+.crumbs.on-paper{color:var(--ink3)}
+.crumbs.on-paper a{color:var(--ink2)}
+.post-meta{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;color:var(--ink3);margin-top:16px}
+.post-hero-img{width:100%;max-height:520px;object-fit:cover;border-radius:12px;margin-top:28px}
+.post-grid{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start}
+@media (max-width:900px){.post-grid{grid-template-columns:1fr}}
+.article{max-width:74ch;font-size:17px;color:var(--ink2);line-height:1.6}
+.article h1{font-size:30px;margin:0 0 18px}
+.article h2{font-size:26px;margin:36px 0 12px}
+.article h3{font-size:21px;margin:28px 0 10px}
+.article h4,.article h5{font-size:17px;margin:22px 0 8px;color:var(--navy)}
+.article p{margin:0 0 18px}
+.article ul,.article ol{margin:0 0 18px;padding-left:22px}
+.article li{margin:6px 0}
+.article img{border-radius:8px;margin:8px 0 18px}
+.article a{color:var(--cyan-ink)}
+.article hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+.article blockquote{margin:24px 0;padding:4px 0 4px 20px;border-left:3px solid var(--cyan);font-family:var(--display);font-size:20px;line-height:1.35;color:var(--navy)}
+.article blockquote p{margin:0 0 10px}
+.article table{border-collapse:collapse;width:100%;margin:0 0 18px;font-size:15px}
+.article td,.article th{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.embed{margin:0 0 22px}
+.embed iframe{width:100%;border:0;border-radius:8px}
+.embed.audio iframe{height:128px}
+.embed.video{aspect-ratio:16/9}
+.embed.video iframe{height:100%}
+.pager{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px;align-items:center}
+.pager a,.pager span{padding:8px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-size:14px;color:var(--ink2)}
+.pager a:hover{border-color:var(--navy2);color:var(--navy)}
+.pager span.cur{background:var(--navy);color:#fff;border-color:var(--navy)}

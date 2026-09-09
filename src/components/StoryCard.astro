@@ -9,5 +9,5 @@ const o = d.outcomes[0];
   {d.logo ? <img class="cl" src={`/assets/${d.logo}`} alt={d.institution} /> : <span class="chip">{d.type.split(' (')[0].slice(0, 34)}</span>}
   <h3>{d.headline}</h3>
   {o && <div><div class="n" style="font-size:30px">{o.value}</div><div class="m">{o.metric}</div></div>}
-  <span class="who">{d.institution}<small>Read the story →</small></span>
+  <span class="who">{d.institution || 'Civitas Learning partner'}<small>Read the story →</small></span>
 </a>

@@ -79,7 +79,7 @@
    {
     "title": "How Institutions Can Measure Career Readiness in Real Time",
     "type": "podcast episode",
-    "url": "https://www.civitaslearning.com/podcast/how-institutions-can-measure-career-readiness-in-real-time/",
+    "url": "/podcast/how-institutions-can-measure-career-readiness-in-real-time/",
     "date": null,
     "description": "UT San Antonio's Mario Vela explains why opt-in career services no longer work — and how a real-time career readiness index makes career outcomes measurable.",
     "video": null
@@ -87,7 +87,7 @@
    {
     "title": "Doing More Without Adding Headcount in Higher Education",
     "type": "podcast episode",
-    "url": "https://www.civitaslearning.com/podcast/doing-more-without-adding-headcount-in-higher-education/",
+    "url": "/podcast/doing-more-without-adding-headcount-in-higher-education/",
     "date": null,
     "description": "NDSU Provost Shari Veil explains how colleges can do more without adding headcount by using data, rethinking work, and aligning resources to student needs.",
     "video": null
@@ -95,7 +95,7 @@
    {
     "title": "5 Questions to Ask Before Buying an AI Agent for Higher Ed",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
+    "url": "/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
     "date": null,
     "description": "Before buying an AI agent, ask what information it's acting on, not just what it can do. Learn five questions every higher ed leader should ask before making a decision.",
     "video": null
@@ -103,7 +103,7 @@
    {
     "title": "Designing Student Support Around Student Needs, Not Institutional Structures",
     "type": "podcast episode",
-    "url": "https://www.civitaslearning.com/podcast/designing-student-support-around-student-needs-not-institutional-structures/",
+    "url": "/podcast/designing-student-support-around-student-needs-not-institutional-structures/",
     "date": null,
     "description": "Page Keller shares how colleges can redesign student support around today's students by reducing friction and improving access.",
     "video": null
@@ -111,7 +111,7 @@
    {
     "title": "Inaction Has a Price: The Hidden Cost of Delayed Student Success Investments",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
+    "url": "/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
     "date": null,
     "description": "Explore the hidden costs of delay and why the status quo deserves just as much scrutiny as any technology vendor.",
     "video": null
@@ -119,7 +119,7 @@
    {
     "title": "Access Isn't Readiness: How First-Gen Students Build Financial Confidence",
     "type": "podcast episode",
-    "url": "https://www.civitaslearning.com/podcast/access-isnt-readiness-how-first-gen-students-build-financial-confidence/",
+    "url": "/podcast/access-isnt-readiness-how-first-gen-students-build-financial-confidence/",
     "date": null,
     "description": "Dr. Charmaine Troy arrived at college with $20 in her pocket. She shares how that experience shaped her view of first-generation student success—and why access alone isn't enough.",
     "video": null
@@ -127,7 +127,7 @@
    {
     "title": "The Hidden Cost of the Wrong Technology",
     "type": "podcast episode",
-    "url": "https://www.civitaslearning.com/podcast/the-hidden-cost-of-the-wrong-technology/",
+    "url": "/podcast/the-hidden-cost-of-the-wrong-technology/",
     "date": null,
     "description": "Anyone can run a good demo. Few vendors are still there for you a year after go-live.",
     "video": null
@@ -161,7 +161,7 @@
   ]
  },
  "/blog/": {
-  "url": "https://www.civitaslearning.com/blog/",
+  "url": "/blog/",
   "path": "/blog/",
   "title": "Student Success Strategies for Higher Education | Civitas Learning",
   "headline": "Blog",
@@ -193,7 +193,7 @@
     "title": "CLOSE the Student Impact Gap: A Modern Operating Model for Student Success",
     "type": "blog post",
     "featured": true,
-    "url": "https://www.civitaslearning.com/blog/close-the-student-impact-gap-a-modern-operating-model-for-student-success/",
+    "url": "/blog/close-the-student-impact-gap-a-modern-operating-model-for-student-success/",
     "date": null,
     "description": "Student success isn't failing because of effort—it's failing because systems are fragmented. Learn how the CLOSE operating model helps institutions turn insight into measurable impact.",
     "video": null
@@ -201,7 +201,7 @@
    {
     "title": "5 Questions to Ask Before Buying an AI Agent for Higher Ed",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
+    "url": "/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
     "date": null,
     "description": "Before buying an AI agent, ask what information it's acting on, not just what it can do.",
     "video": null
@@ -209,7 +209,7 @@
    {
     "title": "Inaction Has a Price: The Hidden Cost of Delayed Student Success Investments",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
+    "url": "/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
     "date": null,
     "description": "Explore the hidden costs of delay and why the status quo deserves scrutiny.",
     "video": null
@@ -217,7 +217,7 @@
    {
     "title": "Beyond Student Success: Evaluating Higher Ed Software, Vendors, & Institutional Fit",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/beyond-student-success-evaluating-higher-ed-software-vendors-institutional-fit/",
+    "url": "/blog/beyond-student-success-evaluating-higher-ed-software-vendors-institutional-fit/",
     "date": null,
     "description": "Features are easy to evaluate. Coordination is harder—and far more important.",
     "video": null
@@ -225,7 +225,7 @@
    {
     "title": "If You Have the Data, Why Is Action Still So Hard?",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/if-you-have-the-data-why-is-action-still-so-hard/",
+    "url": "/blog/if-you-have-the-data-why-is-action-still-so-hard/",
     "date": null,
     "description": "Student success doesn't scale because institutions lack data. It stalls due to prioritization breakdown.",
     "video": null
@@ -233,7 +233,7 @@
    {
     "title": "How Civitas Learning Thinks About Data (and Why That Matters)",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/how-civitas-learning-thinks-about-data-and-why-that-matters/",
+    "url": "/blog/how-civitas-learning-thinks-about-data-and-why-that-matters/",
     "date": null,
     "description": "Most institutions have the data and effort. Fewer have systems turning both into impact.",
     "video": null
@@ -241,7 +241,7 @@
    {
     "title": "Rethinking AI in Higher Ed: It's Not About Saving Time—It's About Making Better Decisions",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/rethinking-ai-in-higher-ed-its-not-about-saving-time-its-about-making-better-decisions/",
+    "url": "/blog/rethinking-ai-in-higher-ed-its-not-about-saving-time-its-about-making-better-decisions/",
     "date": null,
     "description": "Lasting impact comes from systems that earn trust, reflect context, and support human judgment.",
     "video": null
@@ -249,7 +249,7 @@
    {
     "title": "Why Career Readiness Is a Signal — Not Just an Outcome — of Student Success",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/why-career-readiness-is-a-signal-not-just-an-outcome-of-student-success/",
+    "url": "/blog/why-career-readiness-is-a-signal-not-just-an-outcome-of-student-success/",
     "date": null,
     "description": "When career readiness shows up early, students persist longer—and outcomes follow.",
     "video": null
@@ -257,7 +257,7 @@
    {
     "title": "Retention Can Stall Even When You're 'Doing Everything Right'",
     "type": "blog post",
-    "url": "https://www.civitaslearning.com/blog/retention-can-stall-even-when-youre-doing-everything-right/",
+    "url": "/blog/retention-can-stall-even-when-youre-doing-everything-right/",
     "date": null,
     "description": "When retention stalls, the answer isn't more programs—it's better precision.",
     "video": null

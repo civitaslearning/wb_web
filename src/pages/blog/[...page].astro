@@ -1,0 +1,37 @@
+---
+/**
+ * Blog index. /blog/ is page 1 and /blog/page/N/ are the rest, the same
+ * paths the old site used, with nine posts per page.
+ */
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ResCard from '../../components/ResCard.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+  const size = 9;
+  const total = Math.max(1, Math.ceil(posts.length / size));
+  return Array.from({ length: total }, (_, i) => ({
+    params: { page: i === 0 ? undefined : `page/${i + 1}` },
+    props: { posts: posts.slice(i * size, (i + 1) * size), current: i + 1, total },
+  }));
+}
+const { posts, current, total } = Astro.props;
+const href = (n: number) => (n === 1 ? '/blog/' : `/blog/page/${n}/`);
+---
+<Base title="Blog" description="Student success strategies for higher education." seoTitle="Student Success Strategies for Higher Education | Civitas Learning">
+  <PageHero eyebrow="Blog" title="Student success strategies for higher education" sub="Practical, data-informed writing for leaders who have to show results." crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Blog' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="res-list">{posts.map((p) => <ResCard title={p.data.title} type="blog post" url={`/blog/${p.id}/`} description={p.data.description} />)}</div>
+    {total > 1 && (
+      <nav class="pager" aria-label="Blog pages">
+        {current > 1 && <a href={href(current - 1)}>← Newer</a>}
+        {Array.from({ length: total }, (_, i) => i + 1).map((n) => (n === current ? <span class="cur">{n}</span> : <a href={href(n)}>{n}</a>))}
+        {current < total && <a href={href(current + 1)}>Older →</a>}
+      </nav>
+    )}
+  </div></section>
+  <FinalCta />
+</Base>

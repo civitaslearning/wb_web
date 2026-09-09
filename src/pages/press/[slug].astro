@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const items = await getCollection('news');
+  return items.map((n) => ({ params: { slug: n.id }, props: { item: n } }));
+}
+const { item } = Astro.props;
+const d = item.data;
+const { Content } = await render(item);
+const fmt = (s: string) => new Date(s + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Base title={d.title} description={d.description} seoTitle={d.seoTitle} image={d.image} noindex={d.noindex} type="article" published={d.date} modified={d.updated}>
+  <header class="post-head"><div class="wrap">
+    <div class="crumbs on-paper"><a href="/">Home</a> / <a href="/press/">News</a></div>
+    <span class="eyebrow">News</span>
+    <h1 style="margin-top:12px;max-width:22em">{d.title}</h1>
+    <div class="post-meta"><span>{fmt(d.date)}</span></div>
+    {d.image && <img class="post-hero-img" src={d.image} alt={d.imageAlt || ''} />}
+  </div></header>
+  <section style="padding-top:24px"><div class="wrap">
+    <div class="article"><Content /></div>
+  </div></section>
+  <FinalCta />
+</Base>

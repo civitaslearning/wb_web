@@ -6,18 +6,38 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description?: string;
+  /** Exact title tag. Use it to keep the title of a page imported from the old site. */
+  seoTitle?: string;
+  /** Social image, site-relative or absolute. */
+  image?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article';
+  published?: string;
+  modified?: string;
 }
-const { title, description = '' } = Astro.props;
+const { title, description = '', seoTitle, image, noindex = false, type = 'website', published, modified } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = seoTitle || `${title} | Civitas Learning`;
+const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{title} | Civitas Learning</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description || title} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description || title} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Civitas Learning" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {published && <meta property="article:published_time" content={published} />}
+    {modified && <meta property="article:modified_time" content={modified} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

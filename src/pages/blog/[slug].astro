@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ResCard from '../../components/ResCard.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((p) => ({ params: { slug: p.id }, props: { post: p } }));
+}
+const { post } = Astro.props;
+const d = post.data;
+const { Content } = await render(post);
+const fmt = (s: string) => new Date(s + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const related = (await getCollection('blog')).filter((p) => p.id !== post.id).sort((a, b) => b.data.date.localeCompare(a.data.date)).slice(0, 3);
+---
+<Base title={d.title} description={d.description} seoTitle={d.seoTitle} image={d.image} noindex={d.noindex} type="article" published={d.date} modified={d.updated}>
+  <header class="post-head"><div class="wrap">
+    <div class="crumbs on-paper"><a href="/">Home</a> / <a href="/blog/">Blog</a></div>
+    <span class="eyebrow">Blog</span>
+    <h1 style="margin-top:12px;max-width:22em">{d.title}</h1>
+    <div class="post-meta"><span>{fmt(d.date)}</span><span>By {d.author}</span></div>
+    {d.image && <img class="post-hero-img" src={d.image} alt={d.imageAlt || ''} />}
+  </div></header>
+  <section style="padding-top:24px"><div class="wrap post-grid">
+    <div class="article"><Content /></div>
+    <aside class="aside">
+      {d.tags.length > 0 && (
+        <div><span class="eyebrow">Topics</span><div class="filters" style="margin-top:10px">{d.tags.map((t) => <span class="chip">{t}</span>)}</div></div>
+      )}
+      <a class="btn btn-primary" href="/contact/">Book a demo</a>
+    </aside>
+  </div></section>
+  <section class="tint"><div class="wrap">
+    <span class="eyebrow">More from the blog</span>
+    <div class="res-list" style="margin-top:22px">{related.map((p) => <ResCard title={p.data.title} type="blog post" url={`/blog/${p.id}/`} description={p.data.description} />)}</div>
+  </div></section>
+  <FinalCta />
+</Base>
