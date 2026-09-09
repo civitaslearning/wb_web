@@ -16,10 +16,35 @@ export function getStaticPaths() {
 const p = Astro.props;
 const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/advising-and-student-success/' };
 const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', 'CollegeVine', '+ 100 more'];
+// The institutional scoreboard. Every use-case page shows the same six
+// outcomes, so a reader sees the whole institution, not one office.
+const outcomes = [
+  { slug: 'enrollment-management', label: 'Enroll', line: 'Yield, melt, registration' },
+  { slug: 'academic-leaders-and-faculty', label: 'Engage', line: 'Course-level engagement, section fill' },
+  { slug: 'advising-and-student-success', label: 'Persist', line: 'Retention, term to term' },
+  { slug: 'improve-on-time-completion', label: 'Graduate', line: 'On-time completion' },
+  { slug: 'career-outcomes', label: 'Employ', line: 'Career readiness, graduate earnings' },
+  { slug: 'ensure-initiative-efficacy-and-roi', label: 'Prove', line: 'Lift vs. a comparison group' },
+];
 ---
 <Base title={p.name} description={p.sub || p.headline}>
   <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={[{ text: 'Home', href: '/' }, root, { text: p.name }]} />
   <Sections sections={p.sections} />
+  {p.kind === 'usecases' && (
+    <section class="tight"><div class="wrap">
+      <div class="outcomes-head">
+        <div><span class="eyebrow">The institutional scoreboard</span><h2>Every office gets a number. This page is one of six.</h2></div>
+        <p>Enrollment, engagement, persistence, graduation, and career outcomes, each measured against a comparison group. The same data, the same model, one ledger for the cabinet, the board, and the Department of Education.</p>
+      </div>
+      <div class="outcomes">
+        {outcomes.map((o) => (
+          <a class:list={['outcome', { cur: o.slug === p.slug }]} href={`/${o.slug}/`} aria-current={o.slug === p.slug ? 'page' : undefined}>
+            <b>{o.label}</b><span>{o.line}</span>
+          </a>
+        ))}
+      </div>
+    </div></section>
+  )}
   {p.stats.length > 0 && (
     <section class="tint tight"><div class="wrap">
       <span class="eyebrow">Partner outcomes</span>

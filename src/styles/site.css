@@ -184,6 +184,19 @@ section.tint{background:var(--tint)}
 .col li i{font-style:normal;font-family:var(--mono);color:var(--ink3)}
 .col+.col li i{color:var(--cyan-ink)}
 @media (max-width:900px){.cmp{grid-template-columns:1fr}.col+.col{border-left:0;border-top:1px solid var(--line)}}
+/* institutional scoreboard strip (use-case pages) */
+.outcomes-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:26px}
+.outcomes-head h2{font-size:clamp(24px,2.4vw,30px);margin-top:10px}
+.outcomes-head p{color:var(--ink2);font-size:15.5px;max-width:36em}
+.outcomes{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper)}
+.outcome{display:grid;gap:4px;padding:18px 16px;text-decoration:none;color:inherit;border-left:1px solid var(--line)}
+.outcome:first-child{border-left:0}
+.outcome b{font-family:var(--display);font-size:18px;font-weight:600;color:var(--navy)}
+.outcome span{font-size:12.5px;color:var(--ink3)}
+.outcome:hover{background:var(--tint)}
+.outcome.cur{background:var(--cyan-soft)}
+.outcome.cur b{color:var(--cyan-ink)}
+@media (max-width:900px){.outcomes-head{grid-template-columns:1fr;gap:12px}.outcomes{grid-template-columns:1fr 1fr 1fr}.outcome:nth-child(4){border-left:0}.outcome:nth-child(n+4){border-top:1px solid var(--line)}}
 /* AI vendor checklist */
 .checklist{margin-top:28px;border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:28px}
 .checklist-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}

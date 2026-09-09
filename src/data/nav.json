@@ -36,6 +36,7 @@
             { "href": "/curate-student-data/", "text": "Curate & Share Student Data" },
             { "href": "/improve-on-time-completion/", "text": "Remove Barriers to Completion" },
             { "href": "/coordinate-student-care/", "text": "Coordinate Student Care" },
+            { "href": "/career-outcomes/", "text": "Career Outcomes & Accountability" },
             { "href": "/ensure-initiative-efficacy-and-roi/", "text": "Ensure Efficacy & ROI" }
           ]
         }
@@ -77,7 +78,7 @@
   ],
   "footer": [
     { "title": "Solutions", "links": [["/platform/", "Student Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"]] },
-    { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
+    { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
     { "title": "Resources", "links": [["/resources/", "Content Library"], ["/customer-success-stories/", "Customer Stories"], ["/blog/", "Blog"], ["/podcast/", "Next Practices Podcast"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/support/", "Technical Support"]] },
     { "title": "Company", "links": [["/about/", "About"], ["/our-team/", "Leadership Team"], ["/careers/", "Careers"], ["/press/", "News"], ["/commitment/", "Our Commitment"], ["/contact/", "Contact"]] }
   ]

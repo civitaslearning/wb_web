@@ -704,8 +704,8 @@
   "kind": "usecases",
   "name": "Strategic Enrollment & Retention Software",
   "eyebrow": "Strategic Enrollment",
-  "headline": "Ensure Students Can Stay Enrolled at Your Institution",
-  "sub": "Remove academic, financial, and systemic barriers to enrollment and streamline the degree planning and registration experience for improved student retention.",
+  "headline": "Fill the class with students who will finish.",
+  "sub": "Every admit gets two scores in the CRM you already run: will they enroll, and will they still be here in year two. Yield, melt, and registration move first. Retention pays for the next class.",
   "sections": [
    {
     "heading": "Remove Barriers to Success",
@@ -820,8 +820,8 @@
   "kind": "usecases",
   "name": "About Civitas Learning",
   "eyebrow": "Advising & Student Success",
-  "headline": "Help Every Student Not Only Succeed But Thrive",
-  "sub": "Gain insight into individual and groups need to provide proactive support at scale and guide students to reach their full potential.",
+  "headline": "Keep the students you already have.",
+  "sub": "A model trained on your own history scores every student every week, so advisors see the week-four slide before it becomes a week-twelve withdrawal. Retention is the cheapest enrollment you will ever buy.",
   "sections": [
    {
     "heading": "Access Student Information in One Place",
@@ -931,9 +931,9 @@
   "slug": "academic-leaders-and-faculty",
   "kind": "usecases",
   "name": "Student Engagement Software",
-  "eyebrow": "Academic Leaders & Faculty",
-  "headline": "Create Academic Environments Where Students Thrive",
-  "sub": "Gain insight into academic and systemic factors affecting student performance to enhance the academic experience and collaborate across teams to help students reach their full potential.",
+  "eyebrow": "Academic Leaders & Faculty · Student Engagement",
+  "headline": "See student engagement by week, not by grade report.",
+  "sub": "Course-level engagement, section fill, and the bottleneck courses that stall a degree, in one view for deans, chairs, and faculty. Act in week eight, not in December.",
   "sections": [
    {
     "heading": "Know What Works",
@@ -1038,8 +1038,8 @@
   "kind": "usecases",
   "name": "Data & Analytics for Higher Education",
   "eyebrow": "Institutional Research & Effectiveness",
-  "headline": "Empower Data-Informed Decisions at Every Level",
-  "sub": "Equip teams across your institution with actionable insights, like initiative effectiveness and the factors influencing outcomes—enabling them to take data-informed action and continuously refine their efforts.",
+  "headline": "One dataset for the board, the accreditor, and the Department of Education.",
+  "sub": "Retention, graduation, engagement, and graduate earnings by program, with every initiative measured against a comparison group. IR answers the cabinet's question the day it is asked.",
   "sections": [
    {
     "heading": "Democratize Student Data",
@@ -1145,8 +1145,8 @@
   "kind": "usecases",
   "name": "Higher Education Software",
   "eyebrow": "Institutional Technology",
-  "headline": "Get More Value from Your Data & Technology Investments",
-  "sub": "A flexible AI-powered platform that enhances your existing technology infrastructure, reducing inefficiencies and consolidating systems while improving student outcomes.",
+  "headline": "Get more from the systems you already run. Nothing gets replaced.",
+  "sub": "Civitas reads from Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce, and 100+ other systems, builds one model of the institution, and writes actions and results back. Live in weeks, with a named institution to prove it.",
   "sections": [
    {
     "heading": "Consolidate Student Data",
@@ -1245,8 +1245,8 @@
   "kind": "usecases",
   "name": "Student Data Management System",
   "eyebrow": "Curate & Share Student Data",
-  "headline": "Turn Disorganized Student Data into Improved Outcomes",
-  "sub": "Transform your disparate data into actionable insights for your whole team",
+  "headline": "One student record, every office, one version of the truth.",
+  "sub": "Turn data spread across a dozen systems into a governed dataset every team can act on, from the advisor's caseload to the board's dashboard.",
   "sections": [
    {
     "heading": "Empower Your Entire Campus to Take Data-Informed Action",
@@ -1323,9 +1323,9 @@
   "slug": "improve-on-time-completion",
   "kind": "usecases",
   "name": "Support On-Time Graduation",
-  "eyebrow": "Remove Barriers to Completion",
-  "headline": "Help Your Students Graduate On-Time & Within Budget",
-  "sub": "Identify barriers preventing students from completing degrees on time, pinpoint course bottlenecks, deliver student-centered course offerings & simplify the enrollment experience.",
+  "eyebrow": "Graduation & On-Time Completion",
+  "headline": "Move the graduation rate one blocked course at a time.",
+  "sub": "Thirty credits from a degree is where students stall on one section. Find them by name the term before it happens, open the seat, and count the graduates. Graduation is the number the state, the board, and the Department of Education all read.",
   "sections": [
    {
     "heading": "Enable Your Entire Institution to Support On-Time Completion",
@@ -1454,12 +1454,132 @@
   "source": "https://www.civitaslearning.com/improve-on-time-completion/"
  },
  {
+  "slug": "career-outcomes",
+  "kind": "usecases",
+  "name": "Career Outcomes & Program Accountability Software for Higher Education",
+  "eyebrow": "Career Outcomes & Accountability",
+  "headline": "Know which programs pay off for graduates. Before the Department of Education tells you.",
+  "sub": "The career module connects career readiness, persistence, and graduation to graduate earnings by program, so deans see the earnings test coming while there is still time to act.",
+  "stats": [
+   {
+    "value": "$13,000",
+    "metric": "higher post-graduation earnings than the local average, UT San Antonio graduates"
+   },
+   {
+    "value": "94%",
+    "metric": "of students in UTSA's experiential learning hub persisted or graduated"
+   },
+   {
+    "value": "+33%",
+    "metric": "second-year retention after UTSA embedded career readiness in the curriculum"
+   },
+   {
+    "value": "85%",
+    "metric": "more courses with hands-on experience at UTSA since 2022"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "It's already after the fact that we look at it, more of an autopsy rather than a diagnostic tool that's happening in real time.",
+    "name": "Mario Vela",
+    "title": "Assistant Vice Provost of Career Engaged Learning",
+    "institution": "University of Texas at San Antonio",
+    "link": "/podcast/how-institutions-can-measure-career-readiness-in-real-time/"
+   }
+  ],
+  "integrations": [
+   "Handshake",
+   "Canvas",
+   "Banner",
+   "Salesforce"
+  ],
+  "sections": [
+   {
+    "heading": "The rule has changed. Graduate earnings now decide loan eligibility.",
+    "body": "Under the Department of Education's earnings accountability framework, finalized in 2026 and effective July 2027, every Title IV-eligible degree program is measured against what its graduates earn. A program whose graduates repeatedly earn less than working adults with only a high school diploma loses federal loan eligibility. The determination arrives years after the students it describes enrolled. By then the only options are to close the program or absorb the loss. The career module gives deans and provosts the same view the Department will have, program by program, years earlier.",
+    "bullets": []
+   },
+   {
+    "heading": "A diagnostic, not an autopsy",
+    "body": "Employment data arrives after graduation, when nothing can be done. The career readiness index is a real-time view of each student's progress toward a career: internships, experiential learning, career programming, mentorship, and résumé work, alongside persistence and grades. Think of it as a degree plan for career readiness. A student can carry a 3.4 GPA and still be unprepared for the job market. The index shows that in the sophomore year, not in a wage record four years after commencement.",
+    "bullets": [],
+    "image": {
+     "file": "multi-outcome-analytics.webp",
+     "alt": "Multi-outcome analytics with persistence, completion, and career readiness together"
+    }
+   },
+   {
+    "heading": "A scoreboard for every dean",
+    "body": "Each degree program gets one page: enrollment, engagement, persistence, graduation, career readiness, and, where your state wage data allows, graduate earnings against the federal threshold. Deans and chairs see which programs are clear, which are close, and which need a curriculum change, an internship pipeline, or a hard conversation. The same page answers the accreditor, the state, and the board.",
+    "bullets": [],
+    "image": {
+     "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
+     "alt": "Program-level student outcomes with graduation and career measures"
+    }
+   },
+   {
+    "heading": "Find the students who are not career ready, while there is time",
+    "body": "Dynamic student groups update as data changes. The junior in a business program with no internship, no career center visit, and a persistence score that dropped this term is on a list by Monday. Career services, the advisor, and the department see the same list and the same plan. Outreach goes to the students who need it, not to everyone.",
+    "bullets": [],
+    "image": {
+     "file": "dynamic-student-lists.webp",
+     "alt": "Dynamic student groups for targeted career outreach"
+    }
+   },
+   {
+    "heading": "Measure which career programs move persistence and earnings",
+    "body": "Internships, alumni mentoring, applied learning courses, career coaching: institutions offer all of them and rarely know which ones work for which students. Every career program is measured against a matched comparison group on persistence, completion, and later earnings, by student group. UT San Antonio found statistically significant retention gains for students who met with career consultants or received mentorship. The budget follows the evidence.",
+    "bullets": [],
+    "image": {
+     "file": "initiative-program-analysis.webp",
+     "alt": "Initiative analysis showing lift against a comparison group"
+    }
+   },
+   {
+    "heading": "For Deans & Provosts",
+    "body": "Program accountability without waiting for the Department.",
+    "bullets": [
+     "Graduate earnings by program against the federal threshold, years before the determination",
+     "Curriculum and experiential-learning changes measured on persistence and earnings",
+     "One page per program for the board, the accreditor, and the state"
+    ]
+   },
+   {
+    "heading": "For Career Services",
+    "body": "From opt-in to built-in.",
+    "bullets": [
+     "A career readiness index for every student, refreshed as engagement data changes",
+     "Target internship and career outreach to the students most likely to benefit",
+     "Prove which programs move outcomes, and defend the budget with a number"
+    ]
+   },
+   {
+    "heading": "For Institutional Research",
+    "body": "The earnings test on your own data.",
+    "bullets": [
+     "Persistence, graduation, career engagement, and earnings in one governed dataset",
+     "Comparison-group measurement of every career initiative, by student group",
+     "Federal, state, and accreditor reporting from the same numbers"
+    ]
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "See it early: Career readiness and program earnings on a real-time scoreboard, not a wage record four years later",
+     "Act by name: Dynamic student groups put the students who are not career ready on a list, with one owner",
+     "Prove it: Every career program measured against a comparison group, so the budget follows what works"
+    ]
+   }
+  ]
+ },
+ {
   "slug": "coordinate-student-care",
   "kind": "usecases",
   "name": "Coordinate Student Care",
   "eyebrow": "Coordinate Student Care",
-  "headline": "Work Together to Improve Student Outcomes",
-  "sub": "Create a shared understanding of the student experience and align student care in one platform to provide the right support at the right time.",
+  "headline": "One student, one plan, one owner.",
+  "sub": "An advising alert, an aid hold, and a tutoring referral become one case with one owner, so the student hears one version of the plan and every office sees what the others did.",
   "sections": [
    {
     "heading": "Empower the Entire Institution to Help Students Thrive",
@@ -1544,8 +1664,8 @@
   "kind": "usecases",
   "name": "Ensure Initiative Efficacy & ROI",
   "eyebrow": "Ensure Efficacy & ROI",
-  "headline": "Invest in What Works, Adjust What Doesn't",
-  "sub": "Identify effective strategies to enhance outcomes for your student population. Assess policies, initiatives, programs, and course offerings to improve student and institutional results.",
+  "headline": "Fund what works. Retire what doesn't.",
+  "sub": "Every initiative, policy, program, and course measured against a matched comparison group, so the budget follows the evidence. Some interventions have no effect. You should know which.",
   "sections": [
    {
     "heading": "Ensure the Effectiveness of Your Investments",

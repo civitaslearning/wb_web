@@ -108,6 +108,15 @@ All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two o
   with a good answer and a weak answer. Every question is one Civitas answers with a number or
   a name, and the weak answers are quotes from competitor sites. Nobody is named. The page is a
   sales leave-behind: a prospect who brings it to a competitor demo is asking our questions.
+- Use-case pages carry the institutional-success frame, not only student success (Will,
+  2026-09-09). Each page has a headline in the home page voice, and every use-case page shows
+  the same six-outcome scoreboard strip: Enroll, Engage, Persist, Graduate, Employ, Prove. The
+  body sections are still the live site's copy. A new page, `/career-outcomes/`, covers the
+  career module (the career readiness index built with UT San Antonio) and the Department of
+  Education's earnings accountability framework, finalized in 2026 and effective July 2027.
+  The rule text on the page follows the podcast episode with Mario Vela; the exact test and
+  dates should be checked against the final rule before launch. Feature claims for the career
+  module (program-level earnings against the federal threshold) need product confirmation.
 - The security line claims only what the live site already states: FERPA school-official
   status, the data sharing agreement, single sign-on, platform specifications, and VPATs.
   SOC 2 and HECVAT are not on the site. Add them only when the reports exist.
