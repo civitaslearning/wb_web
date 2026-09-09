@@ -119,6 +119,7 @@ section.tint{background:var(--tint)}
 .sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:44px}
 .sec-head p{color:var(--ink2);font-size:17px;max-width:36em}
 .sec-head h2{margin-top:12px}
+.sec-head.one{grid-template-columns:1fr;margin-bottom:28px}
 @media (max-width:900px){.sec-head{grid-template-columns:1fr;gap:16px}}
 /* dark band */
 .band{background:var(--navy);color:#DCE6F5}
