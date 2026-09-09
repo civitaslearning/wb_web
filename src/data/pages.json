@@ -156,7 +156,7 @@
    },
    {
     "text": "Get in touch",
-    "url": "https://www.civitaslearning.com/contact/"
+    "url": "/contact/"
    }
   ]
  },
@@ -276,7 +276,7 @@
    },
    {
     "text": "Get in touch",
-    "url": "https://www.civitaslearning.com/contact/"
+    "url": "/contact/"
    }
   ]
  },
@@ -411,11 +411,11 @@
    },
    {
     "text": "Get in Touch",
-    "url": "https://www.civitaslearning.com/contact/"
+    "url": "/contact/"
    },
    {
     "text": "Leadership Workshops",
-    "url": "https://www.civitaslearning.com/leadership-workshops"
+    "url": "/leadership-workshops/"
    },
    {
     "text": "Strategic Enablement",
@@ -452,7 +452,7 @@
   "ctas": [
    {
     "text": "Get in touch",
-    "url": "https://www.civitaslearning.com/contact/"
+    "url": "/contact/"
    },
    {
     "text": "Read the 2026 Student Success Impact Report",
@@ -494,7 +494,7 @@
    {
     "title": "Insights to Action: An inside look at the 2024 Student Success Impact Report",
     "type": "webinar",
-    "url": "https://www.civitaslearning.com/resources/2024-student-success-impact-report-webinar/",
+    "url": "/resources/2024-student-success-impact-report-webinar/",
     "date": null,
     "description": "Webinar recording discussing the 2024 Student Success Impact Report findings.",
     "video": null
