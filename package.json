@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build:data": "python3 scripts/build-ipeds.py",
+    "build": "npm run build:data && astro build",
     "preview": "astro preview"
   },
   "dependencies": {

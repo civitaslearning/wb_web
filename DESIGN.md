@@ -18,6 +18,95 @@ repository state and next steps). This file covers *why* the site looks and read
 - Public pricing page and an ROI calculator. Lowers buyer risk.
 - Buyer: VP Enrollment, CMO. Strength is the front door — marketing and admissions.
 
+### The competitor read (CollegeVine, Sept 2026)
+
+Read from collegevine.com on 2026-09-09: home, the five solution pages, the IPEDS agent, the
+CRM analyst, and the case studies page.
+
+**What they say**
+
+- Headline: "The AI operating system for universities." Subhead: "unifies your data, models
+  your operations, and deploys AI across every office on campus." Tagline: "Professional Class
+  AI for Higher Education."
+- Architecture is the pitch: an "ontology" data model, then agents, apps, and ML models on top.
+  "All major campus systems are finally talking to each other." "Live in weeks, not years."
+- Breadth is the proof of seriousness. One page lists agents for enrollment, financial aid,
+  advancement, academic operations, career services, dining, housing, research, accreditation,
+  student affairs, compliance, IT, finance, HR, facilities, health services, parking, and
+  procurement.
+- Buyer is the whole cabinet: VP Enrollment, CFO, CIO, VP Advancement, Provost. Security is on
+  every page: zero trust, FERPA, SOC 2 Type II, HECVAT, a trust center.
+- Two free hands-on demos. An IPEDS agent that answers plain-English questions across 4,000+
+  institutions, and a CRM analyst demo behind an email gate. Both lower buyer risk without a
+  data share.
+- Eleven case studies. Titles are process stories: "How Molloy partnered with CollegeVine to
+  use AI for transcript processing, giving 835 hours back." "How Bridgeport and Goodwin unified
+  Slate and Colleague into one data layer."
+- Best-written page is Academic Affairs: "Catches the student in week 8, not in December."
+  "Every dollar traces back to a named course and a specific decision, so you can defend it to a
+  faculty senate."
+
+**Where they are weak**
+
+1. Proof is activity, not outcome. Email open rate. SMS reply rate. Staff hours saved. "Months
+   is the average time for partners to see results." "X% of partners report their agent exceeded
+   expectations." Their ROI FAQ answer is "staff capacity, operational efficiency, and outcomes
+   tied to your specific goals." No retention, completion, or revenue number anywhere.
+2. Student success is rules, not models. "Continuously scans student records for slipping GPA,
+   missed registration, and other risk signals." No institution-specific model, no history, no
+   comparison group. They cannot say whether an intervention worked.
+3. Breadth dilutes the claim. Parking and procurement sit on the same page as retention. A
+   president cannot tell what they are best at.
+4. "AI operating system" and "ontology" are replacement language. It reads as a platform that
+   wants to sit under everything. Our "nothing gets replaced" is the direct counter.
+5. "Hundreds of institutional partners." No number, no logos in the first screen. We have 375
+   and names.
+6. Jargon in headlines: "Operational Intelligence Platform", "unified ontology", "Professional
+   Class AI".
+
+**Where they beat us today**
+
+- Hands-on demos that a prospect can run alone. We have a calculator; they have an agent on
+  public data.
+- Concrete Monday-morning copy on every solution page, one job per section, each with a
+  named person and title.
+- Security on every page. We have none visible.
+- A time-to-value claim ("weeks"). We have the Lawrence Tech story ("live in six weeks") and do
+  not use it as a headline stat.
+- Case study count in the first screen. We have 31 stories and show 4.
+
+**How to out-message them**
+
+| Move | What it does |
+|---|---|
+| Sharpen the thesis line on the home page: "An operating system runs the work. Civitas proves the work paid off." | Turns their strongest word ("operating system") into the setup for ours ("proves"). Never names them. |
+| Add their metrics to the comparison table under "Generic AI agent": open rate, reply rate, hours saved, "exceeded expectations". | Makes the activity-versus-outcome contrast concrete. Our column keeps persistence, completion, revenue versus a matched comparison group. |
+| Add a "How risk is found" row: rules on GPA and missed registration versus a model trained on your own history and refreshed each term. | Their early alert is rules. Ours is a model. Say it in one line. |
+| Build a public IPEDS benchmark tool: pick your institution, see retention and completion versus peers, and what one point is worth. | Matches their IPEDS agent on our terms. Fits the rule that sessions start from IPEDS. Feeds the ROI calculator with real inputs. |
+| Put "375 institutions, 31 measured outcomes" in the stat band or the story index. Link the count. | Beats "hundreds" with a number and a list. |
+| Add "Live in six weeks, Lawrence Tech" as a stat or a proof line on the platform page. | Answers "weeks, not years" with a name. |
+| Add a security line to every solution page and a /security page: FERPA, SOC 2, HECVAT, role-based access. | Removes the objection they raise on every page. Low effort. |
+| List CollegeVine as an integration next to Element451. | Same rule as Element451: competitors appear only as systems we read from. |
+| Rewrite the three job cards to their level of concreteness: "week 8, not December" is the bar. | Their academic affairs page is better copy than our jobs section. Match it. |
+| Keep the frame "institutional effectiveness", but define it as measurement across offices, not plumbing under offices. | Nick's broadening and their breadth story overlap. Ours is "every office gets a scoreboard"; theirs is "every office gets an agent". |
+
+All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two of them:
+
+- The IPEDS tool lives in the home page calculator. `scripts/build-ipeds.py` turns five IPEDS
+  tables into `public/data/ipeds.json` (3,169 institutions, 2023-24). The browser loads it on
+  first use, fills headcount and net price, and shows first-year retention and graduation rate
+  against a peer median. Peers are the 40 institutions with the same control (public, private
+  nonprofit, for-profit) and Carnegie group (associate's, doctoral, master's, baccalaureate,
+  special focus) nearest in headcount, Pell share, and net price. The peer list never shows.
+  Copy branches: below peers, "closing that gap is worth $X"; above peers, "every point you
+  hold is worth $X"; no retention rate, "one point is worth $X".
+- A retention rate from a full-time cohort under 50 students is dropped. A community college
+  that awards a few bachelor's degrees reports retention on that tiny bachelor's cohort, so
+  Sinclair showed 100% from three students. The page then shows "n/a" and the one-point copy.
+- The security line claims only what the live site already states: FERPA school-official
+  status, the data sharing agreement, single sign-on, platform specifications, and VPATs.
+  SOC 2 and HECVAT are not on the site. Add them only when the reports exist.
+
 ### Where the old Civitas home page was weak
 
 1. "AI Built on Your Data" has the same shape as Element's headline. Two vendors saying "AI";

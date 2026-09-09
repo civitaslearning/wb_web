@@ -15,7 +15,7 @@ export function getStaticPaths() {
 }
 const p = Astro.props;
 const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/advising-and-student-success/' };
-const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', '+ 100 more'];
+const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', 'CollegeVine', '+ 100 more'];
 ---
 <Base title={p.name} description={p.sub || p.headline}>
   <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={[{ text: 'Home', href: '/' }, root, { text: p.name }]} />
@@ -34,6 +34,10 @@ const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', '+ 10
       <div class="filters" style="margin-top:14px">{[...p.integrations, ...extraIntegrations].map((x) => <span class="chip">{x}</span>)}</div>
     </div></section>
   )}
+  <section class="tight"><div class="wrap security-line">
+    <span class="eyebrow">Your data stays yours</span>
+    <p>Civitas works under FERPA as a school official you designate, with a published data sharing agreement and platform specifications. Accessibility conformance reports are available on request. <a href="/security/">Security and privacy →</a></p>
+  </div></section>
   <Quotes items={p.testimonials} />
   <FinalCta />
 </Base>

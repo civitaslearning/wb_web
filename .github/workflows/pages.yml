@@ -27,6 +27,13 @@ jobs:
           node-version: 22
           cache: npm
 
+      # scripts/build-ipeds.py rebuilds public/data/ipeds.json from the IPEDS
+      # zips in data/ipeds/ as the first step of `npm run build`.
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
       - name: Install
         run: npm ci
 
