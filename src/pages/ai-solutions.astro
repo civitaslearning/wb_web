@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
-import Mock from '../components/mocks/Mock.astro';
 import FinalCta from '../components/FinalCta.astro';
 
 const caps = [
@@ -38,7 +37,12 @@ const feats = [
     <div class="checks" style="margin-top:22px">{trust.map(([b, t]) => <div class="check"><span><b>{b}</b>{t}</span></div>)}</div>
   </div></section>
   <section><div class="wrap">
-    {feats.map(([h, p], i) => <div class:list={['feat', { rev: i % 2 === 1 }]}><div><h3>{h}</h3><p>{p}</p></div><div class="art"><Mock i={i} /></div></div>)}
+    {feats.map(([h, p], i) => (
+      <div class:list={['feat', { rev: i % 2 === 1, noart: i > 0 }]}>
+        <div><h3>{h}</h3><p>{p}</p></div>
+        {i === 0 && <figure class="shot"><img src="/assets/screens/ai-solutions-1.webp" alt="Civitas Learning AI assistant inside the advising workflow" loading="lazy" /></figure>}
+      </div>
+    ))}
   </div></section>
   <FinalCta />
 </Base>

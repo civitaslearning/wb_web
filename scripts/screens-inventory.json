@@ -1,0 +1,623 @@
+{
+ "inv": {
+  "/platform/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Fragmented-Systems.svg",
+    "alt": "Fragmented systems and siloed data",
+    "h": "Eliminate the Gaps That Hold Students Back"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Limited-Visibility.svg",
+    "alt": "Limited visibility into what's working",
+    "h": "Eliminate the Gaps That Hold Students Back"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Reactive-Engagement.svg",
+    "alt": "Inconsistent, reactive engagement",
+    "h": "Eliminate the Gaps That Hold Students Back"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Measure-ROI.svg",
+    "alt": "Difficulty measuring ROI",
+    "h": "Eliminate the Gaps That Hold Students Back"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/student-success-analytics.jpg",
+    "alt": "Actionable Analytics",
+    "h": "The Student Impact Platform"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Desktop-9Updated_1440px.png",
+    "alt": "Connected Workflows",
+    "h": "The Student Impact Platform"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/strategic-partnership.jpg",
+    "alt": "Dedicated Strategic Partnership",
+    "h": "The Student Impact Platform"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-leaders.jpg",
+    "alt": "",
+    "h": "For Data-Informed Leaders"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-student-facing-teams.jpg",
+    "alt": "",
+    "h": "For Student-Facing Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-students.jpg",
+    "alt": "",
+    "h": "For Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Predictive-Models.svg",
+    "alt": "Built with institution-specific predictive models",
+    "h": "Why Civitas Learning Is Different"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Outcomes-2.svg",
+    "alt": "Insight into multiple student outcomes, not just GPA/retention metrics",
+    "h": "Why Civitas Learning Is Different"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Workflows.svg",
+    "alt": "Real-time insights and AI assistance where work already happens",
+    "h": "Why Civitas Learning Is Different"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Goals.svg",
+    "alt": "Strategic guidance from dedicated higher ed experts and former practitioners",
+    "h": "Why Civitas Learning Is Different"
+   }
+  ],
+  "/ai-solutions/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/08/ai-solutions-1.png",
+    "alt": "",
+    "h": "How Our Built-in AI Works for Every Team On Campus"
+   }
+  ],
+  "/analytics/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/institution-specific-predictive-models.jpg",
+    "alt": "",
+    "h": "Institution-Specific Predictive Models"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/multi-outcome-analytics.jpg",
+    "alt": "",
+    "h": "Multi Outcome Analytics"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/real-time-holistic-views.jpg",
+    "alt": "",
+    "h": "Real-Time, Holistic Views"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/student-success-analytics.jpg",
+    "alt": "Student Success Analytics",
+    "h": "Gain Visibility into the Experience of Your Unique Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/initiative-program-analysis.jpg",
+    "alt": "Initiative & Program Analysis",
+    "h": "Gain Visibility into the Experience of Your Unique Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/course-enrollment-analytics.jpg",
+    "alt": "Course & Enrollment Analytics",
+    "h": "Gain Visibility into the Experience of Your Unique Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/unified-student-data.jpg",
+    "alt": "Unified Student Data",
+    "h": "Gain Visibility into the Experience of Your Unique Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-leaders.jpg",
+    "alt": "",
+    "h": "For Leaders"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-student-facing-teams.jpg",
+    "alt": "",
+    "h": "For Student-Facing Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-students.jpg",
+    "alt": "",
+    "h": "For Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Actionable.svg",
+    "alt": "Actionable, Not Overwhelming",
+    "h": "Why Civitas Learning Analytics?"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Comprehensive.svg",
+    "alt": "Comprehensive, Not Fragmented",
+    "h": "Why Civitas Learning Analytics?"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Outcomes.svg",
+    "alt": "Insight Across Multiple Student Outcomes",
+    "h": "Why Civitas Learning Analytics?"
+   }
+  ],
+  "/workflows/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/embedded-insights.jpg",
+    "alt": "",
+    "h": "Embedded Insights"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/ai-powered-collaboration.jpg",
+    "alt": "",
+    "h": "AI-Powered Collaboration"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/integrated-outreach.jpg",
+    "alt": "",
+    "h": "Integrated Outreach"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/real-time-alerts.jpg",
+    "alt": "Real-Time Academic Alerts & Case Management",
+    "h": "Workflow Features that Power Better Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/collaborative-notes-visibility.jpg",
+    "alt": "Collaborative Notes & Cross-Team Visibility",
+    "h": "Workflow Features that Power Better Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/integrated-communication-tools.jpg",
+    "alt": "Integrated Communication Tools",
+    "h": "Workflow Features that Power Better Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/dynamic-student-lists.jpg",
+    "alt": "Dynamic Student Lists",
+    "h": "Workflow Features that Power Better Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/proactive-planning-scheduling.jpg",
+    "alt": "Proactive Planning & Scheduling",
+    "h": "Workflow Features that Power Better Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-leaders.jpg",
+    "alt": "",
+    "h": "For Leaders"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-student-facing-teams.jpg",
+    "alt": "",
+    "h": "For Student-Facing Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-students.jpg",
+    "alt": "",
+    "h": "For Students"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Actionable.svg",
+    "alt": "Connected, Not Siloed",
+    "h": "Why Civitas Learning Workflows?"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Comprehensive.svg",
+    "alt": "Actionable, Not Reactive",
+    "h": "Why Civitas Learning Workflows?"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/11/Outcomes.svg",
+    "alt": "Scalable, Measurable Impact",
+    "h": "Why Civitas Learning Workflows?"
+   }
+  ],
+  "/data-lakehouse/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-4.png",
+    "alt": "",
+    "h": "The Civitas Learning Data Lakehouse"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-it.png",
+    "alt": "",
+    "h": "For IT Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-ie-ir.png",
+    "alt": "",
+    "h": "For IE & IR Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-advising.png",
+    "alt": "",
+    "h": "For Advising Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-academic-affairs.png",
+    "alt": "",
+    "h": "For Academic Affairs Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-2.png",
+    "alt": "",
+    "h": "Why Civitas Learning Data Lakehouse?"
+   }
+  ],
+  "/strategic-services-2/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-1.png",
+    "alt": "",
+    "h": "A flexible partnership built for sustained student impact"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-student-success.png",
+    "alt": "",
+    "h": "For Student Success and Retention Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-ie-ir.png",
+    "alt": "",
+    "h": "For IE & IR Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-academic-affairs.png",
+    "alt": "",
+    "h": "For Academic Affairs Teams"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-IT-team.png",
+    "alt": "",
+    "h": "For Institutional Technology Leaders"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-lp-image2.png",
+    "alt": "",
+    "h": "Join a community shaping what\u2019s next in higher education"
+   }
+  ],
+  "/enrollment-management/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+    "alt": "",
+    "h": "Actionable Insights for Informed Decisions"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_07_Schedule-Button_1440px.png",
+    "alt": "",
+    "h": "Actionable Insights for Informed Decisions"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+    "alt": "",
+    "h": "Prioritize Engagement to Scale Support"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/01/WORKFLOWS_fall2024acct51201_1440px_cropped.png",
+    "alt": "",
+    "h": "Prioritize Engagement to Scale Support"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Dashboard-Demand-Trends_1440px.png",
+    "alt": "",
+    "h": "Accurately Forecast Course Demand"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Courses_1440px.png",
+    "alt": "",
+    "h": "Accurately Forecast Course Demand"
+   }
+  ],
+  "/advising-and-student-success/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+    "alt": "",
+    "h": "Understand the Whole Student"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen3_1440px.png",
+    "alt": "",
+    "h": "Understand the Whole Student"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen4_1440px.png",
+    "alt": "",
+    "h": "Personalize Outreach to Improve Effectiveness"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_student-list.png",
+    "alt": "",
+    "h": "Personalize Outreach to Improve Effectiveness"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen6_1440px.png",
+    "alt": "",
+    "h": "Coordinate Student Care Across Departments"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_07_Schedule-Button_1440px.png",
+    "alt": "",
+    "h": "Coordinate Student Care Across Departments"
+   }
+  ],
+  "/academic-leaders-and-faculty/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_powerfulpredictors_1440by780px.png",
+    "alt": "",
+    "h": "Access Actionable Insights to Inform Strategic Decision Making"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/01/WORKFLOWS_fall2024acct51201_1440px_cropped.png",
+    "alt": "",
+    "h": "Access Actionable Insights to Inform Strategic Decision Making"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Courses_1440px.png",
+    "alt": "",
+    "h": "Identify & Remove Course & Curricular Barriers"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+    "alt": "",
+    "h": "Identify & Remove Course & Curricular Barriers"
+   }
+  ],
+  "/institutional-research-effectiveness/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+    "alt": "",
+    "h": "Equip Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+    "alt": "",
+    "h": "Equip Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_powerful-predictors-NEW_1440px.png",
+    "alt": "",
+    "h": "Make Meaning of Your Student Data"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/screencap-schema_definition_1440px.png",
+    "alt": "",
+    "h": "Make Meaning of Your Student Data"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Initiative-analysis_cropped_1440px.png",
+    "alt": "",
+    "h": "Assess the Impact of Initiatives & Programs"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_studentlist_1440px-1.png",
+    "alt": "",
+    "h": "Assess the Impact of Initiatives & Programs"
+   }
+  ],
+  "/institutional-technology/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_studentlist_1440px-1.png",
+    "alt": "",
+    "h": "Integrate Multiple Data Sources into One System"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+    "alt": "",
+    "h": "Integrate Multiple Data Sources into One System"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+    "alt": "",
+    "h": "Equip Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/01/inset_chartwithdataandclplatform_1440px_greybg4.png",
+    "alt": "",
+    "h": "Equip Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/01/screencapture_alertsummary_1440px.png",
+    "alt": "",
+    "h": "Configure & Adapt the Platform Over Time"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/screencap-schema_definition_1440px.png",
+    "alt": "",
+    "h": "Configure & Adapt the Platform Over Time"
+   }
+  ],
+  "/curate-student-data/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+    "alt": "",
+    "h": "Turn Student Data into Actionable Insights"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_powerfulpredictors_1440by780px.png",
+    "alt": "",
+    "h": "Turn Student Data into Actionable Insights"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Desktop-9Updated_1440px.png",
+    "alt": "",
+    "h": "Align Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Initiative-analysis_cropped_1440px.png",
+    "alt": "",
+    "h": "Align Teams with Centralized Information"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_studentlist_1440px.png",
+    "alt": "",
+    "h": "Customize Analytics to Institutional Needs"
+   }
+  ],
+  "/improve-on-time-completion/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Completion-insights_1440px-1.png",
+    "alt": "",
+    "h": "Understand Student Outcome Risks Earlier"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Courses_1440px.png",
+    "alt": "",
+    "h": "Understand Student Outcome Risks Earlier"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2025/01/WORKFLOWS_fall2024acct51201_1440px_cropped.png",
+    "alt": "",
+    "h": "Monitor Course Fill Rates"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2022/02/Admin-Analytics-screen3_cropped.jpg",
+    "alt": "",
+    "h": "Improve the Impact of Initiatives & Policies"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_01_Planning-Canvas_1440px.png",
+    "alt": "",
+    "h": "Improve the Impact of Initiatives & Policies"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_08_Build-Schedule_1440px.png",
+    "alt": "",
+    "h": "Find the Best Fit Schedule"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_11_Advisor-Dashboard_1440px.png",
+    "alt": "",
+    "h": "Find the Best Fit Schedule"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_07_Schedule-Button_1440px.png",
+    "alt": "",
+    "h": "Avoid Roadblocks in Degree Planning"
+   }
+  ],
+  "/coordinate-student-care/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+    "alt": "",
+    "h": "Enable Precise Action with Actionable Insights"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Desktop-9Updated_1440px.png",
+    "alt": "",
+    "h": "Enable Precise Action with Actionable Insights"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen6_1440px.png",
+    "alt": "",
+    "h": "Coordinate Student Care Across Departments"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Initiative-analysis_cropped_1440px.png",
+    "alt": "",
+    "h": "Coordinate Student Care Across Departments"
+   }
+  ],
+  "/ensure-initiative-efficacy-and-roi/": [
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Initiative-analysis_cropped_1440px.png",
+    "alt": "",
+    "h": "Regularly Assess the Impact of Your Strategies"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_impactbystudentgroup_1440px.png",
+    "alt": "",
+    "h": "Regularly Assess the Impact of Your Strategies"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Courses_1440px.png",
+    "alt": "",
+    "h": "Reveal Course Impact on Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/screencap-schema_definition_1440px.png",
+    "alt": "",
+    "h": "Reveal Course Impact on Student Outcomes"
+   },
+   {
+    "src": "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Demand-Forecast-hover-state-on-course-list_1440px.png",
+    "alt": "",
+    "h": "Align Course Offerings with Course Demand"
+   }
+  ]
+ },
+ "list": [
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Fragmented-Systems.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Limited-Visibility.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Reactive-Engagement.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Measure-ROI.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/student-success-analytics.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Desktop-9Updated_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/strategic-partnership.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-leaders.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-student-facing-teams.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/for-students.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Predictive-Models.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Outcomes-2.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Workflows.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Goals.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/08/ai-solutions-1.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/institution-specific-predictive-models.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/multi-outcome-analytics.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/real-time-holistic-views.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/initiative-program-analysis.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/course-enrollment-analytics.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/unified-student-data.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Actionable.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Comprehensive.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/Outcomes.svg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/embedded-insights.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/ai-powered-collaboration.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/integrated-outreach.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/real-time-alerts.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/collaborative-notes-visibility.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/integrated-communication-tools.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/dynamic-student-lists.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/11/proactive-planning-scheduling.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-4.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-it.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-ie-ir.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-advising.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-academic-affairs.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/04/data-lakehouse-2.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-1.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-student-success.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-IT-team.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2026/05/strategic-services-lp-image2.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Student-Outcomes-Updated-1_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_07_Schedule-Button_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/02/updateddashboard_1440by1080.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/01/WORKFLOWS_fall2024acct51201_1440px_cropped.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Dashboard-Demand-Trends_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Courses_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen3_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen4_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_student-list.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_Advising-screen6_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_powerfulpredictors_1440by780px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_powerful-predictors-NEW_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/screencap-schema_definition_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Initiative-analysis_cropped_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_studentlist_1440px-1.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/01/inset_chartwithdataandclplatform_1440px_greybg4.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2025/01/screencapture_alertsummary_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_studentlist_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Completion-insights_1440px-1.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2022/02/Admin-Analytics-screen3_cropped.jpg",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_01_Planning-Canvas_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_08_Build-Schedule_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/WORKFLOW_11_Advisor-Dashboard_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_impactbystudentgroup_1440px.png",
+  "https://www.civitaslearning.com/wp-content/uploads/2024/12/ANALYTICS_Demand-Forecast-hover-state-on-course-list_1440px.png"
+ ]
+}

@@ -1,44 +1,47 @@
 ---
 /**
- * Renders crawled page sections into feature rows, checklists, role grids, and cards.
- * The first three body sections get an example mock beside them; the rest become cards.
+ * Renders page sections from src/data/solutions.json.
+ *  - body + image        → feature row, screenshot beside the text (alternating sides)
+ *  - body, no image      → text-only feature row (two columns of prose)
+ *  - bullets + images    → image card grid (one screenshot per bullet)
+ *  - bullets + icons     → icon card grid (live-site SVG icons)
+ *  - "For X" + bullets   → role grid, with the role image when there is one
+ *  - "Why…/How Civitas…" → checklist
+ *  - bullets only        → numbered card grid
+ * Product screenshots live in public/assets/screens/ and were pulled from the live pages.
  */
-import Mock from './mocks/Mock.astro';
-
-interface Section { heading: string; body: string; bullets: string[] }
+interface Img { file: string; alt: string }
+interface Section { heading: string; body: string; bullets: string[]; image?: Img; images?: Img[]; icons?: string[] }
 interface Props { sections: Section[] }
 const { sections } = Astro.props;
 
 type Block =
   | { kind: 'feats'; items: { s: Section; i: number }[] }
-  | { kind: 'extra'; items: Section[] }
   | { kind: 'roles'; items: Section[] }
   | { kind: 'checks'; heading: string; items: string[] }
+  | { kind: 'imgcards'; heading: string; items: { text: string; img: Img }[] }
+  | { kind: 'iconcards'; heading: string; body: string; items: { text: string; icon: string }[] }
   | { kind: 'cards'; heading: string; items: string[] };
 
 const blocks: Block[] = [];
 let feats: { s: Section; i: number }[] = [];
-let extra: Section[] = [];
 let roles: Section[] = [];
 let i = 0;
-
-function flush() {
-  if (feats.length) { blocks.push({ kind: 'feats', items: feats }); feats = []; }
-  if (extra.length) { blocks.push({ kind: 'extra', items: extra }); extra = []; }
-}
-function flushRoles() {
-  if (roles.length) { flush(); blocks.push({ kind: 'roles', items: roles }); roles = []; }
-}
+const flush = () => { if (feats.length) { blocks.push({ kind: 'feats', items: feats }); feats = []; } };
+const flushRoles = () => { if (roles.length) { flush(); blocks.push({ kind: 'roles', items: roles }); roles = []; } };
+const split = (b: string) => { const k = b.indexOf(':'); return k > 0 && k < 60 ? [b.slice(0, k), b.slice(k + 1).trim()] : ['', b]; };
+const src = (f: string) => `/assets/screens/${f}`;
 
 for (const s of sections) {
   const { heading: h, body: b, bullets: bl } = s;
   if (/^for /i.test(h) && bl.length) { roles.push(s); continue; }
   flushRoles();
-  if (/^(Why |How Civitas|What Makes)/.test(h) && bl.length) { flush(); blocks.push({ kind: 'checks', heading: h, items: bl }); continue; }
+  if (s.images && bl.length) { flush(); blocks.push({ kind: 'imgcards', heading: h, items: bl.map((t, n) => ({ text: t, img: s.images![n] })) }); continue; }
+  if (s.icons && bl.length) { flush(); blocks.push({ kind: 'iconcards', heading: h, body: b, items: bl.map((t, n) => ({ text: t, icon: s.icons![n] })) }); continue; }
+  if (/^(Why |How Civitas|What Makes)/.test(h) && bl.length && !b) { flush(); blocks.push({ kind: 'checks', heading: h, items: bl }); continue; }
   if (bl.length && !b) { flush(); blocks.push({ kind: 'cards', heading: h, items: bl }); continue; }
   if (!b && !bl.length) continue;
-  if (i < 3) feats.push({ s, i }); else extra.push(s);
-  i++;
+  feats.push({ s, i: i++ });
 }
 flushRoles();
 flush();
@@ -47,28 +50,41 @@ flush();
   if (blk.kind === 'feats') return (
     <section><div class="wrap">
       {blk.items.map(({ s, i }) => (
-        <div class:list={['feat', { rev: i % 2 === 1 }]}>
+        <div class:list={['feat', { rev: i % 2 === 1, noart: !s.image }]}>
           <div>
             <h3>{s.heading}</h3>
             <p>{s.body}</p>
             {s.bullets.length > 0 && <ul>{s.bullets.map((x) => <li>{x}</li>)}</ul>}
           </div>
-          <div class="art"><Mock i={i} /></div>
+          {s.image && <figure class="shot"><img src={src(s.image.file)} alt={s.image.alt} loading="lazy" /></figure>}
         </div>
       ))}
     </div></section>
   );
-  if (blk.kind === 'extra') return (
+  if (blk.kind === 'imgcards') return (
     <section class="tint"><div class="wrap">
-      <span class="eyebrow">More capabilities</span>
-      <div class="grid3" style="margin-top:22px">
-        {blk.items.map((s) => (
-          <div class="card">
-            <h3>{s.heading}</h3>
-            <p>{s.body}</p>
-            {s.bullets.length > 0 && <ul class="agents">{s.bullets.map((x) => <li><span>·</span><span>{x}</span></li>)}</ul>}
+      <div class="sec-head"><div><h2>{blk.heading}</h2></div></div>
+      <div class:list={['grid3', { grid2: blk.items.length === 4 }]}>
+        {blk.items.map(({ text, img }) => { const [t, d] = split(text); return (
+          <div class="card imgcard">
+            <img src={src(img.file)} alt={img.alt} loading="lazy" />
+            <h3>{t || img.alt}</h3>
+            <p>{d}</p>
           </div>
-        ))}
+        ); })}
+      </div>
+    </div></section>
+  );
+  if (blk.kind === 'iconcards') return (
+    <section><div class="wrap">
+      <div class="sec-head"><div><h2>{blk.heading}</h2></div>{blk.body && <p>{blk.body}</p>}</div>
+      <div class="grid4">
+        {blk.items.map(({ text, icon }) => { const [t, d] = split(text); return (
+          <div class="card">
+            <img class="icon" src={src(icon)} alt="" loading="lazy" />
+            {t ? <><h3 style="font-size:18px">{t}</h3><p>{d}</p></> : <p style="color:var(--ink);font-size:16px;font-weight:600">{d}</p>}
+          </div>
+        ); })}
       </div>
     </div></section>
   );
@@ -78,6 +94,7 @@ flush();
       <div class="roles" style="margin-top:22px">
         {blk.items.map((r) => (
           <div class="role">
+            {r.image && <img class="role-img" src={src(r.image.file)} alt={r.image.alt} loading="lazy" />}
             <h3>{r.heading}</h3>
             {r.body && <p style="font-size:14px;color:var(--ink2);margin-bottom:10px">{r.body}</p>}
             <ul>{r.bullets.map((x) => <li>{x}</li>)}</ul>
@@ -89,16 +106,16 @@ flush();
   if (blk.kind === 'checks') return (
     <section class="tint"><div class="wrap">
       <span class="eyebrow">{blk.heading}</span>
-      <div class="checks" style="margin-top:22px">{blk.items.map((x) => <div class="check"><span>{x}</span></div>)}</div>
+      <div class="checks" style="margin-top:22px">{blk.items.map((x) => { const [t, d] = split(x); return <div class="check"><span>{t && <b>{t}</b>}{d}</span></div>; })}</div>
     </div></section>
   );
   return (
     <section><div class="wrap">
       <div class="sec-head"><div><h2>{blk.heading}</h2></div></div>
       <div class="grid2">
-        {blk.items.map((x, n) => (
-          <div class="card"><div class="ico">{String(n + 1).padStart(2, '0')}</div><p style="color:var(--ink);font-size:16px">{x}</p></div>
-        ))}
+        {blk.items.map((x, n) => { const [t, d] = split(x); return (
+          <div class="card"><div class="ico">{String(n + 1).padStart(2, '0')}</div>{t && <h3 style="font-size:18px">{t}</h3>}<p style="color:var(--ink);font-size:16px">{d}</p></div>
+        ); })}
       </div>
     </div></section>
   );
