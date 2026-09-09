@@ -1,0 +1,37 @@
+---
+import Logo from './Logo.astro';
+import nav from '../data/nav.json';
+---
+<div class="proto">
+  <div class="wrap">
+    <span><b>Prototype.</b> Full-site concept for civitaslearning.com. URL structure matches the live site. Figures marked "example" are illustrative.</span>
+    <span class="mono">v0.3 · Astro · Sept 2026</span>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Civitas Learning home"><Logo /></a>
+    <ul class="menu">
+      {nav.menu.map((m) => (
+        <li>
+          <button type="button" aria-haspopup="true">{m.label} ▾</button>
+          <div class:list={['dd', { two: m.wide }]}>
+            {m.groups.map((g) => (
+              <>
+                {g.title && <div class="grp">{g.title}</div>}
+                {g.links.map((l) => (
+                  <a href={l.href}>{l.text}{l.small && <small>{l.small}</small>}</a>
+                ))}
+              </>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
+    <div class="head-cta">
+      <a class="btn btn-ghost" href="/#roi">Run the numbers</a>
+      <a class="btn btn-primary" href="/contact/">Book a demo</a>
+      <button class="burger btn btn-ghost" type="button" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>

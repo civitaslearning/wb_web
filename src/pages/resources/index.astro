@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ResCard from '../../components/ResCard.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import pages from '../../data/pages.json';
+
+const d = pages['/resources/'];
+const items = d.items.filter((i) => !i.title.toLowerCase().includes('impact report'));
+const topics = d.sections.find((s) => s.heading === 'By Topic')?.bullets ?? [];
+const types = ['All', 'Reports', 'Podcasts', 'Videos', 'Webinars', 'Articles', 'Tools'];
+---
+<Base title="Content Library" description="Reports, podcasts, playbooks, and the numbers behind them.">
+  <PageHero eyebrow="Content library" title="What actually works in student success?" sub="Reports, podcasts, playbooks, and the numbers behind them. Filter by topic, role, or format." crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="featured">
+      <div>
+        <span class="eyebrow">Featured · Annual report</span>
+        <h2 style="margin-top:12px">2026 Student Success Impact Report</h2>
+        <p>Quick wins, lasting impact — what 220 initiatives and five years of data show about what actually compounds. Only 40–60% of initiatives drive a measurable outcome. This is how to tell which.</p>
+        <div class="cta-row" style="margin-top:22px">
+          <a class="btn btn-primary" href="https://studentimpactreport.civitaslearning.com/2026">Get the report</a>
+          <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35)" href="/resources/2024-student-success-impact-report-webinar/">Watch the webinar</a>
+        </div>
+      </div>
+      <img src="/assets/2026-impact-report-LP-5.webp" alt="2026 Student Success Impact Report cover" />
+    </div>
+    <div class="filters" style="margin-top:44px">{types.map((t) => <span class="chip">{t}</span>)}</div>
+    <div class="res-list">{items.map((i) => <ResCard title={i.title} type={i.type} url={i.url} description={i.description ?? ''} />)}</div>
+    <div style="margin-top:36px">
+      <span class="eyebrow">Browse by topic</span>
+      <div class="filters" style="margin-top:12px">{topics.map((t) => <span class="chip">{t}</span>)}</div>
+    </div>
+  </div></section>
+  <FinalCta />
+</Base>

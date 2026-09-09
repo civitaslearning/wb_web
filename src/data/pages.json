@@ -1,0 +1,568 @@
+{
+ "/resources/": {
+  "url": "https://www.civitaslearning.com/resources/",
+  "path": "/resources/",
+  "title": "Student Success Best Practices | Civitas Learning",
+  "headline": "What actually works in student success?",
+  "sub": "",
+  "sections": [
+   {
+    "heading": "Resource Center",
+    "body": "Featured resource: 2026 Student Success Impact Report.",
+    "bullets": []
+   },
+   {
+    "heading": "By Topic",
+    "body": "",
+    "bullets": [
+     "Academic Planning",
+     "Advising",
+     "AI in Higher Education",
+     "Artificial Intelligence",
+     "Career Readiness",
+     "Change Management",
+     "Completion",
+     "Cross Functional Alignment & Collaboration",
+     "Data & Analytics",
+     "Deployment",
+     "Financial Sustainability",
+     "Initiative Effectiveness",
+     "Road Map",
+     "Scheduling & Registration",
+     "Software Procurement & Implementation",
+     "Strategic Initiatives",
+     "Student Engagement & Communication",
+     "Student Experience",
+     "Student Impact Strategies",
+     "Student Success Initiatives"
+    ]
+   },
+   {
+    "heading": "By Role",
+    "body": "",
+    "bullets": [
+     "Academic leaders & faculty",
+     "Advising/Student Services Leader",
+     "Advisor/Student Success Professional",
+     "Career Services Leader",
+     "CIO/CTO",
+     "Enrollment Management Leader",
+     "Institutional Research and Effectiveness",
+     "President/Provost",
+     "Registrar",
+     "Student Success & Retention Leader"
+    ]
+   },
+   {
+    "heading": "By Type",
+    "body": "",
+    "bullets": [
+     "Articles",
+     "Infographics",
+     "Podcasts",
+     "Research & Reports",
+     "Tools",
+     "Videos",
+     "Webinars/Workshops"
+    ]
+   }
+  ],
+  "items": [
+   {
+    "title": "2026 Student Success Impact Report",
+    "type": "report",
+    "url": "https://studentimpactreport.civitaslearning.com/2026",
+    "date": null,
+    "description": "Quick Wins, Lasting Impact — what 220 initiatives and five years of data show about what actually compounds",
+    "video": null
+   },
+   {
+    "title": "How Institutions Can Measure Career Readiness in Real Time",
+    "type": "podcast episode",
+    "url": "https://www.civitaslearning.com/podcast/how-institutions-can-measure-career-readiness-in-real-time/",
+    "date": null,
+    "description": "UT San Antonio's Mario Vela explains why opt-in career services no longer work — and how a real-time career readiness index makes career outcomes measurable.",
+    "video": null
+   },
+   {
+    "title": "Doing More Without Adding Headcount in Higher Education",
+    "type": "podcast episode",
+    "url": "https://www.civitaslearning.com/podcast/doing-more-without-adding-headcount-in-higher-education/",
+    "date": null,
+    "description": "NDSU Provost Shari Veil explains how colleges can do more without adding headcount by using data, rethinking work, and aligning resources to student needs.",
+    "video": null
+   },
+   {
+    "title": "5 Questions to Ask Before Buying an AI Agent for Higher Ed",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
+    "date": null,
+    "description": "Before buying an AI agent, ask what information it's acting on, not just what it can do. Learn five questions every higher ed leader should ask before making a decision.",
+    "video": null
+   },
+   {
+    "title": "Designing Student Support Around Student Needs, Not Institutional Structures",
+    "type": "podcast episode",
+    "url": "https://www.civitaslearning.com/podcast/designing-student-support-around-student-needs-not-institutional-structures/",
+    "date": null,
+    "description": "Page Keller shares how colleges can redesign student support around today's students by reducing friction and improving access.",
+    "video": null
+   },
+   {
+    "title": "Inaction Has a Price: The Hidden Cost of Delayed Student Success Investments",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
+    "date": null,
+    "description": "Explore the hidden costs of delay and why the status quo deserves just as much scrutiny as any technology vendor.",
+    "video": null
+   },
+   {
+    "title": "Access Isn't Readiness: How First-Gen Students Build Financial Confidence",
+    "type": "podcast episode",
+    "url": "https://www.civitaslearning.com/podcast/access-isnt-readiness-how-first-gen-students-build-financial-confidence/",
+    "date": null,
+    "description": "Dr. Charmaine Troy arrived at college with $20 in her pocket. She shares how that experience shaped her view of first-generation student success—and why access alone isn't enough.",
+    "video": null
+   },
+   {
+    "title": "The Hidden Cost of the Wrong Technology",
+    "type": "podcast episode",
+    "url": "https://www.civitaslearning.com/podcast/the-hidden-cost-of-the-wrong-technology/",
+    "date": null,
+    "description": "Anyone can run a good demo. Few vendors are still there for you a year after go-live.",
+    "video": null
+   },
+   {
+    "title": "Coordination Without Centralization: How UC Built Student Success at Scale",
+    "type": "webinar",
+    "url": "https://info.civitaslearning.com/uc-webinar",
+    "date": null,
+    "description": "Tara Warden from the University of Cincinnati shares the decisions and outcomes behind one of the most coordinated student success systems in public higher education.",
+    "video": null
+   }
+  ],
+  "stats": [
+   "220 initiatives and five years of data (2026 Student Success Impact Report)"
+  ],
+  "testimonials": [],
+  "ctas": [
+   {
+    "text": "Read the 2026 Student Success Impact Report",
+    "url": "https://studentimpactreport.civitaslearning.com/2026"
+   },
+   {
+    "text": "Get the Report",
+    "url": "https://studentimpactreport.civitaslearning.com/2026"
+   },
+   {
+    "text": "Get in touch",
+    "url": "https://www.civitaslearning.com/contact/"
+   }
+  ]
+ },
+ "/blog/": {
+  "url": "https://www.civitaslearning.com/blog/",
+  "path": "/blog/",
+  "title": "Student Success Strategies for Higher Education | Civitas Learning",
+  "headline": "Blog",
+  "sub": "What actually works in student success?",
+  "sections": [
+   {
+    "heading": "By Topic",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "By Role",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "Subscribe to The Student Impact Update",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "Pagination",
+    "body": "Pages 1-9 available",
+    "bullets": []
+   }
+  ],
+  "items": [
+   {
+    "title": "CLOSE the Student Impact Gap: A Modern Operating Model for Student Success",
+    "type": "blog post",
+    "featured": true,
+    "url": "https://www.civitaslearning.com/blog/close-the-student-impact-gap-a-modern-operating-model-for-student-success/",
+    "date": null,
+    "description": "Student success isn't failing because of effort—it's failing because systems are fragmented. Learn how the CLOSE operating model helps institutions turn insight into measurable impact.",
+    "video": null
+   },
+   {
+    "title": "5 Questions to Ask Before Buying an AI Agent for Higher Ed",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/5-questions-to-ask-before-buying-an-ai-agent-for-higher-ed/",
+    "date": null,
+    "description": "Before buying an AI agent, ask what information it's acting on, not just what it can do.",
+    "video": null
+   },
+   {
+    "title": "Inaction Has a Price: The Hidden Cost of Delayed Student Success Investments",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/inaction-has-a-price-the-hidden-cost-of-delayed-student-success-investments/",
+    "date": null,
+    "description": "Explore the hidden costs of delay and why the status quo deserves scrutiny.",
+    "video": null
+   },
+   {
+    "title": "Beyond Student Success: Evaluating Higher Ed Software, Vendors, & Institutional Fit",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/beyond-student-success-evaluating-higher-ed-software-vendors-institutional-fit/",
+    "date": null,
+    "description": "Features are easy to evaluate. Coordination is harder—and far more important.",
+    "video": null
+   },
+   {
+    "title": "If You Have the Data, Why Is Action Still So Hard?",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/if-you-have-the-data-why-is-action-still-so-hard/",
+    "date": null,
+    "description": "Student success doesn't scale because institutions lack data. It stalls due to prioritization breakdown.",
+    "video": null
+   },
+   {
+    "title": "How Civitas Learning Thinks About Data (and Why That Matters)",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/how-civitas-learning-thinks-about-data-and-why-that-matters/",
+    "date": null,
+    "description": "Most institutions have the data and effort. Fewer have systems turning both into impact.",
+    "video": null
+   },
+   {
+    "title": "Rethinking AI in Higher Ed: It's Not About Saving Time—It's About Making Better Decisions",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/rethinking-ai-in-higher-ed-its-not-about-saving-time-its-about-making-better-decisions/",
+    "date": null,
+    "description": "Lasting impact comes from systems that earn trust, reflect context, and support human judgment.",
+    "video": null
+   },
+   {
+    "title": "Why Career Readiness Is a Signal — Not Just an Outcome — of Student Success",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/why-career-readiness-is-a-signal-not-just-an-outcome-of-student-success/",
+    "date": null,
+    "description": "When career readiness shows up early, students persist longer—and outcomes follow.",
+    "video": null
+   },
+   {
+    "title": "Retention Can Stall Even When You're 'Doing Everything Right'",
+    "type": "blog post",
+    "url": "https://www.civitaslearning.com/blog/retention-can-stall-even-when-youre-doing-everything-right/",
+    "date": null,
+    "description": "When retention stalls, the answer isn't more programs—it's better precision.",
+    "video": null
+   }
+  ],
+  "stats": [],
+  "testimonials": [],
+  "ctas": [
+   {
+    "text": ">> Read the 2026 Student Success Impact Report",
+    "url": "https://studentimpactreport.civitaslearning.com/2026"
+   },
+   {
+    "text": "Subscribe to The Student Impact Update",
+    "url": "https://www.civitaslearning.com/student-impact-update/"
+   },
+   {
+    "text": "Get in touch",
+    "url": "https://www.civitaslearning.com/contact/"
+   }
+  ]
+ },
+ "/careers/": {
+  "url": "https://www.civitaslearning.com/careers/",
+  "path": "/careers/",
+  "title": "Careers | Civitas Learning",
+  "headline": "Use Your Power for Good",
+  "sub": "When you join Civitas Learning, you become part of a fully remote, global team of smart, hard-working professionals dedicated to helping colleges and universities improve student outcomes.",
+  "sections": [
+   {
+    "heading": "How We Work",
+    "body": "We're not afraid to be innovative. At Civitas Learning, we're doubling down on flexibility, transparency, and inclusivity to create an exceptional employee experience.",
+    "bullets": [
+     "Work Remotely - Fully distributed workforce with no office requirement",
+     "Choose Your Backdrop - Work from nearly anywhere globally",
+     "Connect with Colleagues - Monthly professional development, team building, annual company retreat",
+     "Find Your Balance - Every other Friday off, flexible work arrangements",
+     "You Belong Here - Diverse, inclusive workplace encouraging authenticity"
+    ]
+   },
+   {
+    "heading": "Benefits & Perks",
+    "body": "",
+    "bullets": [
+     "Fully Remote work",
+     "Unlimited PTO + every other Friday off",
+     "Monthly stipend for Home Office, Professional Development, Wellness, Student Loan reimbursement",
+     "401(k) company match (up to 2%)",
+     "Automatic salary benchmarking every 6 months",
+     "100% paid medical, dental, vision insurance",
+     "Up to 12 weeks paid parental leave",
+     "Up to $10,000/year for reproductive care, adoption, gender-affirming treatments"
+    ]
+   },
+   {
+    "heading": "We're Hiring",
+    "body": "Directs to open positions on Greenhouse.",
+    "bullets": []
+   }
+  ],
+  "items": [],
+  "stats": [
+   "401(k) match up to 2%",
+   "salary benchmarking every 6 months",
+   "100% paid medical, dental, vision",
+   "up to 12 weeks paid parental leave",
+   "up to $10,000/year reproductive care, adoption, gender-affirming treatments"
+  ],
+  "testimonials": [
+   {
+    "quote": "I feel like this company has given me the flexibility to thrive as a professional.",
+    "name": null,
+    "title": null,
+    "institution": "Civitas Learning employee"
+   },
+   {
+    "quote": "The environment to be supportive, friendly, and genuine.",
+    "name": null,
+    "title": null,
+    "institution": "Civitas Learning employee"
+   },
+   {
+    "quote": "The company values me as an employee and really cares about our mental health.",
+    "name": null,
+    "title": null,
+    "institution": "Civitas Learning employee"
+   },
+   {
+    "quote": "I really like what I get to work on and I really like my coworkers!",
+    "name": null,
+    "title": null,
+    "institution": "Civitas Learning employee"
+   },
+   {
+    "quote": "Remote work allowed? Check. Good work-life balance? Check. Competitive pay? Check.",
+    "name": null,
+    "title": null,
+    "institution": "Civitas Learning employee"
+   }
+  ],
+  "ctas": [
+   {
+    "text": "See Open Positions",
+    "url": "https://boards.greenhouse.io/civitaslearning"
+   }
+  ]
+ },
+ "/support/": {
+  "url": "https://www.civitaslearning.com/support/",
+  "path": "/support/",
+  "title": "Technical Support | Civitas Learning",
+  "headline": "Technical Support",
+  "sub": "Ensure productivity and improved outcomes through prompt case handling, data accuracy, and tailored assistance.",
+  "sections": [
+   {
+    "heading": "Customer Support Portal",
+    "body": "For Civitas Learning Administrators or Authorized Users to initiate technical support cases.",
+    "bullets": [
+     "https://civitaslearning.my.site.com/partnerportal/login"
+    ]
+   },
+   {
+    "heading": "Email Support",
+    "body": "Questions or help with Civitas Learning applications.",
+    "bullets": [
+     "support@civitaslearning.com"
+    ]
+   },
+   {
+    "heading": "Phone",
+    "body": "512-692-7175",
+    "bullets": []
+   },
+   {
+    "heading": "Address",
+    "body": "Civitas Learning, Inc. 6705 W Highway 290 Suite 607 PMB 1205, Austin, TX 78735-8407, United States",
+    "bullets": []
+   }
+  ],
+  "items": [],
+  "stats": [],
+  "testimonials": [],
+  "ctas": [
+   {
+    "text": "Access the Portal",
+    "url": "https://civitaslearning.my.site.com/partnerportal/login"
+   },
+   {
+    "text": "Email Support",
+    "url": "mailto:support@civitaslearning.com"
+   },
+   {
+    "text": "Get in Touch",
+    "url": "https://www.civitaslearning.com/contact/"
+   },
+   {
+    "text": "Leadership Workshops",
+    "url": "https://www.civitaslearning.com/leadership-workshops"
+   },
+   {
+    "text": "Strategic Enablement",
+    "url": "https://www.civitaslearning.com/customer-webinars"
+   }
+  ]
+ },
+ "/commitment/": {
+  "url": "https://www.civitaslearning.com/commitment/",
+  "path": "/commitment/",
+  "title": "Diversity | Civitas Learning",
+  "headline": "Our Commitment to Community",
+  "sub": "",
+  "sections": [
+   {
+    "heading": "Our Commitment to Community",
+    "body": "At Civitas Learning, we are committed to embracing and celebrating all facets of the human experience by building a supportive community where each individual has the opportunity to succeed.",
+    "bullets": []
+   },
+   {
+    "heading": "Partners",
+    "body": "Our software platform enables institutional partners to make data-informed decisions supporting student achievement.",
+    "bullets": []
+   },
+   {
+    "heading": "Workplace",
+    "body": "Workplace policies designed to be flexible, transparent, and fair to foster inclusion across a global team.",
+    "bullets": []
+   }
+  ],
+  "items": [],
+  "stats": [],
+  "testimonials": [],
+  "ctas": [
+   {
+    "text": "Get in touch",
+    "url": "https://www.civitaslearning.com/contact/"
+   },
+   {
+    "text": "Read the 2026 Student Success Impact Report",
+    "url": "https://studentimpactreport.civitaslearning.com/2026"
+   }
+  ]
+ },
+ "/resources/2024-student-success-impact-report-webinar/": {
+  "url": "https://www.civitaslearning.com/resources/2024-student-success-impact-report-webinar/",
+  "path": "/resources/2024-student-success-impact-report-webinar/",
+  "title": "2024 Student Success Impact Report Webinar | Civitas Learning",
+  "headline": "Insights to Action: An inside look at the 2024 Student Success Impact Report",
+  "sub": "Each year, Civitas Learning conducts a meta-analysis of hundreds of initiatives to provide actionable insights on how institutions can improve their specific student success efforts.",
+  "sections": [
+   {
+    "heading": "About the Webinar",
+    "body": "This year's research examines long-term and recent practices that improve persistence to graduation. The webinar features conversation between data and content professionals discussing report findings and implications for higher education leaders.",
+    "bullets": []
+   },
+   {
+    "heading": "What You'll Learn",
+    "body": "",
+    "bullets": [
+     "The top-performing strategies uncovered by the research",
+     "What types of programs work best for different groups of students",
+     "How Civitas Learning partners are organizing data-activated strategic efforts and application strategies for leaders"
+    ]
+   },
+   {
+    "heading": "Presenters",
+    "body": "",
+    "bullets": [
+     "Sarah DeMeo, Data Analyst — 10 years in higher education (academic and student affairs); MBA from Bentley University; Master of Education from UCLA",
+     "Katy Oliveira, Senior Content Strategist — 15-year higher education career in student success roles (academic advisor, advising leader, faculty member); producer and host of Next Practices podcast and Apple Podcast-featured show Collegehood Advice"
+    ]
+   }
+  ],
+  "items": [
+   {
+    "title": "Insights to Action: An inside look at the 2024 Student Success Impact Report",
+    "type": "webinar",
+    "url": "https://www.civitaslearning.com/resources/2024-student-success-impact-report-webinar/",
+    "date": null,
+    "description": "Webinar recording discussing the 2024 Student Success Impact Report findings.",
+    "video": null
+   }
+  ],
+  "stats": [
+   "meta-analysis of hundreds of initiatives (no specific numeric findings are shown on this page; the report itself is at /resources/student-success-impact-report-2024/)"
+  ],
+  "testimonials": [],
+  "ctas": [
+   {
+    "text": "Read the Student Success playbook",
+    "url": "https://hubs.la/Q049d9840"
+   },
+   {
+    "text": "2024 Student Success Impact Report",
+    "url": "http://www.civitaslearning.com/resources/student-success-impact-report-2024/"
+   }
+  ],
+  "notes": "A video embed slot exists on the page but no YouTube/Vimeo/Wistia URL or ID was exposed in fetched content (likely gated behind a HubSpot form or loaded via JS)."
+ },
+ "/leadership-workshops/": {
+  "url": "https://www.civitaslearning.com/leadership-workshops/",
+  "path": "/leadership-workshops/",
+  "title": "Customer Leadership Workshops | Civitas Learning",
+  "headline": "Leadership Workshops",
+  "sub": "Engage with fellow leaders in the Civitas Learning community of practice at our live, interactive workshops.",
+  "sections": [
+   {
+    "heading": "Customer Community of Practice",
+    "body": "Engage with fellow leaders in the Civitas Learning community of practice at our live, interactive workshops.",
+    "bullets": []
+   },
+   {
+    "heading": "Network with Peer Institutions",
+    "body": "Connect with other leaders focused on developing data-activated approaches to improving student outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Exchange Ideas & Strategies",
+    "body": "Learn from others' experiences, find innovative ways to reach your goals, and create actionable strategies to apply at your institution.",
+    "bullets": []
+   },
+   {
+    "heading": "Boost Civitas Learning Solution expertise",
+    "body": "Deepen your understanding of the Civitas Learning solutions to maximize impact and enhance the student outcomes that matter most.",
+    "bullets": []
+   },
+   {
+    "heading": "Join Us for an Upcoming Workshop",
+    "body": "Join us for an interactive workshop on Actioning Insights for Shifting Trends in Higher Education.",
+    "bullets": [
+     "November 16 & 17",
+     "Austin, Texas"
+    ]
+   },
+   {
+    "heading": "Explore the Student Impact Platform",
+    "body": "Connect with our team to learn how Civitas Learning can help your institution apply its data to improve the student outcomes that matter most and advance its mission.",
+    "bullets": []
+   }
+  ],
+  "stats": [],
+  "testimonials": [],
+  "integrations": [],
+  "ctas": [
+   "Register Now",
+   "Get in Touch"
+  ]
+ }
+}

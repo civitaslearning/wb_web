@@ -1,0 +1,20 @@
+---
+interface T { quote: string; name: string; title: string; institution: string }
+interface Props { items: T[]; title?: string }
+const { items, title = 'What partners say' } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="tint">
+    <div class="wrap">
+      <span class="eyebrow">{title}</span>
+      <div class="quotes" style="margin-top:22px">
+        {items.slice(0, 4).map((t) => (
+          <div class="quote">
+            <blockquote>“{t.quote}”</blockquote>
+            <cite><b>{t.name}</b>{t.title}, {t.institution}</cite>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

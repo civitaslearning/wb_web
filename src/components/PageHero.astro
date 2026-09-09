@@ -1,0 +1,38 @@
+---
+interface Crumb { text: string; href?: string }
+interface Props {
+  eyebrow: string;
+  title: string;
+  sub?: string;
+  crumbs?: Crumb[];
+  ctas?: boolean;
+  class?: string;
+}
+const { eyebrow, title, sub = '', crumbs = [], ctas = true, class: cls = '' } = Astro.props;
+---
+<section class:list={['phero', cls]}>
+  <div class="wrap">
+    <div>
+      {crumbs.length > 0 && (
+        <div class="crumbs">
+          {crumbs.map((c, i) => (
+            <>
+              {i > 0 && ' / '}
+              {c.href ? <a href={c.href}>{c.text}</a> : c.text}
+            </>
+          ))}
+        </div>
+      )}
+      <span class="eyebrow">{eyebrow}</span>
+      <h1 style="margin-top:12px">{title}</h1>
+      {sub && <p class="sub">{sub}</p>}
+      {ctas && (
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact/">Book a demo</a>
+          <a class="btn btn-ghost" href="/customer-success-stories/">See partner outcomes</a>
+        </div>
+      )}
+    </div>
+    <slot />
+  </div>
+</section>

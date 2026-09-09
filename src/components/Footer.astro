@@ -1,0 +1,30 @@
+---
+import Logo from './Logo.astro';
+import nav from '../data/nav.json';
+const year = new Date().getFullYear();
+---
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" aria-label="Civitas Learning home"><Logo /></a>
+        <p>6705 W Highway 290, Suite 607 PMB 1205<br />Austin, TX 78735-8407<br /><a href="tel:512-692-7175">512-692-7175</a></p>
+      </div>
+      {nav.footer.map((col) => (
+        <div>
+          <h4>{col.title}</h4>
+          <ul>{col.links.map(([href, text]) => <li><a href={href}>{text}</a></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <div class="foot-bottom">
+      <span>© {year} Civitas Learning, Inc.</span>
+      <span>
+        <a href="https://www.civitaslearning.com/privacy/">Privacy Policy</a> ·
+        <a href="https://www.civitaslearning.com/accessibility/">Accessibility</a> ·
+        <a href="https://www.civitaslearning.com/edustream/">Edustream</a> ·
+        <a href="https://training.civitaslearning.com/">On-Demand Learning</a>
+      </span>
+    </div>
+  </div>
+</footer>

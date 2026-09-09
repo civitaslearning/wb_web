@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import pages from '../data/pages.json';
+const d = pages['/support/'];
+---
+<Base title="Technical Support" description={d.sub}>
+  <PageHero eyebrow="Technical support" title="Technical Support" sub={d.sub} crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Support' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="grid2">{d.sections.map((s) => <div class="card"><h3>{s.heading}</h3><p>{s.body}</p>{s.bullets.map((x) => <p><b>{x}</b></p>)}</div>)}</div>
+  </div></section>
+</Base>

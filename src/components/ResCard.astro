@@ -1,0 +1,12 @@
+---
+interface Props { title: string; type?: string; url: string; description?: string; guest?: string; cta?: string }
+const { title, type = 'resource', url, description = '', guest = '', cta } = Astro.props;
+const ext = url.startsWith('http') && !url.includes('civitaslearning.com/');
+---
+<a class="card link" href={url}>
+  <span class="chip">{type}</span>
+  <h3>{title}</h3>
+  {guest && <p style="font-weight:700;color:var(--ink)">{guest}</p>}
+  {description && <p>{description}</p>}
+  <span class="more">{cta ?? (ext ? 'Open →' : 'Read →')}</span>
+</a>

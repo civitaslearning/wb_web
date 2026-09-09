@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import FinalCta from '../components/FinalCta.astro';
+import pages from '../data/pages.json';
+const d = pages['/careers/'];
+const how = d.sections.find((s) => s.heading === 'How We Work') ?? { body: '', bullets: [] };
+const ben = d.sections.find((s) => s.heading === 'Benefits & Perks') ?? { bullets: [] };
+---
+<Base title="Careers" description={d.sub}>
+  <PageHero eyebrow="Careers" title="Use your power for good." sub={d.sub} crumbs={[{ text: 'Home', href: '/' }, { text: 'Company', href: '/about/' }, { text: 'Careers' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="grid2">
+      <div><h2>How we work</h2><p class="prose-wide" style="margin-top:12px">{how.body}</p><ul class="agents" style="margin-top:18px">{how.bullets.map((x) => <li><span>value</span><span>{x}</span></li>)}</ul></div>
+      <div><h2>Benefits &amp; perks</h2><div class="checks" style="grid-template-columns:1fr;margin-top:18px">{ben.bullets.map((x) => <div class="check"><span>{x}</span></div>)}</div></div>
+    </div>
+    <div style="margin-top:40px"><a class="btn btn-navy" href="https://www.civitaslearning.com/open-positions/">See open positions</a></div>
+  </div></section>
+  <FinalCta />
+</Base>

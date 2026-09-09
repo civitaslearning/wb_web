@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Mock from '../components/mocks/Mock.astro';
+import FinalCta from '../components/FinalCta.astro';
+
+const caps = [
+  ['AI agents and assistants', 'Prioritize outreach, prepare for meetings with context and next steps, explore institutional data, and generate reports — inside the workflow, not beside it.'],
+  ['Build your own agents', 'Automate repetitive work with no code. Share agents across teams. Scale execution without adding staff.'],
+  ['Institution-specific models', "Persistence, completion, and engagement predictions. Course demand forecasts. Program and intervention outcome measurement. Trained on your history, never on other institutions' data."],
+  ['Built-in AI tools', 'Prepare for student interactions, summarize conversations and notes, and get context-based next steps.'],
+];
+const trust = [
+  ['Grounded in fifteen years of higher-ed expertise', 'Not a general model with a campus skin.'],
+  ["Not trained on other institutions' data", 'Your model, your patterns, your students.'],
+  ['No token-based pricing', 'Use it as much as the work requires.'],
+  ['No code required', 'Agents are built by the people who own the process.'],
+  ['Every action logged', 'Attributed, reviewable, and yours to audit.'],
+  ['89% accuracy', 'predicting student outcomes on institution-specific models.'],
+];
+const feats = [
+  ['For the advisor', "Monday's list is built before the advisor logs in: who to call, why, and what to say. The note is drafted after the meeting."],
+  ['For the cabinet', "Ask a question in plain language — which programs lost the most students after gateway math? — and get the answer with the model's confidence attached."],
+  ['For IT', 'No new system of record. Agents read from and write back to Banner, Canvas, Slate, and the rest through the integrations you already run.'],
+];
+---
+<Base title="Civitas Learning AI" description="AI built on your data. Agents, assistants, and institution-specific models grounded in your institution's own data.">
+  <PageHero eyebrow="Civitas Learning AI" title="AI built on your data. Not on someone else's." sub="From institution-specific models to built-in agents and tools, every AI capability is grounded in your institution's own data, context, and priorities — so teams move from insight to action with confidence, and you can see what the AI did." crumbs={[{ text: 'Home', href: '/' }, { text: 'Solutions', href: '/platform/' }, { text: 'Civitas Learning AI' }]} />
+  <section><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">One AI engine</span><h2>Four capabilities. One institution-specific model behind all of them.</h2></div>
+      <p>Chats, plans, builds, acts — across leadership, enrollment, student success, academics, IR/IE, and career services.</p>
+    </div>
+    <div class="grid2">{caps.map(([h, p], i) => <div class="card"><div class="ico">{String(i + 1).padStart(2, '0')}</div><h3>{h}</h3><p>{p}</p></div>)}</div>
+  </div></section>
+  <section class="tint"><div class="wrap">
+    <span class="eyebrow">Why institutions trust our AI</span>
+    <div class="checks" style="margin-top:22px">{trust.map(([b, t]) => <div class="check"><span><b>{b}</b>{t}</span></div>)}</div>
+  </div></section>
+  <section><div class="wrap">
+    {feats.map(([h, p], i) => <div class:list={['feat', { rev: i % 2 === 1 }]}><div><h3>{h}</h3><p>{p}</p></div><div class="art"><Mock i={i} /></div></div>)}
+  </div></section>
+  <FinalCta />
+</Base>

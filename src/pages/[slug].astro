@@ -1,0 +1,39 @@
+---
+/**
+ * Solution and use-case pages. One route, driven by src/data/solutions.json,
+ * so /platform/, /analytics/, /enrollment-management/ … all share this template.
+ */
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Sections from '../components/Sections.astro';
+import Quotes from '../components/Quotes.astro';
+import FinalCta from '../components/FinalCta.astro';
+import solutions from '../data/solutions.json';
+
+export function getStaticPaths() {
+  return solutions.map((p) => ({ params: { slug: p.slug }, props: p }));
+}
+const p = Astro.props;
+const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/advising-and-student-success/' };
+const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', '+ 100 more'];
+---
+<Base title={p.name} description={p.sub || p.headline}>
+  <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={[{ text: 'Home', href: '/' }, root, { text: p.name }]} />
+  <Sections sections={p.sections} />
+  {p.stats.length > 0 && (
+    <section class="tint tight"><div class="wrap">
+      <span class="eyebrow">Partner outcomes</span>
+      <div class="grid4" style="margin-top:18px">
+        {p.stats.map((s) => <div class="card"><div class="n">{s.value}</div><div class="m">{s.metric}</div></div>)}
+      </div>
+    </div></section>
+  )}
+  {p.integrations.length > 0 && (
+    <section class="tight"><div class="wrap">
+      <span class="eyebrow">Runs beside</span>
+      <div class="filters" style="margin-top:14px">{[...p.integrations, ...extraIntegrations].map((x) => <span class="chip">{x}</span>)}</div>
+    </div></section>
+  )}
+  <Quotes items={p.testimonials} />
+  <FinalCta />
+</Base>

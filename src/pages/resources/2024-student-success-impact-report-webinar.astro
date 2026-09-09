@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import pages from '../../data/pages.json';
+const d = pages['/resources/2024-student-success-impact-report-webinar/'];
+---
+<Base title="2024 Student Success Impact Report Webinar" description={d.sub}>
+  <PageHero eyebrow="Webinar" title={d.headline} sub={d.sub} crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Webinar' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="grid2">
+      <div class="art" style="min-height:300px;background:var(--navy);color:#fff;font-family:var(--mono);font-size:13px;display:grid;place-items:center;border-radius:10px">▶ Video embed goes here (HubSpot / YouTube)</div>
+      <div class="prose-wide">
+        {d.sections.map((s) => (
+          <>
+            <h2>{s.heading}</h2>
+            {s.body && <p>{s.body}</p>}
+            {s.bullets.length > 0 && <ul>{s.bullets.map((x) => <li>{x}</li>)}</ul>}
+          </>
+        ))}
+      </div>
+    </div>
+    <div style="margin-top:32px"><a class="btn btn-primary" href="https://studentimpactreport.civitaslearning.com/2026">Get the 2026 report</a></div>
+  </div></section>
+  <FinalCta />
+</Base>

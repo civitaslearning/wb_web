@@ -1,0 +1,20 @@
+---
+interface Props { title?: string; text?: string }
+const {
+  title = 'Bring your questions. Leave with an estimate you can defend.',
+  text = 'A 45-minute working session. We start from your public IPEDS figures, show what the platform found at institutions like yours, and size the outcome — before anyone touches your data.',
+} = Astro.props;
+---
+<section class="final">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Next step</span>
+      <h2 style="margin-top:12px">{title}</h2>
+      <p>{text}</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/contact/">Book a demo</a>
+      <a class="btn btn-ghost" href="https://studentimpactreport.civitaslearning.com/2026">Get the 2026 Impact Report</a>
+    </div>
+  </div>
+</section>

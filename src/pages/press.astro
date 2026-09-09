@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ResCard from '../components/ResCard.astro';
+import FinalCta from '../components/FinalCta.astro';
+const items = [
+  { title: 'Congratulations to Meredith Baker on Being Named a 2025 Leading Woman in AI', type: '2025', description: 'Recognized by The AI Show @ ASU+GSV.', url: 'https://www.civitaslearning.com/press/congratulations-to-our-chief-customer-officer-meredith-baker-on-being-named-a-2025-leading-woman-in-ai/' },
+  { title: 'UT System Board of Regents Approves Added Investments to Support UTSA Student Success', type: 'Feb 2023', description: 'UTSA extends its services agreement with Civitas Learning.', url: 'https://www.utsa.edu/today/2023/02/story/board-of-regents-approves-added-investments.html' },
+  { title: 'Improving Student Outcomes: Quantifying the Impact of Creative Skills on College and Career', type: 'Oct 2021', description: 'Research collaboration with Adobe and LinkedIn.', url: 'https://blog.adobe.com/en/publish/2021/10/12/improving-student-outcomes-quantifying-impact-creative-skills-on-college-career' },
+];
+---
+<Base title="News" description="Civitas Learning in the news.">
+  <PageHero eyebrow="News" title="Civitas Learning in the news" sub="Announcements, partner milestones, and research." crumbs={[{ text: 'Home', href: '/' }, { text: 'Company', href: '/about/' }, { text: 'News' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="res-list">{items.map((i) => <ResCard {...i} />)}</div>
+    <p style="margin-top:28px;color:var(--ink2)">Press inquiries: <a href="tel:512-692-7175">512-692-7175</a></p>
+  </div></section>
+  <FinalCta />
+</Base>

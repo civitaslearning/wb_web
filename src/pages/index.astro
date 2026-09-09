@@ -1,0 +1,231 @@
+---
+import Base from '../layouts/Base.astro';
+import LogoBand from '../components/LogoBand.astro';
+import FinalCta from '../components/FinalCta.astro';
+---
+<Base title="Civitas Learning" description="AI built on your data. Outcomes you can prove. Civitas Learning connects the systems you already run into one model of your institution and measures the impact of every decision.">
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Institutional effectiveness · Proven, not promised</span>
+        <h1>Every vendor sells AI.<br />We prove what works.</h1>
+        <p class="sub">
+          Civitas Learning connects the data already in <b>Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce — and 100+ other systems</b> into one model of your institution, trains AI on it, and <b>measures the impact of every decision</b> — so you can show your board what moved the numbers, and stop paying for what didn't. Nothing gets replaced.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/contact/">Book a demo</a>
+          <a class="btn btn-ghost" href="/customer-success-stories/">See partner outcomes</a>
+        </div>
+        <LogoBand inline limit={10} />
+      </div>
+      <div class="ledger" aria-label="Example intervention impact ledger">
+        <div class="ledger-head"><h3>Intervention impact, Fall cohort</h3><span class="mono">example · n = 6,412</span></div>
+        <p class="ledger-sub">Persistence lift vs. matched students who did not receive the intervention. 95% confidence shown.</p>
+        <div class="rows" id="rows"></div>
+        <div class="legend"><span class="l1"><i></i>Measured lift</span><span class="l2"><i></i>Not significant</span><span class="l3"><i></i>95% confidence interval</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><div class="n">375<em>+</em></div><div class="l">colleges and universities on the platform</div></div>
+      <div class="stat"><div class="n">89<em>%</em></div><div class="l">accuracy predicting student outcomes, on your data</div></div>
+      <div class="stat"><div class="n"><em>+</em>8 pts</div><div class="l">retention, Northwest Missouri State University</div></div>
+      <div class="stat"><div class="n">$4<em>:</em>$1</div><div class="l">returned on every dollar partners invest</div></div>
+    </div>
+  </div>
+
+  <section id="platform">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">One institution · one dataset</span><h2>Your systems already hold the answer. They just don't talk to each other.</h2></div>
+        <p>Civitas sits beside the systems you run today — more than 100 of them, including the AI agent and CRM tools you may already have bought. It reads from all of them, builds one model of the institution, and writes actions and results back — for student success first, and for every other question the cabinet asks.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-col">
+          <div class="flow-lbl">Systems you keep · 100+ integrations</div>
+          <div class="sys"><b>SIS</b><span>Banner · PeopleSoft · Colleague · Workday Student</span></div>
+          <div class="sys"><b>LMS</b><span>Canvas · Blackboard · D2L · Moodle</span></div>
+          <div class="sys"><b>CRM</b><span>Slate · Salesforce · Element451 · TargetX</span></div>
+          <div class="sys"><b>HR &amp; finance</b><span>Workday · Oracle · Ellucian</span></div>
+          <div class="sys"><b>Everything else</b><span>Your warehouse, engagement tools, card swipes, surveys — 100+ systems and counting</span></div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true"><span></span></div>
+        <div class="flow-col core">
+          <div class="flow-lbl">Civitas</div>
+          <div class="core-box">
+            <div class="step"><b>Unify</b><span>One student, one course, one program record across every system.</span></div>
+            <div class="step"><b>Predict</b><span>Models trained on your history, refreshed each term.</span></div>
+            <div class="step"><b>Act</b><span>AI agents work inside the tools your staff already open.</span></div>
+            <div class="step"><b>Measure</b><span>Every action scored against a matched comparison group.</span></div>
+          </div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true"><span></span></div>
+        <div class="flow-col">
+          <div class="flow-lbl">Outcomes you report</div>
+          <div class="sys out-lead"><b>Student success</b><span>Persistence, completion, time to degree — proven at 375 institutions</span></div>
+          <div class="sys"><b>Enrollment</b><span>Yield, melt, registration</span></div>
+          <div class="sys"><b>Academic planning</b><span>Course demand, section fill, program ROI</span></div>
+          <div class="sys"><b>Finance</b><span>Net tuition, aid leverage, cost to serve</span></div>
+          <div class="sys"><b>Accountability</b><span>Board, accreditor, and state reporting</span></div>
+        </div>
+      </div>
+      <div style="margin-top:28px"><a class="btn btn-ghost" href="/platform/">Explore the platform →</a></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">The questions your cabinet will ask</span><h2>Any tool can send a message. Few can tell you if it changed anything.</h2></div>
+        <p>Performance-based funding, tighter budgets, and AI on every vendor slide. Before you sign, get answers to three questions.</p>
+      </div>
+      <div class="qs">
+        <div class="q"><span class="tag">Question 1</span><h3>Are the predictions built on our students?</h3><p class="a">Models trained on national averages miss the pattern that matters at <b>your</b> institution — the 14-credit part-timer, the transfer with a math gap. <b>Civitas trains a model per institution</b>, from your SIS, LMS, and CRM history.</p></div>
+        <div class="q"><span class="tag">Question 2</span><h3>Which interventions are really working?</h3><p class="a">Only 40–60% of student success initiatives produce a measurable outcome. <b>Civitas measures each one</b> against a matched comparison group, so you fund what works and retire what doesn't.</p></div>
+        <div class="q"><span class="tag">Question 3</span><h3>Do we know what AI does on our behalf?</h3><p class="a">Every agent action is logged, attributed, and reviewable. <b>Your staff set the guardrails</b>; the agent works inside them, and the audit trail is yours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">The lead use case · student success</span><h2>AI agents that do the work — and a ledger that proves it paid off.</h2></div>
+        <p>Student success is where 375 institutions have proved the platform. Each agent acts on your institution's own predictions, inside the systems your teams already use, and reports its impact back to the same ledger.</p>
+      </div>
+      <div class="jobs">
+        <div class="job"><span class="stage">Recruit &amp; enroll</span><h3>Fill the class with students who will finish.</h3><p>Score applicants and admits on likelihood to enroll <i>and</i> persist, then put the right yield work in front of counselors.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Yield agent</b> — ranks admits by enrollment likelihood, drafts outreach, books counselor follow-ups.</span></li><li><span>agent</span><span><b>Registration agent</b> — finds continuing students who haven't registered and clears holds with them.</span></li></ul>
+          <p class="proof"><b>+3.7%</b> registration, SUNY Broome · <a href="/enrollment-management/">Strategic enrollment →</a></p></div>
+        <div class="job"><span class="stage">Success &amp; progress</span><h3>Keep the students you already have.</h3><p>Retention is the cheapest enrollment you will ever buy. Predict risk weekly, route it to the right advisor, and measure whether the outreach worked.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Advising agent</b> — builds each advisor's daily list, drafts the note, schedules the meeting.</span></li><li><span>agent</span><span><b>Care coordination agent</b> — connects alerts across advising, financial aid, and tutoring into one case.</span></li></ul>
+          <p class="proof"><b>+8 pts</b> retention, Northwest Missouri State · <a href="/advising-and-student-success/">Advising →</a></p></div>
+        <div class="job"><span class="stage">Graduate &amp; employ</span><h3>Move students to the finish line, and past it.</h3><p>Spot completion risk in the last 30 credits, clear degree-audit obstacles, and connect graduates to outcomes you can report.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Completion agent</b> — flags students within reach of a degree and fixes the plan that's blocking them.</span></li><li><span>agent</span><span><b>Outcomes agent</b> — tracks graduate employment and reports it back to programs and IR.</span></li></ul>
+          <p class="proof"><b>+5%</b> graduation rate, Texas A&amp;M–San Antonio · <a href="/improve-on-time-completion/">Completion →</a></p></div>
+      </div>
+      <div class="beyond">
+        <div class="beyond-head"><span class="eyebrow">Beyond the student journey</span><p>The same data, models, and ledger answer the rest of the cabinet's questions.</p></div>
+        <div class="beyond-grid">
+          <div class="b"><b>Course demand &amp; scheduling</b><span>Predict section fill by term. Open the sections students need and close the ones they don't.</span></div>
+          <div class="b"><b>Program portfolio</b><span>Enrollment, completion, and cost per program in one view, so investment follows evidence.</span></div>
+          <div class="b"><b>Financial aid leverage</b><span>Find where one more aid dollar changes a yield or persistence decision — and where it doesn't.</span></div>
+          <div class="b"><b>Institutional research</b><span>One governed dataset for IPEDS, accreditation, and board reporting, with the intervention record attached.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Why the data matters</span><h2>Generic AI knows higher ed. Civitas knows <em style="font-style:italic">your</em> students.</h2></div>
+        <p>An agent is only as good as the prediction behind it. Here is the difference between a model trained on the sector and a model trained on you.</p>
+      </div>
+      <div class="cmp">
+        <div class="col"><h3>Generic AI agent <small>sector model</small></h3><ul>
+          <li><i>—</i><span><b>Predictions</b> from national benchmarks or one vendor's pooled customer base.</span></li>
+          <li><i>—</i><span><b>Risk flags</b> based on engagement signals it can see: email opens, chat replies.</span></li>
+          <li><i>—</i><span><b>Proof</b> is activity: messages sent, conversations handled, hours saved.</span></li>
+          <li><i>—</i><span><b>Scope</b> is the front door: marketing, admissions, inquiry response.</span></li></ul></div>
+        <div class="col"><h3>Civitas Learning <small>your model</small></h3><ul>
+          <li><i>✓</i><span><b>Predictions</b> from a model trained on your SIS, LMS, and CRM history — refreshed each term.</span></li>
+          <li><i>✓</i><span><b>Risk flags</b> from grades, credits, course patterns, aid status, and engagement together.</span></li>
+          <li><i>✓</i><span><b>Proof</b> is outcome: persistence, completion, and revenue lift vs. a matched comparison group.</span></li>
+          <li><i>✓</i><span><b>Scope</b> is the whole institution: enroll, persist, graduate, employ — and the courses, programs, and budgets behind them.</span></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Partner outcomes</span><h2>Numbers a president can put in front of a board.</h2></div>
+        <p>Published results from Civitas partners. Every figure is measured against a comparison group, not a prior year.</p>
+      </div>
+      <div class="grid4">
+        <a class="card link" href="/customer-success-stories/from-81-to-86-4-srus-playbook-for-sustained-retention-gains/"><div class="n">86.4%</div><div class="m">first-year retention, up from 81% — highest in SRU history</div><div class="who">Slippery Rock University<small>Read the playbook →</small></div></a>
+        <a class="card link" href="/customer-success-stories/coordination-without-control-how-the-university-of-cincinnati-built-a-student-success-system-that-scales/"><div class="n">+7 pts</div><div class="m">graduation rate across 18 decentralized units</div><div class="who">University of Cincinnati<small>Read the story →</small></div></a>
+        <a class="card link" href="/customer-success-stories/austin-community-college-persistence/"><div class="n">+4.1%</div><div class="m">fall-to-spring persistence; +13% two-year completion</div><div class="who">Austin Community College<small>Read the story →</small></div></a>
+        <a class="card link" href="https://studentimpactreport.civitaslearning.com/2026"><div class="n">$4:$1</div><div class="m">average return across partners, 220 initiatives, five years of data</div><div class="who">2026 Student Success Impact Report<small>Read the methodology →</small></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roi" class="tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Run the numbers</span><h2>What is one point of retention worth to you?</h2></div>
+        <p>Use your own figures. This is the same arithmetic your CFO will do — before Civitas measures the real result.</p>
+      </div>
+      <div class="calc">
+        <div class="fields">
+          <label>Fall undergraduate headcount<input type="number" id="hc" value="9000" min="500" step="100" /></label>
+          <label>Net tuition and fees per student, per year<input type="number" id="tu" value="11500" min="1000" step="250" /></label>
+          <label><span>Retention lift <span class="mono" id="liftLbl">3.0 pts</span> <span style="color:var(--ink3);font-weight:400">— partners typically see 3–11 pts</span></span><input type="range" id="lift" min="1" max="11" step="0.5" value="3" /></label>
+        </div>
+        <div class="out">
+          <div><div class="big" id="rev">$—</div><div class="lbl">additional net revenue per year, from students retained</div></div>
+          <div class="line"><span>Students retained who would have left</span><b id="stu">—</b></div>
+          <p class="note">Assumes one additional year of net tuition per retained student. Multi-year and state funding effects are excluded, so this is a floor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap quote big">
+      <span class="eyebrow">Strategic partnership</span>
+      <blockquote style="margin-top:14px">“The service during integration is beyond expected. I've never felt we're just a number.”</blockquote>
+      <cite style="margin-top:16px"><b>Erin Gunnell</b>Director of Success Advising &amp; Tutoring, Ensign College</cite>
+    </div>
+  </section>
+
+  <FinalCta />
+</Base>
+
+<script>
+  // Example impact ledger. Scale: 0 to +6 pts across 90% of track width (zero line at 8%).
+  const data = [
+    { name: 'Emergency aid + advisor follow-up', n: 'n = 412', lo: 2.6, mid: 4.1, hi: 5.6 },
+    { name: 'Proactive advising outreach', n: 'n = 2,180', lo: 2.1, mid: 3.4, hi: 4.7 },
+    { name: 'Tutoring referral, gateway math', n: 'n = 966', lo: 0.8, mid: 1.9, hi: 3.0 },
+    { name: 'Early alert, no follow-up', n: 'n = 1,540', lo: -0.7, mid: 0.2, hi: 1.1 },
+    { name: 'Generic nudge campaign', n: 'n = 1,314', lo: -0.9, mid: -0.1, hi: 0.7 },
+  ];
+  const max = 6, base = 8, span = 90;
+  const x = (v: number) => base + (Math.max(-0.8, v) / max) * span;
+  const host = document.getElementById('rows')!;
+  for (const d of data) {
+    const sig = d.lo > 0;
+    const row = document.createElement('div');
+    row.className = 'row';
+    const v = d.mid >= 0 ? '+' + d.mid.toFixed(1) : d.mid.toFixed(1);
+    row.innerHTML =
+      `<div class="name">${d.name}<small class="mono">${d.n}</small></div>` +
+      `<div class="track"><span class="zero"></span><span class="bar${sig ? '' : ' flat'}" data-w="${(Math.max(0, d.mid) / max) * span}"></span>` +
+      `<span class="ci" style="left:${x(d.lo)}%;width:${x(d.hi) - x(d.lo)}%"></span></div>` +
+      `<div class="val ${sig ? 'lift' : 'flat'}">${v} pts</div>`;
+    host.appendChild(row);
+  }
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    host.querySelectorAll<HTMLElement>('.bar').forEach((b) => (b.style.width = b.dataset.w + '%'));
+  }));
+
+  // ROI calculator
+  const hc = document.getElementById('hc') as HTMLInputElement;
+  const tu = document.getElementById('tu') as HTMLInputElement;
+  const lift = document.getElementById('lift') as HTMLInputElement;
+  const fmt = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
+  function calc() {
+    const h = +hc.value || 0, t = +tu.value || 0, l = +lift.value || 0;
+    const s = Math.round((h * l) / 100);
+    document.getElementById('liftLbl')!.textContent = l.toFixed(1) + ' pts';
+    document.getElementById('stu')!.textContent = s.toLocaleString('en-US');
+    document.getElementById('rev')!.textContent = fmt(s * t);
+  }
+  [hc, tu, lift].forEach((el) => el.addEventListener('input', calc));
+  calc();
+</script>

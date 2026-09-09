@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+export async function getStaticPaths() {
+  const stories = await getCollection('stories');
+  return stories.map((s) => ({ params: { id: s.id }, props: { story: s } }));
+}
+const { story } = Astro.props;
+const d = story.data;
+const { Content } = await render(story);
+const others = (await getCollection('stories')).filter((s) => s.id !== story.id).sort((a, b) => a.data.order - b.data.order).slice(0, 3);
+---
+<Base title={`${d.institution} — Customer Story`} description={d.summary}>
+  <section class="phero story-hero"><div class="wrap">
+    <div>
+      <div class="crumbs"><a href="/">Home</a> / <a href="/customer-success-stories/">Customer Stories</a> / {d.institution}</div>
+      <span class="eyebrow">{d.type}</span>
+      <h1 style="margin-top:12px">{d.headline}</h1>
+      <p class="sub">{d.summary}</p>
+    </div>
+    {d.logo && <div class="logo-box"><img src={`/assets/${d.logo}`} alt={d.institution} /></div>}
+  </div></section>
+  <section><div class="wrap story-body">
+    <div class="prose"><Content />
+      {d.quote && (
+        <>
+          <h2>In their words</h2>
+          <div class="quote"><blockquote>“{d.quote.text}”</blockquote><cite><b>{d.quote.name}</b>{d.quote.title}</cite></div>
+        </>
+      )}
+      {d.solutions.length > 0 && (
+        <>
+          <h2>Solutions used</h2>
+          <div class="filters">{d.solutions.map((x) => <span class="chip">{x}</span>)}</div>
+        </>
+      )}
+    </div>
+    <aside class="aside">
+      <span class="eyebrow">Outcomes</span>
+      {d.outcomes.slice(0, 4).map((o) => <div class="card"><div class="n">{o.value}</div><div class="m">{o.metric}</div></div>)}
+      <a class="btn btn-primary" href="/contact/">See this at your institution</a>
+    </aside>
+  </div></section>
+  <section class="tint"><div class="wrap">
+    <span class="eyebrow">More partner stories</span>
+    <div class="grid3" style="margin-top:22px">{others.map((s) => <StoryCard story={s} />)}</div>
+  </div></section>
+  <FinalCta />
+</Base>
+
+<style is:global>
+  .story-body .prose h2:first-child { margin-top: 0; }
+</style>

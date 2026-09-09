@@ -1,0 +1,105 @@
+---
+/**
+ * Renders crawled page sections into feature rows, checklists, role grids, and cards.
+ * The first three body sections get an example mock beside them; the rest become cards.
+ */
+import Mock from './mocks/Mock.astro';
+
+interface Section { heading: string; body: string; bullets: string[] }
+interface Props { sections: Section[] }
+const { sections } = Astro.props;
+
+type Block =
+  | { kind: 'feats'; items: { s: Section; i: number }[] }
+  | { kind: 'extra'; items: Section[] }
+  | { kind: 'roles'; items: Section[] }
+  | { kind: 'checks'; heading: string; items: string[] }
+  | { kind: 'cards'; heading: string; items: string[] };
+
+const blocks: Block[] = [];
+let feats: { s: Section; i: number }[] = [];
+let extra: Section[] = [];
+let roles: Section[] = [];
+let i = 0;
+
+function flush() {
+  if (feats.length) { blocks.push({ kind: 'feats', items: feats }); feats = []; }
+  if (extra.length) { blocks.push({ kind: 'extra', items: extra }); extra = []; }
+}
+function flushRoles() {
+  if (roles.length) { flush(); blocks.push({ kind: 'roles', items: roles }); roles = []; }
+}
+
+for (const s of sections) {
+  const { heading: h, body: b, bullets: bl } = s;
+  if (/^for /i.test(h) && bl.length) { roles.push(s); continue; }
+  flushRoles();
+  if (/^(Why |How Civitas|What Makes)/.test(h) && bl.length) { flush(); blocks.push({ kind: 'checks', heading: h, items: bl }); continue; }
+  if (bl.length && !b) { flush(); blocks.push({ kind: 'cards', heading: h, items: bl }); continue; }
+  if (!b && !bl.length) continue;
+  if (i < 3) feats.push({ s, i }); else extra.push(s);
+  i++;
+}
+flushRoles();
+flush();
+---
+{blocks.map((blk) => {
+  if (blk.kind === 'feats') return (
+    <section><div class="wrap">
+      {blk.items.map(({ s, i }) => (
+        <div class:list={['feat', { rev: i % 2 === 1 }]}>
+          <div>
+            <h3>{s.heading}</h3>
+            <p>{s.body}</p>
+            {s.bullets.length > 0 && <ul>{s.bullets.map((x) => <li>{x}</li>)}</ul>}
+          </div>
+          <div class="art"><Mock i={i} /></div>
+        </div>
+      ))}
+    </div></section>
+  );
+  if (blk.kind === 'extra') return (
+    <section class="tint"><div class="wrap">
+      <span class="eyebrow">More capabilities</span>
+      <div class="grid3" style="margin-top:22px">
+        {blk.items.map((s) => (
+          <div class="card">
+            <h3>{s.heading}</h3>
+            <p>{s.body}</p>
+            {s.bullets.length > 0 && <ul class="agents">{s.bullets.map((x) => <li><span>·</span><span>{x}</span></li>)}</ul>}
+          </div>
+        ))}
+      </div>
+    </div></section>
+  );
+  if (blk.kind === 'roles') return (
+    <section class="tint"><div class="wrap">
+      <span class="eyebrow">Built for every team</span>
+      <div class="roles" style="margin-top:22px">
+        {blk.items.map((r) => (
+          <div class="role">
+            <h3>{r.heading}</h3>
+            {r.body && <p style="font-size:14px;color:var(--ink2);margin-bottom:10px">{r.body}</p>}
+            <ul>{r.bullets.map((x) => <li>{x}</li>)}</ul>
+          </div>
+        ))}
+      </div>
+    </div></section>
+  );
+  if (blk.kind === 'checks') return (
+    <section class="tint"><div class="wrap">
+      <span class="eyebrow">{blk.heading}</span>
+      <div class="checks" style="margin-top:22px">{blk.items.map((x) => <div class="check"><span>{x}</span></div>)}</div>
+    </div></section>
+  );
+  return (
+    <section><div class="wrap">
+      <div class="sec-head"><div><h2>{blk.heading}</h2></div></div>
+      <div class="grid2">
+        {blk.items.map((x, n) => (
+          <div class="card"><div class="ico">{String(n + 1).padStart(2, '0')}</div><p style="color:var(--ink);font-size:16px">{x}</p></div>
+        ))}
+      </div>
+    </div></section>
+  );
+})}

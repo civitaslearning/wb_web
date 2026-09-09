@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import FinalCta from '../components/FinalCta.astro';
+import pages from '../data/pages.json';
+const d = pages['/leadership-workshops/'];
+const sections = d.sections.filter((s) => !s.heading.startsWith('Explore'));
+---
+<Base title="Leadership Workshops" description={d.sub}>
+  <PageHero eyebrow="Customer community" title="Leadership Workshops" sub={d.sub} crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Leadership Workshops' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="grid2">{sections.map((s) => <div class="card"><h3>{s.heading}</h3><p>{s.body}</p>{s.bullets.map((x) => <p><b>{x}</b></p>)}</div>)}</div>
+  </div></section>
+  <FinalCta />
+</Base>

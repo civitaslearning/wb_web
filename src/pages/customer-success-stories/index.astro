@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import LogoBand from '../../components/LogoBand.astro';
+import FinalCta from '../../components/FinalCta.astro';
+
+const stories = (await getCollection('stories')).sort((a, b) => a.data.order - b.data.order);
+const filters = ['All', '2-year public', '4-year private', '4-year public', 'Community college', 'Persistence / Retention', 'Completion', 'Enrollment', 'Efficacy & ROI', 'Institutional effectiveness'];
+---
+<Base title="Customer Success Stories" description="Measured outcomes from Civitas Learning partners: retention, completion, enrollment, and ROI.">
+  <PageHero eyebrow="Customer stories" title="Outcomes, measured. Told by the people who did the work." sub="Every story below names the institution, the number, and how it was measured. Filter by institution type, outcome, or solution." crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Customer Stories' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="filters">{filters.map((f) => <span class="chip">{f}</span>)}</div>
+    <div class="grid3">{stories.map((s) => <StoryCard story={s} />)}</div>
+  </div></section>
+  <LogoBand />
+  <FinalCta />
+</Base>

@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ResCard from '../components/ResCard.astro';
+import FinalCta from '../components/FinalCta.astro';
+import pages from '../data/pages.json';
+const d = pages['/blog/'];
+---
+<Base title="Blog" description="Student success strategies for higher education.">
+  <PageHero eyebrow="Blog" title="Student success strategies for higher education" sub="Practical, data-informed writing for leaders who have to show results." crumbs={[{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Blog' }]} ctas={false} />
+  <section><div class="wrap">
+    <div class="res-list">{d.items.map((i) => <ResCard title={i.title} type={i.type} url={i.url} description={i.description ?? ''} />)}</div>
+    <p style="margin-top:28px;color:var(--ink3);font-size:14px">Page 1 of 9 · <a href="https://www.civitaslearning.com/blog/page/2/">Older posts →</a></p>
+  </div></section>
+  <FinalCta />
+</Base>

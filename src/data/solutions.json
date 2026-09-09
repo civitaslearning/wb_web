@@ -1,0 +1,1262 @@
+[
+ {
+  "slug": "platform",
+  "kind": "solutions",
+  "name": "Student Impact Platform",
+  "eyebrow": "Student Impact Platform",
+  "headline": "One platform. Every system you run. Outcomes you can prove.",
+  "sub": "Unify data, connect systems, surface insights, enable action — and measure the result of every action against a comparison group.",
+  "sections": [
+   {
+    "heading": "Eliminate the Gaps That Hold Students Back",
+    "body": "Too often, student success efforts fall short—not because of lack of care, but because teams are working in silos, reacting too late, or lacking a complete view of student needs and what's working. Civitas Learning connects data, insights, and action to help teams coordinate support, align around student success, and take timely action that improves outcomes for students and the institution alike.",
+    "bullets": [
+     "Fragmented systems and siloed data",
+     "Limited visibility into what's working",
+     "Inconsistent, reactive engagement",
+     "Difficulty measuring ROI"
+    ]
+   },
+   {
+    "heading": "The Student Impact Platform",
+    "body": "Equip Everyone to Impact Any Student Outcome",
+    "bullets": [
+     "Leaders: Student Outcome Analytics, Predictive Factors of Success, Initiative Analytics, Course Insights, Course Demand Analytics",
+     "Student-Facing Staff: Student Success Analytics, Unified Student Profile, Shared Notes, Academic Alerts, SMS & Email",
+     "Students: Collaborative Degree Planning, Smart Class Schedule Builder, Appointment Calendaring, Asynchronous Guidance"
+    ]
+   },
+   {
+    "heading": "Actionable Analytics",
+    "body": "Equip stakeholders across campus with insight into multiple student outcomes powered by institution-specific models—spot risk patterns, forecast course demand, and assess initiative impact.",
+    "bullets": []
+   },
+   {
+    "heading": "Connected Workflows",
+    "body": "Actionable insights and AI assistance embedded directly where your teams work. Share notes, issue alerts, surface recommended next actions, and coordinate outreach to help advisors support the right students at the right moment.",
+    "bullets": []
+   },
+   {
+    "heading": "Dedicated Strategic Partnership",
+    "body": "We don't just hand you tools— we build with you. Our Customer Development team partners with your stakeholders to ensure adoption, impact, and continuous improvement.",
+    "bullets": []
+   },
+   {
+    "heading": "For Data-Informed Leaders",
+    "body": "Govern campus-wide strategy with confidence",
+    "bullets": [
+     "Track success factors and drivers across multiple student outcomes",
+     "Automatically catch signals of risk or opportunity with AI",
+     "Evaluate ROI and effectiveness across policies and programs",
+     "Forecast course demand and optimize scheduling"
+    ]
+   },
+   {
+    "heading": "For Student-Facing Teams",
+    "body": "Supercharge engagement and streamline support.",
+    "bullets": [
+     "Pre‑emptively identify at-risk students via real-time alerts",
+     "Keep everyone aligned with shared notes and cross-team visibility",
+     "Deliver AI-generated, data-informed next best actions to guide advisor outreach",
+     "Save time with AI assistants that handle manual work at critical moments",
+     "Scale coordinated outreach via personalized email/SMS, filtered lists, and integrated student insights",
+     "Coordinate student support across departments through shared intelligence and connected action paths"
+    ]
+   },
+   {
+    "heading": "For Students",
+    "body": "Empower with clarity, personalization, and autonomy",
+    "bullets": [
+     "Build academic and graduation roadmaps with degree planning tools",
+     "Choose schedules intelligently with smart course scheduling",
+     "Stay on track with appointment reminders and structured, asynchronous guidance",
+     "Engage proactively through tailored messaging and actionable next steps"
+    ]
+   },
+   {
+    "heading": "Unify Your Existing Data & Systems",
+    "body": "From implementation to insight, Civitas Learning provides hands-on support at every step—connecting data across your SIS, LMS, CRM, and broader technology ecosystem to create a unified foundation for student success, helping every tool work together to advance your mission.",
+    "bullets": []
+   },
+   {
+    "heading": "Why Civitas Learning Is Different",
+    "body": "",
+    "bullets": [
+     "Built with institution-specific predictive models",
+     "Insight into multiple student outcomes, not just GPA/retention metrics",
+     "Real-time insights and AI assistance where work already happens",
+     "Strategic guidance from dedicated higher ed experts and former practitioners"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "With Civitas Learning, we can make ongoing adjustments in real-time. This enables us to allocate resources more effectively.",
+    "name": "Kim McLain",
+    "title": "Associate Vice President/Dean of Health Sciences & Institutional Effectiveness",
+    "institution": "SUNY Broome Community College"
+   },
+   {
+    "quote": "The platform allows us to actually do holistic advising, to address the whole student and know what's happening with them.",
+    "name": "Leslie Abarr-Cuenca",
+    "title": "Director of Student Success",
+    "institution": "Northwest Missouri State University"
+   },
+   {
+    "quote": "Student Scheduling saves time during registration, allowing me to assist students with belonging and career planning.",
+    "name": "Matt Hill",
+    "title": "Senior Lead Advisor",
+    "institution": "Jacksonville State University"
+   },
+   {
+    "quote": "The service during integration is beyond expected. I've never felt we're just a number.",
+    "name": "Erin Gunnell",
+    "title": "Director of Success Advising & Tutoring",
+    "institution": "Ensign College"
+   }
+  ],
+  "integrations": [
+   "Anthology",
+   "Ellucian",
+   "Brainfuse",
+   "Salesforce",
+   "Canvas",
+   "Handshake",
+   "Oracle",
+   "Maxient",
+   "Moodle",
+   "Blackboard",
+   "GivePulse",
+   "Navigate360"
+  ],
+  "source": "https://www.civitaslearning.com/platform/"
+ },
+ {
+  "slug": "analytics",
+  "kind": "solutions",
+  "name": "Real-Time Analytics That Power the Student Impact Platform",
+  "eyebrow": "Actionable Analytics",
+  "headline": "Predictions built on your students. Not on national averages.",
+  "sub": "Institution-specific models, multi-outcome analytics, and real-time views for every team — with 89% accuracy predicting student outcomes.",
+  "sections": [
+   {
+    "heading": "Unlock the Power of Actionable Insights",
+    "body": "Today's higher ed leaders and teams face a common challenge: disconnected data, limited insight into what works, and numerous siloed systems. The Civitas Learning Student Impact Platform changes that—equipping your institution with unified, real-time analytics that power smarter decisions, more proactive support, and measurable results.",
+    "bullets": []
+   },
+   {
+    "heading": "What Makes Our Analytics Different?",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "Institution-Specific Predictive Models",
+    "body": "AI-powered models built for your institution surface predictive insights—not just patterns from the past, but timely indicators of what's likely to happen next. By leveraging your unique student data, the platform reveals risks and opportunities that are truly relevant to your campus.",
+    "bullets": []
+   },
+   {
+    "heading": "Multi Outcome Analytics",
+    "body": "Move beyond retention. Instantly track and forecast a range of outcomes—including completion, persistence, engagement, career readiness and more—so everyone on campus is equipped to support students along their journey.",
+    "bullets": []
+   },
+   {
+    "heading": "Real-Time, Holistic Views",
+    "body": "No more waiting for end-of-term reports. Access up-to-date student profiles, academic alerts, and initiative analysis so your teams can identify at-risk students, spot bottlenecks, and coordinate interventions each day.",
+    "bullets": []
+   },
+   {
+    "heading": "Gain Visibility into the Experience of Your Unique Students",
+    "body": "",
+    "bullets": [
+     "Student Success Analytics",
+     "Initiative & Program Analysis",
+     "Course & Enrollment Analytics",
+     "Unified Student Data"
+    ]
+   },
+   {
+    "heading": "Equip Every Campus Team to Make an Impact",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "For Leaders",
+    "body": "",
+    "bullets": [
+     "Drive campus-wide strategy with real-time visibility into trends, outcomes, and what's working across all departments.",
+     "Confidently invest resources by measuring the true impact of programs, policies, and interventions, backed by institution-specific AI analytics.",
+     "Align teams and scale best practices with clear, actionable insights that unify decision-making at every level."
+    ]
+   },
+   {
+    "heading": "For Student-Facing Teams",
+    "body": "",
+    "bullets": [
+     "Spot risk early and act quickly with real-time AI-powered predictions and up-to-date student profiles.",
+     "Personalize support at scale using deep analytics to prioritize outreach and track progress for every student.",
+     "Simplify the day-to-day by surfacing the most relevant insights directly in your workflow, reducing manual effort and helping you stay focused on students."
+    ]
+   },
+   {
+    "heading": "For Students",
+    "body": "",
+    "bullets": [
+     "Receive proactive, personalized guidance real-time analytics ensure students are supported at the right moment with information that matters most.",
+     "Stay on track and on time with clear roadmaps, reminders, and feedback powered by real-time analytics.",
+     "Experience a connected, supportive campus students benefit from coordinated care and insights, without needing to chase down answers."
+    ]
+   },
+   {
+    "heading": "Why Civitas Learning Analytics?",
+    "body": "",
+    "bullets": [
+     "Actionable, Not Overwhelming: Insights are surfaced daily directly in workflows, so teams can act in real-time, not just analyze in hindsight.",
+     "Comprehensive, Not Fragmented: Unify all your data sources for a true 360° view of student progress and risk factors.",
+     "Insight Across Multiple Student Outcomes: Leaders and their teams can see precisely which factors are influencing outcomes across the student experience"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "We consolidated our data into Civitas Learning's data warehouse, using it as our central hub. This enables us to better understand our students and connect our data more efficiently and effectively.",
+    "name": "Chris Campbell",
+    "title": "CIO",
+    "institution": "DeVry University"
+   },
+   {
+    "quote": "Our team uses the Civitas Learning platform to analyze a variety of programs and initiatives, giving us an idea of exactly which activities are really contributing to retention and persistence.",
+    "name": "Allison Hoffmann",
+    "title": "Associate Provost",
+    "institution": "Northwest Missouri State University"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/analytics/"
+ },
+ {
+  "slug": "workflows",
+  "kind": "solutions",
+  "name": "AI-Powered Workflows",
+  "eyebrow": "AI-Powered Workflows",
+  "headline": "Act inside the tools your teams already open.",
+  "sub": "Alerts, shared notes, recommended next actions, and AI assistance — embedded where the work already happens.",
+  "sections": [
+   {
+    "heading": "Turn Insights into Impact with AI-Powered Workflows",
+    "body": "Guided by ongoing partner input, our connected workflows continuously evolve to meet the needs of different teams across campus—supporting the day-to-day realities of advisors, faculty, student success leaders, and administrators. Connected workflows, enriched by actionable insights and institution-specific AI assistance, are integrated directly into daily campus operations to help teams take timely, effective, and coordinated action. Now, every advisor, faculty member, and leader can move seamlessly from insight to impact.",
+    "bullets": []
+   },
+   {
+    "heading": "What Makes Civitas Learning Workflows Unique?",
+    "body": "",
+    "bullets": [
+     "Embedded Insights: Surface real-time, student-specific insights, alerts, and AI-generated recommendations in the tools your teams already use—so they can intervene faster and with greater precision.",
+     "AI-Powered Collaboration: AI assistants help teams create notes, build student groups, and document interactions in seconds—so staff stay focused on students, while everything stays in one place to keep teams aligned and accountable.",
+     "Integrated Outreach: Drive timely engagement with built-in communication tools—nudges, personalized emails, SMS, and appointment reminders. AI assistants help craft outreach and suggest next steps, while advisors decide what happens next."
+    ]
+   },
+   {
+    "heading": "Workflow Features that Power Better Student Outcomes",
+    "body": "",
+    "bullets": [
+     "Real-Time Academic Alerts & Case Management: Automatically flag at-risk students using predictive models built for your institution. Surface academic alerts in the context of other insights to ensure students get the right support at the right time. Track resolution, follow-up, and student progress in one place.",
+     "Collaborative Notes & Cross-Team Visibility: Capture advising session notes instantly—with AI auto-summarization, so your staff stays focused on students. Share and access holistic student records, making it easy for faculty, advisors, and support staff to coordinate care.",
+     "Integrated Communication Tools: Launch targeted outreach and nudge campaigns using student data filters to enhance engagement. Send personalized emails and texts based on student risk, status, or milestone—ensuring the right message reaches the right student, every time.",
+     "Dynamic Student Lists: Create, update, and share lists for targeted engagement, such as outreach to students at risk for stopping out, those nearing completion, or those in need of registration nudges. Make sure every message reaches the right student, with the right context, from the right voice.",
+     "Proactive Planning & Scheduling: Enable students to build degree roadmaps, select optimal course schedules, and receive structured guidance—all seamlessly connected to advisor workflows."
+    ]
+   },
+   {
+    "heading": "Benefits for Every Campus Team",
+    "body": "",
+    "bullets": [
+     "For Leaders: Govern campus-wide engagement strategies with visibility into team actions, case statuses, and student touchpoints—so strategy stays grounded in people, not just dashboards. Measure workflow efficiency and student impact—adjust and scale best practices institution-wide.",
+     "For Student-Facing Teams: Reduce manual workload and administrative burden—freeing up time to focus on meaningful student interactions. Act earlier and more effectively with at-a-glance student risk alerts, real-time updates, and automated communication tools.",
+     "For Students: Get timely support and guidance, without having to seek it out. Enjoy a seamless experience, from receiving alerts to scheduling appointments—all personalized to their unique needs."
+    ]
+   },
+   {
+    "heading": "Why Civitas Learning Workflows?",
+    "body": "",
+    "bullets": [
+     "Connected, Not Siloed: Unify efforts across advising, faculty, and student services. Eliminate duplicated outreach, close gaps, and boost efficiency.",
+     "Actionable, Not Reactive: Move from waiting to act, to taking proactive steps—every day, for every student.",
+     "Scalable, Measurable Impact: Standardize best practices and scale what works—improving student outcomes and institutional ROI."
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "We've always known that holistic advising is the right approach, but the Civitas Learning platform allows us to actually do that, to actually address the whole student and know what's happening with them in and out of the classroom.",
+    "name": "Leslie Abarr-Cuenca",
+    "title": "Director of Student Success",
+    "institution": "Northwest Missouri State University"
+   },
+   {
+    "quote": "With a streamlined experience and registration process, course scheduling during advising sessions is faster.",
+    "name": "Juan Gilberto Garcia",
+    "title": "Vice President for Enrollment Management",
+    "institution": "Texas A&M International University"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/workflows/"
+ },
+ {
+  "slug": "data-lakehouse",
+  "kind": "solutions",
+  "name": "Data Lakehouse - Civitas Learning",
+  "eyebrow": "Data Lakehouse",
+  "headline": "One governed dataset for the whole institution.",
+  "sub": "A full-service, scalable data foundation that connects Banner, Canvas, Slate, Workday, and 100+ other systems into one model — without replacing any of them.",
+  "sections": [
+   {
+    "heading": "Turn fragmented data into actionable intelligence that improves institutional outcomes",
+    "body": "Institutions today manage more data than ever across multiple systems, but turning that data into timely, coordinated action remains a challenge.",
+    "bullets": [
+     "Reporting relies on static exports and disconnected tools",
+     "Every data question runs through IT, slowing decisions",
+     "AI initiatives stall without a unified, actionable data foundation"
+    ]
+   },
+   {
+    "heading": "From Insight to Action, Faster",
+    "body": "Forward-looking institutions are evolving toward a secure, unified environment that centralizes institutional data into a single, trusted system of insight, ready for analysis, AI, and action by all teams.",
+    "bullets": []
+   },
+   {
+    "heading": "The Civitas Learning Data Lakehouse",
+    "body": "Civitas Learning Data Lakehouse is an institution-specific, cloud-hosted data foundation that unifies your campus systems into one trusted source of intelligence. An embedded AI assistant goes beyond surfacing insight — it runs queries and creates visualizations on behalf of your teams, so everyone operates with real-time visibility, without writing a line of SQL.",
+    "bullets": [
+     "From Insight to Action, Faster - Move beyond static analysis. AI helps teams prioritize, recommend, and take action on the insights that matter.",
+     "Direct, AI-Powered Data Access - Describe what you need in plain language. Your AI assistant writes the query, runs it, and builds the visualization — so every team gets answers in seconds without waiting on IT.",
+     "Future-Ready Data Strategy - Support reporting, compliance and advanced analytics with a flexible foundation that evolves with your institution."
+    ]
+   },
+   {
+    "heading": "A data infrastructure that empowers everyone to engage with data and drive measurable impact",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "From fragmented systems to actionable intelligence",
+    "body": "",
+    "bullets": [
+     "Unify Your Data - Connect SIS, LMS, CRM, and other systems into one cloud-hosted environment, creating a real-time, trusted foundation.",
+     "Explore and Analyze - Access clean, well-defined data directly. Run queries, explore tables, and use ready-to-use templates — or simply ask your AI assistant to do it for you.",
+     "Activate Insight with AI - Use AI-powered workflows and dashboards to surface predictions, uncover patterns, and drive action across teams."
+    ]
+   },
+   {
+    "heading": "How institutional teams move from data to action with Data Lakehouse",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "For IT Teams",
+    "body": "Enable the institution to act on data with confidence",
+    "bullets": [
+     "Unify SIS, LMS, CRM, and other systems into a governed, scalable data foundation.",
+     "Reduce ad hoc data requests by enabling direct, self-service access across teams through an embedded AI assistant.",
+     "Support AI initiatives with a trusted, institution-specific data layer."
+    ]
+   },
+   {
+    "heading": "For IE & IR Teams",
+    "body": "Move from reporting to driving institutional action",
+    "bullets": [
+     "Replace static reporting cycles with real-time, reusable analysis.",
+     "Explore data with the help of an AI Assistant that can run queries and build visualizations for you.",
+     "Deliver insights that teams can immediately act on."
+    ]
+   },
+   {
+    "heading": "For Advising Teams",
+    "body": "Access and explore the data behind your caseload",
+    "bullets": [
+     "Segment student populations dynamically to identify key groups and uncover patterns across your caseload",
+     "Describe the student group or pattern you're looking for, and your AI assistant retrieves and visualizes it in real time."
+    ]
+   },
+   {
+    "heading": "For Academic Affairs Teams",
+    "body": "Connect academic data to student outcomes",
+    "bullets": [
+     "Access and analyze academic performance, progression, and course-level data in one place.",
+     "Drill down into student-level data to understand trends across programs and departments."
+    ]
+   },
+   {
+    "heading": "Why Civitas Learning Data Lakehouse?",
+    "body": "Purpose-built. Fully managed. Action-ready AI.",
+    "bullets": [
+     "Fully Managed Data Infrastructure - We design, implement, and maintain your Data Lakehouse, eliminating the need for internal technical resources or third-party support.",
+     "Built with Institution-Specific AI - Our AI operates on your institution's data and evolves over time, becoming more relevant, more accurate, and more aligned with your goals and outcomes.",
+     "AI that Works for Your Teams - Our embedded AI assistant doesn't just surface patterns — it runs queries and creates visualizations, so every team gains real-time data access without relying on IT."
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [],
+  "integrations": [
+   "SIS",
+   "LMS",
+   "CRM"
+  ],
+  "source": "https://www.civitaslearning.com/data-lakehouse/"
+ },
+ {
+  "slug": "strategic-services-2",
+  "kind": "solutions",
+  "name": "Strategic Services - Civitas Learning",
+  "eyebrow": "Strategic Partnership & Services",
+  "headline": "It's not just about technology. It's about making it work.",
+  "sub": "Close the loop between insight, action, and institutional outcomes across every team — integrated with the Student Impact Platform and guided by former higher education leaders who have done this work.",
+  "sections": [
+   {
+    "heading": "Turn your institutional success investment into measurable institutional impact",
+    "body": "Most institutions have invested in data infrastructure and student success technology. But many still struggle to translate those efforts into impact.",
+    "bullets": [
+     "Technology adoption is inconsistent across teams – insights that could change outcomes sit unused.",
+     "Without standardized insight-to-action paths connecting signals to intervention, the moment passes.",
+     "Leaders can't measure impact and progress and when key conversations arrive, the evidence isn't ready.",
+     "Accountability pressure is rising with accreditors, state funders, and boards demanding evidence of effectiveness"
+    ]
+   },
+   {
+    "heading": "A flexible partnership built for sustained student impact",
+    "body": "We work with our partners to extend the Student Impact Platform beyond technology, embedding its intelligence into your workflows, strategy, and decision-making. Every Civitas Learning partnership includes strategic guidance, ongoing enablement, and dedicated support designed to help institutions turn insight into action. Built for institutions seeking deeper collaboration and faster progress toward institutional priorities, our Strategic Services offering expands that partnership by unlocking greater time with your strategic team and more dedicated, hands-on support tailored to your goals.",
+    "bullets": []
+   },
+   {
+    "heading": "More Than Software: Hear It From Our Partners",
+    "body": "",
+    "bullets": []
+   },
+   {
+    "heading": "Meet Your Strategic Team",
+    "body": "Every Civitas Learning partner is matched with a dedicated Strategic Director — a former higher education practitioner who has led student-facing teams, navigated accreditation cycles, and presented to boards. Working alongside your team, they help define priorities, guide execution, and ensure your use of the Student Impact Platform continues to evolve — translating insight into coordinated action across your institution.",
+    "bullets": [
+     "Meredith Baker",
+     "Gina Chase, M.S.",
+     "Sarah B. DeMeo, M.B.A., M.Ed.",
+     "Robert Freidhoff, M.Ed.",
+     "Dr. Benjamin M. Forche",
+     "Jacqueline Harris",
+     "Dr. Nathan B. Miller",
+     "Dr. Krystin McCauley Watkins"
+    ]
+   },
+   {
+    "heading": "Our partnership model is designed to meet you where you are and evolve with you over time",
+    "body": "",
+    "bullets": [
+     "A foundation for success",
+     "Built around your priorities",
+     "Designed to grow with you"
+    ]
+   },
+   {
+    "heading": "Focus your partnership where it matters most",
+    "body": "",
+    "bullets": [
+     "Change Management",
+     "Training & Enablement",
+     "Role-Specific Insights & Recommendations",
+     "Program & Initiative Assessment",
+     "Best Practices Recommendations",
+     "Advanced Analytics & Strategic Advisory"
+    ]
+   },
+   {
+    "heading": "How we work with your teams and why it matters",
+    "body": "",
+    "bullets": [
+     "For Student Success and Retention Teams",
+     "For IE & IR Teams",
+     "For Academic Affairs Teams",
+     "For Institutional Technology Leaders"
+    ]
+   },
+   {
+    "heading": "Join a community shaping what's next in higher education",
+    "body": "",
+    "bullets": [
+     "Strategic enablement and professional growth (workshops and training)",
+     "Customer collaboration and visibility (conference opportunities)",
+     "Thought leadership and peer connection (roundtables and forums)"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "Usually once you go through implementation and sign off, you move over to a whole other kind of customer. The responsiveness slows down. With Civitas Learning, that shift never happened.",
+    "name": "Sara Greer",
+    "title": "Director of IT–Web Services",
+    "institution": "Del Mar College"
+   },
+   {
+    "quote": "I just feel like you folks are part of our work group here. I don't feel like you're a separate company.",
+    "name": "Dr. John Rindy",
+    "title": "Associate Vice President for Career & Academic Progress",
+    "institution": "Slippery Rock University"
+   },
+   {
+    "quote": "It's not just about software. It's about getting people to see what's possible when we work together and then building something that reflects everyone's needs.",
+    "name": "Linda Kucinski",
+    "title": "Business Analyst",
+    "institution": "Lawrence Technological University"
+   }
+  ],
+  "integrations": [
+   "Student Impact Platform",
+   "Civitas Learning AI",
+   "Actionable Analytics",
+   "Connected Workflows",
+   "Data Lakehouse"
+  ],
+  "source": "https://www.civitaslearning.com/strategic-services-2/"
+ },
+ {
+  "slug": "enrollment-management",
+  "kind": "usecases",
+  "name": "Strategic Enrollment & Retention Software",
+  "eyebrow": "Strategic Enrollment",
+  "headline": "Ensure Students Can Stay Enrolled at Your Institution",
+  "sub": "Remove academic, financial, and systemic barriers to enrollment and streamline the degree planning and registration experience for improved student retention.",
+  "sections": [
+   {
+    "heading": "Remove Barriers to Success",
+    "body": "Maximize total enrollment with actionable insight into key factors, like the impact of financial support on enrollment behavior, to inform strategies and investments.",
+    "bullets": []
+   },
+   {
+    "heading": "Simplify Course Enrollment",
+    "body": "Avoid enrollment issues like conflicts, insufficient availability, or over-provisioned offerings. Inform outreach efforts based on real-time student enrollment behavior.",
+    "bullets": []
+   },
+   {
+    "heading": "Provide the Right Support",
+    "body": "Identify specific opportunities to improve enrollment across diverse student groups. Provide proactive, individualized guidance and support with data-informed strategies.",
+    "bullets": []
+   },
+   {
+    "heading": "Actionable Insights for Informed Decisions",
+    "body": "Get insight into the factors influencing your students' retention, completion, and engagement from institution-specific models. Identify effective policies and initiatives, like scholarship programs or financial aid policies for specific student groups, to create tailored strategies that meet the needs of your students, improving enrollment and retention outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Simplify the Registration Experience",
+    "body": "Provide an end-to-end enrollment experience that empowers students to manage registration in one place. Collaborate with students on degree plans and class schedules to accommodate academic goals, co-curricular activities, and personal commitments.",
+    "bullets": []
+   },
+   {
+    "heading": "Prioritize Engagement to Scale Support",
+    "body": "Deliver proactive support at scale with actionable insights, such as persistence and completion predictions. Monitor degree planning and registration activity to prioritize outreach and tailor guidance based on student needs. Simplify daily workloads to align strategies, prioritize outreach, and inform student guidance.",
+    "bullets": []
+   },
+   {
+    "heading": "Monitor Course Demand in Real-Time",
+    "body": "Section-level scheduling analytics help you respond to student enrollment behavior in real time to ensure course availability. Adjust section capacities by tracking which sections are filling fastest and identifying which modalities, days, and times are most popular.",
+    "bullets": []
+   },
+   {
+    "heading": "Accurately Forecast Course Demand",
+    "body": "Offer the right combination of courses each term to ensure students register for the classes they need to stay enrolled and make progress toward on-time completion. Accurately forecast future demand to avoid over or under-provisioned course offerings.",
+    "bullets": []
+   },
+   {
+    "heading": "Identify Curricular Bottlenecks",
+    "body": "Understand which courses may negatively impact persistence or completion for specific students. Develop tailored academic interventions, identify which courses benefit from embedded support services like tutoring or supplemental instruction, and inform curriculum design.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [
+   {
+    "value": "3.7%",
+    "metric": "Registration Increase (SUNY Broome)"
+   },
+   {
+    "value": "8%",
+    "metric": "retention lift (Northwest Missouri State University, via story URL)"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "Our team uses the Civitas Learning platform to analyze a variety of programs and initiatives, giving us an idea of exactly which activities are really contributing to retention and persistence.",
+    "name": "Allison Hoffmann",
+    "title": "Associate Provost of Enrollment Management & Student Success",
+    "institution": "Northwest Missouri State University",
+    "link": "https://www.civitaslearning.com/customer-success-stories/integrated-approach-to-student-success-leads-to-8-retention-lift-at-northwest-missouri-state-university"
+   },
+   {
+    "quote": "With a streamlined experience and registration process, course scheduling during advising sessions is faster. This allows more time for advisors to engage with students on mission-focused topics, such as different degrees and faster graduation routes.",
+    "name": "Juan Gilberto Garcia",
+    "title": "Vice President for Enrollment Management",
+    "institution": "Texas A&M International University",
+    "link": "https://www.civitaslearning.com/customer-success-stories/strategies-for-improving-student-retention-tamiu/"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/enrollment-management/"
+ },
+ {
+  "slug": "advising-and-student-success",
+  "kind": "usecases",
+  "name": "About Civitas Learning",
+  "eyebrow": "Advising & Student Success",
+  "headline": "Help Every Student Not Only Succeed But Thrive",
+  "sub": "Gain insight into individual and groups need to provide proactive support at scale and guide students to reach their full potential.",
+  "sections": [
+   {
+    "heading": "Access Student Information in One Place",
+    "body": "Consolidate student information into a comprehensive profile. Coordinate student care across campus with centralized notes and academic alerts.",
+    "bullets": []
+   },
+   {
+    "heading": "Easily Prioritize Student Engagement",
+    "body": "Monitor individual or groups of students to prioritize and organize outreach. Quickly send communications or schedule appointments from automated student lists.",
+    "bullets": []
+   },
+   {
+    "heading": "Simplify Course Enrollment",
+    "body": "Collaborate with students on degree plans and class schedules to ease registration. Inform outreach efforts based on real-time student planning and scheduling behavior.",
+    "bullets": []
+   },
+   {
+    "heading": "Understand the Whole Student",
+    "body": "See actionable insights like which students might not persist or graduate and why. Inform proactive guidance with the critical information you need in one place, including holds, financial aid status, course history, advising notes, and engagement opportunities.",
+    "bullets": []
+   },
+   {
+    "heading": "Prioritize Engagement to Scale Proactive Support",
+    "body": "Automatically identify a list of students to engage throughout the term based on factors such as a change in persistence likelihood or unfinished schedules to make an impact before it's too late.",
+    "bullets": []
+   },
+   {
+    "heading": "Personalize Outreach to Improve Effectiveness",
+    "body": "Communicate with students in scalable and personalized ways. Determine which channels are most effective for particular students to improve engagement and take action within the same system.",
+    "bullets": []
+   },
+   {
+    "heading": "Eliminate Inefficiencies, Ease Capacity Challenges",
+    "body": "Equip your advising and student success teams with intelligent case management tools like dynamic lists and shared notes to efficiently use their time. Empower them to quickly complete everyday tasks and organize their workday.",
+    "bullets": []
+   },
+   {
+    "heading": "Coordinate Student Care Across Departments",
+    "body": "Share notes, raise alerts, and coordinate student care across leadership, advisors, faculty, and student success teams with seamless collaboration capabilities.",
+    "bullets": []
+   },
+   {
+    "heading": "Collaborate on Academic Plans with Students",
+    "body": "Collaborate with students on degree plans and class schedules to accommodate academic goals, co-curricular activities, and personal commitments. Monitor degree planning and registration activity to prioritize outreach and tailor guidance based on student needs.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [
+   {
+    "value": "8%",
+    "metric": "Retention Lift (Northwest Missouri State University)"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "Civitas Learning's Student Scheduling saves time during the course selection and registration process. With the extra time, I can assist students with finding a sense of belonging on campus and prompt discussion about their future career plans.",
+    "name": "Matt Hill",
+    "title": "Senior Lead Advisor",
+    "institution": "Jacksonville State University",
+    "link": "https://www.civitaslearning.com/customer-success-stories/streamlined-registration-process-boosts-enrollment-at-jacksonville-state-university/"
+   },
+   {
+    "quote": "We've always known that holistic advising is the right approach, but the Civias Learning platform allows us to actually do that, to actually address the whole student and know what's happening with them in and out of the classroom. We wouldn't be able to do our work without a system like this.",
+    "name": "Leslie Abarr-Cuenca",
+    "title": "Director of Student Success",
+    "institution": "Northwest Missouri State University",
+    "link": "https://www.civitaslearning.com/customer-success-stories/integrated-approach-to-student-success-leads-to-8-retention-lift-at-northwest-missouri-state-university/"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/advising-and-student-success/"
+ },
+ {
+  "slug": "academic-leaders-and-faculty",
+  "kind": "usecases",
+  "name": "Student Engagement Software",
+  "eyebrow": "Academic Leaders & Faculty",
+  "headline": "Create Academic Environments Where Students Thrive",
+  "sub": "Gain insight into academic and systemic factors affecting student performance to enhance the academic experience and collaborate across teams to help students reach their full potential.",
+  "sections": [
+   {
+    "heading": "Know What Works",
+    "body": "Evaluate the impact of courses, academic policies, and programs on student outcomes to inform investments, curriculum design, and faculty development needs.",
+    "bullets": []
+   },
+   {
+    "heading": "Ensure Course Access",
+    "body": "Accurately forecast course demand and monitor registration in real time to avoid scheduling conflicts, insufficient availability, and over-provisioning.",
+    "bullets": []
+   },
+   {
+    "heading": "Support Students Proactively",
+    "body": "Raise academic alerts and track individual students or groups to ensure connection to the most beneficial resources and opportunities.",
+    "bullets": []
+   },
+   {
+    "heading": "Access Actionable Insights to Inform Strategic Decision Making",
+    "body": "Get insight into factors influencing retention, completion, and student engagement to refine strategies and inform resource allocation.",
+    "bullets": []
+   },
+   {
+    "heading": "Monitor & Forecast Course Demand",
+    "body": "Optimize course offerings with insight into section fill rates, popular modalities, days, times, and projected demand for future terms.",
+    "bullets": []
+   },
+   {
+    "heading": "Identify & Remove Course & Curricular Barriers",
+    "body": "Understand which courses may negatively impact student persistence, academic performance, or completion.",
+    "bullets": []
+   },
+   {
+    "heading": "Engage, Guide, & Support Students Proactively",
+    "body": "Raise academic alerts, monitor specific student groups, and provide individualized support with seamless collaboration capabilities.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems – Organize and consolidate systems in one platform",
+     "Step 2: Surface what works – Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence – Align teams and improve outcomes"
+    ]
+   },
+   {
+    "heading": "Footer CTA",
+    "body": "Connect with our team to learn how Civitas Learning can help your institution apply its data to enhance student outcomes.",
+    "bullets": []
+   }
+  ],
+  "stats": [
+   {
+    "value": "4%",
+    "metric": "persistence lift (Austin Community College)"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "The platform allows me to target majors or specific cohorts. When I receive information about scholarships or internships, I can now send targeted emails to only those who qualify.",
+    "name": "Meredith Denton-Hedrick",
+    "title": "Faculty Mentor for Engineering, Physics, Geology, & Environmental Studies",
+    "institution": "Austin Community College",
+    "link": "https://www.civitaslearning.com/customer-success-stories/austin-community-college-persistence"
+   },
+   {
+    "quote": "The biggest benefit is the ability to look at predictive factors and see what interventions work for various groups.",
+    "name": "Penny Kelly",
+    "title": "Vice President of Academic Affairs",
+    "institution": "SUNY Broome Community College",
+    "link": "https://www.civitaslearning.com/customer-success-stories/suny-broome-data-informed-approach-to-retention-decline/"
+   },
+   {
+    "quote": "So much value has come from looking at different populations of students. What works for one group does not apply for others.",
+    "name": "Dr. Mark Appleford",
+    "title": "Vice Provost of Undergraduate Studies",
+    "institution": "University of Texas at San Antonio",
+    "link": "https://www.civitaslearning.com/customer-success-stories/data-informed-student-success-strategies-utsa/"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/academic-leaders-and-faculty/"
+ },
+ {
+  "slug": "institutional-research-effectiveness",
+  "kind": "usecases",
+  "name": "Data & Analytics for Higher Education",
+  "eyebrow": "Institutional Research & Effectiveness",
+  "headline": "Empower Data-Informed Decisions at Every Level",
+  "sub": "Equip teams across your institution with actionable insights, like initiative effectiveness and the factors influencing outcomes—enabling them to take data-informed action and continuously refine their efforts.",
+  "sections": [
+   {
+    "heading": "Democratize Student Data",
+    "body": "Turn disorganized data into actionable insights to enhance decision-making. Empower stakeholders across the institution to access data relevant to their role.",
+    "bullets": []
+   },
+   {
+    "heading": "Understand What Works",
+    "body": "Quickly and easily assess the efficacy and impact of various success initiatives, policies, and programs to inform strategic plans, adjustments, and investments.",
+    "bullets": []
+   },
+   {
+    "heading": "Get More Value from Your Data",
+    "body": "Conduct in-depth research, advanced reporting, and analysis across various student data sources to drive strategic change.",
+    "bullets": []
+   },
+   {
+    "heading": "Equip Teams with Centralized Information",
+    "body": "Democratize insights for stakeholders within the institution to encourage strategic efforts across different departments. Consolidate information in one platform to streamline workflows and a holistic view of each student.",
+    "bullets": []
+   },
+   {
+    "heading": "Enhance Data-Informed Decision Making",
+    "body": "Support more accurate, efficient, and timely decisions across the institution to improve institutional effectiveness. Apply institution-specific predictive models for the outcomes that are most important to you. Evaluate performance for overall outcomes and specific subpopulations to identify what actions impact students most.",
+    "bullets": []
+   },
+   {
+    "heading": "Make Meaning of Your Student Data",
+    "body": "Apply multiple data sources, such as engagement and behavioral data, to identify who is at risk for unfavorable outcomes and understand the factors influencing those outcomes. Access intuitive dashboards and reports with flexible filtering and drill-down options, making it easier for teams to turn insights into action.",
+    "bullets": []
+   },
+   {
+    "heading": "Deep Dive into Your Data for Strategic Insight",
+    "body": "Complete in-depth research, advanced reporting, and analysis with data warehouse capabilities that consolidate data sources, including Civitas Learning predictive AI analytics. Get the actionable insight you need to answer critical questions about your student outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Assess the Impact of Initiatives & Programs",
+    "body": "Equip leaders to reveal the impact of initiatives, courses, programs, and policies on specific student segments. Use this information to develop impactful strategies to support your most critical outcomes, like understanding how changes boost academic performance, thriving, or progress to a degree.",
+    "bullets": []
+   },
+   {
+    "heading": "Customize Analytics to Your Institutional Needs",
+    "body": "Seamlessly integrate additional data sources into the platform to adapt and organize around new initiatives, strategies, or legislative requirements. Create the flexibility to address different stakeholders and focus on additional student outcomes over time.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "With Civitas Learning we can make ongoing adjustments in real-time instead of the traditional approach of analyzing when the term ends.",
+    "name": "Dr. Kim McLain",
+    "title": "Associate Vice President / Dean of Health Sciences & Institutional Effectiveness",
+    "institution": "SUNY Broome Community College",
+    "link": "https://www.civitaslearning.com/customer-success-stories/suny-broome-data-informed-approach-to-retention-decline/"
+   },
+   {
+    "quote": "I appreciate the Civitas Learning platform's initiative analysis capabilities. They allow us to easily account for self-selection bias and quickly run robust analyses to understand what works.",
+    "name": "Dr. Steve Wilkerson",
+    "title": "Chief Analytics Officer",
+    "institution": "University of Texas at San Antonio",
+    "link": "https://www.civitaslearning.com/customer-success-stories/data-informed-student-success-strategies-utsa/"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/institutional-research-effectiveness/"
+ },
+ {
+  "slug": "institutional-technology",
+  "kind": "usecases",
+  "name": "Higher Education Software",
+  "eyebrow": "Institutional Technology",
+  "headline": "Get More Value from Your Data & Technology Investments",
+  "sub": "A flexible AI-powered platform that enhances your existing technology infrastructure, reducing inefficiencies and consolidating systems while improving student outcomes.",
+  "sections": [
+   {
+    "heading": "Consolidate Student Data",
+    "body": "Bring disparate student data together and turn it into comprehensive and actionable insights to inform strategic decision-making.",
+    "bullets": []
+   },
+   {
+    "heading": "Simplify Your Tech Stack",
+    "body": "Combine redundant capabilities into one platform. Curate student information in one comprehensive profile to support improved outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Save Team Time",
+    "body": "Reduce maintenance, freeing time for other projects. Easily adapt with self-service tools to configure and customize the platform.",
+    "bullets": []
+   },
+   {
+    "heading": "Integrate Multiple Data Sources into One System",
+    "body": "Organize and surface student information in one place to better understand the factors influencing student outcomes. Make data accessible and actionable by equipping leaders and frontline staff to filter, segment, and easily reference data throughout the term.",
+    "bullets": []
+   },
+   {
+    "heading": "Turn Student Data into Actionable Insights",
+    "body": "Enhance the value of student data by using it to generate institution-specific models. Use multiple data sources, such as engagement and behavioral data, to identify who is at risk for unfavorable outcomes and understand the factors influencing their success.",
+    "bullets": []
+   },
+   {
+    "heading": "Equip Teams with Centralized Information",
+    "body": "Democratize insights for stakeholders across the institution. Consolidate information in one platform to ensure access to a holistic view of each student. Provide intuitive dashboards and reports with flexible filtering and drill-down options, making it easier for teams to turn insights into action.",
+    "bullets": []
+   },
+   {
+    "heading": "Customize Analytics to Your Institutional Needs",
+    "body": "Seamlessly integrate additional data sources into the platform to adapt and organize around new initiatives, strategies, or legislative requirements. Create the flexibility to address different stakeholders and focus on additional student outcomes over time.",
+    "bullets": []
+   },
+   {
+    "heading": "Configure & Adapt the Platform Over Time",
+    "body": "Reduce administrative burden for Institutional Technology teams with regular product enhancements and support. Configure the Student Impact Platform to meet your institution's specific requirements to ensure that the platform supports your processes and can adapt to changing needs over time.",
+    "bullets": []
+   },
+   {
+    "heading": "Extend the Reach of Your Data",
+    "body": "Cloud-hosted data warehouse capabilities include underlying Civitas Learning insights so your team can complete in-depth research, advanced reporting, and analysis and can extend Civitas Learning intelligence into other areas of your technology ecosystem.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [
+   {
+    "quote": "We consolidated our data into the Civitas Learning platform, using it as our central hub. One of the great benefits is that it integrates into a centralized CRM, where all of our student journeys are represented.",
+    "name": "Chris Campbell",
+    "title": "Chief Information Officer",
+    "institution": "DeVry University",
+    "link": null
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/institutional-technology/"
+ },
+ {
+  "slug": "curate-student-data",
+  "kind": "usecases",
+  "name": "Student Data Management System",
+  "eyebrow": "Curate & Share Student Data",
+  "headline": "Turn Disorganized Student Data into Improved Outcomes",
+  "sub": "Transform your disparate data into actionable insights for your whole team",
+  "sections": [
+   {
+    "heading": "Empower Your Entire Campus to Take Data-Informed Action",
+    "body": "",
+    "bullets": [
+     "Institutional Leaders: Make effective strategic decisions with access to actionable insights like initiative impact, completion likelihood & factors impeding persistence",
+     "Institutional Research & Effectiveness: Distribute insights & quickly assess the impact of policies, initiatives, & programs with easy-to-use analysis tools",
+     "Academic Deans & Faculty: Understand curricular bottlenecks & connect students to the most beneficial supports with insight into course demand & performance",
+     "Advising & Student Success: Empower frontline teams to deliver proactive support at scale with actionable insights like changes in persistence & completion predictions",
+     "Information Technology Teams: Get more value from your data & technology investments with a flexible platform that works with your existing infrastructure"
+    ]
+   },
+   {
+    "heading": "Turn Student Data into Actionable Insights",
+    "body": "Enhance the value of student data by transforming it into actionable insights with predictive AI models built for your institution. Apply multiple data sources, including engagement and behavioral data, to identify who is at risk for unfavorable outcomes and understand the factors influencing those outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Consolidate Data Sources into One System",
+    "body": "Organize student information in one place and surface it alongside actionable insights to better understand the factors influencing student outcomes. Make data accessible and actionable by equipping leaders and frontline staff to filter, segment, and easily reference data throughout the term.",
+    "bullets": []
+   },
+   {
+    "heading": "Align Teams with Centralized Information",
+    "body": "Democratize insights for stakeholders across the institution. Consolidate information in one platform to ensure shared access to a holistic view of each student. Access intuitive dashboards and reports with flexible filtering and drill-down options across diverse data sources, making it easier for teams to turn insights into action.",
+    "bullets": []
+   },
+   {
+    "heading": "Assess the Impact of Initiatives & Policies",
+    "body": "Equip leaders to understand the impact of initiatives, courses, programs, and policies on specific student segments. Use this information to develop impactful strategies, inform investments, and understand how changes boost engagement and help students progress faster toward their degrees.",
+    "bullets": []
+   },
+   {
+    "heading": "Customize Analytics to Institutional Needs",
+    "body": "Seamlessly integrate additional data sources into the platform to adapt and organize around new initiatives, strategies, or legislative requirements. Create the flexibility to address different stakeholders and focus on additional student outcomes over time.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [],
+  "testimonials": [],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/curate-student-data/"
+ },
+ {
+  "slug": "improve-on-time-completion",
+  "kind": "usecases",
+  "name": "Support On-Time Graduation",
+  "eyebrow": "Remove Barriers to Completion",
+  "headline": "Help Your Students Graduate On-Time & Within Budget",
+  "sub": "Identify barriers preventing students from completing degrees on time, pinpoint course bottlenecks, deliver student-centered course offerings & simplify the enrollment experience.",
+  "sections": [
+   {
+    "heading": "Enable Your Entire Institution to Support On-Time Completion",
+    "body": "",
+    "bullets": [
+     "Executive Leaders: Optimize curriculum, forecast course demand, & amplify the impact of initiatives, policies, & programs to remove barriers to enrollment.",
+     "Deans & Faculty: Address curricular barriers, allocate resources, raise alerts, & communicate within one system to collaborate with other teams easily.",
+     "Advising & Success Teams: Provide holistic support, identify what impacts student success & prioritize engagement throughout the term.",
+     "Students: Equip students to stay on track and balance life with academics with collaborative degree planning & scheduling."
+    ]
+   },
+   {
+    "heading": "Understand Student Outcome Risks Earlier",
+    "body": "Identify students who may need support earlier, from those unlikely to thrive academically to those at risk of not graduating on time. Powered by institution-specific predictive AI, teams can better understand the factors influencing student success and take coordinated action that supports both learners and broader campus goals.",
+    "bullets": []
+   },
+   {
+    "heading": "Identify Curricular Bottlenecks",
+    "body": "Understand which courses may negatively impact graduation for specific students to inform targeted interventions and curriculum sequencing.",
+    "bullets": []
+   },
+   {
+    "heading": "Monitor Course Fill Rates",
+    "body": "Respond to course demand in real-time by tracking which sections are filling fastest and identifying the most popular modalities, days, and times.",
+    "bullets": []
+   },
+   {
+    "heading": "Accurately Forecast Course Demand",
+    "body": "Offer the right courses and sections, helping students graduate on time while reducing spending on under-enrolled classes.",
+    "bullets": []
+   },
+   {
+    "heading": "Improve the Impact of Initiatives & Policies",
+    "body": "Understand the impact of initiatives on specific student segments, allowing your team to adjust communications and make timely program changes that boost engagement and help students progress faster toward their degrees.",
+    "bullets": []
+   },
+   {
+    "heading": "Streamline the Registration Experience",
+    "body": "Provide an end-to-end registration experience that empowers students to manage their degree planning, course scheduling, and registration while enabling collaboration with advisors to support on-time graduation.",
+    "bullets": []
+   },
+   {
+    "heading": "Find the Best Fit Schedule",
+    "body": "Create degree plans and class schedules that accommodate academic goals, co-curricular activities like athletics or student committees, and personal commitments, ensuring a more effective path to graduation.",
+    "bullets": []
+   },
+   {
+    "heading": "Prioritize Student Support",
+    "body": "Monitor degree planning and registration activity to prioritize outreach and tailor guidance based on student needs.",
+    "bullets": []
+   },
+   {
+    "heading": "Avoid Roadblocks in Degree Planning",
+    "body": "Students and advisors receive real-time alerts to potential enrollment issues such as missing prerequisites or unavailable courses for scheduling.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [
+   {
+    "value": "34%",
+    "metric": "Del Mar College"
+   },
+   {
+    "value": "89.9%",
+    "metric": "LCCC"
+   },
+   {
+    "value": "50%",
+    "metric": "UT Arlington"
+   },
+   {
+    "value": "14%",
+    "metric": "UTSA"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "With a streamlined experience and registration process, course scheduling during advising sessions is faster. This allows more time for advisors to engage with students on mission-focused topics, such as different degrees and faster graduation routes.",
+    "name": "Juan Gilberto Garcia",
+    "title": "Vice President for Enrollment Management",
+    "institution": "Texas A&M International University"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/improve-on-time-completion/"
+ },
+ {
+  "slug": "coordinate-student-care",
+  "kind": "usecases",
+  "name": "Coordinate Student Care",
+  "eyebrow": "Coordinate Student Care",
+  "headline": "Work Together to Improve Student Outcomes",
+  "sub": "Create a shared understanding of the student experience and align student care in one platform to provide the right support at the right time.",
+  "sections": [
+   {
+    "heading": "Empower the Entire Institution to Help Students Thrive",
+    "body": "",
+    "bullets": [
+     "Institutional Leaders: Identify and invest in the right combination of strategies, align efforts & reduce inefficiencies to improve student outcomes.",
+     "Institutional Research & Effectiveness: Equip stakeholders across campus with the necessary information to coordinate decisions & actions.",
+     "Academic Deans & Faculty: Seamlessly collaborate with advisors & other support professionals to connect students to the resources they need.",
+     "Advising & Student Success Teams: Coordinate proactive engagement efforts across teams to avoid redundant services & scale holistic support."
+    ]
+   },
+   {
+    "heading": "Enable Precise Action with Actionable Insights",
+    "body": "Combine multiple student data sources to generate actionable insights from models built for your institution. Understand what influences outcomes on your campus, which students need support and why, and evaluate the effectiveness of your efforts across different student outcomes.",
+    "bullets": []
+   },
+   {
+    "heading": "Align Teams with Centralized Information",
+    "body": "View a comprehensive student profile to better understand the factors influencing student outcomes. Equip leaders and frontline staff to filter, segment, and easily reference data throughout the term to make data accessible and actionable.",
+    "bullets": []
+   },
+   {
+    "heading": "Coordinate Student Care Across Departments",
+    "body": "Provide a shared view of student information, track outreach, share notes, raise alerts, and coordinate student care across leaders, advisors, faculty, and student service teams with seamless collaboration capabilities.",
+    "bullets": []
+   },
+   {
+    "heading": "Amplify What Works for Students",
+    "body": "Equip leaders to understand the impact of initiatives, courses, programs, and policies on specific student segments. Develop impactful strategies, understand how changes boost engagement, help students progress faster toward their degrees, and increase initiative ROI.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [
+   {
+    "value": "1 year",
+    "metric": "UTSA"
+   },
+   {
+    "value": "2x",
+    "metric": "UT Arlington"
+   },
+   {
+    "value": "2.7 percent",
+    "metric": "SUNY"
+   },
+   {
+    "value": "12 percent",
+    "metric": "Snow College"
+   }
+  ],
+  "testimonials": [],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/coordinate-student-care/"
+ },
+ {
+  "slug": "ensure-initiative-efficacy-and-roi",
+  "kind": "usecases",
+  "name": "Ensure Initiative Efficacy & ROI",
+  "eyebrow": "Ensure Efficacy & ROI",
+  "headline": "Invest in What Works, Adjust What Doesn't",
+  "sub": "Identify effective strategies to enhance outcomes for your student population. Assess policies, initiatives, programs, and course offerings to improve student and institutional results.",
+  "sections": [
+   {
+    "heading": "Ensure the Effectiveness of Your Investments",
+    "body": "",
+    "bullets": [
+     "Institutional Leaders: Understand what works to improve outcomes for specific student groups. Identify inefficiencies & ensure course availability issues to better allocate resources & improve ROI.",
+     "Institutional Research & Effectiveness: Quickly & easily evaluate the impact of efforts on individual students & subgroups to empower stakeholders across campus to make data-informed decisions.",
+     "Academic Deans & Faculty: Align course offerings to student demand. Identify course & grade thresholds that hinder student outcomes. Identify opportunities for tailored academic support, faculty professional development, & curricular updates.",
+     "Advising & Student Success Teams: Know which courses hinder academic success and what supports work best for which students to tailor recommendations & connect students to the most beneficial resources & services."
+    ]
+   },
+   {
+    "heading": "Regularly Assess the Impact of Your Strategies",
+    "body": "Routinely and efficiently evaluate the efficacy of a broad range of strategies using a data-science backed analysis to understand the true impact of each initiative, program, and policy. Use insight into what works to strategically allocate resources and connect students to the most beneficial supports.",
+    "bullets": []
+   },
+   {
+    "heading": "Understand What Helps Specific Student Groups",
+    "body": "Identify distinct student segments, such as transfer students who are likely to persist, but not graduate, to track specific outcomes over time. Understand the impact of success strategies on individual and specific student groups and individuals throughout the term.",
+    "bullets": []
+   },
+   {
+    "heading": "Reveal Course Impact on Student Outcomes",
+    "body": "Understand the impact of sections and courses on persistence and graduation for individual students and subgroups. Inform course and curriculum design to alleviate bottlenecks. Tailor academic support to help students successfully navigate challenging courses.",
+    "bullets": []
+   },
+   {
+    "heading": "Deep Dive into Your Data for Strategic Insight",
+    "body": "Complete in-depth research, advanced reporting, and analysis with consolidated data sources, including Civitas Learning predictive AI insights. Get the data you need to answer critical questions about your outcomes and efforts for various reporting needs, such as accreditation, fundraising, and management.",
+    "bullets": []
+   },
+   {
+    "heading": "Align Course Offerings with Course Demand",
+    "body": "Avoid operating inefficiencies like over or under provisioned courses with course trends. See shifts in demand over time, the accuracy of seats being offered, the characteristics of students who typically take a course, and the number of students planning to enroll in future terms.",
+    "bullets": []
+   },
+   {
+    "heading": "How Civitas Learning Helps You Close the Gap",
+    "body": "",
+    "bullets": [
+     "Step 1: Unify your data and systems - Organize and consolidate systems in one platform",
+     "Step 2: Surface what works - Use predictive analytics and AI workflows",
+     "Step 3: Act with confidence - Align teams and improve outcomes"
+    ]
+   }
+  ],
+  "stats": [
+   {
+    "value": "$1 million saved",
+    "metric": "Texas A&M International University"
+   },
+   {
+    "value": "$1.2 million saved",
+    "metric": "University of Central Oklahoma"
+   },
+   {
+    "value": "$1.36 million saved",
+    "metric": "Austin Community College"
+   }
+  ],
+  "testimonials": [
+   {
+    "quote": "Our team uses the Civitas Learning platform to analyze a variety of programs and initiatives, giving us an idea of exactly which activities are really contributing to retention and persistence.",
+    "name": "Allison Hoffmann",
+    "title": "Associate Provost of Enrollment Management & Student Success",
+    "institution": "Northwest Missouri State University"
+   }
+  ],
+  "integrations": [],
+  "source": "https://www.civitaslearning.com/ensure-initiative-efficacy-and-roi/"
+ }
+]

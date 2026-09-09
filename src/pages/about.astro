@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import LogoBand from '../components/LogoBand.astro';
+import FinalCta from '../components/FinalCta.astro';
+---
+<Base title="About" description="Since 2011, Civitas Learning has helped colleges apply their own data to the outcomes that matter most.">
+  <PageHero eyebrow="About Civitas Learning" title="Since 2011, one job: help colleges apply their own data to the outcomes that matter most." sub="We started with a bet that an institution's own history is a better predictor than any national average. Fifteen years, 375 institutions, and 220 measured initiatives later, that bet is the product." crumbs={[{ text: 'Home', href: '/' }, { text: 'About' }]} />
+  <section><div class="wrap">
+    <div class="grid3">
+      <div class="card"><div class="ico">2011</div><h3>Founded in Austin</h3><p>Built by educators, data scientists, and engineers to replace anecdote with evidence in student success.</p></div>
+      <div class="card"><div class="ico">375</div><h3>Institutions</h3><p>From 2,000-student community colleges to R1 systems, across every institution type and funding model.</p></div>
+      <div class="card"><div class="ico">100+</div><h3>Years of higher-ed experience</h3><p>On the leadership team alone. Most of our customer development team has held the roles they support.</p></div>
+    </div>
+    <div class="prose-wide" style="margin-top:56px">
+      <h2>What we believe</h2>
+      <p>Institutions do not lack data. They lack a single, trustworthy picture of it, and a way to tell which of their efforts changed anything. We build the picture from the systems you already run, and we measure every intervention against a comparison group so the answer is a number, not a feeling.</p>
+      <h2>How we work</h2>
+      <p>A fully remote, global team. Every partner has a named customer development lead who knows their data, their students, and their goals. We publish our methodology every year in the Student Success Impact Report so the sector can check our work.</p>
+    </div>
+  </div></section>
+  <LogoBand />
+  <FinalCta />
+</Base>

@@ -1,0 +1,83 @@
+{
+  "menu": [
+    {
+      "label": "Solutions",
+      "groups": [
+        {
+          "title": "Platform",
+          "links": [
+            { "href": "/platform/", "text": "Student Impact Platform", "small": "One platform, every system you run" },
+            { "href": "/ai-solutions/", "text": "Civitas Learning AI", "small": "Agents and models built on your data" },
+            { "href": "/analytics/", "text": "Actionable Analytics", "small": "Institution-specific predictions" },
+            { "href": "/workflows/", "text": "AI-Powered Workflows", "small": "Act inside the tools teams already use" },
+            { "href": "/data-lakehouse/", "text": "Data Lakehouse", "small": "One governed dataset for the institution" },
+            { "href": "/strategic-services-2/", "text": "Strategic Partnership & Services", "small": "People who make it work" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Use Cases",
+      "wide": true,
+      "groups": [
+        {
+          "title": "By team",
+          "links": [
+            { "href": "/enrollment-management/", "text": "Strategic Enrollment" },
+            { "href": "/advising-and-student-success/", "text": "Advising & Student Success" },
+            { "href": "/academic-leaders-and-faculty/", "text": "Academic Leaders & Faculty" },
+            { "href": "/institutional-research-effectiveness/", "text": "Institutional Research & Effectiveness" },
+            { "href": "/institutional-technology/", "text": "Institutional Technology" }
+          ]
+        },
+        {
+          "title": "By goal",
+          "links": [
+            { "href": "/curate-student-data/", "text": "Curate & Share Student Data" },
+            { "href": "/improve-on-time-completion/", "text": "Remove Barriers to Completion" },
+            { "href": "/coordinate-student-care/", "text": "Coordinate Student Care" },
+            { "href": "/ensure-initiative-efficacy-and-roi/", "text": "Ensure Efficacy & ROI" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "groups": [
+        {
+          "links": [
+            { "href": "/resources/", "text": "Content Library" },
+            { "href": "/customer-success-stories/", "text": "Customer Stories" },
+            { "href": "/blog/", "text": "Blog" },
+            { "href": "/podcast/", "text": "Next Practices Podcast" },
+            { "href": "/subscribe/", "text": "Signals Newsletter" },
+            { "href": "/leadership-workshops/", "text": "Leadership Workshops" },
+            { "href": "/support/", "text": "Technical Support" },
+            { "href": "https://studentimpactreport.civitaslearning.com/2026", "text": "2026 Student Success Impact Report", "small": "Get the report" }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Company",
+      "groups": [
+        {
+          "links": [
+            { "href": "/about/", "text": "About" },
+            { "href": "/our-team/", "text": "Leadership Team" },
+            { "href": "/careers/", "text": "Careers" },
+            { "href": "/press/", "text": "News" },
+            { "href": "/commitment/", "text": "Our Commitment" },
+            { "href": "/contact/", "text": "Contact Us" }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    { "title": "Solutions", "links": [["/platform/", "Student Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"]] },
+    { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
+    { "title": "Resources", "links": [["/resources/", "Content Library"], ["/customer-success-stories/", "Customer Stories"], ["/blog/", "Blog"], ["/podcast/", "Next Practices Podcast"], ["/subscribe/", "Signals Newsletter"], ["/support/", "Technical Support"]] },
+    { "title": "Company", "links": [["/about/", "About"], ["/our-team/", "Leadership Team"], ["/careers/", "Careers"], ["/press/", "News"], ["/commitment/", "Our Commitment"], ["/contact/", "Contact"]] }
+  ]
+}

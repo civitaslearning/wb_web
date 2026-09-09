@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import FinalCta from '../components/FinalCta.astro';
+import pages from '../data/pages.json';
+const d = pages['/commitment/'];
+---
+<Base title="Our Commitment" description="Our commitment to community.">
+  <PageHero eyebrow="Our commitment" title="Our commitment to community" crumbs={[{ text: 'Home', href: '/' }, { text: 'Company', href: '/about/' }, { text: 'Commitment' }]} ctas={false} />
+  <section><div class="wrap prose-wide">{d.sections.map((s) => <><h2>{s.heading}</h2><p>{s.body}</p></>)}</div></section>
+  <FinalCta />
+</Base>
