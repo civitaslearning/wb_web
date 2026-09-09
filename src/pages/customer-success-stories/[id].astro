@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import FinalCta from '../../components/FinalCta.astro';
+import RelatedUseCase from '../../components/RelatedUseCase.astro';
+import { pageForLabel } from '../../lib/usecases';
 
 export async function getStaticPaths() {
   const stories = await getCollection('stories');
@@ -11,6 +13,13 @@ export async function getStaticPaths() {
 const { story } = Astro.props;
 const d = story.data;
 const { Content } = await render(story);
+const used = d.solutions.map((x) => ({ text: x, page: pageForLabel(x) }));
+const fits = [
+  { text: d.headline, weight: 4 },
+  { text: d.outcomes.map((o) => o.metric).join(' '), weight: 3 },
+  { text: d.summary, weight: 2 },
+  { text: story.body || '', weight: 0.25 },
+];
 const who = d.institution || 'Civitas Learning partner';
 const others = (await getCollection('stories')).filter((s) => s.id !== story.id).sort((a, b) => a.data.order - b.data.order).slice(0, 3);
 ---
@@ -37,13 +46,14 @@ const others = (await getCollection('stories')).filter((s) => s.id !== story.id)
       {d.solutions.length > 0 && (
         <>
           <h2>Solutions used</h2>
-          <div class="filters">{d.solutions.map((x) => <span class="chip">{x}</span>)}</div>
+          <div class="filters">{used.map((u) => u.page ? <a class="chip" href={`/${u.page.slug}/`} title={u.page.headline}>{u.text}</a> : <span class="chip">{u.text}</span>)}</div>
         </>
       )}
     </div>
     <aside class="aside">
       {d.outcomes.length > 0 && <span class="eyebrow">Outcomes</span>}
       {d.outcomes.slice(0, 4).map((o) => <div class="card"><div class="n">{o.value}</div><div class="m">{o.metric}</div></div>)}
+      <RelatedUseCase texts={fits} />
       <a class="btn btn-primary" href="/contact/">See this at your institution</a>
     </aside>
   </div></section>

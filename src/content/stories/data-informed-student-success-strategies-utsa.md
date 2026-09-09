@@ -67,7 +67,7 @@ The “hub and spoke” model, UTSA’s organizational structure for student suc
 
 The Division of Student Success, prominently located in an area of campus known as the Academic Success District, offers a slate of centralized programs and services designed to support overall student success, including academic advising, student academic support, student success coaching, and housing and residence life. The Division of Student Success also coordinates a mentoring hub to offer specialized support to first-year, first-generation, and transfer students.
 
-In addition, each college has a Student Success Center that provides resources, programs, and services tailored to a student’s academic discipline. These centers incorporate career engaged learning opportunities, extended academic support, digital fluency skill building, and a sense of belonging within the college.
+In addition, each college has a Student Success Center that provides resources, programs, and services tailored to a student’s academic discipline. These centers incorporate [career engaged learning opportunities](/career-outcomes/), extended academic support, digital fluency skill building, and a sense of belonging within the college.
 
 This organizational structure reflects a collaborative and cross-functional approach to student success. Campus leaders meet weekly to review student success data and determine targeted initiatives. The staff who oversee key departments come together to operationalize these initiatives and coordinate services.
 

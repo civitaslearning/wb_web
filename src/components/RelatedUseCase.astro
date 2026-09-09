@@ -1,0 +1,28 @@
+---
+/**
+ * "Where this fits": the use-case or solution pages an article belongs with.
+ * Pass the article's words with weights; the matcher in src/lib/usecases.ts
+ * picks the pages. Renders nothing when nothing matches.
+ */
+import { matchPages, type Weighted } from '../lib/usecases';
+
+interface Props {
+  texts: Weighted[];
+  max?: number;
+  heading?: string;
+}
+const { texts, max = 2, heading = 'Where this fits' } = Astro.props;
+const pages = matchPages(texts, max);
+---
+{pages.length > 0 && (
+  <div class="fits">
+    <span class="eyebrow">{heading}</span>
+    {pages.map((p) => (
+      <a class="card link fit" href={`/${p.slug}/`}>
+        <small>{p.eyebrow}</small>
+        <h3>{p.headline}</h3>
+        <span class="more">See the use case →</span>
+      </a>
+    ))}
+  </div>
+)}

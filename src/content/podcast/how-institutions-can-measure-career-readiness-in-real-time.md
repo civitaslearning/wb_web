@@ -19,7 +19,7 @@ Career services have traditionally been opt-in. Students use it if they know it 
 
 For Mario Vela, Assistant Vice Provost of Career Engaged Learning and Executive Director of the University Career Center at the [University of Texas at San Antonio (UTSA)](/customer-success-stories/data-informed-student-success-strategies-utsa/), that model no longer works. Part of the pressure is external. New federal accountability measures are tying degree programs more closely to employment outcomes. But there is also a more basic problem with opt-in career services: they tend to work best for students who already know how to navigate them. At UTSA, where about half of students are first-generation, that gap matters.
 
-UTSA’s response has been to make career development part of the academic experience across colleges, degree programs, and courses. Now the university is working with [Civitas Learning](/platform/) to make that work measurable through a career readiness index that brings career engagement data into a real-time view of whether students are on track for life after graduation.
+UTSA’s response has been to make career development part of the academic experience across colleges, degree programs, and courses. Now the university is working with [Civitas Learning](/career-outcomes/) to make that work measurable through a career readiness index that brings career engagement data into a real-time view of whether students are on track for life after graduation.
 
 In this episode of *Next Practices*, Vela shares how UTSA built its classroom-to-career model, how the career readiness index will work, and what career center leaders can do to build support across their institutions.
 
@@ -120,7 +120,7 @@ For leaders wondering where to start, Vela’s advice is simple:
 His closing message to career center leaders is straightforward: this is a moment of real opportunity. Career outcomes have the institution’s attention. Use that momentum, and keep the focus on students.
 
 READY TO TALK?
-**See what this could look like at your institution.**[Talk with our team →](/contact/)
+**See what this could look like at your institution.** The career readiness index and the earnings test are on the [career outcomes and accountability](/career-outcomes/) page. [Talk with our team →](/contact/)
 
 <div class="embed video"><iframe src="https://www.youtube.com/embed/0dDrxC25JcM?feature=oembed" title="How Institutions Can Measure Career Readiness in Real Time | Civitas Learning" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 

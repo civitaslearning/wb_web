@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ResCard from '../../components/ResCard.astro';
 import FinalCta from '../../components/FinalCta.astro';
+import RelatedUseCase from '../../components/RelatedUseCase.astro';
+import { pageForLabel } from '../../lib/usecases';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -11,6 +13,14 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const d = post.data;
 const { Content } = await render(post);
+// Topic chips link to the use case they name. A chip with no match stays plain.
+const topics = d.tags.map((t) => ({ text: t, page: pageForLabel(t) }));
+const fits = [
+  { text: d.title, weight: 4 },
+  { text: d.tags.join(' '), weight: 3 },
+  { text: d.description, weight: 2 },
+  { text: post.body || '', weight: 0.25 },
+];
 const fmt = (s: string) => new Date(s + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const related = (await getCollection('blog')).filter((p) => p.id !== post.id).sort((a, b) => b.data.date.localeCompare(a.data.date)).slice(0, 3);
 ---
@@ -26,8 +36,9 @@ const related = (await getCollection('blog')).filter((p) => p.id !== post.id).so
     <div class="article"><Content /></div>
     <aside class="aside">
       {d.tags.length > 0 && (
-        <div><span class="eyebrow">Topics</span><div class="filters" style="margin-top:10px">{d.tags.map((t) => <span class="chip">{t}</span>)}</div></div>
+        <div><span class="eyebrow">Topics</span><div class="filters" style="margin-top:10px">{topics.map((t) => t.page ? <a class="chip" href={`/${t.page.slug}/`} title={t.page.headline}>{t.text}</a> : <span class="chip">{t.text}</span>)}</div></div>
       )}
+      <RelatedUseCase texts={fits} />
       <a class="btn btn-primary" href="/contact/">Book a demo</a>
     </aside>
   </div></section>

@@ -80,4 +80,4 @@ Post-graduation earnings for UTSA graduates average nearly $13,000 more than the
 
 Students and families expect more than a diploma—they expect preparation for life after graduation. Institutions like UTSA that embed career readiness throughout the academic journey see stronger engagement, stronger persistence, and stronger long-term outcomes.
 
-[Reach out to us](/contact/) to learn more about how Civitas Learning can help your institution embed career readiness into every stage of the student journey.
+See how the career module makes this measurable, and what the Department of Education's earnings test means for each program, on the [career outcomes and accountability](/career-outcomes/) page. Or [reach out to us](/contact/) to learn more about how Civitas Learning can help your institution embed career readiness into every stage of the student journey.

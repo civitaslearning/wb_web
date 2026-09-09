@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ResCard from '../../components/ResCard.astro';
 import FinalCta from '../../components/FinalCta.astro';
+import RelatedUseCase from '../../components/RelatedUseCase.astro';
 
 export async function getStaticPaths() {
   const eps = await getCollection('podcast');
@@ -11,6 +12,11 @@ export async function getStaticPaths() {
 const { ep } = Astro.props;
 const d = ep.data;
 const { Content } = await render(ep);
+const fits = [
+  { text: d.title, weight: 4 },
+  { text: d.description, weight: 2 },
+  { text: ep.body || '', weight: 0.25 },
+];
 const fmt = (s: string) => new Date(s + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const related = (await getCollection('podcast')).filter((e) => e.id !== ep.id).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || '')).slice(0, 3);
 ---
@@ -25,6 +31,7 @@ const related = (await getCollection('podcast')).filter((e) => e.id !== ep.id).s
     <div class="article"><Content /></div>
     <aside class="aside">
       {d.image && <img src={d.image} alt={d.imageAlt || ''} style="border-radius:10px" />}
+      <RelatedUseCase texts={fits} />
       <a class="btn btn-primary" href="/contact/">Book a demo</a>
     </aside>
   </div></section>

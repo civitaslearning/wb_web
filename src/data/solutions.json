@@ -1459,7 +1459,7 @@
   "name": "Career Outcomes & Program Accountability Software for Higher Education",
   "eyebrow": "Career Outcomes & Accountability",
   "headline": "Know which programs pay off for graduates. Before the Department of Education tells you.",
-  "sub": "The career module connects career readiness, persistence, and graduation to graduate earnings by program, so deans see the earnings test coming while there is still time to act.",
+  "sub": "The career module follows every student and every alumni cohort over years, not a first-destination survey, and connects career readiness, persistence, and graduation to graduate earnings by program. Deans see the earnings test coming while there is still time to act.",
   "stats": [
    {
     "value": "$13,000",
@@ -1507,6 +1507,11 @@
      "file": "multi-outcome-analytics.webp",
      "alt": "Multi-outcome analytics with persistence, completion, and career readiness together"
     }
+   },
+   {
+    "heading": "Every student and every graduate, over years. Not a first-destination survey.",
+    "body": "A first-destination survey reaches the graduates who answer, six months out, once. The career module maps the whole student body while they are enrolled and every alumni cohort after they leave, year over year, by program and by student group. That is the same longitudinal view the Department of Education uses for the earnings test, and it is the only way to see whether a curriculum change made in 2026 moved the earnings of the class of 2030. Career readiness while enrolled, outcomes after, one record per student from first term to fifth year out.",
+    "bullets": []
    },
    {
     "heading": "A scoreboard for every dean",
@@ -1557,7 +1562,7 @@
     "heading": "For Institutional Research",
     "body": "The earnings test on your own data.",
     "bullets": [
-     "Persistence, graduation, career engagement, and earnings in one governed dataset",
+     "Every student and every alumni cohort in one longitudinal record: persistence, graduation, career engagement, and earnings",
      "Comparison-group measurement of every career initiative, by student group",
      "Federal, state, and accreditor reporting from the same numbers"
     ]

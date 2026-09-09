@@ -117,6 +117,13 @@ All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two o
   The rule text on the page follows the podcast episode with Mario Vela; the exact test and
   dates should be checked against the final rule before launch. Feature claims for the career
   module (program-level earnings against the federal threshold) need product confirmation.
+  The old site had no career page and no product screenshots of the career module, so the
+  page reuses analytics screens. Replace them when product supplies real ones.
+- Articles link to the pages they belong with. `src/lib/usecases.ts` scores a title, tags,
+  description, and body against one keyword rule per use-case page. Blog posts, podcast
+  episodes, and customer stories show a "Where this fits" card for the top two matches, and
+  topic chips link to the use case they name. On the home page the "Outcomes you report"
+  cards link to the matching use case. Add a rule when a page is added.
 - The security line claims only what the live site already states: FERPA school-official
   status, the data sharing agreement, single sign-on, platform specifications, and VPATs.
   SOC 2 and HECVAT are not on the site. Add them only when the reports exist.
