@@ -10,7 +10,7 @@
  *  - bullets only        → numbered card grid
  * Product screenshots live in public/assets/screens/ and were pulled from the live pages.
  */
-interface Img { file: string; alt: string }
+interface Img { file: string; alt: string; fit?: 'cover' | 'contain' }
 interface Section { heading: string; body: string; bullets: string[]; image?: Img; images?: Img[]; icons?: string[] }
 interface Props { sections: Section[] }
 const { sections } = Astro.props;
@@ -67,7 +67,7 @@ flush();
       <div class:list={['grid3', { grid2: blk.items.length === 4 }]}>
         {blk.items.map(({ text, img }) => { const [t, d] = split(text); return (
           <div class="card imgcard">
-            <img src={src(img.file)} alt={img.alt} loading="lazy" />
+            <img class:list={{ contain: img.fit === 'contain' }} src={src(img.file)} alt={img.alt} loading="lazy" />
             <h3>{t || img.alt}</h3>
             <p>{d}</p>
           </div>

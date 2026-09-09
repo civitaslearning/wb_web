@@ -379,6 +379,7 @@ footer{padding:56px 0 32px;background:var(--tint);border-top:1px solid var(--lin
 @media (max-width:900px){.feat.rev .shot{order:0}}
 .card.imgcard{padding:0;overflow:hidden}
 .card.imgcard img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.card.imgcard img.contain{aspect-ratio:auto;object-fit:contain;background:var(--tint)}
 .card.imgcard h3,.card.imgcard p{padding:0 22px}
 .card.imgcard h3{margin-top:16px}
 .card.imgcard p{padding-bottom:22px}

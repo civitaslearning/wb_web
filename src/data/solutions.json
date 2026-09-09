@@ -1504,22 +1504,26 @@
     "body": "Employment data arrives after graduation, when nothing can be done. The career readiness index is a real-time view of each student's progress toward a career: internships, experiential learning, career programming, mentorship, and résumé work, alongside persistence and grades. Think of it as a degree plan for career readiness. A student can carry a 3.4 GPA and still be unprepared for the job market. The index shows that in the sophomore year, not in a wage record four years after commencement.",
     "bullets": [],
     "image": {
-     "file": "multi-outcome-analytics.webp",
-     "alt": "Multi-outcome analytics with persistence, completion, and career readiness together"
+     "file": "career-overview.webp",
+     "alt": "Post-Graduation Outcomes: matched graduates, employment within 6 and 12 months, major-aligned careers, time to first job, current salary, and salary growth, with employment rate by graduation year"
     }
    },
    {
     "heading": "Every student and every graduate, over years. Not a first-destination survey.",
     "body": "A first-destination survey reaches the graduates who answer, six months out, once. The career module maps the whole student body while they are enrolled and every alumni cohort after they leave, year over year, by program and by student group. That is the same longitudinal view the Department of Education uses for the earnings test, and it is the only way to see whether a curriculum change made in 2026 moved the earnings of the class of 2030. Career readiness while enrolled, outcomes after, one record per student from first term to fifth year out.",
-    "bullets": []
+    "bullets": [],
+    "image": {
+     "file": "career-major-table.webp",
+     "alt": "Outcomes by major: graduates, employment at 6 and 12 months, major alignment, stayed local, months to job, current salary, and salary growth for every program"
+    }
    },
    {
     "heading": "A scoreboard for every dean",
     "body": "Each degree program gets one page: enrollment, engagement, persistence, graduation, career readiness, and, where your state wage data allows, graduate earnings against the federal threshold. Deans and chairs see which programs are clear, which are close, and which need a curriculum change, an internship pipeline, or a hard conversation. The same page answers the accreditor, the state, and the board.",
     "bullets": [],
     "image": {
-     "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
-     "alt": "Program-level student outcomes with graduation and career measures"
+     "file": "career-program.webp",
+     "alt": "One program selected: 622 nursing graduates, 92% employed within 12 months, $75,852 average current salary, employment rate by graduation year"
     }
    },
    {
@@ -1539,6 +1543,38 @@
      "file": "initiative-program-analysis.webp",
      "alt": "Initiative analysis showing lift against a comparison group"
     }
+   },
+   {
+    "heading": "What the career module shows",
+    "body": "",
+    "bullets": [
+     "Overview: Every graduate matched to employment data. Employed within 6 and 12 months, major-aligned career, time to first job, first and current salary, salary growth, by graduation year.",
+     "Geographic: Where graduates work now and where their first job was, by state, with community retention: always local, left and returned, stayed then left, never local.",
+     "Career paths: Jobs held, promotions, company changes, and states worked in per graduate, with top first employers and top industries.",
+     "By major: Average current salary by major, and a table of outcomes for every program with at least ten graduates. Select a program and every other view filters to it."
+    ],
+    "images": [
+     {
+      "file": "career-tab-overview.webp",
+      "alt": "Overview tab: employment rate by graduation year",
+      "fit": "contain"
+     },
+     {
+      "file": "career-tab-geographic.webp",
+      "alt": "Geographic tab: where graduates work now, by state",
+      "fit": "contain"
+     },
+     {
+      "file": "career-tab-paths.webp",
+      "alt": "Career paths tab: jobs, promotions, top employers, top industries",
+      "fit": "contain"
+     },
+     {
+      "file": "career-tab-by-major.webp",
+      "alt": "By major tab: average current salary by major",
+      "fit": "contain"
+     }
+    ]
    },
    {
     "heading": "For Deans & Provosts",

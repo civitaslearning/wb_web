@@ -117,8 +117,11 @@ All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two o
   The rule text on the page follows the podcast episode with Mario Vela; the exact test and
   dates should be checked against the final rule before launch. Feature claims for the career
   module (program-level earnings against the federal threshold) need product confirmation.
-  The old site had no career page and no product screenshots of the career module, so the
-  page reuses analytics screens. Replace them when product supplies real ones.
+  The old site had no career page and no product screenshots of the career module. The
+  screens on the page (`public/assets/screens/career-*.webp`) were captured on 2026-09-09 from
+  the Post-Graduation Outcomes module at demo.civitaslearning.com: overview, geographic,
+  career paths, by major, the outcomes-by-major table, and a single program (nursing). The
+  demo tenant's numbers are illustrative, like every other product screen on the site.
 - Articles link to the pages they belong with. `src/lib/usecases.ts` scores a title, tags,
   description, and body against one keyword rule per use-case page. Blog posts, podcast
   episodes, and customer stories show a "Where this fits" card for the top two matches, and
