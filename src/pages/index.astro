@@ -247,10 +247,11 @@ import FinalCta from '../components/FinalCta.astro';
   calc();
 
   // Institution finder. Loads public/data/ipeds.json on first use and fills the
-  // calculator with real IPEDS figures. Peers are the 40 institutions in the
-  // same sector nearest in undergraduate headcount, Pell share, and net price.
-  // The peer list is never shown.
-  type Row = [number, string, string, string, number, number, number | null, number | null, number | null, number | null];
+  // calculator with real IPEDS figures. Peers are the 40 institutions with the
+  // same control (public, private nonprofit, for-profit) and Carnegie group
+  // nearest in undergraduate headcount, Pell share, and net price. The peer
+  // list is never shown.
+  type Row = [number, string, string, string, number, number, number | null, number | null, number | null, number | null, number];
   const inst = document.getElementById('inst') as HTMLInputElement;
   const list = document.getElementById('instList') as HTMLUListElement;
   const picked = document.getElementById('instPicked')!;
@@ -300,7 +301,9 @@ import FinalCta from '../components/FinalCta.astro';
   }
 
   function peers(r: Row): Row[] {
-    const same = rows.filter((x) => x[4] === r[4] && x[0] !== r[0]);
+    const control = (s: number) => ((s - 1) % 3) + 1;
+    let same = rows.filter((x) => x[0] !== r[0] && control(x[4]) === control(r[4]) && x[10] === r[10] && r[10] > 0);
+    if (same.length < 40) same = rows.filter((x) => x[0] !== r[0] && x[4] === r[4]);
     const dist = (x: Row) => {
       const size = Math.abs(Math.log(x[5]) - Math.log(r[5]));
       const pell = r[9] != null && x[9] != null ? Math.abs(x[9] - r[9]) / 25 : 0.5;
@@ -331,21 +334,21 @@ import FinalCta from '../components/FinalCta.astro';
     $('bGradP').textContent = isNaN(gradP) ? 'n/a' : gradP + '%';
 
     const gap = r[6] != null && !isNaN(retP) ? r[6] - retP : 0;
-    const onePoint = fmt((r[5] / 100) * (+tu.value || 0));
+    const worth = (pts: number) => fmt(Math.round((r[5] * pts) / 100) * (+tu.value || 0));
+    const pts = (n: number) => `${n} ${n === 1 ? 'point' : 'points'}`;
     let msg: string;
     if (r[6] == null || isNaN(retP)) {
       lift.value = '3';
-      msg = `IPEDS does not report a first-year retention rate here. One point is worth ${onePoint} a year.`;
+      msg = `IPEDS does not report a first-year retention rate here. One point is worth ${worth(1)} a year.`;
     } else if (gap < 0) {
-      const g = Math.min(11, Math.max(1, Math.round(-gap * 2) / 2));
-      lift.value = String(g);
-      msg = `${-gap} points below institutions like yours. Closing that gap is worth ${fmt((r[5] * -gap / 100) * (+tu.value || 0))} a year.`;
+      lift.value = String(Math.min(11, Math.max(1, -gap)));
+      msg = `${pts(-gap)} below institutions like yours. Closing that gap is worth ${worth(-gap)} a year.`;
     } else if (gap > 0) {
       lift.value = '3';
-      msg = `${gap} points above institutions like yours. Every point you hold is worth ${onePoint} a year.`;
+      msg = `${pts(gap)} above institutions like yours. Every point you hold is worth ${worth(1)} a year.`;
     } else {
       lift.value = '3';
-      msg = `Level with institutions like yours. One point is worth ${onePoint} a year.`;
+      msg = `Level with institutions like yours. One point is worth ${worth(1)} a year.`;
     }
     $('bMsg').textContent = msg;
     bench.hidden = false;

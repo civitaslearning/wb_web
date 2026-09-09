@@ -10,6 +10,7 @@ data files) and unzip them into one folder:
 
     HD2023.zip        Institutional characteristics (directory)
     DRVEF2023.zip     Derived enrollment: headcount and retention
+    EF2023D.zip       Retention cohort counts
     DRVGR2023.zip     Derived graduation rates
     SFA2223.zip       Student financial aid: net price and Pell share
 
@@ -19,10 +20,14 @@ Run:
 Rows kept: active, degree-granting, Title IV institutions in sectors 1 to 6
 (public and private, two-year and four-year) with at least 200 undergraduates.
 A retention or graduation rate that IPEDS does not report is stored as null.
+Retention is also stored as null when the full-time retention cohort has fewer
+than MIN_COHORT students. A community college that awards a few bachelor's
+degrees reports retention on that tiny bachelor's cohort, and a 100% rate from
+three students is not a benchmark.
 
 Output row shape (arrays keep the file small):
     [unitid, name, city, state, sector, undergrad headcount,
-     retention %, graduation %, net price $, pell %]
+     retention %, graduation %, net price $, pell %, carnegie group]
 """
 from __future__ import annotations
 
@@ -34,6 +39,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "public" / "data" / "ipeds.json"
 YEAR = "2023-24"
+MIN_COHORT = 50
 
 
 def find(folder: pathlib.Path, stem: str) -> pathlib.Path:
@@ -68,6 +74,7 @@ def main():
     folder = pathlib.Path(sys.argv[1])
     hd = read(find(folder, "hd2023"))
     ef = read(find(folder, "drvef2023"))
+    efd = read(find(folder, "ef2023d"))
     gr = read(find(folder, "drvgr2023"))
     sfa = read(find(folder, "sfa2223"))
 
@@ -86,6 +93,11 @@ def main():
         # IPEDS writes "." when a figure is not available. num() turns that into None
         # and the row is kept, so the institution can still be found.
         ret = num(e.get("RET_PCF"))
+        # RRFTCTA is the adjusted full-time retention cohort. A rate from a
+        # cohort smaller than MIN_COHORT is noise, not a benchmark.
+        cohort = num(efd.get(uid, {}).get("RRFTCTA"))
+        if cohort is None or cohort < MIN_COHORT:
+            ret = None
         if not ug or ug < 200:
             continue
         g = gr.get(uid, {})
@@ -97,6 +109,22 @@ def main():
         if np_ is None:
             np_ = num(s.get("NPGRN2"))
         pell = num(s.get("UPGRNTP"))
+        # Carnegie 2021 basic classification, folded into six groups so peers
+        # compare like with like: an associate's college that awards a few
+        # bachelor's degrees is still an associate's college.
+        c = num(h.get("C21BASIC")) or 0
+        if 1 <= c <= 14:
+            group = 1  # associate's and special-focus two-year
+        elif 15 <= c <= 17:
+            group = 2  # doctoral universities
+        elif 18 <= c <= 20:
+            group = 3  # master's colleges and universities
+        elif 21 <= c <= 23:
+            group = 4  # baccalaureate colleges
+        elif c >= 24:
+            group = 5  # special focus four-year and tribal
+        else:
+            group = 0  # not classified
         rows.append([
             int(uid),
             h["INSTNM"],
@@ -108,6 +136,7 @@ def main():
             round(grad) if grad is not None else None,
             round(np_) if np_ is not None else None,
             round(pell) if pell is not None else None,
+            group,
         ])
 
     rows.sort(key=lambda r: r[1].lower())
@@ -115,7 +144,7 @@ def main():
     payload = {
         "year": YEAR,
         "source": "IPEDS, National Center for Education Statistics",
-        "fields": ["unitid", "name", "city", "state", "sector", "undergrad", "retention", "graduation", "netPrice", "pell"],
+        "fields": ["unitid", "name", "city", "state", "sector", "undergrad", "retention", "graduation", "netPrice", "pell", "carnegieGroup"],
         "rows": rows,
     }
     OUT.write_text(json.dumps(payload, separators=(",", ":"), ensure_ascii=False) + "\n", encoding="utf-8")
