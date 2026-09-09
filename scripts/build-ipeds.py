@@ -5,8 +5,8 @@ The home page calculator uses this file to find an institution and fill in
 its real fall undergraduate headcount, net price, first-year retention rate,
 and graduation rate. Peers are computed in the browser from the same file.
 
-Download these files from https://nces.ed.gov/ipeds/datacenter/ (Complete
-data files) and unzip them into one folder:
+The source files are the IPEDS "Complete data files" zips from
+https://nces.ed.gov/ipeds/datacenter/, committed unchanged in data/ipeds/:
 
     HD2023.zip        Institutional characteristics (directory)
     DRVEF2023.zip     Derived enrollment: headcount and retention
@@ -14,8 +14,13 @@ data files) and unzip them into one folder:
     DRVGR2023.zip     Derived graduation rates
     SFA2223.zip       Student financial aid: net price and Pell share
 
-Run:
-    python scripts/build-ipeds.py <folder with the unzipped csv files>
+The script reads the csv inside each zip, so nothing is unzipped by hand.
+`npm run build` runs this script before `astro build`, and the CI workflow
+runs `npm run build`, so the JSON is always rebuilt from the committed zips.
+
+Run by hand:
+    python3 scripts/build-ipeds.py            # reads data/ipeds/
+    python3 scripts/build-ipeds.py <folder>   # reads zips or csv files there
 
 Rows kept: active, degree-granting, Title IV institutions in sectors 1 to 6
 (public and private, two-year and four-year) with at least 200 undergraduates.
@@ -32,27 +37,40 @@ Output row shape (arrays keep the file small):
 from __future__ import annotations
 
 import csv
+import io
 import json
 import pathlib
 import sys
+import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+DATA = ROOT / "data" / "ipeds"
 OUT = ROOT / "public" / "data" / "ipeds.json"
 YEAR = "2023-24"
 MIN_COHORT = 50
 
 
-def find(folder: pathlib.Path, stem: str) -> pathlib.Path:
-    hits = [p for p in folder.rglob("*.csv") if p.stem.lower() == stem.lower()]
-    if not hits:
-        sys.exit(f"missing {stem}.csv under {folder}")
-    return hits[0]
+def open_csv(folder: pathlib.Path, stem: str) -> io.TextIOBase:
+    """Return a text stream for <stem>.csv, from a plain file or from <stem>.zip."""
+    want = stem.lower()
+    for p in folder.rglob("*"):
+        if p.suffix.lower() == ".csv" and p.stem.lower() == want:
+            return p.open(encoding="utf-8-sig", errors="replace", newline="")
+        if p.suffix.lower() == ".zip" and p.stem.lower() == want:
+            z = zipfile.ZipFile(p)
+            names = [n for n in z.namelist() if n.lower().endswith(".csv")]
+            if not names:
+                sys.exit(f"no csv inside {p}")
+            # Prefer the revised file (_rv) when IPEDS ships one.
+            names.sort(key=lambda n: (not n.lower().endswith("_rv.csv"), n))
+            return io.TextIOWrapper(z.open(names[0]), encoding="utf-8-sig", errors="replace", newline="")
+    sys.exit(f"missing {stem}.csv or {stem}.zip under {folder}")
 
 
-def read(path: pathlib.Path) -> dict[str, dict]:
+def read(folder: pathlib.Path, stem: str) -> dict[str, dict]:
     # The files are UTF-8 with a byte-order mark. Decode errors are replaced,
     # and column names keep only ASCII letters, digits, and underscores.
-    with path.open(encoding="utf-8-sig", errors="replace", newline="") as f:
+    with open_csv(folder, stem) as f:
         reader = csv.DictReader(f)
         rows = {}
         for row in reader:
@@ -69,14 +87,14 @@ def num(v: str) -> float | None:
 
 
 def main():
-    if len(sys.argv) < 2:
-        sys.exit(__doc__)
-    folder = pathlib.Path(sys.argv[1])
-    hd = read(find(folder, "hd2023"))
-    ef = read(find(folder, "drvef2023"))
-    efd = read(find(folder, "ef2023d"))
-    gr = read(find(folder, "drvgr2023"))
-    sfa = read(find(folder, "sfa2223"))
+    folder = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else DATA
+    if not folder.is_dir():
+        sys.exit(f"{folder} is not a folder\n\n{__doc__}")
+    hd = read(folder, "hd2023")
+    ef = read(folder, "drvef2023")
+    efd = read(folder, "ef2023d")
+    gr = read(folder, "drvgr2023")
+    sfa = read(folder, "sfa2223")
 
     rows = []
     for uid, h in hd.items():
