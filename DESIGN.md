@@ -90,6 +90,18 @@ CRM analyst, and the case studies page.
 | Rewrite the three job cards to their level of concreteness: "week 8, not December" is the bar. | Their academic affairs page is better copy than our jobs section. Match it. |
 | Keep the frame "institutional effectiveness", but define it as measurement across offices, not plumbing under offices. | Nick's broadening and their breadth story overlap. Ours is "every office gets a scoreboard"; theirs is "every office gets an agent". |
 
+All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two of them:
+
+- The IPEDS tool lives in the home page calculator. `scripts/build-ipeds.py` turns four IPEDS
+  tables into `public/data/ipeds.json` (2,900 institutions, 2023-24). The browser loads it on
+  first use, fills headcount and net price, and shows first-year retention and graduation rate
+  against a peer median. Peers are the 40 institutions in the same sector nearest in headcount,
+  Pell share, and net price. The peer list never shows. Copy branches: below peers, "closing
+  that gap is worth $X"; above peers, "every point you hold is worth $X".
+- The security line claims only what the live site already states: FERPA school-official
+  status, the data sharing agreement, single sign-on, platform specifications, and VPATs.
+  SOC 2 and HECVAT are not on the site. Add them only when the reports exist.
+
 ### Where the old Civitas home page was weak
 
 1. "AI Built on Your Data" has the same shape as Element's headline. Two vendors saying "AI";

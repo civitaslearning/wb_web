@@ -26,18 +26,31 @@ import FinalCta from '../components/FinalCta.astro';
     <div class="wrap">
       <div class="sec-head">
         <div><span class="eyebrow">Run the numbers</span><h2>What is one point of retention worth to you?</h2></div>
-        <p>Use your own figures. This is the same arithmetic your CFO will do — before Civitas measures the real result.</p>
+        <p>Start with your institution's own IPEDS figures, then move the slider.</p>
       </div>
       <div class="calc">
+        <div class="finder">
+          <label for="inst">Find your institution</label>
+          <div class="finder-box">
+            <input type="search" id="inst" placeholder="Type a college or university name" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="instList" aria-expanded="false" />
+            <ul class="finder-list" id="instList" role="listbox" hidden></ul>
+          </div>
+          <p class="finder-picked" id="instPicked" hidden></p>
+        </div>
         <div class="fields">
-          <label>Fall undergraduate headcount<input type="number" id="hc" value="9000" min="500" step="100" /></label>
-          <label>Net tuition and fees per student, per year<input type="number" id="tu" value="11500" min="1000" step="250" /></label>
+          <label>Fall undergraduate headcount<input type="number" id="hc" value="9000" min="200" step="100" /></label>
+          <label>Net price per student, per year<input type="number" id="tu" value="11500" min="1000" step="250" /></label>
           <label><span>Retention lift <span class="mono" id="liftLbl">3.0 pts</span> <span style="color:var(--ink3);font-weight:400">— partners typically see 3–11 pts</span></span><input type="range" id="lift" min="1" max="11" step="0.5" value="3" /></label>
         </div>
         <div class="out">
+          <div class="bench" id="bench" hidden>
+            <div class="bench-row"><b id="bRet">—</b><span>first-year retention<small>institutions like yours: <b id="bRetP">—</b></small></span></div>
+            <div class="bench-row"><b id="bGrad">—</b><span><span id="bGradLbl">graduation rate</span><small>institutions like yours: <b id="bGradP">—</b></small></span></div>
+            <p class="bench-msg" id="bMsg"></p>
+          </div>
           <div><div class="big" id="rev">$—</div><div class="lbl">additional net revenue per year, from students retained</div></div>
           <div class="line"><span>Students retained who would have left</span><b id="stu">—</b></div>
-          <p class="note">Assumes one additional year of net tuition per retained student. Multi-year and state funding effects are excluded, so this is a floor.</p>
+          <p class="note" id="calcNote">Assumes one additional year of net price per retained student. Multi-year and state funding effects are excluded, so this is a floor.</p>
         </div>
         <div class="cta-row">
           <a class="btn btn-primary" href="/contact/">Book a demo</a>
@@ -62,14 +75,14 @@ import FinalCta from '../components/FinalCta.astro';
     <div class="wrap">
       <div class="sec-head">
         <div><span class="eyebrow">One institution · one dataset</span><h2>Your systems already hold the answer. They just don't talk to each other.</h2></div>
-        <p>Civitas sits beside the systems you run today — more than 100 of them, including the AI agent and CRM tools you may already have bought. It reads from all of them, builds one model of the institution, and writes actions and results back — for student success first, and for every other question the cabinet asks.</p>
+        <p><b>An operating system runs the work. Civitas proves the work paid off.</b> Civitas sits beside the systems you run today — more than 100 of them, including the AI agent and CRM tools you may already have bought. It reads from all of them, builds one model of the institution, and writes actions and results back — for student success first, and for every other question the cabinet asks.</p>
       </div>
       <div class="flow">
         <div class="flow-col">
           <div class="flow-lbl">Systems you keep · 100+ integrations</div>
           <div class="sys"><b>SIS</b><span>Banner · PeopleSoft · Colleague · Workday Student</span></div>
           <div class="sys"><b>LMS</b><span>Canvas · Blackboard · D2L · Moodle</span></div>
-          <div class="sys"><b>CRM</b><span>Slate · Salesforce · Element451 · TargetX</span></div>
+          <div class="sys"><b>CRM</b><span>Slate · Salesforce · Element451 · CollegeVine · TargetX</span></div>
           <div class="sys"><b>HR &amp; finance</b><span>Workday · Oracle · Ellucian</span></div>
           <div class="sys"><b>Everything else</b><span>Your warehouse, engagement tools, card swipes, surveys — 100+ systems and counting</span></div>
         </div>
@@ -93,7 +106,10 @@ import FinalCta from '../components/FinalCta.astro';
           <div class="sys"><b>Accountability</b><span>Board, accreditor, and state reporting</span></div>
         </div>
       </div>
-      <div style="margin-top:28px"><a class="btn btn-ghost" href="/platform/">Explore the platform →</a></div>
+      <div class="cta-row" style="margin-top:28px">
+        <a class="btn btn-ghost" href="/platform/">Explore the platform →</a>
+        <a class="btn btn-ghost" href="/customer-success-stories/from-a-year-of-frustration-to-live-in-six-weeks-lawrence-technological-universitys-deployment-story/">Live in six weeks at Lawrence Tech →</a>
+      </div>
     </div>
   </section>
 
@@ -118,18 +134,18 @@ import FinalCta from '../components/FinalCta.astro';
         <p>Student success is where 375 institutions have proved the platform. Each agent acts on your institution's own predictions, inside the systems your teams already use, and reports its impact back to the same ledger.</p>
       </div>
       <div class="jobs">
-        <div class="job"><span class="stage">Recruit &amp; enroll</span><h3>Fill the class with students who will finish.</h3><p>Score applicants and admits on likelihood to enroll <i>and</i> persist, then put the right yield work in front of counselors.</p>
-          <ul class="agents"><li><span>agent</span><span><b>Yield agent</b> — ranks admits by enrollment likelihood, drafts outreach, books counselor follow-ups.</span></li><li><span>agent</span><span><b>Registration agent</b> — finds continuing students who haven't registered and clears holds with them.</span></li></ul>
+        <div class="job"><span class="stage">Recruit &amp; enroll</span><h3>Fill the class with students who will finish.</h3><p>Every admit gets two scores in the CRM your counselors already open: will they enroll, and will they still be here in year two. Counselors work the list from the top. The agent works the rest.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Yield agent</b> — drafts the outreach, books the follow-up, and logs it in the CRM the day an admit goes quiet.</span></li><li><span>agent</span><span><b>Registration agent</b> — finds the continuing student who has not registered by week two of open registration, names the hold, and clears it with them.</span></li></ul>
           <p class="proof"><b>+3.7%</b> registration, SUNY Broome · <a href="/enrollment-management/">Strategic enrollment →</a></p></div>
-        <div class="job"><span class="stage">Success &amp; progress</span><h3>Keep the students you already have.</h3><p>Retention is the cheapest enrollment you will ever buy. Predict risk weekly, route it to the right advisor, and measure whether the outreach worked.</p>
-          <ul class="agents"><li><span>agent</span><span><b>Advising agent</b> — builds each advisor's daily list, drafts the note, schedules the meeting.</span></li><li><span>agent</span><span><b>Care coordination agent</b> — connects alerts across advising, financial aid, and tutoring into one case.</span></li></ul>
+        <div class="job"><span class="stage">Success &amp; progress</span><h3>Keep the students you already have.</h3><p>Retention is the cheapest enrollment you will ever buy. A model trained on your own history scores every student every week, so the advisor sees the week-four slide before it becomes a week-twelve withdrawal.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Advising agent</b> — builds each advisor's list for the day, drafts the note, and books the meeting before the student misses a second class.</span></li><li><span>agent</span><span><b>Care coordination agent</b> — turns an advising alert, an aid hold, and a tutoring referral into one case with one owner, so the student hears one version of the plan.</span></li></ul>
           <p class="proof"><b>+8 pts</b> retention, Northwest Missouri State · <a href="/advising-and-student-success/">Advising →</a></p></div>
-        <div class="job"><span class="stage">Graduate &amp; employ</span><h3>Move students to the finish line, and past it.</h3><p>Spot completion risk in the last 30 credits, clear degree-audit obstacles, and connect graduates to outcomes you can report.</p>
-          <ul class="agents"><li><span>agent</span><span><b>Completion agent</b> — flags students within reach of a degree and fixes the plan that's blocking them.</span></li><li><span>agent</span><span><b>Outcomes agent</b> — tracks graduate employment and reports it back to programs and IR.</span></li></ul>
+        <div class="job"><span class="stage">Graduate &amp; employ</span><h3>Move students to the finish line, and past it.</h3><p>Thirty credits from a degree is where students stall on one course. The completion agent finds them by name, the term before it happens.</p>
+          <ul class="agents"><li><span>agent</span><span><b>Completion agent</b> — flags the senior whose plan is blocked by one section, then fixes the plan or finds the seat.</span></li><li><span>agent</span><span><b>Outcomes agent</b> — tracks graduate employment and reports it back to programs and IR, so program review starts with a number.</span></li></ul>
           <p class="proof"><b>+5%</b> graduation rate, Texas A&amp;M–San Antonio · <a href="/improve-on-time-completion/">Completion →</a></p></div>
       </div>
       <div class="beyond">
-        <div class="beyond-head"><span class="eyebrow">Beyond the student journey</span><p>The same data, models, and ledger answer the rest of the cabinet's questions.</p></div>
+        <div class="beyond-head"><span class="eyebrow">Beyond the student journey</span><p>Every office gets a scoreboard, not just an agent. The same data, models, and ledger answer the rest of the cabinet's questions.</p></div>
         <div class="beyond-grid">
           <div class="b"><b>Course demand &amp; scheduling</b><span>Predict section fill by term. Open the sections students need and close the ones they don't.</span></div>
           <div class="b"><b>Program portfolio</b><span>Enrollment, completion, and cost per program in one view, so investment follows evidence.</span></div>
@@ -149,12 +165,12 @@ import FinalCta from '../components/FinalCta.astro';
       <div class="cmp">
         <div class="col"><h3>Generic AI agent <small>sector model</small></h3><ul>
           <li><i>—</i><span><b>Predictions</b> from national benchmarks or one vendor's pooled customer base.</span></li>
-          <li><i>—</i><span><b>Risk flags</b> based on engagement signals it can see: email opens, chat replies.</span></li>
-          <li><i>—</i><span><b>Proof</b> is activity: messages sent, conversations handled, hours saved.</span></li>
+          <li><i>—</i><span><b>Risk flags</b> from rules: a slipping GPA, a missed registration, an unopened email.</span></li>
+          <li><i>—</i><span><b>Proof</b> is activity: open rates, reply rates, hours saved, "exceeded expectations".</span></li>
           <li><i>—</i><span><b>Scope</b> is the front door: marketing, admissions, inquiry response.</span></li></ul></div>
         <div class="col"><h3>Civitas Learning <small>your model</small></h3><ul>
           <li><i>✓</i><span><b>Predictions</b> from a model trained on your SIS, LMS, and CRM history — refreshed each term.</span></li>
-          <li><i>✓</i><span><b>Risk flags</b> from grades, credits, course patterns, aid status, and engagement together.</span></li>
+          <li><i>✓</i><span><b>Risk flags</b> from a model trained on your history: grades, credits, course patterns, aid status, and engagement together.</span></li>
           <li><i>✓</i><span><b>Proof</b> is outcome: persistence, completion, and revenue lift vs. a matched comparison group.</span></li>
           <li><i>✓</i><span><b>Scope</b> is the whole institution: enroll, persist, graduate, employ — and the courses, programs, and budgets behind them.</span></li></ul></div>
       </div>
@@ -165,7 +181,7 @@ import FinalCta from '../components/FinalCta.astro';
     <div class="wrap">
       <div class="sec-head">
         <div><span class="eyebrow">Partner outcomes</span><h2>Numbers a president can put in front of a board.</h2></div>
-        <p>Published results from Civitas partners. Every figure is measured against a comparison group, not a prior year.</p>
+        <p>Published results from Civitas partners: 31 stories, each with the number and how it was measured. Every figure is measured against a comparison group, not a prior year. <a href="/customer-success-stories/">See all 31 →</a></p>
       </div>
       <div class="grid4">
         <a class="card link" href="/customer-success-stories/from-81-to-86-4-srus-playbook-for-sustained-retention-gains/"><div class="n">86.4%</div><div class="m">first-year retention, up from 81% — highest in SRU history</div><div class="who">Slippery Rock University<small>Read the playbook →</small></div></a>
@@ -229,4 +245,131 @@ import FinalCta from '../components/FinalCta.astro';
   }
   [hc, tu, lift].forEach((el) => el.addEventListener('input', calc));
   calc();
+
+  // Institution finder. Loads public/data/ipeds.json on first use and fills the
+  // calculator with real IPEDS figures. Peers are the 40 institutions in the
+  // same sector nearest in undergraduate headcount, Pell share, and net price.
+  // The peer list is never shown.
+  type Row = [number, string, string, string, number, number, number | null, number | null, number | null, number | null];
+  const inst = document.getElementById('inst') as HTMLInputElement;
+  const list = document.getElementById('instList') as HTMLUListElement;
+  const picked = document.getElementById('instPicked')!;
+  const bench = document.getElementById('bench')!;
+  const $ = (id: string) => document.getElementById(id)!;
+  let rows: Row[] = [];
+  let loading: Promise<void> | null = null;
+  let active = -1;
+
+  function load() {
+    if (loading) return loading;
+    const base = document.querySelector('a.brand')?.getAttribute('href') || '/';
+    loading = fetch(base.replace(/\/?$/, '/') + 'data/ipeds.json')
+      .then((r) => r.json())
+      .then((d) => { rows = d.rows; });
+    return loading;
+  }
+
+  function matches(q: string): Row[] {
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!terms.length) return [];
+    const out: Row[] = [];
+    for (const r of rows) {
+      const hay = (r[1] + ' ' + r[2] + ' ' + r[3]).toLowerCase();
+      if (terms.every((t) => hay.includes(t))) { out.push(r); if (out.length >= 8) break; }
+    }
+    return out;
+  }
+
+  function render(items: Row[]) {
+    list.innerHTML = '';
+    active = -1;
+    for (const r of items) {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'option');
+      li.innerHTML = `<b>${r[1]}</b><small>${r[2]}, ${r[3]}</small>`;
+      li.addEventListener('mousedown', (e) => { e.preventDefault(); choose(r); });
+      list.appendChild(li);
+    }
+    list.hidden = items.length === 0;
+    inst.setAttribute('aria-expanded', String(items.length > 0));
+  }
+
+  function median(v: number[]) {
+    const s = v.slice().sort((a, b) => a - b);
+    return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2) : NaN;
+  }
+
+  function peers(r: Row): Row[] {
+    const same = rows.filter((x) => x[4] === r[4] && x[0] !== r[0]);
+    const dist = (x: Row) => {
+      const size = Math.abs(Math.log(x[5]) - Math.log(r[5]));
+      const pell = r[9] != null && x[9] != null ? Math.abs(x[9] - r[9]) / 25 : 0.5;
+      const price = r[8] != null && x[8] != null ? Math.abs(Math.log(x[8]) - Math.log(r[8])) : 0.5;
+      return size + pell + price;
+    };
+    return same.map((x) => [dist(x), x] as [number, Row]).sort((a, b) => a[0] - b[0]).slice(0, 40).map((p) => p[1]);
+  }
+
+  function choose(r: Row) {
+    inst.value = r[1];
+    list.hidden = true;
+    inst.setAttribute('aria-expanded', 'false');
+    picked.hidden = false;
+    picked.textContent = `${r[1]}, ${r[2]}, ${r[3]} · IPEDS 2023–24`;
+    hc.value = String(r[5]);
+    if (r[8]) tu.value = String(r[8]);
+
+    const p = peers(r);
+    const retVals = p.map((x) => x[6]).filter((x): x is number => x != null);
+    const retP = retVals.length ? Math.round(median(retVals)) : NaN;
+    const gradVals = p.map((x) => x[7]).filter((x): x is number => x != null);
+    const gradP = gradVals.length ? Math.round(median(gradVals)) : NaN;
+    $('bRet').textContent = r[6] != null ? r[6] + '%' : 'n/a';
+    $('bRetP').textContent = isNaN(retP) ? 'n/a' : retP + '%';
+    $('bGradLbl').textContent = r[4] <= 3 ? '6-year graduation rate' : '3-year graduation rate';
+    $('bGrad').textContent = r[7] != null ? r[7] + '%' : 'n/a';
+    $('bGradP').textContent = isNaN(gradP) ? 'n/a' : gradP + '%';
+
+    const gap = r[6] != null && !isNaN(retP) ? r[6] - retP : 0;
+    const onePoint = fmt((r[5] / 100) * (+tu.value || 0));
+    let msg: string;
+    if (r[6] == null || isNaN(retP)) {
+      lift.value = '3';
+      msg = `IPEDS does not report a first-year retention rate here. One point is worth ${onePoint} a year.`;
+    } else if (gap < 0) {
+      const g = Math.min(11, Math.max(1, Math.round(-gap * 2) / 2));
+      lift.value = String(g);
+      msg = `${-gap} points below institutions like yours. Closing that gap is worth ${fmt((r[5] * -gap / 100) * (+tu.value || 0))} a year.`;
+    } else if (gap > 0) {
+      lift.value = '3';
+      msg = `${gap} points above institutions like yours. Every point you hold is worth ${onePoint} a year.`;
+    } else {
+      lift.value = '3';
+      msg = `Level with institutions like yours. One point is worth ${onePoint} a year.`;
+    }
+    $('bMsg').textContent = msg;
+    bench.hidden = false;
+    calc();
+  }
+
+  inst.addEventListener('focus', () => { load(); });
+  inst.addEventListener('input', async () => {
+    await load();
+    render(matches(inst.value));
+  });
+  inst.addEventListener('keydown', (e) => {
+    const items = list.querySelectorAll('li');
+    if (!items.length || list.hidden) return;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      active = (active + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+      items.forEach((li, i) => li.classList.toggle('active', i === active));
+    } else if (e.key === 'Enter' && active >= 0) {
+      e.preventDefault();
+      (items[active] as HTMLElement).dispatchEvent(new MouseEvent('mousedown'));
+    } else if (e.key === 'Escape') {
+      list.hidden = true;
+    }
+  });
+  inst.addEventListener('blur', () => { setTimeout(() => { list.hidden = true; }, 120); });
 </script>
