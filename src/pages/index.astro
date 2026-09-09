@@ -10,13 +10,12 @@ import FinalCta from '../components/FinalCta.astro';
         <span class="eyebrow">Institutional effectiveness · Proven, not promised</span>
         <h1>Every vendor sells AI.<br />We prove what works.</h1>
         <p class="sub">
-          Civitas Learning connects the data already in <b>Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce — and 100+ other systems</b> into one model of your institution, trains AI on it, and <b>measures the impact of every decision</b> — so you can show your board what moved the numbers, and stop paying for what didn't. Nothing gets replaced.
+          Civitas Learning connects the data already in <b>Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce — and 100+ other systems</b> into one model of your institution, trains AI on it, and <b>measures the impact of every decision</b> — so you can show your board what moved the numbers, and stop paying for what didn't.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="/contact/">Book a demo</a>
           <a class="btn btn-ghost" href="/customer-success-stories/">See partner outcomes</a>
         </div>
-        <LogoBand inline limit={10} />
       </div>
       <div class="ledger" aria-label="Example intervention impact ledger">
         <div class="ledger-head"><h3>Intervention impact, Fall cohort</h3><span class="mono">example · n = 6,412</span></div>
@@ -26,6 +25,29 @@ import FinalCta from '../components/FinalCta.astro';
       </div>
     </div>
   </header>
+
+  <section id="roi" class="tint tight">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Run the numbers</span><h2>What is one point of retention worth to you?</h2></div>
+        <p>Use your own figures. This is the same arithmetic your CFO will do — before Civitas measures the real result.</p>
+      </div>
+      <div class="calc">
+        <div class="fields">
+          <label>Fall undergraduate headcount<input type="number" id="hc" value="9000" min="500" step="100" /></label>
+          <label>Net tuition and fees per student, per year<input type="number" id="tu" value="11500" min="1000" step="250" /></label>
+          <label><span>Retention lift <span class="mono" id="liftLbl">3.0 pts</span> <span style="color:var(--ink3);font-weight:400">— partners typically see 3–11 pts</span></span><input type="range" id="lift" min="1" max="11" step="0.5" value="3" /></label>
+        </div>
+        <div class="out">
+          <div><div class="big" id="rev">$—</div><div class="lbl">additional net revenue per year, from students retained</div></div>
+          <div class="line"><span>Students retained who would have left</span><b id="stu">—</b></div>
+          <p class="note">Assumes one additional year of net tuition per retained student. Multi-year and state funding effects are excluded, so this is a floor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <LogoBand />
 
   <div class="stats">
     <div class="wrap">
@@ -150,27 +172,6 @@ import FinalCta from '../components/FinalCta.astro';
         <a class="card link" href="/customer-success-stories/coordination-without-control-how-the-university-of-cincinnati-built-a-student-success-system-that-scales/"><div class="n">+7 pts</div><div class="m">graduation rate across 18 decentralized units</div><div class="who">University of Cincinnati<small>Read the story →</small></div></a>
         <a class="card link" href="/customer-success-stories/austin-community-college-persistence/"><div class="n">+4.1%</div><div class="m">fall-to-spring persistence; +13% two-year completion</div><div class="who">Austin Community College<small>Read the story →</small></div></a>
         <a class="card link" href="https://studentimpactreport.civitaslearning.com/2026"><div class="n">$4:$1</div><div class="m">average return across partners, 220 initiatives, five years of data</div><div class="who">2026 Student Success Impact Report<small>Read the methodology →</small></div></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="roi" class="tint">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="eyebrow">Run the numbers</span><h2>What is one point of retention worth to you?</h2></div>
-        <p>Use your own figures. This is the same arithmetic your CFO will do — before Civitas measures the real result.</p>
-      </div>
-      <div class="calc">
-        <div class="fields">
-          <label>Fall undergraduate headcount<input type="number" id="hc" value="9000" min="500" step="100" /></label>
-          <label>Net tuition and fees per student, per year<input type="number" id="tu" value="11500" min="1000" step="250" /></label>
-          <label><span>Retention lift <span class="mono" id="liftLbl">3.0 pts</span> <span style="color:var(--ink3);font-weight:400">— partners typically see 3–11 pts</span></span><input type="range" id="lift" min="1" max="11" step="0.5" value="3" /></label>
-        </div>
-        <div class="out">
-          <div><div class="big" id="rev">$—</div><div class="lbl">additional net revenue per year, from students retained</div></div>
-          <div class="line"><span>Students retained who would have left</span><b id="stu">—</b></div>
-          <p class="note">Assumes one additional year of net tuition per retained student. Multi-year and state funding effects are excluded, so this is a floor.</p>
-        </div>
       </div>
     </div>
   </section>
