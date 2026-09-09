@@ -103,6 +103,11 @@ All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two o
 - A retention rate from a full-time cohort under 50 students is dropped. A community college
   that awards a few bachelor's degrees reports retention on that tiny bachelor's cohort, so
   Sinclair showed 100% from three students. The page then shows "n/a" and the one-point copy.
+- The AI vendor checklist (Meredith's name for it) sits under the comparison table and has its
+  own page at `/ai-vendor-checklist/`. Ten questions a cabinet should ask any AI vendor, each
+  with a good answer and a weak answer. Every question is one Civitas answers with a number or
+  a name, and the weak answers are quotes from competitor sites. Nobody is named. The page is a
+  sales leave-behind: a prospect who brings it to a competitor demo is asking our questions.
 - The security line claims only what the live site already states: FERPA school-official
   status, the data sharing agreement, single sign-on, platform specifications, and VPATs.
   SOC 2 and HECVAT are not on the site. Add them only when the reports exist.

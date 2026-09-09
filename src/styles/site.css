@@ -184,6 +184,16 @@ section.tint{background:var(--tint)}
 .col li i{font-style:normal;font-family:var(--mono);color:var(--ink3)}
 .col+.col li i{color:var(--cyan-ink)}
 @media (max-width:900px){.cmp{grid-template-columns:1fr}.col+.col{border-left:0;border-top:1px solid var(--line)}}
+/* AI vendor checklist */
+.checklist{margin-top:28px;border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:28px}
+.checklist-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+.checklist-head h3{font-size:22px;margin-top:8px;max-width:22em}
+.checklist ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px;counter-reset:q}
+.checklist li{counter-increment:q;display:grid;grid-template-columns:34px 1fr;gap:4px 10px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink2)}
+.checklist li::before{content:counter(q,decimal-leading-zero);grid-row:1/span 2;font-family:var(--mono);font-size:13px;color:var(--cyan-ink);padding-top:2px}
+.checklist li b{color:var(--ink);font-weight:700}
+.checklist li span{font-size:14px;color:var(--ink3)}
+@media (max-width:900px){.checklist ol{grid-template-columns:1fr}}
 /* cards */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
