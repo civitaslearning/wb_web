@@ -75,7 +75,7 @@ Every vendor now sells AI. The demos look alike. These ten questions separate a 
 
 **Why it matters.** "Hundreds of partners" and "millions of conversations" are volume. A published outcome with an institution's name on it is proof. A reference call is proof you can check.
 
-**A good answer.** A count, a link, and three names. We have 375 institutions and [31 measured outcomes](/customer-success-stories/), each with the number and how it was measured.
+**A good answer.** A link and three names. We publish [31 measured outcomes](/customer-success-stories/), each with the number and how it was measured, and we will set up the calls.
 
 **A weak answer.** A logo wall with no numbers under it.
 

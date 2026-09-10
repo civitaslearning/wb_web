@@ -1,12 +1,12 @@
 ---
 import customers from '../data/customers.json';
 interface Props { label?: string; limit?: number; inline?: boolean }
-const { label = 'Trusted by 375 colleges and universities of all sizes', limit = customers.length, inline = false } = Astro.props;
+const { label = 'Trusted by colleges and universities of all sizes', limit = customers.length, inline = false } = Astro.props;
 const list = customers.slice(0, limit);
 ---
 {inline ? (
   <div class="logo-strip">
-    <p class="lbl"><b>Trusted by 375 colleges and universities</b> of all sizes</p>
+    <p class="lbl"><b>Trusted by colleges and universities</b> of all sizes</p>
     <div class="logos">{list.map((c) => <img src={`/assets/${c.file}`} alt={c.name} />)}</div>
   </div>
 ) : (

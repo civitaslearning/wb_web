@@ -156,7 +156,7 @@ Supporting moves, in order down the page:
 |---|---|
 | Hero + example impact ledger | State the thesis; show the one picture only Civitas can show (lift with confidence intervals, two interventions with no effect). |
 | Logo strip in the hero | Trust from named institutions, not a number. |
-| Stat band | Four numbers: 375+, 89%, +8 pts, $4:$1. |
+| Stat band | Four numbers: 220 measured initiatives, 89%, +8 pts, $4:$1. |
 | "One institution, one dataset" | Nick's broadening: institutional effectiveness across every system the university runs. Systems in → Civitas (Unify, Predict, Act, Measure) → outcomes out, student success first. |
 | Three cabinet questions | Set the buying criteria. Question 2 ("which interventions are really working?") is one Element cannot answer. |
 | Three jobs with named agents | Recruit & enroll, Success & progress, Graduate & employ. Each job has one number and one school. |
@@ -175,6 +175,9 @@ Supporting moves, in order down the page:
 - No "bring your data" demo. Prospects cannot share data pre-sale. Sessions start from IPEDS.
 - `$4 : $1` stays in the stat band and outcome card, not in the calculator.
 - Proof is one number and one institution. No ranges.
+- No institution-count claims (Will, 2026-09-10). No "375 institutions", no "hundreds of
+  partners". The logo strip and the named outcomes carry the trust. Counts of measured
+  initiatives and published stories are fine, because each one links to its evidence.
 - No internal jargon in headlines. Plain terms a president uses.
 
 ### Voice
