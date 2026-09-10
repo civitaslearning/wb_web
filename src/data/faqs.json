@@ -1,6 +1,5 @@
 {
  "_note": "Questions buyers actually ask, keyed by page path. Rendered by src/components/Faq.astro, which also emits FAQPage structured data. Rules: write the question the way a buyer says it, not the way marketing would title it. Put the answer in the first sentence, because an answer engine quotes that sentence without the question next to it. Use a number and a name wherever the site already publishes one. Never make a claim here that is not made in the visible copy elsewhere on the site. Source for new questions is the Gong call record; Marketing owns the copy.",
-
  "/": [
   {
    "q": "How do we know if our student success interventions are working?",
@@ -12,11 +11,15 @@
   },
   {
    "q": "What does Civitas Learning actually do?",
-   "a": "Civitas Learning connects the systems a college already runs into one model of the institution, trains predictive models on that institution's own history, puts the results in front of the staff who act on them, and measures what each action changed. It is a measurement layer over the systems you keep, not a replacement for your SIS, LMS, or CRM."
+   "a": "Civitas Learning connects the systems a college already runs into one model of the institution, trains predictive models on that institution's own history, gives staff and students the tools to act on it, and measures what each action changed. The tools include an advising CRM with case management, degree planning, registration, class scheduling, and a student mobile app, so Civitas can be your advising system of record or work alongside the one you already have."
   },
   {
-   "q": "Does Civitas replace our SIS, LMS, or CRM?",
-   "a": "No. Civitas reads from more than 100 systems, including Banner, PeopleSoft, Colleague, Workday Student, Canvas, Blackboard, Slate, and Salesforce, and writes actions and results back to them. Nothing gets replaced, including a CRM or AI agent tool you have already bought."
+   "q": "Do we have to replace our SIS, LMS, or CRM?",
+   "a": "No, and that is a choice rather than a limitation. Civitas reads from more than 100 systems, including Banner, PeopleSoft, Colleague, Workday Student, Canvas, Blackboard, Slate, and Salesforce, and writes actions and results back to them. It never replaces the SIS or the LMS. For the advising CRM specifically, Civitas ships its own, so you can consolidate onto it or keep the tool you have. <a href=\"/compare/\">How that compares →</a>"
+  },
+  {
+   "q": "Is Civitas just analytics, or can our advisors and students work in it?",
+   "a": "Both. Advisors get a CRM with case management, shared notes, academic alerts, dynamic student lists, and email and SMS outreach. Students get collaborative degree planning, the class schedule builder, registration, appointment scheduling, and a mobile app. The analytics and the comparison-group measurement sit under all of it. <a href=\"/advising-and-student-success/\">What an advising team gets →</a>"
   },
   {
    "q": "How is this different from a generic AI agent?",
@@ -39,7 +42,6 @@
    "a": "No. Every model is trained on your institution's own data, and your data is never pooled into a benchmark sold to another school. Civitas operates as a school official under FERPA, under a data sharing agreement you sign. <a href=\"/security/\">Security and privacy →</a>"
   }
  ],
-
  "/platform/": [
   {
    "q": "What is the Institutional Impact Platform?",
@@ -50,12 +52,12 @@
    "a": "More than 100, including Banner, PeopleSoft, Colleague, and Workday Student for the SIS; Canvas, Blackboard, D2L, and Moodle for the LMS; and Slate, Salesforce, Element451, CollegeVine, and TargetX for the CRM. Civitas also reads engagement tools, the campus card system, surveys, and your warehouse."
   },
   {
-   "q": "Do we have to replace anything we already own?",
-   "a": "No. The platform sits beside the systems you run and reads from them, then writes actions and results back. Institutions keep the CRM, the early alert tool, and the agent platform they already bought."
+   "q": "Do we have to replace anything, and can Civitas be our advising CRM?",
+   "a": "Nothing has to be replaced, and Civitas can be your advising CRM if you want it to be. The platform ships case management, shared notes, alerts, outreach, degree planning, registration, scheduling, and a student mobile app, so an institution can consolidate onto it. It also sits beside the CRM, early alert tool, or agent platform you already bought and writes back to them. The SIS and the LMS are never replaced."
   },
   {
    "q": "Who uses the platform day to day?",
-   "a": "Three groups. Leaders use student outcome analytics, predictive factors of success, initiative analytics, course insights, and course demand analytics. Advisors and student-facing staff use the unified student profile, shared notes, academic alerts, and email and SMS outreach. Students use collaborative degree planning, the class schedule builder, and appointment scheduling."
+   "a": "Three groups. Leaders use student outcome analytics, predictive factors of success, initiative analytics, course insights, and course demand analytics. Advisors and student-facing staff use the unified student profile, case management, shared notes, academic alerts, dynamic lists, and email and SMS outreach. Students use collaborative degree planning, the smart class schedule builder, registration, appointment scheduling, asynchronous guidance, and the student mobile app."
   },
   {
    "q": "How is the platform different from a data warehouse or a BI dashboard?",
@@ -74,7 +76,6 @@
    "a": "AI is built into the platform, not sold beside it. There is no token metering, no per-agent purchase, and no separate agent platform to implement. <a href=\"/ai-solutions/\">Civitas Learning AI →</a>"
   }
  ],
-
  "/analytics/": [
   {
    "q": "What is an institution-specific predictive model?",
@@ -105,7 +106,6 @@
    "a": "No. Each model is trained on one institution's data, and nothing is pooled into a cross-institution benchmark."
   }
  ],
-
  "/workflows/": [
   {
    "q": "Where do advisors actually see this?",
@@ -132,7 +132,6 @@
    "a": "Yes, and it is where the difference shows. Outreach and engagement can be targeted by population, and results are reported by population, so you can see whether an effort designed for full-time residential students is reaching anybody else."
   }
  ],
-
  "/data-lakehouse/": [
   {
    "q": "What is a unified data layer in higher education?",
@@ -159,7 +158,6 @@
    "a": "The integration is maintained as part of the subscription. Institutions migrating from one SIS or CRM to another keep the historical record, which matters because the predictive models are trained on that history."
   }
  ],
-
  "/strategic-services-2/": [
   {
    "q": "What does the Civitas partnership include beyond software?",
@@ -182,7 +180,6 @@
    "a": "The models, the definitions, and the measurement record stay with the institution, not with the person who set them up. That is the difference between an operating model and a project."
   }
  ],
-
  "/ai-solutions/": [
   {
    "q": "What is agentic AI, and how is it different from a chatbot?",
@@ -221,7 +218,6 @@
    "a": "Schedule a conversation with our team. We will learn about your goals and help you identify which AI assistants and capabilities fit your institution first. <a href=\"/contact/\">Book a demo →</a>"
   }
  ],
-
  "/enrollment-management/": [
   {
    "q": "How do we predict which admits will actually enroll?",
@@ -248,7 +244,6 @@
    "a": "Retention is almost always the cheaper number. One point at an institution of 9,000 students paying $11,500 net is 90 students and just over $1 million a year, with no additional recruitment spend. <a href=\"/#roi\">Run your own figures →</a>"
   }
  ],
-
  "/advising-and-student-success/": [
   {
    "q": "How does an advisor know which students to contact first?",
@@ -275,11 +270,14 @@
    "a": "Yes. Each advising initiative is scored against a matched comparison group of similar students who did not receive it, so you can see the lift and the confidence interval rather than a year-over-year difference. <a href=\"/ensure-initiative-efficacy-and-roi/\">How efficacy is measured →</a>"
   },
   {
-   "q": "Does it work with the case management tool we already use?",
-   "a": "Yes. Civitas reads from and writes to the systems you run, including the CRM and the early alert tool, rather than replacing them."
+   "q": "Can Civitas be our advising CRM, or does it only work with the one we have?",
+   "a": "Either way, and the institution decides. Civitas ships an advising CRM with case management, shared notes, academic alerts, dynamic student lists, and email and SMS outreach, so it can be the system your advisors work in. It also reads from and writes to a CRM or early alert tool you would rather keep. Most vendors in this category require you to move advising into their system."
+  },
+  {
+   "q": "Is there anything for students, or is this an advisor tool?",
+   "a": "Students get collaborative degree planning, the smart class schedule builder, registration, appointment scheduling, asynchronous guidance, and a mobile app. Planning pays when students come back to it: academic planning produced a 10% sustained persistence lift over five years, and 15% for online students."
   }
  ],
-
  "/academic-leaders-and-faculty/": [
   {
    "q": "How do we find the courses that are blocking student progress?",
@@ -306,7 +304,6 @@
    "a": "No. The signals surface where faculty already work, and the alert an instructor raises becomes part of the same student record advising sees."
   }
  ],
-
  "/institutional-research-effectiveness/": [
   {
    "q": "How does this help with accreditation and IPEDS reporting?",
@@ -333,7 +330,6 @@
    "a": "Yes. The governed dataset is available to the institution's analytics stack, so existing reporting and visualization tools keep working."
   }
  ],
-
  "/institutional-technology/": [
   {
    "q": "What does implementation require from our IT team?",
@@ -360,11 +356,10 @@
    "a": "More than 100, including Banner, PeopleSoft, Colleague, Workday Student, Canvas, Blackboard, D2L, Moodle, Slate, Salesforce, Element451, CollegeVine, and TargetX, plus your warehouse and engagement tools."
   },
   {
-   "q": "Does this add another system of record?",
-   "a": "No. Civitas reads from your systems of record and writes actions and results back to them."
+   "q": "Does this add another system of record, or replace one?",
+   "a": "Neither, unless you want it to. Civitas reads from your systems of record and writes actions and results back, and it never replaces the SIS or the LMS. Where an institution wants to retire an advising or early alert tool, Civitas ships the advising CRM, case management, planning, registration, and scheduling to consolidate onto, which is a way to reduce the vendor count rather than add to it."
   }
  ],
-
  "/curate-student-data/": [
   {
    "q": "Why do our offices report different numbers for the same thing?",
@@ -387,7 +382,6 @@
    "a": "Only the roles the institution grants. The institution sets the access model; Civitas enforces it."
   }
  ],
-
  "/improve-on-time-completion/": [
   {
    "q": "Why do students stall so close to a degree?",
@@ -414,7 +408,6 @@
    "a": "Yes. Austin Community College raised fall-to-spring persistence 4.1 percent and two-year completion 13 percent."
   }
  ],
-
  "/career-outcomes/": [
   {
    "q": "What are the new Department of Education earnings rules?",
@@ -445,7 +438,6 @@
    "a": "Deans and provosts for program decisions, career services for where to invest, and institutional research for accreditation, state reporting, and the federal filing."
   }
  ],
-
  "/coordinate-student-care/": [
   {
    "q": "How do we stop students from falling between offices?",
@@ -468,7 +460,6 @@
    "a": "Yes. Student success outreach measured against a comparison group produced a 16 percent persistence lift in the 2026 Impact Report, sustained at 16 percent over five years."
   }
  ],
-
  "/ensure-initiative-efficacy-and-roi/": [
   {
    "q": "How do you prove an initiative worked?",
@@ -499,7 +490,6 @@
    "a": "As a ledger: each initiative, the population, the lift, and the confidence interval, next to the dollar value. That is the format a president can defend in the room."
   }
  ],
-
  "/pricing/": [
   {
    "q": "How much does Civitas Learning cost?",
@@ -519,7 +509,7 @@
   },
   {
    "q": "What is not included?",
-   "a": "Systems Civitas reads from remain your cost: the SIS, the LMS, the CRM, and their license fees are unaffected, because nothing is replaced. Unusual source systems can add integration scope."
+   "a": "Systems Civitas reads from remain your cost. The SIS and the LMS are never replaced, so their license fees are unaffected. A CRM or early alert tool you decide to retire onto Civitas is a saving on your side rather than a line on our invoice. Unusual source systems can add integration scope."
   },
   {
    "q": "How should we build the business case?",

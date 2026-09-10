@@ -444,7 +444,39 @@ Re-read the competitor pages on a schedule. Their products change and ours does 
 
 ---
 
-## 7. Persona pages: lead with the buyer's win
+## 7. What the product actually is: work with the CRM, or be the CRM
+
+A correction that ran through the whole site (Will, 2026-09-10). The copy said Civitas is "a
+measurement layer, not a system of record" and that "nothing gets replaced". **That undersold the
+product badly.** Civitas has an advising CRM with case management, notes, alerts, dynamic lists,
+and outreach; collaborative degree planning; registration; class scheduling; and, new, a
+student-facing mobile app.
+
+The position that follows is stronger than either extreme in the market:
+
+| Vendor | Deployment |
+|---|---|
+| EAB Navigate360 | Advising moves into Navigate360. It becomes the system of record. |
+| Salesforce Education Cloud, Element451 | It is the CRM. |
+| **Civitas Learning** | **Your choice. Be the advising CRM, or read from the one you keep and write back to it.** The measurement is the same either way. |
+
+"Nothing gets replaced" survives as a de-risking promise for the CIO, but it is now "nothing
+**has** to be replaced" — a choice the buyer makes rather than a limit on what we can do. The SIS
+and the LMS are genuinely never replaced. An advising or early alert contract can be retired onto
+Civitas, which is a way to reduce the vendor count rather than add to it.
+
+This was costing us the head-to-head. The EAB comparison page previously conceded "a mature
+student mobile app" and "Navigate360 becomes the advising system of record" as reasons to choose
+them, when we ship both a mobile app and an advising CRM. Those rows are corrected, and the mobile
+app is no longer listed under "choose EAB when".
+
+**Before launch:** the student mobile app is new and is not yet on `www.civitaslearning.com`.
+Confirm its product name, its availability date, and what it does for students, then use that
+wording rather than the generic phrase used here.
+
+---
+
+## 8. Persona pages: lead with the buyer's win
 
 The home page speaks to the president and the chief financial officer. The five team use-case
 pages are where a VP of Enrollment, a director of advising, or an IR director decides whether we

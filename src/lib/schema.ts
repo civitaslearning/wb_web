@@ -28,7 +28,7 @@ export function organization() {
     alternateName: 'Civitas Learning, Inc.',
     url: `${SITE}/`,
     description:
-      'Civitas Learning connects the systems a college or university already runs into one model of the institution, trains institution-specific predictive models on it, and measures the impact of every student success initiative against a matched comparison group.',
+      'Civitas Learning connects the systems a college or university already runs into one model of the institution, trains institution-specific predictive models on it, and measures the impact of every student success initiative against a matched comparison group. The platform includes an advising CRM with case management, degree planning, registration, class scheduling, and a student mobile app, so it can serve as the advising system of record or work alongside the CRM an institution already has.',
     foundingDate: '2011',
     slogan: 'Every vendor sells AI. We prove what works.',
     knowsAbout: [

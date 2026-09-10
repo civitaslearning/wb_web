@@ -8,12 +8,12 @@
   "eyebrow": "Comparison",
   "headline": "Civitas Learning vs. EAB Navigate360",
   "sub": "Both platforms help institutions coordinate student support. They differ on what the prediction is trained on, and on whether the platform can tell you what an initiative changed.",
-  "answer": "Civitas Learning and EAB Navigate360 both build institution-specific predictive models and both measure intervention impact, so the honest difference is method and disclosure rather than ability. Navigate360 is a higher education CRM built around advising workflow, case management, campaigns, and a student mobile app, with an Intervention Effectiveness Tool that compares student lists; EAB reports more than 850 institutions and publishes retention and graduation ranges. Civitas builds a matched comparison group from your own records and reports the lift with its confidence interval and population size for every initiative, and it reads from the systems you run rather than becoming the place advising happens. Institutions that want one packaged system for advising, with a student app and an advisory relationship, tend to prefer Navigate360. Institutions that have to defend a specific number to a board or an accreditor tend to prefer the Civitas method.",
+  "answer": "Civitas Learning and EAB Navigate360 are closer than the category talk suggests: both build institution-specific predictive models, both measure intervention impact, and both ship an advising CRM, planning and scheduling tools, and a student mobile app. Two things separate them. The first is deployment: Navigate360 becomes the advising system of record, while Civitas can be your advising CRM or sit beside the one you keep and write back to it, which means the institution decides rather than the vendor. The second is measurement method: EAB compares student lists in its Intervention Effectiveness Tool and publishes retention and graduation ranges, and Civitas builds a matched comparison group from your own records and reports each initiative's lift with its population size and confidence interval.",
   "rows": [
    {
     "dimension": "What it is",
     "them": "A higher education CRM: advising workflow, case management, campaigns, and a student mobile app. EAB reports more than 850 institutions and over 10 million students, and also sells research and advisory services.",
-    "us": "A measurement layer over the systems you already run: one unified dataset, an institution-specific predictive model, action inside existing workflows, and comparison-group measurement."
+    "us": "A full student success platform and a measurement layer: an advising CRM with case management, notes, alerts, and outreach, collaborative degree planning, registration, class scheduling, and a student mobile app, on one unified dataset with institution-specific models. Deploy it as your advising system of record, or beside the one you already run."
    },
    {
     "dimension": "How risk is identified",
@@ -33,17 +33,17 @@
    {
     "dimension": "Where staff work",
     "them": "Primarily inside Navigate360, which becomes the advising system of record for many institutions.",
-    "us": "Inside the tools staff already open. Civitas reads from and writes back to your CRM, SIS, and case management tool rather than replacing them."
+    "us": "Your choice, and that is the point. Civitas can be the advising system of record, or it can sit beside your existing CRM and case management tool and write actions and results back to them. Nothing has to be replaced, and nothing stops you replacing it."
    },
    {
     "dimension": "Scope",
     "them": "Focused on student success, advising, and the student experience, with a strong student-facing mobile app.",
-    "us": "The whole institution: enrollment, engagement, persistence, completion, career outcomes, course demand, and program accountability on one dataset."
+    "us": "The whole institution: enrollment, engagement, persistence, completion, career outcomes, course demand, and program accountability on one dataset, with the advising tools on top of it rather than beside it."
    },
    {
     "dimension": "Student-facing tools",
     "them": "A mature student mobile app for scheduling, to-dos, and communication.",
-    "us": "Degree planning, the class schedule builder, appointment scheduling, and asynchronous guidance, delivered in the platform."
+    "us": "Collaborative degree planning, the smart class schedule builder, registration, appointment scheduling, asynchronous guidance, and a student mobile app."
    },
    {
     "dimension": "Advisory services",
@@ -52,8 +52,7 @@
    }
   ],
   "themBest": [
-   "You want one packaged system that becomes the advising system of record, and you are willing to move advising work into it.",
-   "A student-facing mobile app is a requirement, and you want it from the same vendor.",
+   "You want one packaged system that becomes the advising system of record and you have no reason to keep the tools you own.",
    "You want the platform and a research and advisory relationship from one company.",
    "Scale of installed base matters to your committee: EAB reports more than 850 institutions."
   ],
@@ -66,7 +65,7 @@
   "faqs": [
    {
     "q": "Is Civitas Learning a replacement for EAB Navigate360?",
-    "a": "It can be, and it does not have to be. Civitas reads from and writes to the tools an institution already runs, so some institutions keep an existing case management system and add Civitas for prediction and measurement, while others consolidate. The deciding question is usually whether advising work should move into a vendor's system or stay in the institution's own workflow."
+    "a": "It can be, and that is the difference worth understanding. Civitas ships the advising CRM, case management, planning, registration, scheduling, and a student mobile app, so it can replace Navigate360 outright. It can also sit beside a tool you would rather keep and write back to it. Navigate360 generally expects advising work to move into Navigate360."
    },
    {
     "q": "What is the main difference between Civitas Learning and EAB Navigate360?",
@@ -78,7 +77,7 @@
    },
    {
     "q": "Can we run both?",
-    "a": "Yes. Civitas integrates with more than 100 systems and does not require the institution to give up an existing advising or case management tool. Institutions that run both typically use Civitas for the model and the efficacy measurement."
+    "a": "Yes. Civitas integrates with more than 100 systems and does not require you to give up an existing advising or case management tool, so institutions mid-contract often keep Navigate360 and add Civitas for the model and the efficacy measurement, then decide at renewal whether to consolidate."
    },
    {
     "q": "How should we evaluate the two?",
@@ -149,7 +148,7 @@
    {
     "dimension": "Relationship to the other",
     "them": "Salesforce is one of the CRMs Civitas reads from and writes back to.",
-    "us": "Civitas does not replace the CRM. Scores and actions land in Salesforce where the staff already work."
+    "us": "Civitas does not require you to replace the CRM: scores and actions land in Salesforce where your staff already work. Where you would rather not build advising in Salesforce, Civitas provides the advising CRM, planning, registration, and scheduling itself."
    }
   ],
   "themBest": [
@@ -167,7 +166,7 @@
   "faqs": [
    {
     "q": "Does Civitas Learning replace Salesforce?",
-    "a": "No. Salesforce is one of the CRMs Civitas reads from and writes back to, alongside Slate, Element451, CollegeVine, and TargetX. The CRM stays the system of record for relationships, and Civitas adds the model and the measurement across every system."
+    "a": "It does not have to. Salesforce is one of the CRMs Civitas reads from and writes back to, alongside Slate, Element451, CollegeVine, and TargetX, and many institutions keep it as the system of record for relationships. For advising specifically, Civitas ships its own CRM, case management, planning, registration, and scheduling, so institutions that do not want to build all of that in Salesforce do not have to."
    },
    {
     "q": "Can we just build this in Salesforce ourselves?",
@@ -175,7 +174,7 @@
    },
    {
     "q": "We already own Salesforce. Is Civitas redundant?",
-    "a": "No, and the overlap is small. Salesforce holds the interactions; Civitas predicts the outcome from the whole record and measures whether the interaction changed it."
+    "a": "No, and the overlap is smaller than it looks. Salesforce holds the interactions; Civitas predicts the outcome from the whole record across every system and measures whether the interaction changed it. Where the two do overlap, on advising workflow, you choose which one your advisors work in."
    },
    {
     "q": "Which is faster to implement?",
@@ -236,7 +235,7 @@
    {
     "dimension": "Systems posture",
     "them": "A CRM: for many institutions it becomes the system of record for recruitment and communication.",
-    "us": "Reads from more than 100 systems, including Element451, and writes actions and results back. Nothing is replaced."
+    "us": "Reads from more than 100 systems, including Element451, and writes actions and results back. Where you want it to, Civitas is also the advising CRM itself. Nothing has to be replaced, and nothing stops you replacing it."
    },
    {
     "dimension": "Institutional scope",
@@ -258,7 +257,7 @@
   "faqs": [
    {
     "q": "Do Civitas Learning and Element451 compete?",
-    "a": "They overlap more than they used to. Element451 began at the front door and now sells student success and retention products that read SIS and LMS data. Civitas is a measurement layer across the whole institution that reads from the CRM you run, and Element451 is a supported integration, so the two are frequently deployed together."
+    "a": "They overlap more than they used to. Element451 began at the front door and now sells student success and retention products that read SIS and LMS data; Civitas ships an advising CRM, planning, registration, and scheduling alongside its measurement layer. The practical difference is that Element451 is the CRM, and Civitas can either be the CRM or read from the one you run. Element451 is a supported integration."
    },
    {
     "q": "Can we use both?",
@@ -302,7 +301,7 @@
   "eyebrow": "Buyer's guide",
   "headline": "Student success platform alternatives, and how to tell them apart",
   "sub": "Four kinds of product get sold as a student success platform. They solve different problems, and the demos look alike.",
-  "answer": "There are four categories of student success software, and the fastest way to tell them apart is to ask what each one produces as proof. Student success management systems produce advising activity. AI-native CRMs produce engagement and efficiency. Data warehouses and business intelligence tools produce reports. Measurement platforms such as Civitas Learning produce lift against a matched comparison group. Most institutions need more than one, and the mistake is buying two products from the same category and expecting them to answer different questions.",
+  "answer": "There are four categories of student success software, and the fastest way to tell them apart is to ask what each one produces as proof, and whether it makes you move your work into it. Student success management systems produce advising activity and expect advising to live in them. AI-native CRMs produce engagement and efficiency and are the CRM. Data warehouses and business intelligence tools produce reports. Measurement platforms such as Civitas Learning produce lift against a matched comparison group, and ship the advising, planning, and scheduling tools too, so the institution decides whether to keep its CRM or use theirs. Most institutions need more than one category, and the mistake is buying two products from the same one and expecting different answers.",
   "rows": [
    {
     "dimension": "Student success management system",
@@ -326,8 +325,8 @@
    },
    {
     "dimension": "Measurement platform",
-    "them": "Institution-specific predictive models plus comparison-group efficacy measurement. This is what Civitas Learning is.",
-    "us": "Buy it when you have to prove which initiatives moved persistence, completion, or revenue, and defend the number."
+    "them": "Institution-specific predictive models and comparison-group efficacy measurement, with advising, planning, and scheduling tools on the same dataset. This is what Civitas Learning is.",
+    "us": "Buy it when you have to prove which initiatives moved persistence, completion, or revenue, and defend the number. It is also the only option in this list that lets you keep your CRM or use its own."
    }
   ],
   "themBest": [
@@ -337,7 +336,7 @@
   ],
   "usBest": [
    "Performance-based funding, a board, or an accreditor is asking which initiatives worked.",
-   "You already own the systems and cannot justify replacing them.",
+   "You want to decide for yourself whether to keep your CRM or consolidate onto one platform, rather than have the vendor decide.",
    "You need one dataset that answers enrollment, engagement, persistence, completion, and career outcome questions the same way.",
    "You want the prediction trained on your own students, refreshed each term."
   ],

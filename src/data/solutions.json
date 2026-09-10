@@ -27,8 +27,8 @@
     "body": "Equip Everyone to Impact Any Student Outcome",
     "bullets": [
      "Leaders: Student Outcome Analytics, Predictive Factors of Success, Initiative Analytics, Course Insights, Course Demand Analytics",
-     "Student-Facing Staff: Student Success Analytics, Unified Student Profile, Shared Notes, Academic Alerts, SMS & Email",
-     "Students: Collaborative Degree Planning, Smart Class Schedule Builder, Appointment Calendaring, Asynchronous Guidance"
+     "Student-Facing Staff: Advising CRM with Case Management, Unified Student Profile, Shared Notes, Academic Alerts, Dynamic Student Lists, SMS & Email",
+     "Students: Collaborative Degree Planning, Smart Class Schedule Builder, Registration, Appointment Calendaring, Asynchronous Guidance, Student Mobile App"
     ]
    },
    {
@@ -829,6 +829,7 @@
     "body": "",
     "bullets": [
      "Monday's list, already built: Ranked by risk with the reason attached, so the first hour of the week goes to advising rather than to filtering a spreadsheet.",
+     "The advising CRM, if you want it: Case management, shared notes, academic alerts, dynamic lists, and email and SMS outreach. Use it as your system of record, or keep the tool you have and let Civitas write back to it.",
      "The week-four signal: Grades, credits, course patterns, aid status, and engagement weighed together, so the slide shows up before a single grade report would.",
      "The note, drafted: The record is written after the meeting and lands back in the systems your team already uses, so nobody re-keys anything.",
      "Proof for your staffing case: Every advising initiative scored against a matched comparison group. Northwest Missouri State gained 8 points of retention."
@@ -872,7 +873,7 @@
    },
    {
     "heading": "Plan the degree with the student, not for them",
-    "body": "Build and revisit degree plans and class schedules together, around the student's goals, work, and commitments. Planning pays when students come back to it: academic planning produced a 10% sustained persistence lift over five years, and 15% for online students.",
+    "body": "Build and revisit degree plans and class schedules together, around the student's goals, work, and commitments, then register from the same place. Students carry it in the mobile app. Planning pays when students come back to it: academic planning produced a 10% sustained persistence lift over five years, and 15% for online students.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_07_Schedule-Button_1440px.webp",
@@ -1109,13 +1110,14 @@
   "name": "Higher Education Software",
   "eyebrow": "Institutional Technology",
   "headline": "Nothing to rip out. Nothing new to maintain.",
-  "sub": "Civitas reads from Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce, and 100+ other systems, builds one model of the institution, and writes actions and results back. Lawrence Technological University was live in six weeks.",
+  "sub": "Civitas reads from Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce, and 100+ other systems, builds one model of the institution, and writes actions and results back. Keep the advising tools you have, or consolidate onto ours. Lawrence Technological University was live in six weeks.",
   "sections": [
    {
     "heading": "What a CIO gets",
     "body": "",
     "bullets": [
-     "No new system of record: Civitas reads from your systems and writes back to them. Nothing is replaced, including the CRM and the AI agent tool you have already bought.",
+     "No new system of record: Civitas reads from your systems and writes back to them, and never replaces the SIS or the LMS.",
+     "Fewer vendors if you want them: Civitas ships the advising CRM, case management, planning, registration, and scheduling, so an advising or early alert contract can be retired onto it rather than renewed.",
      "Integrations you do not maintain: Civitas builds the connections and keeps them running through your vendors' upgrades, as part of the subscription.",
      "Live in six weeks: Lawrence Technological University's date. What moves it is the number of source systems and how fast you can convene the people who own each one.",
      "FERPA answered in writing: School official status you designate, a published data sharing agreement, single sign-on, and role-based access."

@@ -10,7 +10,7 @@
   "term": "Institutional Impact Platform",
   "also": ["Student Impact Platform"],
   "short": "Civitas Learning's platform for unifying institutional data, predicting outcomes, acting in existing workflows, and measuring the result.",
-  "body": "The platform reads from more than 100 systems, builds one governed record of the institution, trains institution-specific predictive models on it, delivers the result inside the tools staff already use, and measures each initiative against a matched comparison group. It was previously named the Student Impact Platform, and older material still uses that name.",
+  "body": "The platform reads from more than 100 systems, builds one governed record of the institution, trains institution-specific predictive models on it, and measures each initiative against a matched comparison group. It also carries the tools people work in: an advising CRM with case management, notes, alerts, and outreach; collaborative degree planning; registration; class scheduling; and a student mobile app. An institution can use it as the advising system of record or keep its own CRM and let Civitas write back to it. It was previously named the Student Impact Platform, and older material still uses that name.",
   "see": [["/platform/", "Platform overview"]]
  },
  {
