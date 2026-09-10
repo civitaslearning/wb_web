@@ -719,76 +719,62 @@
   "kind": "usecases",
   "name": "Strategic Enrollment & Retention Software",
   "eyebrow": "Strategic Enrollment",
-  "headline": "Fill the class with students who will finish.",
-  "sub": "Every admit gets two scores in the CRM you already run: will they enroll, and will they still be here in year two. Yield, melt, and registration move first. Retention pays for the next class.",
+  "headline": "Make your number. Then keep it.",
+  "sub": "You are judged on the fall census, and again on spring retention. Every admit gets two scores in the CRM your counselors already open: will they enroll, and will they still be here in year two.",
   "sections": [
    {
-    "heading": "Remove Barriers to Success",
-    "body": "Maximize total enrollment with actionable insight into key factors, like the impact of financial support on enrollment behavior, to inform strategies and investments.",
-    "bullets": []
+    "heading": "What a VP of Enrollment gets",
+    "body": "",
+    "bullets": [
+     "Hit the census number: Two scores on every admit, in the CRM your counselors already open, so the team works the list from the top and the agent works the rest.",
+     "Stop the melt: The admit who goes quiet surfaces the day it happens, with the outreach drafted and the follow-up booked.",
+     "Register the students you already have: Continuing students who have not registered by week two, named, with the hold identified. SUNY Broome raised registration 3.7%.",
+     "Keep the class you recruited: Second-year persistence reported next to yield, so you find out whether the class you built actually stays."
+    ]
    },
    {
-    "heading": "Simplify Course Enrollment",
-    "body": "Avoid enrollment issues like conflicts, insufficient availability, or over-provisioned offerings. Inform outreach efforts based on real-time student enrollment behavior.",
-    "bullets": []
-   },
-   {
-    "heading": "Provide the Right Support",
-    "body": "Identify specific opportunities to improve enrollment across diverse student groups. Provide proactive, individualized guidance and support with data-informed strategies.",
-    "bullets": []
-   },
-   {
-    "heading": "Actionable Insights for Informed Decisions",
-    "body": "Get insight into the factors influencing your students' retention, completion, and engagement from institution-specific models. Identify effective policies and initiatives, like scholarship programs or financial aid policies for specific student groups, to create tailored strategies that meet the needs of your students, improving enrollment and retention outcomes.",
+    "heading": "See which admits will enroll, and which will still be here in year two",
+    "body": "Two predictions from a model trained on your own admit and enrollment history, not on sector averages: likelihood to enroll, and likelihood to persist into year two. A yield decision that fills the class with students who leave raises this year's census and next year's attrition, so the platform reports both numbers together.",
     "bullets": [],
     "image": {
      "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
-     "alt": "Actionable Insights for Informed Decisions"
+     "alt": "Student outcome predictions for an admitted class"
     }
    },
    {
-    "heading": "Simplify the Registration Experience",
-    "body": "Provide an end-to-end enrollment experience that empowers students to manage registration in one place. Collaborate with students on degree plans and class schedules to accommodate academic goals, co-curricular activities, and personal commitments.",
-    "bullets": [],
-    "image": {
-     "file": "WORKFLOW_07_Schedule-Button_1440px.webp",
-     "alt": "Simplify the Registration Experience"
-    }
-   },
-   {
-    "heading": "Prioritize Engagement to Scale Support",
-    "body": "Deliver proactive support at scale with actionable insights, such as persistence and completion predictions. Monitor degree planning and registration activity to prioritize outreach and tailor guidance based on student needs. Simplify daily workloads to align strategies, prioritize outreach, and inform student guidance.",
+    "heading": "Work the melt list before the deposit deadline passes",
+    "body": "Deposited students who have gone quiet are scored daily and ranked, so a counselor opens the day with the twenty names that matter rather than the whole file. The outreach is drafted and the follow-up is booked, which is what makes proactive contact survive a busy July.",
     "bullets": [],
     "image": {
      "file": "updateddashboard_1440by1080.webp",
-     "alt": "Prioritize Engagement to Scale Support"
+     "alt": "Prioritized outreach list for admitted students"
     }
    },
    {
-    "heading": "Monitor Course Demand in Real-Time",
-    "body": "Section-level scheduling analytics help you respond to student enrollment behavior in real time to ensure course availability. Adjust section capacities by tracking which sections are filling fastest and identifying which modalities, days, and times are most popular.",
+    "heading": "Clear the registration holds that cost you the spring number",
+    "body": "Continuing students who have not registered by week two of open registration are found by name, with the hold that is stopping them identified, so the conversation starts from the fix. SUNY Broome raised registration 3.7% by working that list.",
+    "bullets": [],
+    "image": {
+     "file": "WORKFLOW_07_Schedule-Button_1440px.webp",
+     "alt": "Student registration and schedule builder"
+    }
+   },
+   {
+    "heading": "Open the sections that hold the class",
+    "body": "Section-level analytics show which sections are filling fastest and which modalities, days, and times students actually pick, and forecast demand for the next term. A student who cannot get a required seat is an enrollment problem before it is an academic one.",
     "bullets": [],
     "image": {
      "file": "WORKFLOWS_fall2024acct51201_1440px_cropped.webp",
-     "alt": "Monitor Course Demand in Real-Time"
+     "alt": "Real-time section fill and course demand"
     }
    },
    {
-    "heading": "Accurately Forecast Course Demand",
-    "body": "Offer the right combination of courses each term to ensure students register for the classes they need to stay enrolled and make progress toward on-time completion. Accurately forecast future demand to avoid over or under-provisioned course offerings.",
-    "bullets": [],
-    "image": {
-     "file": "ANALYTICS_Dashboard-Demand-Trends_1440px.webp",
-     "alt": "Accurately Forecast Course Demand"
-    }
-   },
-   {
-    "heading": "Identify Curricular Bottlenecks",
-    "body": "Understand which courses may negatively impact persistence or completion for specific students. Develop tailored academic interventions, identify which courses benefit from embedded support services like tutoring or supplemental instruction, and inform curriculum design.",
+    "heading": "Find the gateway course that costs you next year's returning class",
+    "body": "Some courses quietly remove students from the institution. Course-level analysis shows which ones reduce persistence for which populations, so you can put tutoring or supplemental instruction where it changes the second-year number instead of spreading it evenly.",
     "bullets": [],
     "image": {
      "file": "ANALYTICS_Courses_1440px.webp",
-     "alt": "Identify Curricular Bottlenecks"
+     "alt": "Course impact on persistence and completion"
     }
    },
    {
@@ -833,78 +819,64 @@
  {
   "slug": "advising-and-student-success",
   "kind": "usecases",
-  "name": "About Civitas Learning",
+  "name": "Advising & Student Success Software",
   "eyebrow": "Advising & Student Success",
-  "headline": "Keep the students you already have.",
-  "sub": "A model trained on your own history scores every student every week, so advisors see the week-four slide before it becomes a week-twelve withdrawal. Retention is the cheapest enrollment you will ever buy.",
+  "headline": "Get your time back. Spend it on the students who need you this week.",
+  "sub": "Your list is built before you log in, ranked by a model trained on your own history and refreshed each term, with the reason attached. The note is drafted after the meeting. Retention is the cheapest enrollment you will ever buy.",
   "sections": [
    {
-    "heading": "Access Student Information in One Place",
-    "body": "Consolidate student information into a comprehensive profile. Coordinate student care across campus with centralized notes and academic alerts.",
-    "bullets": []
+    "heading": "What an advising team gets",
+    "body": "",
+    "bullets": [
+     "Monday's list, already built: Ranked by risk with the reason attached, so the first hour of the week goes to advising rather than to filtering a spreadsheet.",
+     "The week-four signal: Grades, credits, course patterns, aid status, and engagement weighed together, so the slide shows up before a single grade report would.",
+     "The note, drafted: The record is written after the meeting and lands back in the systems your team already uses, so nobody re-keys anything.",
+     "Proof for your staffing case: Every advising initiative scored against a matched comparison group. Northwest Missouri State gained 8 points of retention."
+    ]
    },
    {
-    "heading": "Easily Prioritize Student Engagement",
-    "body": "Monitor individual or groups of students to prioritize and organize outreach. Quickly send communications or schedule appointments from automated student lists.",
-    "bullets": []
-   },
-   {
-    "heading": "Simplify Course Enrollment",
-    "body": "Collaborate with students on degree plans and class schedules to ease registration. Inform outreach efforts based on real-time student planning and scheduling behavior.",
-    "bullets": []
-   },
-   {
-    "heading": "Understand the Whole Student",
-    "body": "See actionable insights like which students might not persist or graduate and why. Inform proactive guidance with the critical information you need in one place, including holds, financial aid status, course history, advising notes, and engagement opportunities.",
+    "heading": "See the whole student, not the last grade",
+    "body": "Holds, financial aid status, course history, advising notes, and engagement in one profile, next to the prediction and the factors driving it. An advisor opens the conversation knowing what changed, which is the difference between a check-in and an intervention.",
     "bullets": [],
     "image": {
      "file": "updateddashboard_1440by1080.webp",
-     "alt": "Understand the Whole Student"
+     "alt": "Unified student profile with predictions and history"
     }
    },
    {
-    "heading": "Prioritize Engagement to Scale Proactive Support",
-    "body": "Automatically identify a list of students to engage throughout the term based on factors such as a change in persistence likelihood or unfinished schedules to make an impact before it's too late.",
+    "heading": "Your list is built before you log in",
+    "body": "Students are surfaced automatically as the signal changes: a drop in persistence likelihood, an unfinished schedule, a missed registration. The list arrives ranked, so the work starts at the top instead of starting with building the list.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_Advising-screen3_1440px.webp",
-     "alt": "Prioritize Engagement to Scale Proactive Support"
+     "alt": "An advisor's prioritized student list for the day"
     }
    },
    {
-    "heading": "Personalize Outreach to Improve Effectiveness",
-    "body": "Communicate with students in scalable and personalized ways. Determine which channels are most effective for particular students to improve engagement and take action within the same system.",
+    "heading": "Reach students on the channel they actually answer",
+    "body": "Send personalized email and SMS from the same place you see the student, and see which channel each student responds to. Keep a person setting the audience, the timing, and the message: in the 2026 Impact Report, persistence fell 6.8 percentage points where communication was fully automated with no human judgment behind it.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_Advising-screen4_1440px.webp",
-     "alt": "Personalize Outreach to Improve Effectiveness"
+     "alt": "Personalized outreach from the advising workflow"
     }
    },
    {
-    "heading": "Eliminate Inefficiencies, Ease Capacity Challenges",
-    "body": "Equip your advising and student success teams with intelligent case management tools like dynamic lists and shared notes to efficiently use their time. Empower them to quickly complete everyday tasks and organize their workday.",
+    "heading": "Stop rebuilding the same list every week",
+    "body": "Dynamic lists, shared notes, and case management tools that hold their state, so a caseload is maintained rather than reconstructed. This is the hour a week per advisor that funds the rest of the work.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_student-list.webp",
-     "alt": "Eliminate Inefficiencies, Ease Capacity Challenges"
+     "alt": "Dynamic student lists and shared case notes"
     }
    },
    {
-    "heading": "Coordinate Student Care Across Departments",
-    "body": "Share notes, raise alerts, and coordinate student care across leadership, advisors, faculty, and student success teams with seamless collaboration capabilities.",
-    "bullets": [],
-    "image": {
-     "file": "WORKFLOW_Advising-screen6_1440px.webp",
-     "alt": "Coordinate Student Care Across Departments"
-    }
-   },
-   {
-    "heading": "Collaborate on Academic Plans with Students",
-    "body": "Collaborate with students on degree plans and class schedules to accommodate academic goals, co-curricular activities, and personal commitments. Monitor degree planning and registration activity to prioritize outreach and tailor guidance based on student needs.",
+    "heading": "Plan the degree with the student, not for them",
+    "body": "Build and revisit degree plans and class schedules together, around the student's goals, work, and commitments. Planning pays when students come back to it: academic planning produced a 10% sustained persistence lift over five years, and 15% for online students.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_07_Schedule-Button_1440px.webp",
-     "alt": "Collaborate on Academic Plans with Students"
+     "alt": "Collaborative degree planning and schedule building"
     }
    },
    {
@@ -947,58 +919,53 @@
   "kind": "usecases",
   "name": "Student Engagement Software",
   "eyebrow": "Academic Leaders & Faculty · Student Engagement",
-  "headline": "See student engagement by week, not by grade report.",
-  "sub": "Course-level engagement, section fill, and the bottleneck courses that stall a degree, in one view for deans, chairs, and faculty. Act in week eight, not in December.",
+  "headline": "Catch the slide in week four, while you can still change the outcome.",
+  "sub": "Course-level engagement by week rather than by grade report, and the bottleneck course that costs you a graduating class. One view for deans, chairs, and faculty.",
   "sections": [
    {
-    "heading": "Know What Works",
-    "body": "Evaluate the impact of courses, academic policies, and programs on student outcomes to inform investments, curriculum design, and faculty development needs.",
-    "bullets": []
+    "heading": "What a dean or chair gets",
+    "body": "",
+    "bullets": [
+     "Week four, not December: Engagement by week for every section, so a chair sees the drop while the term can still be changed.",
+     "The course that is blocking the degree: Pass rates, withdrawals, and downstream persistence by section rather than by department average.",
+     "A schedule built from what students need: Section fill forecast by term, so you open the seats that hold students and close the ones that will not fill.",
+     "Program review that starts from a number: Each effort scored against a comparison group, so a dean walks into the review with evidence rather than participation counts."
+    ]
    },
    {
-    "heading": "Ensure Course Access",
-    "body": "Accurately forecast course demand and monitor registration in real time to avoid scheduling conflicts, insufficient availability, and over-provisioning.",
-    "bullets": []
-   },
-   {
-    "heading": "Support Students Proactively",
-    "body": "Raise academic alerts and track individual students or groups to ensure connection to the most beneficial resources and opportunities.",
-    "bullets": []
-   },
-   {
-    "heading": "Access Actionable Insights to Inform Strategic Decision Making",
-    "body": "Get insight into factors influencing retention, completion, and student engagement to refine strategies and inform resource allocation.",
-    "bullets": [],
-    "image": {
-     "file": "ANALYTICS_powerfulpredictors_1440by780px.webp",
-     "alt": "Access Actionable Insights to Inform Strategic Decision Making"
-    }
-   },
-   {
-    "heading": "Monitor & Forecast Course Demand",
-    "body": "Optimize course offerings with insight into section fill rates, popular modalities, days, times, and projected demand for future terms.",
-    "bullets": [],
-    "image": {
-     "file": "WORKFLOWS_fall2024acct51201_1440px_cropped.webp",
-     "alt": "Monitor & Forecast Course Demand"
-    }
-   },
-   {
-    "heading": "Identify & Remove Course & Curricular Barriers",
-    "body": "Understand which courses may negatively impact student persistence, academic performance, or completion.",
-    "bullets": [],
-    "image": {
-     "file": "ANALYTICS_Courses_1440px.webp",
-     "alt": "Identify & Remove Course & Curricular Barriers"
-    }
-   },
-   {
-    "heading": "Engage, Guide, & Support Students Proactively",
-    "body": "Raise academic alerts, monitor specific student groups, and provide individualized support with seamless collaboration capabilities.",
+    "heading": "See the slide by week, not by grade report",
+    "body": "Engagement signals from the LMS and the campus systems roll up to the section, the course, and the program, and refresh through the term. Raise an alert from the same screen, and the faculty member who raises it becomes part of the same student record advising sees.",
     "bullets": [],
     "image": {
      "file": "updateddashboard_1440by1080.webp",
-     "alt": "Engage, Guide, & Support Students Proactively"
+     "alt": "Course-level engagement and academic alerts"
+    }
+   },
+   {
+    "heading": "Find the course that is blocking the degree",
+    "body": "A gateway course can look healthy in aggregate and still be removing one population from the institution. Course analysis shows pass rates, withdrawal patterns, and downstream persistence for each section, which is where the department average hides the problem.",
+    "bullets": [],
+    "image": {
+     "file": "ANALYTICS_Courses_1440px.webp",
+     "alt": "Course and curricular bottleneck analysis"
+    }
+   },
+   {
+    "heading": "Build the schedule from the degree plans, not last year's schedule",
+    "body": "Forecast section fill by term from degree plans, historical registration behavior, and student progression, and watch fill rates move in real time. It reduces the two failures that both cost money: the section that does not fill, and the missing seat that stalls a student thirty credits from a degree.",
+    "bullets": [],
+    "image": {
+     "file": "WORKFLOWS_fall2024acct51201_1440px_cropped.webp",
+     "alt": "Section fill rates and course demand forecast"
+    }
+   },
+   {
+    "heading": "Know which of your programs moved a number",
+    "body": "Initiative analytics score each effort against a matched comparison group, by program and by student population. That is what turns a curriculum or faculty development argument from a conviction into a measured result you can take to a faculty senate.",
+    "bullets": [],
+    "image": {
+     "file": "ANALYTICS_powerfulpredictors_1440by780px.webp",
+     "alt": "Predictive factors and initiative impact by program"
     }
    },
    {
@@ -1009,11 +976,6 @@
      "Step 2: Surface what works – Use predictive analytics and AI workflows",
      "Step 3: Act with confidence – Align teams and improve outcomes"
     ]
-   },
-   {
-    "heading": "Footer CTA",
-    "body": "Connect with our team to learn how Civitas Learning can help your institution apply its data to enhance student outcomes.",
-    "bullets": []
    }
   ],
   "stats": [
@@ -1053,76 +1015,62 @@
   "kind": "usecases",
   "name": "Data & Analytics for Higher Education",
   "eyebrow": "Institutional Research & Effectiveness",
-  "headline": "One dataset for the board, the accreditor, and the Department of Education.",
-  "sub": "Retention, graduation, engagement, and graduate earnings by program, with every initiative measured against a comparison group. IR answers the cabinet's question the day it is asked.",
+  "headline": "Win the board meeting.",
+  "sub": "Answer the cabinet's question the day it is asked, with a comparison group behind it. Retention, graduation, engagement, and graduate earnings by program, from one governed dataset that reconciles across the board deck, the self-study, and the federal filing.",
   "sections": [
    {
-    "heading": "Democratize Student Data",
-    "body": "Turn disorganized data into actionable insights to enhance decision-making. Empower stakeholders across the institution to access data relevant to their role.",
-    "bullets": []
+    "heading": "What an IR office gets",
+    "body": "",
+    "bullets": [
+     "The answer the same day: One governed dataset with shared definitions, so the question that used to take three weeks of extracts takes an afternoon.",
+     "Numbers that reconcile: The retention figure in the board deck, the accreditation self-study, and the IPEDS submission all come from the same place, with the intervention record attached.",
+     "A method that survives scrutiny: Every initiative measured against a matched comparison group of your own students, with the confidence interval reported.",
+     "Your analysts back on analysis: The data assembly that consumes the office is built and maintained for you."
+    ]
    },
    {
-    "heading": "Understand What Works",
-    "body": "Quickly and easily assess the efficacy and impact of various success initiatives, policies, and programs to inform strategic plans, adjustments, and investments.",
-    "bullets": []
-   },
-   {
-    "heading": "Get More Value from Your Data",
-    "body": "Conduct in-depth research, advanced reporting, and analysis across various student data sources to drive strategic change.",
-    "bullets": []
-   },
-   {
-    "heading": "Equip Teams with Centralized Information",
-    "body": "Democratize insights for stakeholders within the institution to encourage strategic efforts across different departments. Consolidate information in one platform to streamline workflows and a holistic view of each student.",
+    "heading": "Answer the cabinet's question the day it is asked",
+    "body": "One governed dataset, with dashboards and drill-downs the rest of the institution can use without coming through your office for every request. Democratizing access is what stops IR being the queue that every strategic question waits in.",
     "bullets": [],
     "image": {
      "file": "updateddashboard_1440by1080.webp",
-     "alt": "Equip Teams with Centralized Information"
+     "alt": "Institutional dashboards with filtering and drill-down"
     }
    },
    {
-    "heading": "Enhance Data-Informed Decision Making",
-    "body": "Support more accurate, efficient, and timely decisions across the institution to improve institutional effectiveness. Apply institution-specific predictive models for the outcomes that are most important to you. Evaluate performance for overall outcomes and specific subpopulations to identify what actions impact students most.",
-    "bullets": [],
-    "image": {
-     "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
-     "alt": "Enhance Data-Informed Decision Making"
-    }
-   },
-   {
-    "heading": "Make Meaning of Your Student Data",
-    "body": "Apply multiple data sources, such as engagement and behavioral data, to identify who is at risk for unfavorable outcomes and understand the factors influencing those outcomes. Access intuitive dashboards and reports with flexible filtering and drill-down options, making it easier for teams to turn insights into action.",
+    "heading": "Report by population, because the average hides the finding",
+    "body": "Break every outcome out by enrollment status, transfer status, modality, and the populations your institution cares about. In the 2026 Impact Report, academic planning produced a 2% persistence lift across the broad population and a 15% lift for online students. One of those numbers is worth acting on.",
     "bullets": [],
     "image": {
      "file": "ANALYTICS_powerful-predictors-NEW_1440px.webp",
-     "alt": "Make Meaning of Your Student Data"
+     "alt": "Predictive factors broken out by student population"
     }
    },
    {
-    "heading": "Deep Dive into Your Data for Strategic Insight",
-    "body": "Complete in-depth research, advanced reporting, and analysis with data warehouse capabilities that consolidate data sources, including Civitas Learning predictive AI analytics. Get the actionable insight you need to answer critical questions about your student outcomes.",
-    "bullets": [],
-    "image": {
-     "file": "screencap-schema_definition_1440px.webp",
-     "alt": "Deep Dive into Your Data for Strategic Insight"
-    }
-   },
-   {
-    "heading": "Assess the Impact of Initiatives & Programs",
-    "body": "Equip leaders to reveal the impact of initiatives, courses, programs, and policies on specific student segments. Use this information to develop impactful strategies to support your most critical outcomes, like understanding how changes boost academic performance, thriving, or progress to a degree.",
+    "heading": "Show which initiative moved the number, and which did not",
+    "body": "Each initiative, course, program, and policy scored against a matched comparison group, with the lift and the confidence interval. Across 220 measured initiatives only 40 to 60 percent produced a measurable outcome, which is the finding that changes a budget conversation.",
     "bullets": [],
     "image": {
      "file": "ANALYTICS_Initiative-analysis_cropped_1440px.webp",
-     "alt": "Assess the Impact of Initiatives & Programs"
+     "alt": "Initiative impact analysis against a comparison group"
     }
    },
    {
-    "heading": "Customize Analytics to Your Institutional Needs",
-    "body": "Seamlessly integrate additional data sources into the platform to adapt and organize around new initiatives, strategies, or legislative requirements. Create the flexibility to address different stakeholders and focus on additional student outcomes over time.",
+    "heading": "Audit the model rather than taking the accuracy figure on faith",
+    "body": "Each prediction carries the factors that drove it, the models are documented, and they are retrained each term on your own data. IR can examine model behavior by population, which is the review a single headline accuracy number cannot substitute for.",
     "bullets": [],
     "image": {
-     "file": "WORKFLOW_studentlist_1440px-1.webp",
-     "alt": "Customize Analytics to Your Institutional Needs"
+     "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
+     "alt": "Student outcome model with contributing factors"
+    }
+   },
+   {
+    "heading": "Take the governed dataset into your own tools",
+    "body": "Cloud-hosted data warehouse capabilities carry the underlying Civitas predictions, so your analysts can run their own research, advanced reporting, and analysis, and extend the intelligence into the rest of your stack.",
+    "bullets": [],
+    "image": {
+     "file": "screencap-schema_definition_1440px.webp",
+     "alt": "Data warehouse schema for institutional analysts"
     }
    },
    {
@@ -1160,76 +1108,53 @@
   "kind": "usecases",
   "name": "Higher Education Software",
   "eyebrow": "Institutional Technology",
-  "headline": "Get more from the systems you already run. Nothing gets replaced.",
-  "sub": "Civitas reads from Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce, and 100+ other systems, builds one model of the institution, and writes actions and results back. Live in weeks, with a named institution to prove it.",
+  "headline": "Nothing to rip out. Nothing new to maintain.",
+  "sub": "Civitas reads from Banner, PeopleSoft, Workday, Slate, Canvas, Salesforce, and 100+ other systems, builds one model of the institution, and writes actions and results back. Lawrence Technological University was live in six weeks.",
   "sections": [
    {
-    "heading": "Consolidate Student Data",
-    "body": "Bring disparate student data together and turn it into comprehensive and actionable insights to inform strategic decision-making.",
-    "bullets": []
+    "heading": "What a CIO gets",
+    "body": "",
+    "bullets": [
+     "No new system of record: Civitas reads from your systems and writes back to them. Nothing is replaced, including the CRM and the AI agent tool you have already bought.",
+     "Integrations you do not maintain: Civitas builds the connections and keeps them running through your vendors' upgrades, as part of the subscription.",
+     "Live in six weeks: Lawrence Technological University's date. What moves it is the number of source systems and how fast you can convene the people who own each one.",
+     "FERPA answered in writing: School official status you designate, a published data sharing agreement, single sign-on, and role-based access."
+    ]
    },
    {
-    "heading": "Simplify Your Tech Stack",
-    "body": "Combine redundant capabilities into one platform. Curate student information in one comprehensive profile to support improved outcomes.",
-    "bullets": []
-   },
-   {
-    "heading": "Save Team Time",
-    "body": "Reduce maintenance, freeing time for other projects. Easily adapt with self-service tools to configure and customize the platform.",
-    "bullets": []
-   },
-   {
-    "heading": "Integrate Multiple Data Sources into One System",
-    "body": "Organize and surface student information in one place to better understand the factors influencing student outcomes. Make data accessible and actionable by equipping leaders and frontline staff to filter, segment, and easily reference data throughout the term.",
+    "heading": "One record across every system, without a new system of record",
+    "body": "Student information from the SIS, LMS, CRM, aid, engagement tools, and the campus card system is organized into one profile that leaders and frontline staff can filter and segment. Your systems of record stay exactly where they are and keep their authority.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_studentlist_1440px-1.webp",
-     "alt": "Integrate Multiple Data Sources into One System"
+     "alt": "Student data unified from multiple source systems"
     }
    },
    {
-    "heading": "Turn Student Data into Actionable Insights",
-    "body": "Enhance the value of student data by using it to generate institution-specific models. Use multiple data sources, such as engagement and behavioral data, to identify who is at risk for unfavorable outcomes and understand the factors influencing their success.",
-    "bullets": [],
-    "image": {
-     "file": "ANALYTICS_Student-Outcomes-Updated-1_1440px.webp",
-     "alt": "Turn Student Data into Actionable Insights"
-    }
-   },
-   {
-    "heading": "Equip Teams with Centralized Information",
-    "body": "Democratize insights for stakeholders across the institution. Consolidate information in one platform to ensure access to a holistic view of each student. Provide intuitive dashboards and reports with flexible filtering and drill-down options, making it easier for teams to turn insights into action.",
-    "bullets": [],
-    "image": {
-     "file": "updateddashboard_1440by1080.webp",
-     "alt": "Equip Teams with Centralized Information"
-    }
-   },
-   {
-    "heading": "Customize Analytics to Your Institutional Needs",
-    "body": "Seamlessly integrate additional data sources into the platform to adapt and organize around new initiatives, strategies, or legislative requirements. Create the flexibility to address different stakeholders and focus on additional student outcomes over time.",
-    "bullets": [],
-    "image": {
-     "file": "inset_chartwithdataandclplatform_1440px_greybg4.webp",
-     "alt": "Customize Analytics to Your Institutional Needs"
-    }
-   },
-   {
-    "heading": "Configure & Adapt the Platform Over Time",
-    "body": "Reduce administrative burden for Institutional Technology teams with regular product enhancements and support. Configure the Institutional Impact Platform to meet your institution's specific requirements to ensure that the platform supports your processes and can adapt to changing needs over time.",
+    "heading": "Configure it yourself, without opening a ticket",
+    "body": "Self-service tools let your team adapt the platform to how the institution actually works, and regular product enhancements arrive without a migration project. The maintenance burden that usually lands on Institutional Technology is the thing being removed here.",
     "bullets": [],
     "image": {
      "file": "screencapture_alertsummary_1440px.webp",
-     "alt": "Configure & Adapt the Platform Over Time"
+     "alt": "Platform configuration and alert administration"
     }
    },
    {
-    "heading": "Extend the Reach of Your Data",
-    "body": "Cloud-hosted data warehouse capabilities include underlying Civitas Learning insights so your team can complete in-depth research, advanced reporting, and analysis and can extend Civitas Learning intelligence into other areas of your technology ecosystem.",
+    "heading": "Add a data source without starting a project",
+    "body": "Bring in another system when a new initiative, strategy, or legislative requirement demands it, and organize the platform around it. The federal earnings rule is the current example of a reporting requirement arriving faster than a data warehouse roadmap.",
+    "bullets": [],
+    "image": {
+     "file": "inset_chartwithdataandclplatform_1440px_greybg4.webp",
+     "alt": "Adding data sources and adapting analytics"
+    }
+   },
+   {
+    "heading": "Extend the intelligence into the rest of your stack",
+    "body": "Cloud-hosted data warehouse capabilities include the underlying Civitas insights, so your team can run in-depth research and advanced reporting, and feed the predictions back into other systems your institution runs.",
     "bullets": [],
     "image": {
      "file": "screencap-schema_definition_1440px.webp",
-     "alt": "Extend the Reach of Your Data"
+     "alt": "Data warehouse schema and downstream integration"
     }
    },
    {
@@ -1293,12 +1218,12 @@
     }
    },
    {
-    "heading": "Align Teams with Centralized Information",
-    "body": "Democratize insights for stakeholders across the institution. Consolidate information in one platform to ensure shared access to a holistic view of each student. Access intuitive dashboards and reports with flexible filtering and drill-down options across diverse data sources, making it easier for teams to turn insights into action.",
+    "heading": "Give every office the same student record",
+    "body": "One governed dataset behind the advisor, the registrar, the dean, and institutional research, with shared definitions for a student, a term, a cohort, and a program. That is what stops three offices answering the same question three different ways.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_Desktop-9Updated_1440px.webp",
-     "alt": "Align Teams with Centralized Information"
+     "alt": "One student record shared across offices"
     }
    },
    {
@@ -1657,12 +1582,12 @@
     }
    },
    {
-    "heading": "Align Teams with Centralized Information",
-    "body": "View a comprehensive student profile to better understand the factors influencing student outcomes. Equip leaders and frontline staff to filter, segment, and easily reference data throughout the term to make data accessible and actionable.",
+    "heading": "Everyone sees the same version of the plan",
+    "body": "Anyone working with a student sees what the other offices have already done and why, through the term. Coordination fails when three offices each hold a piece of the story and none of them can see the other two.",
     "bullets": [],
     "image": {
      "file": "WORKFLOW_Desktop-9Updated_1440px.webp",
-     "alt": "Align Teams with Centralized Information"
+     "alt": "Shared view of a student across support teams"
     }
    },
    {

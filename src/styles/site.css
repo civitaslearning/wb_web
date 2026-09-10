@@ -40,6 +40,7 @@ img{max-width:100%;display:block}
 .menu .dd a small{display:block;color:var(--ink3);font-size:12.5px}
 .menu .dd a:hover{background:var(--cyan-soft)}
 .menu .dd .grp{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:8px 12px 2px}
+.menu .dd a.hub{font-weight:700;color:var(--navy);border-bottom:1px solid var(--line);border-radius:4px 4px 0 0;margin-bottom:6px;padding-bottom:10px}
 .menu .dd a.ep{margin-top:6px;background:var(--cyan-soft);border-radius:6px;padding:10px 12px;max-width:320px;font-weight:600}
 .menu .dd a.ep .grp{display:block;padding:0 0 4px;color:var(--cyan-ink)}
 .menu .dd a.ep:hover{background:#D3EEFB}
@@ -413,6 +414,14 @@ ul.plain li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;
 ul.plain li:before{content:"›";color:var(--ink3);font-weight:700}
 .card.pick{border-color:var(--cyan);background:var(--cyan-soft)}
 .card.pick ul.plain li:before{color:var(--cyan-ink)}
+/* Comparison page sources. A claim about another vendor carries the page we read it on. */
+.sources{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.sources li{padding:14px 0;border-top:1px solid var(--line);display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.sources li a{font-weight:700;font-size:15.5px;color:var(--cyan-ink);text-decoration:none}
+.sources li a:hover{text-decoration:underline}
+.sources li span{font-family:var(--mono);font-size:12px;color:var(--ink3)}
+.src-note{margin-top:20px;font-size:14px;color:var(--ink3);max-width:70ch}
+.src-note a{color:var(--cyan-ink);font-weight:600;text-decoration:none}
 /* Glossary (src/pages/glossary.astro) */
 .glossary{margin:0;display:grid;gap:0}
 .gterm{display:grid;grid-template-columns:280px 1fr;gap:40px;padding:30px 0;border-top:1px solid var(--line);scroll-margin-top:140px}

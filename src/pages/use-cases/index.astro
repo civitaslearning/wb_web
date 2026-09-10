@@ -1,0 +1,117 @@
+---
+/**
+ * The Use Cases hub.
+ *
+ * The breadcrumb on every use-case page used to point at the advising page,
+ * which meant "Use Cases" led to one use case rather than to a list of them.
+ * This is the page it should have pointed at.
+ *
+ * Grouping comes from nav.json so the menu and this page cannot drift apart,
+ * and the copy comes from solutions.json so a headline is written once.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Faq from '../../components/Faq.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import solutions from '../../data/solutions.json';
+import nav from '../../data/nav.json';
+import { breadcrumbs } from '../../lib/schema';
+
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Use Cases' }];
+const bySlug = new Map(solutions.map((s) => [`/${s.slug}/`, s]));
+
+// Who each page is written for. The team pages lead with that person's win, so
+// the hub says whose win it is before the reader clicks.
+const persona: Record<string, string> = {
+  '/enrollment-management/': 'VP of Enrollment',
+  '/advising-and-student-success/': 'Advising leaders and advisors',
+  '/academic-leaders-and-faculty/': 'Deans, chairs, and faculty',
+  '/institutional-research-effectiveness/': 'Institutional research',
+  '/institutional-technology/': 'CIO and IT',
+};
+
+const menu = nav.menu.find((m) => m.label === 'Use Cases');
+const groups = (menu?.groups ?? []).map((g) => ({
+  title: g.title,
+  items: g.links.map((l) => ({ href: l.href, page: bySlug.get(l.href), who: persona[l.href] })).filter((i) => i.page),
+}));
+
+// The same six-outcome scoreboard every use-case page carries.
+const outcomes = [
+  { slug: 'enrollment-management', label: 'Enroll', line: 'Yield, melt, registration' },
+  { slug: 'academic-leaders-and-faculty', label: 'Engage', line: 'Course-level engagement, section fill' },
+  { slug: 'advising-and-student-success', label: 'Persist', line: 'Retention, term to term' },
+  { slug: 'improve-on-time-completion', label: 'Graduate', line: 'On-time completion' },
+  { slug: 'career-outcomes', label: 'Employ', line: 'Career readiness, graduate earnings' },
+  { slug: 'ensure-initiative-efficacy-and-roi', label: 'Prove', line: 'Lift vs. a comparison group' },
+];
+
+const faqs = [
+  {
+    q: 'Which use case should we start with?',
+    a: 'Start with the number you are being asked about, and the person being asked. Most institutions begin with advising and retention, because retention is the cheapest enrollment they can buy, then extend to enrollment, completion, and career outcomes on the same data and the same models.',
+  },
+  {
+    q: 'Do we have to buy these separately?',
+    a: 'No. They are one platform, one dataset, and one set of institution-specific models. The pages are organized by the job a team is trying to do, not by a price list. <a href="/pricing/">How pricing works →</a>',
+  },
+  {
+    q: 'Can one platform really serve enrollment, advising, deans, IR, and IT?',
+    a: 'It serves them because they are asking about the same students from different seats. The enrollment office wants to know who will still be here in year two, the dean wants to know which course is removing them, and IR has to defend both numbers to a board. One dataset and one model answer all three.',
+  },
+];
+---
+<Base
+  title="Use Cases"
+  seoTitle="Higher Education Student Success Use Cases | Civitas Learning"
+  description="What Civitas Learning does for each team and each goal: strategic enrollment, advising and student success, academic leadership, institutional research, IT, completion, career outcomes, and initiative efficacy."
+  jsonld={[breadcrumbs(crumbs, '/use-cases/')]}
+>
+  <PageHero
+    eyebrow="Use Cases"
+    title="Every office gets a number, not just an agent."
+    sub="The same unified data, the same institution-specific models, and the same comparison-group measurement, organized by the job each team is trying to do. Start with the question you are being asked."
+    crumbs={crumbs}
+  />
+
+  <section class="tight"><div class="wrap">
+    <div class="outcomes-head">
+      <div><span class="eyebrow">The institutional scoreboard</span><h2>Six outcomes, one ledger</h2></div>
+      <p>Enrollment, engagement, persistence, graduation, and career outcomes, each measured against a comparison group. The same data and the same model, for the cabinet, the board, and the Department of Education.</p>
+    </div>
+    <div class="outcomes">
+      {outcomes.map((o) => (
+        <a class="outcome" href={`/${o.slug}/`}><b>{o.label}</b><span>{o.line}</span></a>
+      ))}
+    </div>
+  </div></section>
+
+  {groups.map((g, i) => (
+    <section class:list={['tight', { tint: i % 2 === 0 }]}><div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">{g.title}</span>
+          <h2>{g.title === 'By team' ? 'What your team gets' : 'What you are trying to move'}</h2>
+        </div>
+        <p>
+          {g.title === 'By team'
+            ? 'Each page leads with the win that role gets, and the how sits underneath it.'
+            : 'Cross-office goals that no single team owns on its own.'}
+        </p>
+      </div>
+      <div class="res-list">
+        {g.items.map(({ href, page, who }) => (
+          <a class="card link" href={href}>
+            <span class="eyebrow">{who ?? page!.eyebrow}</span>
+            <h3>{page!.headline}</h3>
+            <p>{page!.sub}</p>
+            <span class="more">Read the use case →</span>
+          </a>
+        ))}
+      </div>
+    </div></section>
+  ))}
+
+  <Faq items={faqs} heading="Questions about where to start" tint={false} />
+  <FinalCta />
+</Base>

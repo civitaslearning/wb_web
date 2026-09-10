@@ -21,6 +21,7 @@
     {
       "label": "Use Cases",
       "wide": true,
+      "hub": { "href": "/use-cases/", "text": "All use cases", "small": "Every office gets a number, not just an agent" },
       "groups": [
         {
           "title": "By team",
@@ -91,7 +92,7 @@
   ],
   "footer": [
     { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"], ["/pricing/", "How Pricing Works"]] },
-    { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
+    { "title": "Use cases", "links": [["/use-cases/", "All use cases"], ["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
     { "title": "Customers", "links": [["/customer-success-stories/", "Customer Stories"], ["/podcast/", "Next Practices Podcast"], ["/leadership-workshops/", "Leadership Workshops"]] },
     { "title": "Resources", "links": [["/resources/", "Content Library"], ["/blog/", "Blog"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/compare/", "Compare Platforms"], ["/glossary/", "Glossary"], ["/support/", "Technical Support"]] },
     { "title": "Company", "links": [["/about/", "About"], ["/our-team/", "Leadership Team"], ["/careers/", "Careers"], ["/press/", "News"], ["/commitment/", "Our Commitment"], ["/contact/", "Contact"]] }

@@ -397,18 +397,95 @@ and third-party corroboration. Neither the live site nor this prototype had any 
   it gives the model (annual subscription scaled to institution size, no token metering, no
   per-agent charge), the four things that move the number, what is included, and what is not.
 
-### Before this goes live
+### The competitor fact check (2026-09-10)
 
-- **Competitor claims need a check.** Everything on the comparison pages is drawn from public
-  material and was read in September 2026. Marketing and Legal should verify each row, and the
-  pages need a re-read on a schedule, because their products change and we do not get to say so.
-- **The Element451 page contradicts a standing rule.** DESIGN.md section 1 records the board
-  rule that Element451 appears on the site only as an integration and never as a named
-  competitor. Will asked for the comparison page on 2026-09-10. The page is built and treats
-  Element451 as both, an integration and a comparison. Confirm which rule stands.
-- **Pricing needs Finance and Legal.** "No token metering", "no per-agent charge", and
-  "integration and partnership included" will be quoted back in a negotiation.
-- **Third-party corroboration is the remaining gap.** Structured data and question headings get
-  a page read; being cited also depends on other sites saying the same thing. Review-site
-  profiles, analyst coverage, and the Impact Report's methodology being citable are the next
-  piece of work, and none of it is on-site.
+Every claim on the comparison pages about another vendor was checked against that vendor's own
+current material. **Two were wrong, not merely stale**, and the pages were corrected before
+launch. Each comparison page now ends with the sources we read, and carries the date.
+
+| What we had said | What their own site says |
+|---|---|
+| EAB Navigate360 proves impact with activity reporting only | EAB sells an Intervention Effectiveness Tool and publishes graduation gains of 3–15%, retention gains of 2–12%, and a typical 5:1 return |
+| EAB's risk scores are largely generic | EAB reports more than 200 custom-built models, some trained on ten years of an institution's history |
+| Element451 proves activity: conversations, response rates, hours saved | Element451 publishes a 2–7% term-to-term retention lift and 3–10% grade gains |
+| Element451 is a front-door CRM | It now sells student success and retention products and reads SIS and LMS data |
+| Salesforce implementations "commonly run in quarters" | Salesforce publishes no implementation timeline. We had no source |
+
+The corrected pages make the difference **method and disclosure, not ability**. Most vendors now
+publish an outcome number; what separates them is whether they will tell you how the comparison
+group was built and hand you the population size and the confidence interval. That is a claim we
+can defend, and the previous one was not. Three other unsourced assertions were changed into
+questions to put to the vendor, and Navigate360 AI and Agentforce for Education were added,
+because a reader who knows the market would have noticed we left them out.
+
+Re-read the competitor pages on a schedule. Their products change and ours does not get to say so.
+
+### Open items
+
+- **Naming: settled** (Will, 2026-09-10). The Element451 comparison page stands, and it
+  supersedes the older section 1 rule that Element451 appears only as an integration. It is now
+  both, an integration and a named comparison.
+- **Pricing: settled** (Will, 2026-09-10). The pricing page claims are approved as written.
+- **Third-party corroboration is still the weakest link, and the research found less than
+  expected.** No source contradicts our outcome claims, and none independently supports them
+  either. Two specific risks:
+  - **The 89% accuracy figure has no third-party source.** It appears in three comparison rows
+    and two FAQs, and the AI vendor checklist tells buyers to make vendors prove their models.
+    Expect the same question back from a procurement office.
+  - **Trade press reports the efficacy study at a different scale than we do.** Higher Ed Dive
+    and Campus Technology both covered it as "more than 1,000 initiatives across 55 colleges"
+    with about 60% positive. The site says 220 initiatives and 40–60%. These may be different
+    editions of the report, but a journalist comparing them will ask, and the answer should be
+    ready before launch. The same coverage quotes Mark Milliron cautioning against a binary
+    reading of the finding, which is our own executive arguing our headline number is too simple.
+  - Review-site presence is thin: three G2 reviews for Inspire, no Capterra profile, a 404 on
+    Software Advice, and TrustRadius blocked automated reading. Building that presence is
+    off-site work nobody has started.
+
+---
+
+## 7. Persona pages: lead with the buyer's win
+
+The home page speaks to the president and the chief financial officer. The five team use-case
+pages are where a VP of Enrollment, a director of advising, or an IR director decides whether we
+understand their job. They were failing that test: the headlines described institutional
+outcomes or product behavior, and everything under the hero was Title Case capability copy
+carried over from the live site.
+
+**The rule now: the headline is the win that person gets, in their words. The how goes in the
+subhead.**
+
+| Page | Was | Is |
+|---|---|---|
+| Strategic Enrollment | Fill the class with students who will finish. | Make your number. Then keep it. |
+| Advising & Student Success | Keep the students you already have. | Get your time back. Spend it on the students who need you this week. |
+| Academic Leaders & Faculty | See student engagement by week, not by grade report. | Catch the slide in week four, while you can still change the outcome. |
+| IR & Effectiveness | One dataset for the board, the accreditor, and the Department of Education. | Win the board meeting. |
+| Institutional Technology | Get more from the systems you already run. Nothing gets replaced. | Nothing to rip out. Nothing new to maintain. |
+
+Under each hero, the three body-only Title Case rows became one numbered card grid naming that
+role's wins ("What a VP of Enrollment gets", "What a CIO gets"), and every feature row was
+rewritten as an outcome for that reader rather than a capability. "Democratize Student Data"
+became "Answer the cabinet's question the day it is asked." "Simplify Your Tech Stack" became
+"Configure it yourself, without opening a ticket."
+
+**Duplicates are gone.** "Customize Analytics to Your Institutional Needs", "Prioritize
+Engagement", "Equip Teams with Centralized Information" and six other blocks appeared on two or
+three pages each. Each capability now lives on the one page whose reader cares about it: IT owns
+configuration, IR owns the same-day answer, coordinate-student-care owns the shared plan. No
+heading repeats across any use-case page now, apart from the shared closing checklist.
+
+### Three defects fixed while in there
+
+1. **The advising page was titled "About Civitas Learning."** This is a real defect on the live
+   site, not an import error: `www.civitaslearning.com/advising-and-student-success/` still
+   serves `<title>About Civitas Learning</title>`, which costs that page its ranking for every
+   advising term. This is the one place the site deliberately departs from the rule that title
+   tags match the live site, because the live title is a defect rather than an asset. The page
+   is now "Advising & Student Success Software".
+2. **The academic leaders page carried a stray "Footer CTA" heading** in the body, from the
+   import. Removed.
+3. **The Use Cases breadcrumb pointed at the advising page**, so "Use Cases" led to one use case
+   rather than to a list. There is now a hub at `/use-cases/`, grouped by team and by goal,
+   reading its grouping from `nav.json` and its copy from `solutions.json` so the menu and the
+   page cannot drift apart. The header's Use Cases menu opens with a link to it.

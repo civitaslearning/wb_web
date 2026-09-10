@@ -17,7 +17,8 @@ export function getStaticPaths() {
   return solutions.map((p) => ({ params: { slug: p.slug }, props: p }));
 }
 const p = Astro.props;
-const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/advising-and-student-success/' };
+// "Use Cases" points at the hub, not at one of the use cases.
+const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/use-cases/' };
 const path = `/${p.slug}/`;
 const crumbs = [{ text: 'Home', href: '/' }, root, { text: p.name }];
 // Buyer questions for this page, with FAQPage data. A page with no entry in
@@ -80,6 +81,6 @@ const outcomes = [
     <p>Civitas works under FERPA as a school official you designate, with a published data sharing agreement and platform specifications. Accessibility conformance reports are available on request. <a href="/security/">Security and privacy →</a></p>
   </div></section>
   <Quotes items={p.testimonials} />
-  <Faq items={faqItems} heading={`Questions institutions ask about ${p.eyebrow.toLowerCase()}`} />
+  <Faq items={faqItems} heading={`Questions institutions ask about ${p.eyebrow.split('·')[0].trim().toLowerCase()}`} />
   <FinalCta />
 </Base>

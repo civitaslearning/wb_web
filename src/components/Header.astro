@@ -21,6 +21,11 @@ const latest = eps[0];
         <li>
           <button type="button" aria-haspopup="true">{m.label} ▾</button>
           <div class:list={['dd', { two: m.wide }]}>
+            {'hub' in m && m.hub && (
+              <a class="hub" href={m.hub.href} style={m.wide ? 'grid-column:1/-1' : undefined}>
+                {m.hub.text}{m.hub.small && <small>{m.hub.small}</small>}
+              </a>
+            )}
             {m.groups.map((g) => (
               <>
                 {g.title && <div class="grp">{g.title}</div>}
