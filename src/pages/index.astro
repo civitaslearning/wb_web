@@ -1,9 +1,21 @@
 ---
 import Base from '../layouts/Base.astro';
 import LogoBand from '../components/LogoBand.astro';
+import Faq from '../components/Faq.astro';
 import FinalCta from '../components/FinalCta.astro';
+import faqs from '../data/faqs.json';
+import { softwareApplication, type FaqItem } from '../lib/schema';
+
+// Section headings on this page are questions, and each section answers its
+// question in the first sentence under it. That is what an answer engine
+// quotes. The line that used to be the heading is kept as the deck.
+const homeFaqs: FaqItem[] = (faqs as Record<string, FaqItem[]>)['/'] ?? [];
 ---
-<Base title="Civitas Learning" description="AI built on your data. Outcomes you can prove. Civitas Learning connects the systems you already run into one model of your institution and measures the impact of every decision.">
+<Base
+  title="Civitas Learning"
+  description="AI built on your data. Outcomes you can prove. Civitas Learning connects the systems you already run into one model of your institution and measures the impact of every decision."
+  jsonld={[softwareApplication()]}
+>
   <header class="hero">
     <div class="wrap">
       <div class="hero-copy">
@@ -74,8 +86,8 @@ import FinalCta from '../components/FinalCta.astro';
   <section id="platform">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">One institution · one dataset</span><h2>Your systems already hold the answer. They just don't talk to each other.</h2></div>
-        <p><b>An operating system runs the work. Civitas proves the work paid off.</b> Civitas sits beside the systems you run today — more than 100 of them, including the AI agent and CRM tools you may already have bought. It reads from all of them, builds one model of the institution, and writes actions and results back — for student success first, and for every other question the cabinet asks.</p>
+        <div><span class="eyebrow">One institution · one dataset</span><h2>How do you get one view of a student across every system you run?</h2></div>
+        <p><b>Your systems already hold the answer. They just don't talk to each other.</b> An operating system runs the work; Civitas proves the work paid off. Civitas sits beside the systems you run today — more than 100 of them, including the AI agent and CRM tools you may already have bought. It reads from all of them, builds one model of the institution, and writes actions and results back — for student success first, and for every other question the cabinet asks.</p>
       </div>
       <div class="flow">
         <div class="flow-col">
@@ -116,8 +128,8 @@ import FinalCta from '../components/FinalCta.astro';
   <section class="band">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">The questions your cabinet will ask</span><h2>Any tool can send a message. Few can tell you if it changed anything.</h2></div>
-        <p>Performance-based funding, tighter budgets, and AI on every vendor slide. Before you sign, get answers to three questions.</p>
+        <div><span class="eyebrow">The questions your cabinet will ask</span><h2>How do you know if a student success intervention actually worked?</h2></div>
+        <p><b>Any tool can send a message. Few can tell you if it changed anything.</b> Performance-based funding, tighter budgets, and AI on every vendor slide. Before you sign, get answers to three questions.</p>
       </div>
       <div class="qs">
         <div class="q"><span class="tag">Question 1</span><h3>Are the predictions built on our students?</h3><p class="a">Models trained on national averages miss the pattern that matters at <b>your</b> institution — the 14-credit part-timer, the transfer with a math gap. <b>Civitas trains a model per institution</b>, from your SIS, LMS, and CRM history.</p></div>
@@ -130,8 +142,8 @@ import FinalCta from '../components/FinalCta.astro';
   <section id="jobs">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">The lead use case · student success</span><h2>AI agents that do the work — and a ledger that proves it paid off.</h2></div>
-        <p>Student success is where our partners have proved the platform. Each agent acts on your institution's own predictions, inside the systems your teams already use, and reports its impact back to the same ledger.</p>
+        <div><span class="eyebrow">The lead use case · student success</span><h2>What can AI agents actually do for a college?</h2></div>
+        <p><b>They do the work, and a ledger proves it paid off.</b> Student success is where our partners have proved the platform. Each agent acts on your institution's own predictions, inside the systems your teams already use, and reports its impact back to the same ledger.</p>
       </div>
       <div class="jobs">
         <div class="job"><span class="stage">Recruit &amp; enroll</span><h3>Fill the class with students who will finish.</h3><p>Every admit gets two scores in the CRM your counselors already open: will they enroll, and will they still be here in year two. Counselors work the list from the top. The agent works the rest.</p>
@@ -161,8 +173,8 @@ import FinalCta from '../components/FinalCta.astro';
   <section style="padding-top:0">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">Why the data matters</span><h2>Generic AI knows higher ed. Civitas knows <em style="font-style:italic">your</em> students.</h2></div>
-        <p>An agent is only as good as the prediction behind it. Here is the difference between a model trained on the sector and a model trained on you.</p>
+        <div><span class="eyebrow">Why the data matters</span><h2>What is the difference between a generic AI agent and an institution-specific model?</h2></div>
+        <p><b>Generic AI knows higher ed. Civitas knows <em style="font-style:italic">your</em> students.</b> An agent is only as good as the prediction behind it. Here is the difference between a model trained on the sector and a model trained on you. <a href="/compare/">Compare the platforms →</a></p>
       </div>
       <div class="cmp">
         <div class="col"><h3>Generic AI agent <small>sector model</small></h3><ul>
@@ -200,8 +212,8 @@ import FinalCta from '../components/FinalCta.astro';
   <section id="proof" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">Partner outcomes</span><h2>Numbers a president can put in front of a board.</h2></div>
-        <p>Published results from Civitas partners: 31 stories, each with the number and how it was measured. Every figure is measured against a comparison group, not a prior year. <a href="/customer-success-stories/">See all 31 →</a></p>
+        <div><span class="eyebrow">Partner outcomes</span><h2>What results do institutions actually get?</h2></div>
+        <p><b>Numbers a president can put in front of a board.</b> Published results from Civitas partners: 31 stories, each with the number and how it was measured. Every figure is measured against a comparison group, not a prior year. <a href="/customer-success-stories/">See all 31 →</a></p>
       </div>
       <div class="grid4">
         <a class="card link" href="/customer-success-stories/from-81-to-86-4-srus-playbook-for-sustained-retention-gains/"><div class="n">86.4%</div><div class="m">first-year retention, up from 81% — highest in SRU history</div><div class="who">Slippery Rock University<small>Read the playbook →</small></div></a>
@@ -219,6 +231,8 @@ import FinalCta from '../components/FinalCta.astro';
       <cite style="margin-top:16px"><b>Erin Gunnell</b>Director of Success Advising &amp; Tutoring, Ensign College</cite>
     </div>
   </section>
+
+  <Faq items={homeFaqs} heading="What institutions ask before they buy" />
 
   <FinalCta />
 </Base>

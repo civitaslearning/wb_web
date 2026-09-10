@@ -1,0 +1,70 @@
+---
+/**
+ * Glossary. Answer engines cite the page that defines a term, so every term we
+ * expect a buyer to type gets one screen: a one-sentence definition first, then
+ * the paragraph, then the page that goes deeper.
+ *
+ * Terms are marked up as a DefinedTermSet, and each entry has a stable anchor
+ * so another page, or another site, can link straight to the definition.
+ */
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import FinalCta from '../components/FinalCta.astro';
+import terms from '../data/glossary.json';
+import { breadcrumbs, definedTermSet, slug } from '../lib/schema';
+
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Resources', href: '/resources/' }, { text: 'Glossary' }];
+const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term));
+---
+<Base
+  title="Glossary"
+  seoTitle="Student Success and Institutional Effectiveness Glossary | Civitas Learning"
+  description="Definitions of the terms used in student success and institutional effectiveness: matched comparison group, lift, institution-specific model, persistence, unified data layer, program accountability, and more."
+  jsonld={[breadcrumbs(crumbs, '/glossary/'), definedTermSet(sorted)]}
+>
+  <PageHero
+    eyebrow="Glossary"
+    title="The words on this site, defined."
+    sub="Student success has a vocabulary problem: every vendor uses the same words for different things. Here is what each one means when we use it, and how to tell whether someone else means the same thing."
+    crumbs={crumbs}
+  />
+
+  <section class="tight"><div class="wrap">
+    <div class="filters">
+      {sorted.map((t) => <a class="chip" href={`#${slug(t.term)}`}>{t.term}</a>)}
+    </div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <dl class="glossary">
+      {sorted.map((t) => (
+        <div class="gterm" id={slug(t.term)}>
+          <dt>
+            <h2>{t.term}</h2>
+            {t.also && t.also.length > 0 && <p class="also">Also called: {t.also.join(', ')}</p>}
+          </dt>
+          <dd>
+            <p class="short">{t.short}</p>
+            <p>{t.body}</p>
+            {t.see && t.see.length > 0 && (
+              <p class="see">{t.see.map(([href, text]) => <a href={href}>{text} →</a>)}</p>
+            )}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  </div></section>
+
+  <section class="tight tint"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Use it in a demo</span><h2>Ask two vendors to define the same word.</h2></div>
+      <p>The fastest way to find out what a platform actually does is to ask it to define "risk", "model", and "lift", then ask how each one is produced.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/ai-vendor-checklist/">The AI vendor checklist →</a>
+      <a class="btn btn-ghost" href="/compare/">Compare the platforms →</a>
+    </div>
+  </div></section>
+
+  <FinalCta />
+</Base>

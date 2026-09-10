@@ -1,7 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
 import FinalCta from '../components/FinalCta.astro';
+import faqs from '../data/faqs.json';
+import { breadcrumbs, type FaqItem } from '../lib/schema';
+
+// The nine questions the live /ai-solutions/ page answers in its accordion,
+// carried over word for word except where the product name changed.
+const faqItems: FaqItem[] = (faqs as Record<string, FaqItem[]>)['/ai-solutions/'] ?? [];
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Solutions', href: '/platform/' }, { text: 'Civitas Learning AI' }];
 
 const caps = [
   ['AI agents and assistants', 'Prioritize outreach, prepare for meetings with context and next steps, explore institutional data, and generate reports — inside the workflow, not beside it.'],
@@ -23,7 +31,7 @@ const feats = [
   ['For IT', 'No new system of record. Agents read from and write back to Banner, Canvas, Slate, and the rest through the integrations you already run.'],
 ];
 ---
-<Base title="Civitas Learning AI" description="AI built on your data. Agents, assistants, and institution-specific models grounded in your institution's own data.">
+<Base title="Civitas Learning AI" description="AI built on your data. Agents, assistants, and institution-specific models grounded in your institution's own data." jsonld={[breadcrumbs(crumbs, '/ai-solutions/')]}>
   <PageHero eyebrow="Civitas Learning AI" title="AI built on your data. Not on someone else's." sub="From institution-specific models to built-in agents and tools, every AI capability is grounded in your institution's own data, context, and priorities — so teams move from insight to action with confidence, and you can see what the AI did." crumbs={[{ text: 'Home', href: '/' }, { text: 'Solutions', href: '/platform/' }, { text: 'Civitas Learning AI' }]} />
   <section class="tight video-sec"><div class="wrap">
     <div class="embed video"><iframe src="https://www.youtube-nocookie.com/embed/lgtksaqTxu4" title="Document Every Student Conversation in Seconds: Civitas Learning Agentic AI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -48,5 +56,6 @@ const feats = [
       </div>
     ))}
   </div></section>
+  <Faq items={faqItems} heading="Questions institutions ask about AI in higher education" />
   <FinalCta />
 </Base>

@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import solutions from '../data/solutions.json';
+import compare from '../data/compare.json';
 
 /**
  * Sitemap for search engines. Lists every page the site builds, except pages
@@ -18,6 +19,7 @@ export const GET: APIRoute = async ({ site }) => {
     urls.push({ path: path === '' ? '/' : path + '/' });
   }
   for (const s of solutions) urls.push({ path: `/${s.slug}/` });
+  for (const c of compare) urls.push({ path: `/compare/${c.slug}/` });
 
   const blog = (await getCollection('blog')).filter((p) => !p.data.noindex);
   for (const p of blog) urls.push({ path: `/blog/${p.id}/`, lastmod: p.data.updated || p.data.date });

@@ -345,3 +345,70 @@ Re-cut or re-title it when the rename reaches the video library.
 **Customers in the nav.** The header has a Customers menu between Use Cases and Resources:
 Customer Stories, Next Practices Podcast, and the newest episode by name and guest (read from
 the podcast collection in `Header.astro`). The footer has a matching Customers column.
+
+---
+
+## 6. Answer-engine optimization
+
+The premise (Will, 2026-09-10): when a provost asks an assistant "how do we know if our student
+success interventions are working", or a chief financial officer asks "what is one point of
+retention worth", Civitas should be the cited answer. Answer engines pull from pages with
+explicit question headings, a direct first-sentence answer, defined entities, structured data,
+and third-party corroboration. Neither the live site nor this prototype had any of that.
+
+### The rules
+
+1. **Every heading a reader could type into a search box is a question.** The six home page
+   headings were slogans; they are now questions, and the slogan survives as the bold deck at
+   the front of the paragraph under it. Nothing was lost, and the page now matches the query.
+2. **The answer goes in the first sentence.** An engine quotes that sentence without the
+   question next to it, so it has to stand alone. "Measure each initiative against a matched
+   comparison group" works; "There are three things to consider here" does not.
+3. **Mark up only what the reader can see.** Every FAQ answer is visible on the page, never
+   behind an accordion. Marking up hidden content violates the search guidelines and loses the
+   rich result.
+4. **Never make a claim in an FAQ that is not made in the visible copy elsewhere.** The FAQ is
+   the most quotable part of the site and therefore the easiest place to create a claim nobody
+   in the company has approved.
+
+### What was built
+
+- **`src/lib/schema.ts`** builds the JSON-LD. `Base.astro` emits Organization and WebSite on
+  every page as one `@graph`, and takes a `jsonld` prop for page-level nodes. Current coverage:
+  221 pages with Organization and WebSite, 23 BreadcrumbList, 23 FAQPage, 2 SoftwareApplication,
+  1 DefinedTermSet.
+- **`src/data/faqs.json`** holds 143 questions across 18 pages, keyed by path, rendered by
+  `src/components/Faq.astro`, which also emits the FAQPage data. Every solution and use-case
+  page has six to nine. **Marketing owns this file**, and the source for new questions is the
+  Gong call record: write the question the way the buyer said it on the call.
+- **The nine live `/ai-solutions/` FAQs are ported back**, word for word except where the
+  product name changed, and now carry markup they did not have on the live site.
+- **Comparison pages** at `/compare/`: EAB Navigate360, Salesforce Education Cloud,
+  Element451, and a category buyer's guide. These capture the highest-intent search we
+  currently cede to review sites. The template rule is that each page names what the other
+  product is genuinely better at, in its own section, before the table. A comparison page that
+  only flatters the publisher is discounted by readers and by answer engines, and it loses the
+  deal in the room when the buyer notices.
+- **`/glossary/`** defines 17 terms as a DefinedTermSet with stable anchors: Student Impact
+  Gap, CLOSE, matched comparison group, institution-specific model, Institutional Impact
+  Management, lift, persistence, unified data layer, program accountability, and the rest.
+  Answer engines cite the page that defines the term.
+- **`/pricing/`** answers the question buyers ask an assistant first. It is not a price list:
+  it gives the model (annual subscription scaled to institution size, no token metering, no
+  per-agent charge), the four things that move the number, what is included, and what is not.
+
+### Before this goes live
+
+- **Competitor claims need a check.** Everything on the comparison pages is drawn from public
+  material and was read in September 2026. Marketing and Legal should verify each row, and the
+  pages need a re-read on a schedule, because their products change and we do not get to say so.
+- **The Element451 page contradicts a standing rule.** DESIGN.md section 1 records the board
+  rule that Element451 appears on the site only as an integration and never as a named
+  competitor. Will asked for the comparison page on 2026-09-10. The page is built and treats
+  Element451 as both, an integration and a comparison. Confirm which rule stands.
+- **Pricing needs Finance and Legal.** "No token metering", "no per-agent charge", and
+  "integration and partnership included" will be quoted back in a negotiation.
+- **Third-party corroboration is the remaining gap.** Structured data and question headings get
+  a page read; being cited also depends on other sites saying the same thing. Review-site
+  profiles, analyst coverage, and the Impact Report's methodology being citable are the next
+  piece of work, and none of it is on-site.

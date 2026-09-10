@@ -385,6 +385,45 @@ a.sys:hover{border-color:var(--cyan)}
 .video-sec .embed{max-width:960px;margin:0 auto 14px}
 .video-sec .embed iframe{border-radius:12px;box-shadow:0 12px 40px rgba(0,31,76,.16)}
 .video-cap{text-align:center;color:var(--ink2);font-size:15px;max-width:60ch;margin:0 auto}
+/* FAQ blocks (src/components/Faq.astro). Questions are real headings and the
+   answers are always visible, because the FAQPage markup has to match what a
+   reader sees. Two columns on wide screens, one on a phone. */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+.faq-item{padding:20px 0;border-top:1px solid var(--line)}
+.faq-item h3{font-size:17.5px;line-height:1.3;margin-bottom:8px;color:var(--navy)}
+.faq-item p{font-size:15px;color:var(--ink2);line-height:1.55}
+.faq-item a{color:var(--cyan-ink);font-weight:600;text-decoration:none}
+.faq-item a:hover{text-decoration:underline}
+@media (max-width:900px){.faq{grid-template-columns:1fr}}
+/* The direct answer, first thing under a hero. Answer engines quote this. */
+.answer-box{border-left:3px solid var(--coral);background:var(--tint);border-radius:0 10px 10px 0;padding:24px 28px;max-width:80ch}
+.answer-box p{margin-top:10px;font-size:17.5px;line-height:1.6;color:var(--ink)}
+/* Comparison table (src/pages/compare/[slug].astro) */
+.cmp-table{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper)}
+.cmp-row{display:grid;grid-template-columns:190px 1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.cmp-row:first-child{border-top:0}
+.cmp-row>span{padding:18px 20px;font-size:14.5px;color:var(--ink2);line-height:1.5}
+.cmp-row .dim{font-weight:700;color:var(--navy);background:var(--tint)}
+.cmp-row .mine{background:var(--cyan-soft);color:var(--ink)}
+.cmp-head>span{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding-top:14px;padding-bottom:14px}
+.cmp-head .mine{color:var(--cyan-ink)}
+@media (max-width:900px){.cmp-row{grid-template-columns:1fr}.cmp-head{display:none}.cmp-row>span{padding:12px 18px}.cmp-row .dim{padding-top:16px}}
+ul.plain{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:12px}
+ul.plain li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;color:var(--ink2)}
+ul.plain li:before{content:"›";color:var(--ink3);font-weight:700}
+.card.pick{border-color:var(--cyan);background:var(--cyan-soft)}
+.card.pick ul.plain li:before{color:var(--cyan-ink)}
+/* Glossary (src/pages/glossary.astro) */
+.glossary{margin:0;display:grid;gap:0}
+.gterm{display:grid;grid-template-columns:280px 1fr;gap:40px;padding:30px 0;border-top:1px solid var(--line);scroll-margin-top:140px}
+.gterm dt h2{font-size:23px;line-height:1.2}
+.gterm .also{font-size:13px;color:var(--ink3);margin-top:8px;font-family:var(--mono)}
+.gterm dd{margin:0}
+.gterm .short{font-size:17px;color:var(--ink);font-weight:600;margin-bottom:12px}
+.gterm dd p{font-size:15.5px;color:var(--ink2);line-height:1.6}
+.gterm .see{margin-top:12px;display:flex;gap:18px;flex-wrap:wrap}
+.gterm .see a{font-size:14px;font-weight:700;color:var(--cyan-ink);text-decoration:none}
+@media (max-width:900px){.gterm{grid-template-columns:1fr;gap:14px}}
 /* footer */
 footer{padding:56px 0 32px;background:var(--tint);border-top:1px solid var(--line);font-size:14px;color:var(--ink2)}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 1fr;gap:28px;margin-bottom:36px}

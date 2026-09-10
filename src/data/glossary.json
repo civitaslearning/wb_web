@@ -1,0 +1,111 @@
+[
+ {
+  "term": "Institutional Impact Management",
+  "also": ["IIM"],
+  "short": "The practice of measuring what every institutional initiative changed, across every office, on one dataset.",
+  "body": "Institutional Impact Management extends student success beyond the advising office. The same unified data, the same institution-specific models, and the same comparison-group measurement answer enrollment, engagement, persistence, completion, career outcome, course demand, and program portfolio questions. The distinguishing test is whether an office can state the lift its work produced, not the activity it performed.",
+  "see": [["/platform/", "The Institutional Impact Platform"]]
+ },
+ {
+  "term": "Institutional Impact Platform",
+  "also": ["Student Impact Platform"],
+  "short": "Civitas Learning's platform for unifying institutional data, predicting outcomes, acting in existing workflows, and measuring the result.",
+  "body": "The platform reads from more than 100 systems, builds one governed record of the institution, trains institution-specific predictive models on it, delivers the result inside the tools staff already use, and measures each initiative against a matched comparison group. It was previously named the Student Impact Platform, and older material still uses that name.",
+  "see": [["/platform/", "Platform overview"]]
+ },
+ {
+  "term": "Student Impact Gap",
+  "short": "The distance between the effort an institution puts into student success and the outcomes it can actually show.",
+  "body": "The gap opens when work is real but fragmented: teams act in silos, insight arrives after the moment to use it, and nobody can say which effort moved a number. It is not a gap in care or in effort. It closes when data, workflow, and measurement are connected so improvement compounds rather than resets each year.",
+  "see": [["/blog/close-the-student-impact-gap-a-modern-operating-model-for-student-success/", "How to close it"]]
+ },
+ {
+  "term": "CLOSE operating model",
+  "also": ["CLOSE"],
+  "short": "Civitas Learning's five-part operating model for student success: Connect, Learn, Operationalize, Strengthen, Evaluate.",
+  "body": "Connect data and teams around shared context. Learn from institution-specific patterns rather than generic benchmarks. Operationalize insight inside daily workflows. Strengthen human judgment with transparent AI. Evaluate impact and close the loop. It describes how an institution designs its systems so that improvement compounds instead of resetting each year.",
+  "see": [["/blog/close-the-student-impact-gap-a-modern-operating-model-for-student-success/", "The CLOSE model in full"]]
+ },
+ {
+  "term": "Matched comparison group",
+  "also": ["comparison group", "control group"],
+  "short": "A group of an institution's own students who did not receive an initiative, matched to the students who did on the characteristics that predict the outcome.",
+  "body": "The comparison group is what turns a change into evidence. Without it, a rise in persistence could come from the initiative, from a different incoming class, or from an unrelated policy change. Civitas builds the group from the institution's own records and reports the difference between the two groups with a confidence interval.",
+  "see": [["/ensure-initiative-efficacy-and-roi/", "How efficacy is measured"]]
+ },
+ {
+  "term": "Lift",
+  "short": "The difference in an outcome between students who received an initiative and a matched comparison group who did not.",
+  "body": "Lift is stated in percentage points or percent, with the population size and a confidence interval attached. A lift whose confidence interval crosses zero is not a result, and reporting it as one is the most common way vendors overstate a product. In 220 measured initiatives, 40 to 60 percent produced a measurable lift.",
+  "see": [["/ensure-initiative-efficacy-and-roi/", "Efficacy and ROI"]]
+ },
+ {
+  "term": "Institution-specific model",
+  "also": ["institution-specific predictive model"],
+  "short": "A predictive model trained on one institution's own student records rather than on sector averages or a vendor's pooled customer data.",
+  "body": "The model learns the patterns that predict outcomes at that institution, such as the 14-credit part-time student or the transfer with a gap in mathematics, and it is retrained each term. Civitas models predict student outcomes with 89 percent accuracy. No institution's data is pooled into a benchmark sold to another school.",
+  "see": [["/analytics/", "Actionable analytics"]]
+ },
+ {
+  "term": "Persistence",
+  "short": "Whether a student continues their enrollment from one term to the next, at any institution or at the same one.",
+  "body": "Persistence is measured term to term, which makes it the fastest honest signal an institution has. Retention is the annual, institution-level version of the same idea, and it is the figure IPEDS collects. An institution can lose persistence in the spring and not see it in the retention rate until the following fall.",
+  "see": [["/advising-and-student-success/", "Advising and student success"]]
+ },
+ {
+  "term": "Unified data layer",
+  "also": ["Data Lakehouse", "governed dataset"],
+  "short": "One governed dataset that joins the student record across every system the institution runs, with shared definitions.",
+  "body": "Without a unified data layer, the registrar, the advising office, and institutional research answer the same question differently, because each reads a different copy of the data with a different definition behind it. The layer is what makes a retention figure reconcile across a board deck, an accreditation self-study, and an IPEDS submission.",
+  "see": [["/data-lakehouse/", "The Data Lakehouse"]]
+ },
+ {
+  "term": "Early alert",
+  "short": "A notification that a student may be at risk, raised by a rule, an instructor, or a predictive model.",
+  "body": "The distinction that matters is what raised it. A rule fires on a threshold someone chose, such as a grade below C. A model weighs grades, credits, course patterns, aid status, and engagement together and ranks students by risk. Early alerts also depend on follow-up: in measured partner data, an early alert with no follow-up has produced no significant lift.",
+  "see": [["/analytics/", "Predictive analytics"]]
+ },
+ {
+  "term": "Course demand forecasting",
+  "short": "Predicting how many seats each course and section will need in a future term, from degree plans and student progression.",
+  "body": "Forecasting lets an institution build the schedule from what students need to progress rather than from last year's schedule. It reduces the two failures that both cost money: the section that does not fill, and the missing seat that blocks a student thirty credits from a degree.",
+  "see": [["/academic-leaders-and-faculty/", "For academic leaders"]]
+ },
+ {
+  "term": "Care coordination",
+  "short": "Handling a student's advising alert, aid hold, and support referral as one case with one owner rather than three separate contacts.",
+  "body": "Coordination fails when three offices each hold a piece of the story and none can see the other two, which is how a student receives contradictory instructions or a flood of messages. Macomb Community College found students receiving 17 to 20 communications a day before it moved to coordinated outreach.",
+  "see": [["/coordinate-student-care/", "Coordinate student care"]]
+ },
+ {
+  "term": "Program accountability",
+  "also": ["earnings test", "gainful employment"],
+  "short": "Holding an academic program to a standard based on what its graduates earn after they leave.",
+  "body": "The Department of Education's earnings accountability framework was finalized in 2026 and takes effect in July 2027. It compares the earnings of a program's graduates against an earnings benchmark, and programs that fall short can lose access to federal student aid. Institutions can measure their own programs against the threshold years before a federal determination arrives.",
+  "see": [["/career-outcomes/", "Career outcomes and accountability"]]
+ },
+ {
+  "term": "Longitudinal outcome mapping",
+  "short": "Tracking the whole student body and alumni population over years, rather than surveying graduates once.",
+  "body": "A first-destination survey captures one moment and a self-selected sample, which is why its numbers usually look better than the cohort actually did. Longitudinal mapping follows the population over time, which is what makes it possible to see whether a program's graduates are still earning above a threshold well after commencement.",
+  "see": [["/career-outcomes/", "Career outcomes"]]
+ },
+ {
+  "term": "Agentic AI",
+  "short": "AI that completes multi-step work on a team's behalf rather than only answering questions in a conversation.",
+  "body": "An agent can build a student group, draft an automation, or generate a report. The question to ask of any agent is what its model is trained on and who keeps the decision. Civitas agents act on institution-specific predictions, staff set the guardrails, and every action is logged and attributed.",
+  "see": [["/ai-solutions/", "Civitas Learning AI"]]
+ },
+ {
+  "term": "School official under FERPA",
+  "short": "A designation that lets an institution share student records with a vendor performing an institutional service, under the institution's direction and control.",
+  "body": "Civitas Learning operates as a school official designated by the institution, under a data sharing agreement the institution signs. The institution keeps ownership of its data, sets the access model, and can audit it. Student data is never pooled into a benchmark sold to another institution.",
+  "see": [["/security/", "Security and privacy"]]
+ },
+ {
+  "term": "Student Success Impact Report",
+  "short": "Civitas Learning's annual analysis of which student success initiatives produced measurable outcomes across partner institutions.",
+  "body": "Each edition reports the persistence effect of practices such as advising, outreach, academic planning, career engagement, and co-curricular participation, measured against comparison groups and broken out by student population. It is the source for the finding that only 40 to 60 percent of initiatives produce a measurable outcome.",
+  "see": [["/resources/", "Resource library"]]
+ }
+]

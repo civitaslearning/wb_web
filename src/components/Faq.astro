@@ -1,0 +1,43 @@
+---
+/**
+ * A question-and-answer block, with FAQPage structured data.
+ *
+ * Questions are written the way a buyer asks them, and every answer starts
+ * with the answer. Answer engines quote the first sentence, so the first
+ * sentence must stand on its own without the question next to it.
+ *
+ * The questions are real headings, and the answers are always visible. Do not
+ * hide them behind an accordion: the markup must match what the reader sees.
+ */
+import { faqPage, type FaqItem } from '../lib/schema';
+
+interface Props {
+  items: FaqItem[];
+  heading?: string;
+  eyebrow?: string;
+  /** Set false on a page that already emits FAQPage data from another block. */
+  schema?: boolean;
+  tint?: boolean;
+}
+const { items, heading = 'Questions buyers ask us', eyebrow = 'Frequently asked questions', schema = true, tint = true } = Astro.props;
+---
+
+{items.length > 0 && (
+  <section class:list={['tight', { tint }]}>
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">{eyebrow}</span><h2>{heading}</h2></div>
+        <p>Short answers, in the words a cabinet uses. For anything not here, <a href="/contact/">ask us directly</a>.</p>
+      </div>
+      <div class="faq">
+        {items.map((i) => (
+          <div class="faq-item">
+            <h3>{i.q}</h3>
+            <p set:html={i.a} />
+          </div>
+        ))}
+      </div>
+    </div>
+    {schema && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...faqPage(items) })} />}
+  </section>
+)}

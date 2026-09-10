@@ -1,0 +1,52 @@
+---
+/** Index of the comparison pages. Linked from the footer and the nav. */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Faq from '../../components/Faq.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import compare from '../../data/compare.json';
+import { breadcrumbs } from '../../lib/schema';
+
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Compare' }];
+const faqs = [
+  {
+    q: 'How does Civitas Learning compare to other student success platforms?',
+    a: 'Civitas Learning is a measurement layer rather than a system of record: it reads from the systems an institution already runs, predicts outcomes with a model trained on that institution’s own history, and reports the lift each initiative produced against a matched comparison group. Student success management systems, AI-native CRMs, and CRM platforms answer different questions and are often run alongside it. <a href="/compare/student-success-platform-alternatives/">The category, explained →</a>',
+  },
+  {
+    q: 'Do we have to replace what we already own?',
+    a: 'No. Civitas reads from more than 100 systems, including Banner, PeopleSoft, Workday Student, Canvas, Slate, Salesforce, Element451, and CollegeVine, and writes actions and results back to them.',
+  },
+  {
+    q: 'What should we ask every vendor?',
+    a: 'What the model is trained on, how risk is identified, how often the model is refreshed, what lift they can show against a comparison group, which of your systems they replace, and how long until an advisor sees a prediction about a real student. <a href="/ai-vendor-checklist/">The full ten-question checklist →</a>',
+  },
+];
+---
+<Base
+  title="Compare Civitas Learning"
+  seoTitle="Compare Civitas Learning to Other Student Success Platforms | Civitas Learning"
+  description="Side-by-side comparisons of Civitas Learning and the platforms institutions evaluate alongside it, including EAB Navigate360, Salesforce Education Cloud, and Element451."
+  jsonld={[breadcrumbs(crumbs, '/compare/')]}
+>
+  <PageHero
+    eyebrow="Compare"
+    title="Comparisons, written by us, with the other side's case included."
+    sub="Buyers compare us to three or four products. Rather than leave that to a review site, here is each comparison in full, including what the other product is better at."
+    crumbs={crumbs}
+  />
+  <section><div class="wrap">
+    <div class="res-list">
+      {compare.map((c) => (
+        <a class="card link" href={`/compare/${c.slug}/`}>
+          <span class="eyebrow">{c.eyebrow}</span>
+          <h3>{c.name}</h3>
+          <p>{c.sub}</p>
+          <span class="more">Read the comparison →</span>
+        </a>
+      ))}
+    </div>
+  </div></section>
+  <Faq items={faqs} heading="Questions about choosing a platform" />
+  <FinalCta />
+</Base>

@@ -11,7 +11,9 @@
             { "href": "/analytics/", "text": "Actionable Analytics", "small": "Institution-specific predictions" },
             { "href": "/workflows/", "text": "AI-Powered Workflows", "small": "Act inside the tools teams already use" },
             { "href": "/data-lakehouse/", "text": "Data Lakehouse", "small": "One governed dataset for the institution" },
-            { "href": "/strategic-services-2/", "text": "Strategic Partnership & Services", "small": "People who make it work" }
+            { "href": "/strategic-services-2/", "text": "Strategic Partnership & Services", "small": "People who make it work" },
+            { "href": "/pricing/", "text": "How Pricing Works", "small": "What sets the number, and what is included" },
+            { "href": "/compare/", "text": "Compare Platforms", "small": "Against EAB, Salesforce, and the category" }
           ]
         }
       ]
@@ -64,6 +66,7 @@
             { "href": "/subscribe/", "text": "Signals Newsletter" },
             { "href": "/leadership-workshops/", "text": "Leadership Workshops" },
             { "href": "/ai-vendor-checklist/", "text": "AI Vendor Checklist", "small": "Ten questions for any AI vendor" },
+            { "href": "/glossary/", "text": "Glossary", "small": "What the words mean when we use them" },
             { "href": "/support/", "text": "Technical Support" },
             { "href": "https://studentimpactreport.civitaslearning.com/2026", "text": "2026 Student Success Impact Report", "small": "Get the report" }
           ]
@@ -87,10 +90,10 @@
     }
   ],
   "footer": [
-    { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"]] },
+    { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"], ["/pricing/", "How Pricing Works"]] },
     { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
     { "title": "Customers", "links": [["/customer-success-stories/", "Customer Stories"], ["/podcast/", "Next Practices Podcast"], ["/leadership-workshops/", "Leadership Workshops"]] },
-    { "title": "Resources", "links": [["/resources/", "Content Library"], ["/blog/", "Blog"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/support/", "Technical Support"]] },
+    { "title": "Resources", "links": [["/resources/", "Content Library"], ["/blog/", "Blog"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/compare/", "Compare Platforms"], ["/glossary/", "Glossary"], ["/support/", "Technical Support"]] },
     { "title": "Company", "links": [["/about/", "About"], ["/our-team/", "Leadership Team"], ["/careers/", "Careers"], ["/press/", "News"], ["/commitment/", "Our Commitment"], ["/contact/", "Contact"]] }
   ]
 }

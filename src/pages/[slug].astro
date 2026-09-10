@@ -7,14 +7,24 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import Sections from '../components/Sections.astro';
 import Quotes from '../components/Quotes.astro';
+import Faq from '../components/Faq.astro';
 import FinalCta from '../components/FinalCta.astro';
 import solutions from '../data/solutions.json';
+import faqs from '../data/faqs.json';
+import { breadcrumbs, softwareApplication, type FaqItem } from '../lib/schema';
 
 export function getStaticPaths() {
   return solutions.map((p) => ({ params: { slug: p.slug }, props: p }));
 }
 const p = Astro.props;
 const root = p.kind === 'solutions' ? { text: 'Solutions', href: '/platform/' } : { text: 'Use Cases', href: '/advising-and-student-success/' };
+const path = `/${p.slug}/`;
+const crumbs = [{ text: 'Home', href: '/' }, root, { text: p.name }];
+// Buyer questions for this page, with FAQPage data. A page with no entry in
+// faqs.json renders no block; add the questions there, not here.
+const faqItems: FaqItem[] = (faqs as Record<string, FaqItem[]>)[path] ?? [];
+const jsonld: object[] = [breadcrumbs(crumbs, path)];
+if (p.slug === 'platform') jsonld.push(softwareApplication());
 const extraIntegrations = ['PeopleSoft', 'Workday', 'Slate', 'Element451', 'CollegeVine', '+ 100 more'];
 // The institutional scoreboard. Every use-case page shows the same six
 // outcomes, so a reader sees the whole institution, not one office.
@@ -27,8 +37,8 @@ const outcomes = [
   { slug: 'ensure-initiative-efficacy-and-roi', label: 'Prove', line: 'Lift vs. a comparison group' },
 ];
 ---
-<Base title={p.name} description={p.sub || p.headline}>
-  <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={[{ text: 'Home', href: '/' }, root, { text: p.name }]} />
+<Base title={p.name} description={p.sub || p.headline} jsonld={jsonld}>
+  <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={crumbs} />
   {'video' in p && p.video && (
     <section class="tight video-sec"><div class="wrap">
       <div class="embed video"><iframe src={`https://www.youtube-nocookie.com/embed/${p.video.youtube}`} title={p.video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -70,5 +80,6 @@ const outcomes = [
     <p>Civitas works under FERPA as a school official you designate, with a published data sharing agreement and platform specifications. Accessibility conformance reports are available on request. <a href="/security/">Security and privacy →</a></p>
   </div></section>
   <Quotes items={p.testimonials} />
+  <Faq items={faqItems} heading={`Questions institutions ask about ${p.eyebrow.toLowerCase()}`} />
   <FinalCta />
 </Base>

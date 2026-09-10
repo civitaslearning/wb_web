@@ -1,0 +1,537 @@
+{
+ "_note": "Questions buyers actually ask, keyed by page path. Rendered by src/components/Faq.astro, which also emits FAQPage structured data. Rules: write the question the way a buyer says it, not the way marketing would title it. Put the answer in the first sentence, because an answer engine quotes that sentence without the question next to it. Use a number and a name wherever the site already publishes one. Never make a claim here that is not made in the visible copy elsewhere on the site. Source for new questions is the Gong call record; Marketing owns the copy.",
+
+ "/": [
+  {
+   "q": "How do we know if our student success interventions are working?",
+   "a": "Measure each initiative against a matched comparison group of students who did not receive it. Civitas Learning builds that comparison group from your own records, so the result is the lift the initiative produced rather than the difference between this year and last year. Across 220 measured initiatives, only 40 to 60 percent produced a measurable outcome, which is the reason the measurement matters. <a href=\"/ensure-initiative-efficacy-and-roi/\">How efficacy is measured →</a>"
+  },
+  {
+   "q": "What is one point of retention worth to our institution?",
+   "a": "One point of retention is worth your undergraduate headcount times one percent, times your net price per student. At an institution of 9,000 students paying a net price of $11,500, that is 90 students and just over $1 million a year. The <a href=\"/#roi\">calculator on this page</a> fills in your own IPEDS figures so you can see the number for your institution."
+  },
+  {
+   "q": "What does Civitas Learning actually do?",
+   "a": "Civitas Learning connects the systems a college already runs into one model of the institution, trains predictive models on that institution's own history, puts the results in front of the staff who act on them, and measures what each action changed. It is a measurement layer over the systems you keep, not a replacement for your SIS, LMS, or CRM."
+  },
+  {
+   "q": "Does Civitas replace our SIS, LMS, or CRM?",
+   "a": "No. Civitas reads from more than 100 systems, including Banner, PeopleSoft, Colleague, Workday Student, Canvas, Blackboard, Slate, and Salesforce, and writes actions and results back to them. Nothing gets replaced, including a CRM or AI agent tool you have already bought."
+  },
+  {
+   "q": "How is this different from a generic AI agent?",
+   "a": "A generic agent predicts from national benchmarks or a vendor's pooled customer base; Civitas trains a separate model on each institution's own history and refreshes it each term. The difference shows up in the proof: an agent vendor reports activity such as open rates and hours saved, and Civitas reports persistence, completion, and revenue against a comparison group. <a href=\"/ai-vendor-checklist/\">Ten questions to ask any AI vendor →</a>"
+  },
+  {
+   "q": "How accurate are the predictions?",
+   "a": "Institution-specific models predict student outcomes with 89 percent accuracy. Accuracy comes from training on your SIS, LMS, and CRM history rather than on sector averages, and from retraining each term so the model matches the institution you are today."
+  },
+  {
+   "q": "How long does implementation take?",
+   "a": "Lawrence Technological University went live in six weeks. Timelines depend on how many systems are in scope and how clean the data is, so ask any vendor, including us, to name an institution that hit the date they are quoting you. <a href=\"/customer-success-stories/from-a-year-of-frustration-to-live-in-six-weeks-lawrence-technological-universitys-deployment-story/\">Read the deployment story →</a>"
+  },
+  {
+   "q": "What does Civitas Learning cost?",
+   "a": "Pricing is an annual platform subscription scaled to the size of the institution, with no per-agent charge and no token metering. What is in scope, how many systems are integrated, and the level of partnership set the number. <a href=\"/pricing/\">How pricing works →</a>"
+  },
+  {
+   "q": "Is our student data used to train models for other institutions?",
+   "a": "No. Every model is trained on your institution's own data, and your data is never pooled into a benchmark sold to another school. Civitas operates as a school official under FERPA, under a data sharing agreement you sign. <a href=\"/security/\">Security and privacy →</a>"
+  }
+ ],
+
+ "/platform/": [
+  {
+   "q": "What is the Institutional Impact Platform?",
+   "a": "The Institutional Impact Platform is Civitas Learning's single platform for unifying institutional data, predicting student outcomes, acting inside existing workflows, and measuring the result of each action. It was previously named the Student Impact Platform. Leaders get analytics, student-facing staff get a unified student profile and coordinated outreach, and students get planning and scheduling tools."
+  },
+  {
+   "q": "Which systems does the platform integrate with?",
+   "a": "More than 100, including Banner, PeopleSoft, Colleague, and Workday Student for the SIS; Canvas, Blackboard, D2L, and Moodle for the LMS; and Slate, Salesforce, Element451, CollegeVine, and TargetX for the CRM. Civitas also reads engagement tools, the campus card system, surveys, and your warehouse."
+  },
+  {
+   "q": "Do we have to replace anything we already own?",
+   "a": "No. The platform sits beside the systems you run and reads from them, then writes actions and results back. Institutions keep the CRM, the early alert tool, and the agent platform they already bought."
+  },
+  {
+   "q": "Who uses the platform day to day?",
+   "a": "Three groups. Leaders use student outcome analytics, predictive factors of success, initiative analytics, course insights, and course demand analytics. Advisors and student-facing staff use the unified student profile, shared notes, academic alerts, and email and SMS outreach. Students use collaborative degree planning, the class schedule builder, and appointment scheduling."
+  },
+  {
+   "q": "How is the platform different from a data warehouse or a BI dashboard?",
+   "a": "A warehouse stores the data and a dashboard displays it; neither predicts what will happen to a named student, nor measures whether an action changed the outcome. The platform adds an institution-specific model, the workflow where staff act on it, and the comparison-group measurement that closes the loop. <a href=\"/data-lakehouse/\">The data layer →</a>"
+  },
+  {
+   "q": "What results have institutions seen?",
+   "a": "Northwest Missouri State University raised retention 8 points, Slippery Rock University reached 86.4 percent first-year retention from 81 percent, and the University of Cincinnati raised its graduation rate 7 points across 18 decentralized units. Every published figure is measured against a comparison group. <a href=\"/customer-success-stories/\">See the stories →</a>"
+  },
+  {
+   "q": "How long does it take to get live?",
+   "a": "Six weeks at Lawrence Technological University. The variables are the number of source systems, the state of the data, and how quickly the institution can convene the people who own each system."
+  },
+  {
+   "q": "Is AI included, or is it a separate product?",
+   "a": "AI is built into the platform, not sold beside it. There is no token metering, no per-agent purchase, and no separate agent platform to implement. <a href=\"/ai-solutions/\">Civitas Learning AI →</a>"
+  }
+ ],
+
+ "/analytics/": [
+  {
+   "q": "What is an institution-specific predictive model?",
+   "a": "An institution-specific predictive model is trained on one college's own student records rather than on sector averages or a vendor's pooled customer data. It learns the patterns that predict outcomes at that institution, such as the 14-credit part-time student or the transfer with a gap in mathematics, and it is refreshed each term. Civitas models predict student outcomes with 89 percent accuracy."
+  },
+  {
+   "q": "How is a predictive model different from an early alert rule?",
+   "a": "A rule fires on a threshold someone chose, such as a grade below C or a missed registration. A model weighs grades, credits, course patterns, aid status, and engagement together, learns which combinations preceded a departure at your institution, and ranks students by risk. Ask any vendor for the list of signals: a short, obvious list is a rule set."
+  },
+  {
+   "q": "How often are the models retrained?",
+   "a": "Each term. A model built once at installation describes an institution that no longer exists, because the students, the curriculum, and the policies all change."
+  },
+  {
+   "q": "Which outcomes can you predict?",
+   "a": "Persistence, completion, and time to degree, plus course demand by section and term. Predictions are available by student population, so results can be broken out for part-time, transfer, online, and commuting students rather than reported as an institution-wide average."
+  },
+  {
+   "q": "Can we see why a student was flagged?",
+   "a": "Yes. Each prediction carries the factors that drove it, so an advisor sees the reason rather than a score alone, and institutional research can audit the model's behavior."
+  },
+  {
+   "q": "Do we need data scientists on staff to use this?",
+   "a": "No. The models are built and maintained by Civitas, and the output arrives in the tools advisors, deans, and IR already use. Institutions with their own analytics teams can work with the underlying dataset directly. <a href=\"/institutional-research-effectiveness/\">For institutional research →</a>"
+  },
+  {
+   "q": "Is our data used to train models for other institutions?",
+   "a": "No. Each model is trained on one institution's data, and nothing is pooled into a cross-institution benchmark."
+  }
+ ],
+
+ "/workflows/": [
+  {
+   "q": "Where do advisors actually see this?",
+   "a": "Inside the tools they already open. Civitas puts the daily list, the student profile, the shared note, and the recommended next action in the advising workflow, and writes the record back to the systems of record so nobody re-keys anything."
+  },
+  {
+   "q": "Will this add another system for our staff to learn?",
+   "a": "It replaces the spreadsheet and the cross-office email thread rather than adding a system beside them. Coordination happens on a shared student record, so an advising alert, an aid hold, and a tutoring referral become one case with one owner."
+  },
+  {
+   "q": "Can we automate outreach without losing human judgment?",
+   "a": "Yes, and the data says you should keep a person in the loop. In the 2026 Student Success Impact Report, persistence fell 6.8 percentage points where communication was fully automated with no human judgment guiding timing and context. Staff set the audience, the timing, and the message; the workflow does the assembly."
+  },
+  {
+   "q": "How do we know what an automation did on our behalf?",
+   "a": "Every action is logged, attributed, and reviewable. Your staff set the guardrails, the agent works inside them, and the audit trail belongs to the institution."
+  },
+  {
+   "q": "Do we need IT to build a workflow?",
+   "a": "No. Teams describe the problem in plain language and the platform builds the automation. No scripting or technical setup is required."
+  },
+  {
+   "q": "Does this work for part-time, online, and commuting students?",
+   "a": "Yes, and it is where the difference shows. Outreach and engagement can be targeted by population, and results are reported by population, so you can see whether an effort designed for full-time residential students is reaching anybody else."
+  }
+ ],
+
+ "/data-lakehouse/": [
+  {
+   "q": "What is a unified data layer in higher education?",
+   "a": "A unified data layer is one governed dataset that joins the student record across every system the institution runs, so a student, a course, and a program mean the same thing in every report. Without it, the registrar, the advising office, and institutional research each answer the same question differently, because each is reading a different copy of the data."
+  },
+  {
+   "q": "How is this different from a data warehouse we could build ourselves?",
+   "a": "The joins, the definitions, and the maintenance are the work, and they are what the Data Lakehouse delivers already built for higher education. An institution that builds its own warehouse still has to write the SIS and LMS integrations, keep them running through every vendor upgrade, and decide what a term, a cohort, and a program are."
+  },
+  {
+   "q": "Who owns the data?",
+   "a": "The institution does. Civitas operates as a school official under FERPA, under a data sharing agreement the institution signs, and the data is never pooled into a benchmark sold to another school. <a href=\"/security/\">Security and privacy →</a>"
+  },
+  {
+   "q": "Can our own analysts query it?",
+   "a": "Yes. Institutional research and analytics teams can work with the governed dataset directly, with the intervention record attached, which is what makes IPEDS, accreditation, and board reporting reconcile."
+  },
+  {
+   "q": "How many systems can it read?",
+   "a": "More than 100, across the SIS, LMS, CRM, financial aid, HR, finance, engagement tools, and the campus card system. If a system holds a record about a student, it can generally be brought in."
+  },
+  {
+   "q": "What happens when we change one of our source systems?",
+   "a": "The integration is maintained as part of the subscription. Institutions migrating from one SIS or CRM to another keep the historical record, which matters because the predictive models are trained on that history."
+  }
+ ],
+
+ "/strategic-services-2/": [
+  {
+   "q": "What does the Civitas partnership include beyond software?",
+   "a": "A Customer Development team that works with your stakeholders on adoption, impact, and continuous improvement. The team helps define which initiatives to measure, reads the results with you, and works through what to change next term."
+  },
+  {
+   "q": "Is this a paid professional services engagement?",
+   "a": "The partnership is part of the subscription rather than a separate statement of work billed by the hour. <a href=\"/pricing/\">How pricing works →</a>"
+  },
+  {
+   "q": "Who do we work with after we go live?",
+   "a": "The same team. Continuity is the point: the people who learn your data, your calendar, and your politics stay with the account rather than handing off to a support queue."
+  },
+  {
+   "q": "What does the first year usually look like?",
+   "a": "Integration and model build first, then adoption with the teams who will act daily, then the first measured results at the end of a term. The first efficacy read arrives once a cohort has been through an intervention and a comparison group exists."
+  },
+  {
+   "q": "What if our team turns over?",
+   "a": "The models, the definitions, and the measurement record stay with the institution, not with the person who set them up. That is the difference between an operating model and a project."
+  }
+ ],
+
+ "/ai-solutions/": [
+  {
+   "q": "What is agentic AI, and how is it different from a chatbot?",
+   "a": "Agentic AI can complete multi-step work on a team's behalf, such as building a student group, drafting an automation, or generating a report, rather than only answering questions in a single conversation. Civitas Learning's agentic AI is grounded in your institution's own data, so its actions reflect your students and your context."
+  },
+  {
+   "q": "Why is Civitas Learning AI different from other general-purpose AI solutions?",
+   "a": "Civitas Learning AI is grounded in your institution's own data, context, and historical outcomes. Instead of providing generic answers or recommendations based on national averages, it connects AI to the intelligence and workflows that matter to your institution."
+  },
+  {
+   "q": "Is AI built into the Institutional Impact Platform?",
+   "a": "Yes. AI capabilities are built into the platform, so teams can access intelligence and assistance where they already work rather than managing separate AI tools."
+  },
+  {
+   "q": "Do I need to purchase individual AI agents or pay for tokens?",
+   "a": "No. Civitas Learning AI does not use a token-based model or require you to purchase individual agents. You can build and use as many agents as you need, all integrated directly into the platform, with no separate agent platform to buy. <a href=\"/pricing/\">How pricing works →</a>"
+  },
+  {
+   "q": "Is Civitas Learning's AI trained on data from other institutions?",
+   "a": "No. Every recommendation is built on your institution's own unified data and predictive models, not on benchmarks pooled from other schools."
+  },
+  {
+   "q": "Do our teams need to know how to code to build an agent or automation?",
+   "a": "No. Teams describe the challenge they are trying to solve in plain language, and the platform builds the automation. No scripting or technical setup is required."
+  },
+  {
+   "q": "How does Civitas Learning keep AI transparent and under our team's control?",
+   "a": "AI assistants and automations surface recommendations and next steps, and your teams make the final decisions. Every action is logged and attributed, so the institution can review what the AI did on its behalf."
+  },
+  {
+   "q": "Does adopting your AI require a new implementation project?",
+   "a": "No. Agentic AI is built into the platform your teams already use, so there is no separate system to implement or maintain."
+  },
+  {
+   "q": "How do we get started?",
+   "a": "Schedule a conversation with our team. We will learn about your goals and help you identify which AI assistants and capabilities fit your institution first. <a href=\"/contact/\">Book a demo →</a>"
+  }
+ ],
+
+ "/enrollment-management/": [
+  {
+   "q": "How do we predict which admits will actually enroll?",
+   "a": "A model trained on your own admit and enrollment history scores every admit for likelihood to enroll, and a second score predicts whether that student will still be enrolled in year two. Counselors work the list from the top, and the scores sit in the CRM they already open."
+  },
+  {
+   "q": "How do we reduce summer melt?",
+   "a": "Find the admits who have gone quiet before the deposit deadline passes, and give the follow-up an owner. Civitas scores the risk daily and drafts the outreach, so the counselor spends the time on the conversation rather than on building the list."
+  },
+  {
+   "q": "Can this help with continuing student registration, not just new students?",
+   "a": "Yes, and it is often the larger number. SUNY Broome raised registration 3.7 percent by finding continuing students who had not registered by week two of open registration, naming the hold, and clearing it with them."
+  },
+  {
+   "q": "Does this replace Slate, Salesforce, or Element451?",
+   "a": "No. Civitas reads from the CRM you run and writes scores and actions back into it. The CRM stays the system of record for recruitment."
+  },
+  {
+   "q": "How does enrollment work connect to retention?",
+   "a": "Through the same model and the same ledger. Yield decisions that bring in students who do not persist raise this year's class and next year's attrition, so the platform reports enrollment and second-year persistence together."
+  },
+  {
+   "q": "What is one point of retention worth compared with recruiting the same students?",
+   "a": "Retention is almost always the cheaper number. One point at an institution of 9,000 students paying $11,500 net is 90 students and just over $1 million a year, with no additional recruitment spend. <a href=\"/#roi\">Run your own figures →</a>"
+  }
+ ],
+
+ "/advising-and-student-success/": [
+  {
+   "q": "How does an advisor know which students to contact first?",
+   "a": "The platform builds each advisor's list before they log in, ranked by a model trained on your institution's own history and refreshed each term. The list carries the reason for each student's position, so the advisor opens the conversation knowing what changed."
+  },
+  {
+   "q": "How early can we catch a student who is slipping?",
+   "a": "Week four rather than week twelve. The model scores every student every week on grades, credits, course patterns, aid status, and engagement together, which surfaces the pattern before a single grade would."
+  },
+  {
+   "q": "What retention gains have institutions actually seen?",
+   "a": "Northwest Missouri State University gained 8 points of retention, Slippery Rock University reached 86.4 percent first-year retention from 81 percent, and Austin Community College raised fall-to-spring persistence 4.1 percent. Each figure is measured against a comparison group. <a href=\"/customer-success-stories/\">Read the stories →</a>"
+  },
+  {
+   "q": "Does this add work for advisors?",
+   "a": "It moves the work from list-building to advising. The daily list is assembled, the note is drafted after the meeting, and the follow-up is scheduled, so the advisor's time goes to the conversation."
+  },
+  {
+   "q": "How do we keep outreach from overwhelming students?",
+   "a": "Coordinate it on one record. Before it changed its approach, Macomb Community College found students receiving 17 to 20 communications a day from separate offices; shared visibility into who has contacted a student, and why, is what stops that."
+  },
+  {
+   "q": "Can we measure whether advising actually moved persistence?",
+   "a": "Yes. Each advising initiative is scored against a matched comparison group of similar students who did not receive it, so you can see the lift and the confidence interval rather than a year-over-year difference. <a href=\"/ensure-initiative-efficacy-and-roi/\">How efficacy is measured →</a>"
+  },
+  {
+   "q": "Does it work with the case management tool we already use?",
+   "a": "Yes. Civitas reads from and writes to the systems you run, including the CRM and the early alert tool, rather than replacing them."
+  }
+ ],
+
+ "/academic-leaders-and-faculty/": [
+  {
+   "q": "How do we find the courses that are blocking student progress?",
+   "a": "Look at outcomes by section, not by department average. Course insights show pass rates, withdrawal patterns, and downstream persistence for each section, which is how a gateway course that looks fine in aggregate turns out to be blocking one population."
+  },
+  {
+   "q": "Can we see student engagement before grades are posted?",
+   "a": "Yes, by week rather than by grade report. Engagement signals from the LMS and the campus systems roll up to the section, the course, and the program, so a chair sees the drop while the term can still be changed."
+  },
+  {
+   "q": "How do we forecast course demand?",
+   "a": "A model predicts section fill by term from degree plans, historical registration behavior, and student progression. Institutions use it to open the sections students need to progress and close the ones that will not fill."
+  },
+  {
+   "q": "What can a dean do with this that a dashboard does not give them?",
+   "a": "See which of their programs moved a number, and which did not. Initiative analytics scores each effort against a comparison group, so a dean's program review starts from measured impact rather than participation counts."
+  },
+  {
+   "q": "Does faculty development show up in the numbers?",
+   "a": "It has in the published research. The Student Success Impact Report has measured persistence effects from faculty development and early alert practice, alongside advising and outreach."
+  },
+  {
+   "q": "Do faculty have to log in to another system?",
+   "a": "No. The signals surface where faculty already work, and the alert an instructor raises becomes part of the same student record advising sees."
+  }
+ ],
+
+ "/institutional-research-effectiveness/": [
+  {
+   "q": "How does this help with accreditation and IPEDS reporting?",
+   "a": "One governed dataset produces the numbers, with the intervention record attached. That means the retention figure in the accreditation self-study, the board deck, and the IPEDS submission reconcile, and the institution can show what it did about the number as well as the number."
+  },
+  {
+   "q": "Can institutional research audit the predictive models?",
+   "a": "Yes. Each prediction carries the factors that drove it, the models are documented, and they are retrained each term on the institution's own data. IR can examine model behavior by student population rather than accepting a single accuracy figure."
+  },
+  {
+   "q": "How do you build the comparison group?",
+   "a": "From your own students. For each initiative, Civitas matches participants with similar students who did not receive it on the characteristics that predict the outcome, then reports the difference with a confidence interval. That is what separates a measured lift from a year-over-year change."
+  },
+  {
+   "q": "Will this replace the analyses our office already runs?",
+   "a": "No, it removes the data assembly that consumes the office. Analysts spend their time on the questions rather than on reconciling extracts from six systems."
+  },
+  {
+   "q": "Can we break results out by student population?",
+   "a": "Yes, and averages usually hide the finding. In the 2026 Impact Report, academic planning produced a 2 percent persistence lift across the broad population and a 15 percent lift for online students."
+  },
+  {
+   "q": "Can we export the data to our own tools?",
+   "a": "Yes. The governed dataset is available to the institution's analytics stack, so existing reporting and visualization tools keep working."
+  }
+ ],
+
+ "/institutional-technology/": [
+  {
+   "q": "What does implementation require from our IT team?",
+   "a": "Access to the source systems and someone who can speak for each one. Civitas builds and maintains the integrations, so the institution is not writing or supporting the connectors."
+  },
+  {
+   "q": "How does Civitas handle FERPA?",
+   "a": "Civitas operates as a school official under FERPA, designated by the institution, under a signed data sharing agreement. The data sharing agreement and the platform specifications are published documents you can review before you buy. <a href=\"/security/\">Security and privacy →</a>"
+  },
+  {
+   "q": "Do you support single sign-on?",
+   "a": "Yes, with role-based access, so what a person can see follows the role the institution assigns them."
+  },
+  {
+   "q": "Is there an accessibility conformance report?",
+   "a": "Accessibility conformance reports are available on request."
+  },
+  {
+   "q": "What happens when we upgrade or replace a source system?",
+   "a": "The integration is maintained as part of the subscription, and the historical record is preserved. Preserving history matters because the predictive models are trained on it."
+  },
+  {
+   "q": "How many systems can you integrate, and which ones?",
+   "a": "More than 100, including Banner, PeopleSoft, Colleague, Workday Student, Canvas, Blackboard, D2L, Moodle, Slate, Salesforce, Element451, CollegeVine, and TargetX, plus your warehouse and engagement tools."
+  },
+  {
+   "q": "Does this add another system of record?",
+   "a": "No. Civitas reads from your systems of record and writes actions and results back to them."
+  }
+ ],
+
+ "/curate-student-data/": [
+  {
+   "q": "Why do our offices report different numbers for the same thing?",
+   "a": "Because each office is reading a different copy of the data with a different definition behind it. One governed dataset with shared definitions for a student, a term, a cohort, and a program is what makes the registrar's number, the advising number, and the IR number match."
+  },
+  {
+   "q": "How do we share student data across offices without breaking FERPA?",
+   "a": "Role-based access on one record, under a data sharing agreement, with Civitas designated as a school official. Staff see what their role requires, and the access record is auditable."
+  },
+  {
+   "q": "How long does it take to get the data unified?",
+   "a": "Weeks rather than years, depending on how many systems are in scope. Lawrence Technological University was live in six weeks."
+  },
+  {
+   "q": "What if our data is messy?",
+   "a": "Most institutional data is, and the integration work assumes it. The practical constraint is usually not data quality but agreement on definitions, which is why the Customer Development team runs that conversation early."
+  },
+  {
+   "q": "Who can see a student's record?",
+   "a": "Only the roles the institution grants. The institution sets the access model; Civitas enforces it."
+  }
+ ],
+
+ "/improve-on-time-completion/": [
+  {
+   "q": "Why do students stall so close to a degree?",
+   "a": "Usually one blocked course, not a general loss of momentum. Students thirty credits from a degree stall on a single unavailable section or an unmet requirement, which is findable a term before it happens."
+  },
+  {
+   "q": "How do we raise our graduation rate?",
+   "a": "Find the specific barrier for each student, then remove it. Texas A&M University–San Antonio raised its graduation rate 5 percent, and the University of Cincinnati gained 7 points across 18 decentralized units, by working the blocked plans rather than launching a general campaign."
+  },
+  {
+   "q": "What is degree planning worth to persistence?",
+   "a": "In the 2026 Student Success Impact Report, academic planning produced a 10 percent sustained persistence lift over five years, including 11 percent for new students and 15 percent for online students. The lift comes from plans students revisit, not plans they file once."
+  },
+  {
+   "q": "How does course scheduling affect completion?",
+   "a": "A plan is only as good as the seats behind it. Course demand forecasting shows which sections students need to progress, so the schedule is built from the degree plans rather than from last year's schedule."
+  },
+  {
+   "q": "Can we see time to degree, not just the six-year rate?",
+   "a": "Yes. Time to degree, credit accumulation, and progression are tracked by population, which is where the difference between full-time and part-time completion shows up."
+  },
+  {
+   "q": "Does this work for community colleges?",
+   "a": "Yes. Austin Community College raised fall-to-spring persistence 4.1 percent and two-year completion 13 percent."
+  }
+ ],
+
+ "/career-outcomes/": [
+  {
+   "q": "What are the new Department of Education earnings rules?",
+   "a": "The Department of Education's earnings accountability framework was finalized in 2026 and takes effect in July 2027. It compares the earnings of a program's graduates against an earnings benchmark, and programs that fall short can lose access to federal student aid. Institutions that wait for the determination will be reacting to a number they could have seen years earlier."
+  },
+  {
+   "q": "How do we know which programs are at risk?",
+   "a": "Measure graduate earnings by program against the federal threshold now, on your own data, rather than waiting for the federal determination. The career module reports earnings and outcomes at the program level so a provost can see which programs are close to the line."
+  },
+  {
+   "q": "Do you only track first destination?",
+   "a": "No. Civitas maps the whole student body and the alumni population over years, not a first-destination survey taken six months after commencement. That is what makes it possible to see whether a program's graduates are still earning above the threshold well after they leave."
+  },
+  {
+   "q": "How is this different from a first-destination survey?",
+   "a": "A survey captures a moment and a self-selected sample; longitudinal outcome data covers the population over time. Response-rate bias is the reason first-destination numbers tend to look better than the cohort actually did."
+  },
+  {
+   "q": "Does career engagement affect persistence?",
+   "a": "Yes. In the 2026 Student Success Impact Report, career engagement was associated with a 7 percent persistence lift at two-year institutions and 2 percent at four-year institutions, and the platform shows which experiences produced it for which students."
+  },
+  {
+   "q": "Which systems does the career module read from?",
+   "a": "Handshake, Canvas, Banner, and Salesforce among others, so participation in internships, mentoring, and career coaching joins the same student record as academic progress."
+  },
+  {
+   "q": "Who uses this at an institution?",
+   "a": "Deans and provosts for program decisions, career services for where to invest, and institutional research for accreditation, state reporting, and the federal filing."
+  }
+ ],
+
+ "/coordinate-student-care/": [
+  {
+   "q": "How do we stop students from falling between offices?",
+   "a": "Put the advising alert, the aid hold, and the tutoring referral into one case with one owner. Coordination fails when three offices each hold a piece of the story and none of them can see the other two."
+  },
+  {
+   "q": "How many messages is a student actually getting from us?",
+   "a": "More than you think. Macomb Community College found students receiving 17 to 20 communications a day across offices before it moved to coordinated, relationship-first outreach."
+  },
+  {
+   "q": "Who owns the follow-up?",
+   "a": "One named person per case, visible to everyone who touches the student. The record shows whether contact happened, not just whether a message was sent."
+  },
+  {
+   "q": "Does this replace our case management or early alert system?",
+   "a": "No. Civitas reads from and writes to the tools you run, and adds the shared record and the measurement across them."
+  },
+  {
+   "q": "Can we measure whether coordinated care actually helped?",
+   "a": "Yes. Student success outreach measured against a comparison group produced a 16 percent persistence lift in the 2026 Impact Report, sustained at 16 percent over five years."
+  }
+ ],
+
+ "/ensure-initiative-efficacy-and-roi/": [
+  {
+   "q": "How do you prove an initiative worked?",
+   "a": "Compare the students who received it with matched students who did not. Civitas builds the comparison group from your own records, matching on the characteristics that predict the outcome, then reports the difference with a confidence interval. A year-over-year change is not proof, because the cohort changed too."
+  },
+  {
+   "q": "What percentage of student success initiatives actually work?",
+   "a": "Between 40 and 60 percent produce a measurable outcome, across 220 initiatives measured over five years of partner data. That is the argument for measuring: roughly half the spend is producing something you cannot see, and the other half is not producing anything."
+  },
+  {
+   "q": "What is the return on the investment?",
+   "a": "Partners see an average of $4 returned for every $1 invested, across 220 measured initiatives. The mechanism is retained students paying another year of net price, which is why the calculator on the home page starts from headcount and net price."
+  },
+  {
+   "q": "What happens when an initiative does not work?",
+   "a": "You stop funding it, and that is the point. Ask any vendor to name an intervention of theirs that did not work; a vendor who has never found one is not measuring."
+  },
+  {
+   "q": "How long before we see a measured result?",
+   "a": "One term of a cohort, once participants and a comparison group both exist. Longitudinal effects, such as a five-year sustained lift, take the time they take."
+  },
+  {
+   "q": "Can we measure initiatives we run outside the platform?",
+   "a": "Yes, as long as the participation record can be brought in. The measurement needs to know who received the intervention and when."
+  },
+  {
+   "q": "How do we report this to a board?",
+   "a": "As a ledger: each initiative, the population, the lift, and the confidence interval, next to the dollar value. That is the format a president can defend in the room."
+  }
+ ],
+
+ "/pricing/": [
+  {
+   "q": "How much does Civitas Learning cost?",
+   "a": "Civitas Learning is sold as an annual platform subscription scaled to the size of the institution. There is no published list price, because the number depends on institution size, which capabilities are in scope, and how many systems are integrated. Ask for a quote against your own headcount and system list, and expect it within the first conversation."
+  },
+  {
+   "q": "Do you charge per agent or per AI token?",
+   "a": "No. There is no token metering and no per-agent purchase. Teams build and use as many agents and automations as the work requires, at no additional charge."
+  },
+  {
+   "q": "Do you charge per student or per advisor seat?",
+   "a": "The subscription scales with the size of the institution rather than metering individual logins, so adding an advisor or an academic department does not change the invoice. Ask us to confirm the structure for your institution in writing."
+  },
+  {
+   "q": "Is implementation a separate cost?",
+   "a": "Integration, model build, and the Customer Development partnership are part of the subscription rather than a separate professional services engagement billed by the hour."
+  },
+  {
+   "q": "What is not included?",
+   "a": "Systems Civitas reads from remain your cost: the SIS, the LMS, the CRM, and their license fees are unaffected, because nothing is replaced. Unusual source systems can add integration scope."
+  },
+  {
+   "q": "How should we build the business case?",
+   "a": "Start with what one point of retention is worth at your institution, which is headcount times one percent times net price. Partners average $4 returned for every $1 invested across 220 measured initiatives. <a href=\"/#roi\">Run your own numbers →</a>"
+  },
+  {
+   "q": "What contract length do institutions sign?",
+   "a": "Multi-year agreements are typical, because the measurement needs more than one term to produce a comparison group and the models improve as history accumulates. Confirm the term and renewal conditions in your own agreement."
+  },
+  {
+   "q": "Can we start with one use case?",
+   "a": "Yes. Many institutions start with advising and retention, then extend to enrollment, completion, and career outcomes on the same data and the same models."
+  }
+ ]
+}

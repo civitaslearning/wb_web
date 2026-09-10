@@ -1,0 +1,110 @@
+---
+/**
+ * How pricing works.
+ *
+ * Not a price list. It answers the question a buyer asks an AI assistant
+ * first, and it removes the reason to go read a competitor's pricing page to
+ * find out. The commitments on this page (no token metering, no per-agent
+ * charge, integration and partnership included) must be confirmed by Finance
+ * and Legal before launch, because a buyer will quote them back in a
+ * negotiation.
+ */
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import FinalCta from '../components/FinalCta.astro';
+import faqs from '../data/faqs.json';
+import { breadcrumbs, type FaqItem } from '../lib/schema';
+
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Pricing' }];
+const items: FaqItem[] = (faqs as Record<string, FaqItem[]>)['/pricing/'] ?? [];
+
+const drivers = [
+  ['Institution size', 'Undergraduate headcount is the largest single factor. A community college of 4,000 and a public research university of 40,000 are not the same subscription.'],
+  ['Scope', 'Which capabilities are in play: analytics, workflows and outreach, student-facing planning and scheduling, the career module. Institutions commonly start with one use case and extend.'],
+  ['Systems', 'How many source systems are integrated, and whether any of them are unusual. Standard SIS, LMS, and CRM integrations are routine; a bespoke internal system adds scope.'],
+  ['Term', 'Multi-year agreements are typical, because measurement needs more than one term to produce a comparison group and the models improve as history accumulates.'],
+];
+
+const included = [
+  ['Integration', 'Building and maintaining the connections to your source systems, through their upgrades.'],
+  ['The data layer', 'One governed dataset with higher education definitions, kept current.'],
+  ['Institution-specific models', 'Built on your history and retrained each term, at no charge per model.'],
+  ['AI agents and automations', 'As many as your teams need. No token metering, no per-agent purchase.'],
+  ['Efficacy measurement', 'Comparison-group measurement of your initiatives, with the confidence intervals.'],
+  ['Strategic partnership', 'The Customer Development team, as part of the subscription rather than an hourly engagement.'],
+];
+
+const notIncluded = [
+  ['Your existing systems', 'The SIS, LMS, CRM, and their license fees are unaffected, because nothing is replaced.'],
+  ['Unusual integrations', 'A bespoke or unsupported source system can add integration scope.'],
+  ['Your people', 'Adoption takes staff time. The platform reduces the work; it does not remove the need for advisors and analysts.'],
+];
+---
+<Base
+  title="How Pricing Works"
+  seoTitle="How Civitas Learning Pricing Works | Civitas Learning"
+  description="How Civitas Learning is priced: an annual platform subscription scaled to institution size, with no token metering and no per-agent charge. What sets the number, what is included, and how to build the business case."
+  jsonld={[breadcrumbs(crumbs, '/pricing/')]}
+>
+  <PageHero
+    eyebrow="Pricing"
+    title="How Civitas Learning is priced."
+    sub="No list price, and no runaround either. Here is the pricing model, what moves the number, what is included, and how to build the business case before you talk to anyone."
+    crumbs={crumbs}
+  />
+
+  <section class="tight"><div class="wrap">
+    <div class="answer-box">
+      <span class="eyebrow">The short answer</span>
+      <p>Civitas Learning is an annual platform subscription, scaled to the size of the institution. There is no token metering, no charge per AI agent, and no separate implementation invoice. We do not publish a list price, because the number depends on institution size, the scope you want, and how many systems are integrated. Ask for a quote against your own headcount and system list, and expect one in the first conversation rather than the fourth.</p>
+    </div>
+  </div></section>
+
+  <section class="tight"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">What sets the number</span><h2>Four things move the price. Nothing else does.</h2></div>
+      <p>If you want a rough figure before a call, these are the inputs we will ask for.</p>
+    </div>
+    <div class="grid2">
+      {drivers.map(([h, p], i) => (
+        <div class="card"><div class="ico">{String(i + 1).padStart(2, '0')}</div><h3 style="font-size:18px">{h}</h3><p>{p}</p></div>
+      ))}
+    </div>
+  </div></section>
+
+  <section class="tight tint"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">What you get</span><h2>Included in the subscription</h2></div>
+      <p>The things vendors most often bill separately are in the number.</p>
+    </div>
+    <div class="checks" style="margin-top:22px">
+      {included.map(([b, t]) => <div class="check"><span><b>{b}</b>{t}</span></div>)}
+    </div>
+    <div class="beyond" style="margin-top:34px">
+      <div class="beyond-head"><span class="eyebrow">Not included</span><p>Said plainly, so it does not surface late in a procurement.</p></div>
+      <div class="beyond-grid">
+        {notIncluded.map(([b, t]) => <div class="b"><b>{b}</b><span>{t}</span></div>)}
+      </div>
+    </div>
+  </div></section>
+
+  <section class="tight"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">The business case</span><h2>Start with what one point of retention is worth.</h2></div>
+      <p>Most institutions build the case from retained revenue, because it is the number a board already understands.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><div class="n">1 pt</div><div class="m">Headcount × 1% × net price. At 9,000 students and $11,500 net, one point is just over $1 million a year.</div></div>
+      <div class="card"><div class="n">$4:$1</div><div class="m">Average return across partners, over 220 initiatives measured against comparison groups across five years.</div></div>
+      <div class="card"><div class="n">40–60%</div><div class="m">Share of student success initiatives that produce a measurable outcome. The rest is the budget the measurement finds.</div></div>
+    </div>
+    <div class="cta-row" style="margin-top:28px">
+      <a class="btn btn-primary" href="/#roi">Run your own numbers →</a>
+      <a class="btn btn-ghost" href="/ensure-initiative-efficacy-and-roi/">How efficacy is measured →</a>
+    </div>
+  </div></section>
+
+  <Faq items={items} heading="Questions about pricing" />
+  <FinalCta />
+</Base>

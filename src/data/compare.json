@@ -1,0 +1,311 @@
+[
+ {
+  "slug": "civitas-learning-vs-eab-navigate360",
+  "competitor": "EAB Navigate360",
+  "name": "Civitas Learning vs. EAB Navigate360",
+  "seoTitle": "Civitas Learning vs. EAB Navigate360 | Civitas Learning",
+  "description": "A side-by-side comparison of Civitas Learning and EAB Navigate360 for student success: what each is built to do, how risk is identified, and how impact is measured.",
+  "eyebrow": "Comparison",
+  "headline": "Civitas Learning vs. EAB Navigate360",
+  "sub": "Both platforms help institutions coordinate student support. They differ on what the prediction is trained on, and on whether the platform can tell you what an initiative changed.",
+  "answer": "Civitas Learning and EAB Navigate360 are both student success platforms, and the practical difference is measurement. Navigate360 is a student success management system built around advising workflow, case management, campaigns, and a student mobile app, backed by EAB's research and advisory membership. Civitas Learning is built around an institution-specific predictive model and a comparison-group measurement of every initiative, and it reads from the systems an institution already runs rather than becoming the place advising happens. Institutions that want a packaged advising and case-management system with a student app tend to prefer Navigate360; institutions that need to prove which initiatives moved persistence, and defend that number to a board or an accreditor, tend to prefer Civitas.",
+  "rows": [
+   {
+    "dimension": "What it is",
+    "them": "A student success management system: advising workflow, case management, campaigns, and a student mobile app, sold alongside EAB's research and advisory membership.",
+    "us": "A measurement layer over the systems you already run: one unified dataset, an institution-specific predictive model, action inside existing workflows, and comparison-group measurement."
+   },
+   {
+    "dimension": "How risk is identified",
+    "them": "Risk scores and success markers built largely on historical patterns and program-level milestones, presented as risk tiers.",
+    "us": "A model trained on your own SIS, LMS, CRM, and aid history, weighing grades, credits, course patterns, aid status, and engagement together, retrained each term, at 89% accuracy."
+   },
+   {
+    "dimension": "How impact is proven",
+    "them": "Activity and adoption reporting: appointments, campaign response, case volume, plus EAB benchmarking research.",
+    "us": "Lift against a matched comparison group of your own students, with a confidence interval, per initiative. Across 220 measured initiatives, 40–60% produced a measurable outcome."
+   },
+   {
+    "dimension": "Where staff work",
+    "them": "Primarily inside Navigate360, which becomes the advising system of record for many institutions.",
+    "us": "Inside the tools staff already open. Civitas reads from and writes back to your CRM, SIS, and case management tool rather than replacing them."
+   },
+   {
+    "dimension": "Scope",
+    "them": "Focused on student success, advising, and the student experience, with a strong student-facing mobile app.",
+    "us": "The whole institution: enrollment, engagement, persistence, completion, career outcomes, course demand, and program accountability on one dataset."
+   },
+   {
+    "dimension": "Student-facing tools",
+    "them": "A mature student mobile app for scheduling, to-dos, and communication.",
+    "us": "Degree planning, the class schedule builder, appointment scheduling, and asynchronous guidance, delivered in the platform."
+   },
+   {
+    "dimension": "Advisory services",
+    "them": "Research and advisory membership with benchmarking and best-practice publications, a core part of the EAB model.",
+    "us": "A Customer Development team that works on your own numbers, plus the annual Student Success Impact Report drawn from measured partner initiatives."
+   }
+  ],
+  "themBest": [
+   "You want one packaged system that becomes the advising system of record, and you are willing to move advising work into it.",
+   "A student-facing mobile app is a requirement, and you want it from the same vendor.",
+   "Your institution already values the EAB research and advisory membership and wants the platform bundled with it."
+  ],
+  "usBest": [
+   "You have to show a board, a system office, or an accreditor which initiatives produced a measured outcome, and which did not.",
+   "You already own a CRM, an early alert tool, or an AI agent platform, and replacing them is not on the table.",
+   "The question is institutional, not only advising: enrollment, course demand, completion, program accountability, and graduate earnings on the same dataset.",
+   "You need predictions trained on your own students rather than on sector patterns, refreshed every term."
+  ],
+  "faqs": [
+   {
+    "q": "Is Civitas Learning a replacement for EAB Navigate360?",
+    "a": "It can be, and it does not have to be. Civitas reads from and writes to the tools an institution already runs, so some institutions keep an existing case management system and add Civitas for prediction and measurement, while others consolidate. The deciding question is usually whether advising work should move into a vendor's system or stay in the institution's own workflow."
+   },
+   {
+    "q": "What is the main difference between Civitas Learning and EAB Navigate360?",
+    "a": "Measurement. Navigate360 reports what your teams did, such as appointments held and campaigns run; Civitas reports what those actions changed, as lift against a matched comparison group of your own students. Both matter, but only the second one answers a board's question about whether the spend worked."
+   },
+   {
+    "q": "Which one has better predictive analytics?",
+    "a": "Civitas trains a separate model per institution on that institution's own SIS, LMS, CRM, and aid history and retrains it each term, at 89% accuracy on student outcomes. Ask both vendors the same question: what is the model trained on, how often is it refreshed, and can institutional research audit it?"
+   },
+   {
+    "q": "Can we run both?",
+    "a": "Yes. Civitas integrates with more than 100 systems and does not require the institution to give up an existing advising or case management tool. Institutions that run both typically use Civitas for the model and the efficacy measurement."
+   },
+   {
+    "q": "How should we evaluate the two?",
+    "a": "Ask each vendor for a lift number against a comparison group, the size of that group, and the confidence interval, then ask them to name an intervention of theirs that did not work. <a href=\"/ai-vendor-checklist/\">The ten-question vendor checklist →</a>"
+   }
+  ]
+ },
+ {
+  "slug": "civitas-learning-vs-salesforce-education-cloud",
+  "competitor": "Salesforce Education Cloud",
+  "name": "Civitas Learning vs. Salesforce Education Cloud",
+  "seoTitle": "Civitas Learning vs. Salesforce Education Cloud | Civitas Learning",
+  "description": "How Civitas Learning and Salesforce Education Cloud differ: a CRM platform you configure versus a measurement layer with institution-specific predictive models. They are frequently run together.",
+  "eyebrow": "Comparison",
+  "headline": "Civitas Learning vs. Salesforce Education Cloud",
+  "sub": "These two are not the same kind of product, and most institutions that ask the question end up running both.",
+  "answer": "Salesforce Education Cloud is a CRM platform an institution configures to manage relationships and processes across the student lifecycle; Civitas Learning is a measurement layer that unifies data from the systems an institution already runs, predicts outcomes with institution-specific models, and measures what each initiative changed. Salesforce gives you a platform and a partner ecosystem to build on, with the flexibility and the implementation cost that implies. Civitas arrives with the higher education data model, the predictive models, and the efficacy measurement already built. Civitas integrates with Salesforce, so the common outcome is not a choice between them: the CRM stays the system of record for relationships, and Civitas supplies the prediction and the proof.",
+  "rows": [
+   {
+    "dimension": "What it is",
+    "them": "A configurable CRM platform for higher education, with a large partner and app ecosystem, typically implemented with a systems integrator.",
+    "us": "A purpose-built measurement layer for higher education: unified data, institution-specific predictive models, action in existing workflows, and comparison-group measurement."
+   },
+   {
+    "dimension": "Time to value",
+    "them": "Depends on the implementation. A configured CRM is scoped, built, and tested; timelines commonly run in quarters and depend on the integrator.",
+    "us": "Lawrence Technological University was live in six weeks. The higher education data model and the predictive models are not built from scratch per customer."
+   },
+   {
+    "dimension": "Predictive analytics",
+    "them": "Platform-level AI and analytics features that an institution configures and trains against its own Salesforce data.",
+    "us": "Models trained on the institution's whole record across the SIS, LMS, CRM, and aid systems, retrained each term, at 89% accuracy on student outcomes."
+   },
+   {
+    "dimension": "Proof of impact",
+    "them": "Reports and dashboards on the data in the CRM, built by the institution or its integrator.",
+    "us": "Lift per initiative against a matched comparison group, with a confidence interval, out of the box."
+   },
+   {
+    "dimension": "Data scope",
+    "them": "Strongest on data that lives in or flows into the CRM.",
+    "us": "More than 100 systems, including the SIS, LMS, financial aid, HR, finance, engagement tools, and the campus card system."
+   },
+   {
+    "dimension": "Who maintains it",
+    "them": "The institution, usually with an administrator and an ongoing integrator relationship.",
+    "us": "Civitas maintains the integrations and the models as part of the subscription."
+   },
+   {
+    "dimension": "Relationship to the other",
+    "them": "Salesforce is one of the CRMs Civitas reads from and writes back to.",
+    "us": "Civitas does not replace the CRM. Scores and actions land in Salesforce where the staff already work."
+   }
+  ],
+  "themBest": [
+   "Salesforce is already an institutional standard and you want the student lifecycle on the same platform as everything else.",
+   "You need deep process customization and you have the administrator capacity or integrator budget to build and maintain it.",
+   "The requirement is relationship and process management, such as recruitment, advancement, or service desks, rather than outcome measurement."
+  ],
+  "usBest": [
+   "You need predictions and efficacy measurement without a multi-quarter build.",
+   "The data that predicts persistence lives outside the CRM, in the SIS, the LMS, and the aid system.",
+   "You want the higher education data model, the definitions, and the comparison-group method already built and maintained.",
+   "You are being asked to prove return on investment, not to report on pipeline."
+  ],
+  "faqs": [
+   {
+    "q": "Does Civitas Learning replace Salesforce?",
+    "a": "No. Salesforce is one of the CRMs Civitas reads from and writes back to, alongside Slate, Element451, CollegeVine, and TargetX. The CRM stays the system of record for relationships, and Civitas adds the model and the measurement across every system."
+   },
+   {
+    "q": "Can we just build this in Salesforce ourselves?",
+    "a": "You can build reports and workflows in Salesforce; the harder parts are the higher education data model across the SIS and LMS, an institution-specific predictive model retrained each term, and a defensible comparison group per initiative. Those are the parts institutions most often underestimate when they scope the build."
+   },
+   {
+    "q": "We already own Salesforce. Is Civitas redundant?",
+    "a": "No, and the overlap is small. Salesforce holds the interactions; Civitas predicts the outcome from the whole record and measures whether the interaction changed it."
+   },
+   {
+    "q": "Which is faster to implement?",
+    "a": "Civitas is generally faster, because the data model and the predictive models are not built per customer. Lawrence Technological University went live in six weeks. A configured CRM implementation is scoped work and its timeline depends on the integrator and the requirements."
+   },
+   {
+    "q": "How do we compare the two on cost?",
+    "a": "Compare the total: platform licenses plus implementation plus the administrator or integrator time to build and maintain what you need. Civitas is an annual subscription that includes integration, model build, and the partnership. <a href=\"/pricing/\">How Civitas pricing works →</a>"
+   }
+  ]
+ },
+ {
+  "slug": "civitas-learning-vs-element451",
+  "competitor": "Element451",
+  "name": "Civitas Learning vs. Element451",
+  "seoTitle": "Civitas Learning vs. Element451 | Civitas Learning",
+  "description": "How Civitas Learning and Element451 differ: an AI-native CRM built for the front door versus a measurement layer that proves which initiatives changed persistence and completion.",
+  "eyebrow": "Comparison",
+  "headline": "Civitas Learning vs. Element451",
+  "sub": "One is built to run the front door. One is built to prove what the work produced. They integrate.",
+  "answer": "Element451 is an AI-native CRM with conversational agents, strongest at the front door of the institution: marketing, admissions, inquiry response, and the enrollment funnel. Civitas Learning is a measurement layer across the whole institution, with predictive models trained on each institution's own history and an efficacy measurement that reports lift against a matched comparison group. The clearest difference is the proof each one offers: agent platforms report activity such as conversations handled, response rates, and staff hours saved, and Civitas reports persistence, completion, and revenue against a comparison group. Element451 is one of the CRMs Civitas reads from, so institutions frequently run both.",
+  "rows": [
+   {
+    "dimension": "Center of gravity",
+    "them": "The front door: marketing, admissions, inquiry response, and the enrollment funnel, with AI agents handling conversation at volume.",
+    "us": "The whole student lifecycle and the institution behind it: enroll, engage, persist, graduate, employ, and prove."
+   },
+   {
+    "dimension": "What the AI is trained on",
+    "them": "A vendor model applied across the customer base, tuned with institutional content and configuration.",
+    "us": "A model trained per institution on that institution's own SIS, LMS, CRM, and aid history, retrained each term, at 89% accuracy."
+   },
+   {
+    "dimension": "What counts as proof",
+    "them": "Activity and efficiency: conversations handled, response and engagement rates, staff hours saved, application volume.",
+    "us": "Outcome: persistence, completion, and net revenue lift against a matched comparison group, with a confidence interval."
+   },
+   {
+    "dimension": "Pricing model",
+    "them": "Published pricing tiers, an approach that lowers buyer risk early in the process.",
+    "us": "An annual subscription scaled to institution size, with no token metering and no per-agent charge. No published list price."
+   },
+   {
+    "dimension": "Systems posture",
+    "them": "A CRM: for many institutions it becomes the system of record for recruitment and communication.",
+    "us": "Reads from more than 100 systems, including Element451, and writes actions and results back. Nothing is replaced."
+   },
+   {
+    "dimension": "Institutional scope",
+    "them": "Enrollment and student engagement, extending into the student experience.",
+    "us": "Also course demand, program portfolio, aid leverage, institutional research, and graduate earnings against the federal earnings test."
+   }
+  ],
+  "themBest": [
+   "The problem you are solving is at the front door: inquiry volume, response time, application completion, and yield communication.",
+   "You are replacing or consolidating a CRM and want AI agents native to it.",
+   "You want published pricing before you talk to anyone."
+  ],
+  "usBest": [
+   "The question is whether an initiative worked, and you need a number a board or an accreditor will accept.",
+   "You are keeping the CRM you have, including Element451, and need prediction and measurement across every other system too.",
+   "Retention, completion, and program accountability matter as much as the funnel.",
+   "You need models trained on your own students, not on the sector."
+  ],
+  "faqs": [
+   {
+    "q": "Do Civitas Learning and Element451 compete?",
+    "a": "They overlap at the enrollment funnel and diverge everywhere else. Element451 is a CRM with AI agents built for the front door; Civitas is a measurement layer across the whole institution that reads from the CRM you run. Element451 is a supported integration."
+   },
+   {
+    "q": "Can we use both?",
+    "a": "Yes, and institutions do. Element451 runs the recruitment communication, and Civitas supplies the enrollment and second-year persistence predictions and measures whether the campaigns changed anything."
+   },
+   {
+    "q": "Which has better AI?",
+    "a": "That depends on the job. For conversation at volume at the front door, an AI-native CRM is built for it. For predicting which enrolled student will not return next term, a model trained on your own institution's history is the relevant comparison, and that is what Civitas builds."
+   },
+   {
+    "q": "Why does Civitas not publish a price when Element451 does?",
+    "a": "Because the number depends on institution size, scope, and how many systems are integrated. Published tiers are genuinely useful to a buyer, and the honest answer is that we will give you a quote against your own headcount and system list in the first conversation. <a href=\"/pricing/\">How pricing works →</a>"
+   },
+   {
+    "q": "How do we compare them fairly?",
+    "a": "Ask both for the same evidence: a lift number against a comparison group, the group size, the confidence interval, and an intervention of theirs that did not work. <a href=\"/ai-vendor-checklist/\">The ten-question vendor checklist →</a>"
+   }
+  ]
+ },
+ {
+  "slug": "student-success-platform-alternatives",
+  "competitor": "the category",
+  "name": "Student success platform alternatives",
+  "seoTitle": "Student Success Platform Alternatives: How to Compare | Civitas Learning",
+  "description": "The categories of student success software, what each is built for, and the six questions that separate them. A buyer's guide for provosts, VPs of student success, and IR leaders.",
+  "eyebrow": "Buyer's guide",
+  "headline": "Student success platform alternatives, and how to tell them apart",
+  "sub": "Four kinds of product get sold as a student success platform. They solve different problems, and the demos look alike.",
+  "answer": "There are four categories of student success software, and the fastest way to tell them apart is to ask what each one produces as proof. Student success management systems produce advising activity. AI-native CRMs produce engagement and efficiency. Data warehouses and business intelligence tools produce reports. Measurement platforms such as Civitas Learning produce lift against a matched comparison group. Most institutions need more than one, and the mistake is buying two products from the same category and expecting them to answer different questions.",
+  "rows": [
+   {
+    "dimension": "Student success management system",
+    "them": "Advising workflow, case management, campaigns, a student app. Examples include EAB Navigate360.",
+    "us": "Buy it when advising work should live in one packaged system. It will tell you what your staff did, not what it changed."
+   },
+   {
+    "dimension": "AI-native CRM",
+    "them": "Conversational agents, recruitment and engagement communication at volume. Examples include Element451 and CollegeVine.",
+    "us": "Buy it for the front door. Ask what the model is trained on, and what proof it offers beyond response rates and hours saved."
+   },
+   {
+    "dimension": "CRM platform",
+    "them": "Configurable relationship and process management across the lifecycle. Examples include Salesforce Education Cloud and Slate.",
+    "us": "Buy it when you need process flexibility and have the capacity to build and maintain it. Budget for the implementation, not just the license."
+   },
+   {
+    "dimension": "Data warehouse or BI",
+    "them": "Storage, joins, and dashboards over institutional data.",
+    "us": "Buy it if you have the engineering capacity to build and maintain the higher education data model. It stores and displays; it does not predict or measure."
+   },
+   {
+    "dimension": "Measurement platform",
+    "them": "Institution-specific predictive models plus comparison-group efficacy measurement. This is what Civitas Learning is.",
+    "us": "Buy it when you have to prove which initiatives moved persistence, completion, or revenue, and defend the number."
+   }
+  ],
+  "themBest": [
+   "You need a single packaged system for advising, and measurement is not the reason you are buying.",
+   "The urgent problem is at the front door, and enrollment communication is the bottleneck.",
+   "You have the engineering capacity to build and maintain your own data model and analytics."
+  ],
+  "usBest": [
+   "Performance-based funding, a board, or an accreditor is asking which initiatives worked.",
+   "You already own the systems and cannot justify replacing them.",
+   "You need one dataset that answers enrollment, engagement, persistence, completion, and career outcome questions the same way.",
+   "You want the prediction trained on your own students, refreshed each term."
+  ],
+  "faqs": [
+   {
+    "q": "What are the main alternatives to Civitas Learning?",
+    "a": "The most common alternatives fall into four categories: student success management systems such as EAB Navigate360, AI-native CRMs such as Element451 and CollegeVine, CRM platforms such as Salesforce Education Cloud and Slate, and in-house data warehouse and business intelligence builds. Each answers a different question, and only some of them measure whether an initiative worked."
+   },
+   {
+    "q": "How do I compare student success platforms fairly?",
+    "a": "Ask every vendor the same six questions: what the model is trained on, how risk is identified, how often the model is refreshed, what lift they can show against a comparison group, which of your systems they replace, and how long until an advisor sees a prediction about a real student. The answers separate the categories faster than a demo does. <a href=\"/ai-vendor-checklist/\">The full ten-question checklist →</a>"
+   },
+   {
+    "q": "Can one platform do all of it?",
+    "a": "Not usually, and a vendor claiming otherwise is worth a second look. The practical pattern is a system of record for relationships, a system for the advising workflow, and a measurement layer that reads across both."
+   },
+   {
+    "q": "What should we do first?",
+    "a": "Write down the question you have to answer, and who is asking it. A board asking about return on investment, a provost asking which programs are at risk under the federal earnings rule, and a VP asking how to staff advising are three different purchases."
+   },
+   {
+    "q": "How much should we expect to spend?",
+    "a": "Compare the total cost, including implementation and the internal capacity to maintain it, rather than the license alone. <a href=\"/pricing/\">How Civitas pricing works →</a>"
+   }
+  ]
+ }
+]

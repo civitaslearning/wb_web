@@ -1,0 +1,98 @@
+---
+/**
+ * Comparison pages, driven by src/data/compare.json.
+ *
+ * These pages exist because buyers and answer engines ask "Civitas Learning
+ * vs. X", and today that search goes to a review site that neither of us
+ * wrote. The rule for this template: name what the other product is genuinely
+ * better at, in its own section, before the table. A comparison page that
+ * only flatters the publisher is discounted by readers and by answer engines,
+ * and it loses the deal in the room when the buyer notices.
+ *
+ * Every claim about another vendor must be checkable against that vendor's own
+ * public material, and must be re-checked before launch and on a schedule
+ * after it, because their product changes and ours does not get to say so.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Faq from '../../components/Faq.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import compare from '../../data/compare.json';
+import { breadcrumbs } from '../../lib/schema';
+
+export function getStaticPaths() {
+  return compare.map((p) => ({ params: { slug: p.slug }, props: p }));
+}
+const p = Astro.props;
+const path = `/compare/${p.slug}/`;
+const crumbs = [{ text: 'Home', href: '/' }, { text: 'Compare', href: '/compare/' }, { text: p.name }];
+const others = compare.filter((c) => c.slug !== p.slug);
+---
+<Base title={p.name} seoTitle={p.seoTitle} description={p.description} jsonld={[breadcrumbs(crumbs, path)]}>
+  <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={crumbs} />
+
+  <section class="tight"><div class="wrap">
+    <div class="answer-box">
+      <span class="eyebrow">The short answer</span>
+      <p>{p.answer}</p>
+    </div>
+  </div></section>
+
+  <section class="tight"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Side by side</span><h2>How the two compare, dimension by dimension</h2></div>
+      <p>Claims about {p.competitor} are drawn from public material and were checked in September 2026. Products change; tell us if something here is out of date.</p>
+    </div>
+    <div class="cmp-table" role="table">
+      <div class="cmp-row cmp-head" role="row">
+        <span role="columnheader">Dimension</span>
+        <span role="columnheader">{p.competitor === 'the category' ? 'What it is' : p.competitor}</span>
+        <span role="columnheader">Civitas Learning</span>
+      </div>
+      {p.rows.map((r) => (
+        <div class="cmp-row" role="row">
+          <span class="dim" role="rowheader">{r.dimension}</span>
+          <span role="cell">{r.them}</span>
+          <span class="mine" role="cell">{r.us}</span>
+        </div>
+      ))}
+    </div>
+  </div></section>
+
+  <section class="tight tint"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">An honest read</span><h2>Which one you should buy</h2></div>
+      <p>Both columns are real. A vendor who cannot name the case where a competitor wins is not telling you how they lose.</p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>{p.competitor === 'the category' ? 'Choose something else when' : `Choose ${p.competitor} when`}</h3>
+        <ul class="plain">{p.themBest.map((x) => <li>{x}</li>)}</ul>
+      </div>
+      <div class="card pick">
+        <h3>Choose Civitas Learning when</h3>
+        <ul class="plain">{p.usBest.map((x) => <li>{x}</li>)}</ul>
+      </div>
+    </div>
+  </div></section>
+
+  <Faq items={p.faqs} heading={`Questions about ${p.name}`} tint={false} />
+
+  <section class="tight tint"><div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Check it yourself</span><h2>Do not take our word for any of this.</h2></div>
+      <p>Ask every vendor on your list the same ten questions, and compare the answers rather than the demos.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/ai-vendor-checklist/">Get the AI vendor checklist →</a>
+      <a class="btn btn-ghost" href="/customer-success-stories/">See 31 measured outcomes →</a>
+    </div>
+    {others.length > 0 && (
+      <div class="filters" style="margin-top:28px">
+        {others.map((o) => <a class="chip" href={`/compare/${o.slug}/`}>{o.name}</a>)}
+      </div>
+    )}
+  </div></section>
+
+  <FinalCta />
+</Base>
