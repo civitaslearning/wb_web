@@ -581,6 +581,81 @@
   "source": "https://www.civitaslearning.com/data-lakehouse/"
  },
  {
+  "slug": "student-mobile-app",
+  "kind": "solutions",
+  "name": "Student Mobile App - Civitas Learning",
+  "eyebrow": "Inspire · Student mobile app",
+  "headline": "Students carry the whole institution in one app.",
+  "sub": "Inspire puts courses, alerts, advisor notes, messages, and the calendar on the student phone, with an assistant that answers from the student record.",
+  "phoneVideo": {
+   "file": "/assets/video/inspire-student-app.mp4",
+   "poster": "/assets/video/inspire-student-app-poster.webp",
+   "title": "A walk through the Inspire student mobile app",
+   "caption": "Ninety seconds through the app that a student sees: the overview, the assistant, course history, alerts, messages, and the calendar. The record shown is test data."
+  },
+  "sections": [
+   {
+    "heading": "Students Do Not Know Which Portal to Open",
+    "body": "A student who wants one answer must open the student information system for grades, the learning system for coursework, e-mail for the advisor, and a different page to make an appointment. Each system asks for a different password, and none of them shows the whole picture. The student stops looking, and the office never knows that a question was asked.",
+    "bullets": [
+     "One question, four logins",
+     "Advisor messages lost in e-mail",
+     "Alerts that a student never opens",
+     "No record of what the student tried"
+    ]
+   },
+   {
+    "heading": "Everything the Student Needs, in One Place",
+    "body": "Inspire opens on a student overview: the institution, the program, the credits, and the cumulative grade point average, with quick access to the profile, the notes, the alerts, and the events. The bottom of the screen keeps five destinations always available, so no student has to learn a menu.",
+    "bullets": [
+     "Home: program, credits, grade point average, and what to do next",
+     "Courses: in progress, completed, and transferred, with the class average and the instructor for each",
+     "Assistant: answers about the student own record",
+     "Messages: advisor messages and attached documents",
+     "More: profile, notes, alerts, and events"
+    ]
+   },
+   {
+    "heading": "Ask Inspire",
+    "body": "The assistant answers questions about courses, alerts, the calendar, notes, and messages, and it answers from the Inspire record of that student. A student can ask it to summarize progress, to show the alerts that need attention, or to say what is coming up. It reads only records that are already available to the student, and it tells the student to confirm important academic decisions with an advisor.",
+    "bullets": [
+     "\"Summarize my courses and progress\"",
+     "\"Show alerts that need my attention\"",
+     "\"What is coming up on my calendar?\""
+    ]
+   },
+   {
+    "heading": "Alerts and Notes That Reach the Student",
+    "body": "An academic alert from an advisor becomes a card in the app, with the reason and the status. Notes that the support team decides to share become a searchable list, filtered by note type. A student sees only the notes that were shared, and the app says so on the screen.",
+    "bullets": []
+   },
+   {
+    "heading": "One Calendar for Advising Time",
+    "body": "The calendar keeps appointments, institution events, and advising time together, as a month view or a list. A student can look at a personal schedule, find a time with a member of staff, and add an event, without a second tool and without e-mail.",
+    "bullets": []
+   },
+   {
+    "heading": "Private, and Only What the Student May See",
+    "body": "Sign-in uses a one-time code sent to the institutional inbox, so there is no new password. The app resolves the account and the institution before it shows data, and every screen is limited to the records that the student already has the right to read. Academic communications stay private.",
+    "bullets": [
+     "No password: a one-time code that expires quickly and works once",
+     "Only shared notes are visible to the student",
+     "The assistant reads no record that the student cannot open",
+     "The same FERPA agreement that covers the platform"
+    ]
+   },
+   {
+    "heading": "Part of the Institutional Impact Platform",
+    "body": "Inspire is the student face of the same platform that your teams use. The advisor writes the note, issues the alert, and offers the time in the advising workflow; the student reads it, answers it, and books it on the phone. What the student does becomes engagement data, and engagement is one of the six outcomes that Civitas models for your institution.",
+    "bullets": []
+   }
+  ],
+  "stats": [],
+  "testimonials": [],
+  "integrations": [],
+  "source": ""
+ },
+ {
   "slug": "strategic-services-2",
   "kind": "solutions",
   "name": "Strategic Services - Civitas Learning",

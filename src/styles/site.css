@@ -56,8 +56,42 @@ img{max-width:100%;display:block}
 .site-head .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
 .btn-white{background:#fff;color:var(--navy);border-color:#fff}
 .btn:focus-visible,a:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
-.burger{display:none}
-@media (max-width:980px){.menu,.head-cta .btn-ghost{display:none}.burger{display:block}}
+/* The phone menu. Below 980px the hover menu cannot work, so the burger opens
+   a panel that lists the same nav.json links with no hover and no hidden step. */
+.burger{display:none;width:44px;height:44px;padding:0;border:1px solid rgba(255,255,255,.5);border-radius:6px;background:none;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger span{display:block;width:20px;height:2px;background:#fff;border-radius:2px}
+.burger[aria-expanded="true"]{background:rgba(255,255,255,.14)}
+.mnav{background:var(--paper);border-top:1px solid var(--line);max-height:calc(100vh - 70px);overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px 0 24px}
+.mnav .mwrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+.mnav .mgrp{padding:14px 0;border-top:1px solid var(--line)}
+.mnav .mgrp:first-child{border-top:0}
+.mnav .mlabel{font:700 15px var(--body);color:var(--navy);padding:0 0 6px}
+.mnav .grp{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:10px 0 2px}
+.mnav a{display:block;padding:11px 0;font-size:15.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.mnav a:last-child{border-bottom:0}
+.mnav a.hub,.mnav a.ep{font-weight:700;color:var(--navy)}
+.mnav a.ep .grp{padding-top:0;color:var(--cyan-ink)}
+.mnav .mcta{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:1px solid var(--line)}
+.mnav .mcta .btn{justify-content:center;text-align:center}
+.mnav .btn-ghost{color:var(--navy);border-color:var(--navy)}
+body.nav-open{overflow:hidden}
+@media (max-width:980px){.menu,.head-cta .btn-ghost{display:none}.burger{display:flex}}
+/* The prototype banner wraps to several lines on a phone. Sticky, it would
+   cover the header it sits above, so below 980px it scrolls away instead. */
+@media (max-width:980px){
+  .proto{position:static}
+  .site-head{top:0}
+  .site-head .wrap{gap:12px;padding:0 18px}
+  .proto .long,.proto .mono{display:none}
+}
+/* A small phone has room for the logo, one button, and the burger, but only
+   if the button gets smaller. "Book a demo" stays: it is the reason for the page. */
+@media (max-width:560px){
+  .site-head .wrap{gap:8px;padding:0 14px}
+  .site-head .head-cta .btn{padding:10px 14px;font-size:13.5px}
+  .site-head .wordmark{height:28px}
+  .burger{width:40px;height:40px}
+}
 /* hero */
 .hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
@@ -386,6 +420,12 @@ a.sys:hover{border-color:var(--cyan)}
 .video-sec .embed{max-width:960px;margin:0 auto 14px}
 .video-sec .embed iframe{border-radius:12px;box-shadow:0 12px 40px rgba(0,31,76,.16)}
 .video-cap{text-align:center;color:var(--ink2);font-size:15px;max-width:60ch;margin:0 auto}
+/* A portrait screen recording of the student app (src/data/solutions.json →
+   "phoneVideo"). The file is a tall video, so it sits in a phone shape rather
+   than in the 16:9 box that the product videos use. */
+.phone-sec{padding-top:0;display:grid;justify-items:center;gap:16px}
+.phone{width:300px;max-width:82vw;aspect-ratio:1080/2400;background:var(--navy);border:9px solid #0E1B33;border-radius:38px;box-shadow:0 26px 60px -24px rgba(0,31,76,.55);overflow:hidden;position:relative}
+.phone video{width:100%;height:100%;object-fit:cover;display:block;background:var(--navy)}
 /* FAQ blocks (src/components/Faq.astro). Questions are real headings and the
    answers are always visible, because the FAQPage markup has to match what a
    reader sees. Two columns on wide screens, one on a phone. */

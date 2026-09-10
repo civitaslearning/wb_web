@@ -10,6 +10,7 @@
             { "href": "/ai-solutions/", "text": "Civitas Learning AI", "small": "Agents and models built on your data" },
             { "href": "/analytics/", "text": "Actionable Analytics", "small": "Institution-specific predictions" },
             { "href": "/workflows/", "text": "AI-Powered Workflows", "small": "Act inside the tools teams already use" },
+            { "href": "/student-mobile-app/", "text": "Student Mobile App", "small": "Inspire, the app the student opens" },
             { "href": "/data-lakehouse/", "text": "Data Lakehouse", "small": "One governed dataset for the institution" },
             { "href": "/strategic-services-2/", "text": "Strategic Partnership & Services", "small": "People who make it work" },
             { "href": "/pricing/", "text": "How Pricing Works", "small": "What sets the number, and what is included" },
@@ -91,7 +92,7 @@
     }
   ],
   "footer": [
-    { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"], ["/pricing/", "How Pricing Works"]] },
+    { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/student-mobile-app/", "Student Mobile App"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"], ["/pricing/", "How Pricing Works"]] },
     { "title": "Use cases", "links": [["/use-cases/", "All use cases"], ["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
     { "title": "Customers", "links": [["/customer-success-stories/", "Customer Stories"], ["/podcast/", "Next Practices Podcast"], ["/leadership-workshops/", "Leadership Workshops"]] },
     { "title": "Resources", "links": [["/resources/", "Content Library"], ["/blog/", "Blog"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/compare/", "Compare Platforms"], ["/glossary/", "Glossary"], ["/support/", "Technical Support"]] },

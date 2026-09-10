@@ -35,6 +35,7 @@ const rules: Rule[] = [
   { slug: 'ensure-initiative-efficacy-and-roi', re: /\b(ROI|efficacy|initiative (analysis|effectiveness|impact)|budget\w*|financial sustainability|return on investment|what works)\b/gi },
   { slug: 'institutional-technology', re: /\b(technology|integration\w*|tech stack|procurement|implementation|AI readiness|change management)\b/gi },
   { slug: 'curate-student-data', re: /\b(data quality|disconnected|student data|data governance|data silo\w*|single source)\b/gi },
+  { slug: 'student-mobile-app', re: /\b(mobile app|student app|Inspire app|on their phone|smartphone\w*)\b/gi },
   { slug: 'analytics', re: /\b(analytics|predictive|prediction\w*)\b/gi },
   { slug: 'ai-solutions', re: /\b(AI|artificial intelligence|agent\w*)\b/g },
   { slug: 'platform', re: /\b(student (success|impact) platform|student success software)\b/gi },

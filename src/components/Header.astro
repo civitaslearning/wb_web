@@ -9,7 +9,7 @@ const latest = eps[0];
 ---
 <div class="proto">
   <div class="wrap">
-    <span><b>Prototype.</b> Full-site concept for civitaslearning.com. URL structure matches the live site. Figures marked "example" are illustrative.</span>
+    <span><b>Prototype.</b> <span class="long">Full-site concept for civitaslearning.com. URL structure matches the live site. Figures marked "example" are illustrative.</span></span>
     <span class="mono">v0.3 · Astro · Sept 2026</span>
   </div>
 </div>
@@ -48,7 +48,61 @@ const latest = eps[0];
     <div class="head-cta">
       <a class="btn btn-ghost" href="/#roi">Run the numbers</a>
       <a class="btn btn-primary" href="/contact/">Book a demo</a>
-      <button class="burger btn btn-ghost" type="button" aria-label="Menu">☰</button>
+      <button class="burger" type="button" aria-label="Open the menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+  <!-- The same nav.json data as the desktop menu, as one open list. A phone has
+       no hover, so each group is a heading with its links below it. -->
+  <nav class="mnav" id="mobile-nav" hidden>
+    <div class="mwrap">
+      {nav.menu.map((m) => (
+        <div class="mgrp">
+          <div class="mlabel">{m.label}</div>
+          {'hub' in m && m.hub && <a class="hub" href={m.hub.href}>{m.hub.text}</a>}
+          {m.groups.map((g) => (
+            <>
+              {g.title && <div class="grp">{g.title}</div>}
+              {g.links.map((l) => <a href={l.href}>{l.text}</a>)}
+            </>
+          ))}
+          {'latestEpisode' in m && m.latestEpisode && latest && (
+            <a class="ep" href={`/podcast/${latest.id}/`}>
+              <span class="grp">Latest episode</span>{latest.data.title}
+            </a>
+          )}
+        </div>
+      ))}
+      <div class="mcta">
+        <a class="btn btn-ghost" href="/#roi">Run the numbers</a>
+        <a class="btn btn-primary" href="/contact/">Book a demo</a>
+      </div>
+    </div>
+  </nav>
 </header>
+<script>
+  /* Opens the phone menu. The button is the only control, so it carries the
+     state: aria-expanded says what it does, and Escape closes the panel. */
+  const burger = document.querySelector<HTMLButtonElement>('.burger');
+  const panel = document.getElementById('mobile-nav');
+  if (burger && panel) {
+    const set = (open: boolean) => {
+      panel.hidden = !open;
+      burger.setAttribute('aria-expanded', String(open));
+      burger.setAttribute('aria-label', open ? 'Close the menu' : 'Open the menu');
+      document.body.classList.toggle('nav-open', open);
+    };
+    burger.addEventListener('click', () => set(panel.hidden));
+    panel.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) set(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !panel.hidden) { set(false); burger.focus(); }
+    });
+    /* A resize back to the desktop width shows the real menu again. */
+    window.matchMedia('(min-width:981px)').addEventListener('change', (e) => {
+      if (e.matches) set(false);
+    });
+  }
+</script>

@@ -46,6 +46,15 @@ const outcomes = [
       {p.video.caption && <p class="video-cap">{p.video.caption}</p>}
     </div></section>
   )}
+  {'phoneVideo' in p && p.phoneVideo && (
+    <section class="tight phone-sec">
+      <div class="phone">
+        <video src={p.phoneVideo.file} poster={p.phoneVideo.poster} title={p.phoneVideo.title}
+               controls muted loop playsinline preload="none"></video>
+      </div>
+      {p.phoneVideo.caption && <p class="video-cap">{p.phoneVideo.caption}</p>}
+    </section>
+  )}
   <Sections sections={p.sections} />
   {p.kind === 'usecases' && (
     <section class="tight"><div class="wrap">

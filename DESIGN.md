@@ -241,7 +241,7 @@ Numbers use `font-variant-numeric: tabular-nums` wherever they line up.
 - Cards: 1px `--line` border, 10px radius, no shadow. Shadow is spent once, on the hero ledger.
 - Dark bands (`.band`, `.phero`, `.final`) are navy with `#DCE6F5` text and cyan eyebrows.
 - Breakpoint at 900px: grids collapse to one column, the flow diagram stacks vertically with
-  the arrows rotated, the menu hides behind a burger (not wired yet).
+  the arrows rotated, the menu hides behind a burger that opens the phone panel (section 9).
 
 ### Signature components
 
@@ -283,7 +283,7 @@ left, outcome cards pinned right), three more stories, final CTA. Slugs match th
 ## 4. Open design work
 
 1. Check each screenshot sits beside the right section; the mapping is heuristic.
-2. Mobile menu behavior.
+2. ~~Mobile menu behavior.~~ Done, see section 9.
 3. Story filters (institution type, outcome, solution) are visual only; wire to data.
 4. Resource library filters, same.
 5. A real photo or two. The site is all type and data right now; one image of a campus or an
@@ -493,9 +493,9 @@ the claim and its headline is now "Six outcomes. A model for each. All of them y
 
 **Before launch, two things to confirm:**
 
-1. **The student mobile app** is new and is not yet on `www.civitaslearning.com`. Confirm its
-   product name, availability date, and what it does for students, then use that wording rather
-   than the generic phrase used here.
+1. **The student mobile app** is named **Inspire** and now has a page at `/student-mobile-app/`
+   (see section 9). It is not on `www.civitaslearning.com`. Confirm the availability date and
+   whether Marketing agrees with the name before launch.
 2. **"More models per institution than anyone else in the category"** appears once, on
    `/analytics/`. It is the one superlative on the site and it is Will's claim rather than a
    sourced one. Either substantiate it or cut it; the countable version ("six outcomes, a model
@@ -548,3 +548,64 @@ heading repeats across any use-case page now, apart from the shared closing chec
    rather than to a list. There is now a hub at `/use-cases/`, grouped by team and by goal,
    reading its grouping from `nav.json` and its copy from `solutions.json` so the menu and the
    page cannot drift apart. The header's Use Cases menu opens with a link to it.
+
+---
+
+## 9. Inspire: the student mobile app page
+
+New page at `/student-mobile-app/` (Will, 2026-09-10). Source material is one screen recording,
+`~/Desktop/mobile/uta-robert-freidhoff-journey.mp4`: 1080x2400 portrait, 2:01, no audio.
+
+**The app is named Inspire.** Its own splash screen reads "Inspire, closer to you." and
+"Powered by Civitas Learning". Every claim on the page is something the recording shows, and
+nothing else. The page is the first place on either site that says what students see.
+
+| Screen | What the page claims from it |
+|---|---|
+| Home / Student Overview | Institution, program, credits, cumulative grade point average, quick access to profile, notes, alerts, events |
+| Ask Inspire | Answers about courses, alerts, calendar, notes, messages, "grounded in your Inspire record"; reads only records already available to the student; tells the student to confirm academic decisions with an advisor |
+| Course history | In progress, completed, transferred; class average and instructor per course |
+| Alerts | An advisor's academic alert, with reason and status |
+| Messages | Advisor messages and attachments; "your academic communications are private and protected" |
+| Calendar | Appointments, events, advising time; my schedule, find a time, create event |
+| Notes | "Records shared by your support team"; "you only see notes that were shared with you" |
+| Sign-in | A one-time code to the institutional inbox, no password, codes expire quickly and work once |
+
+### How the video is used
+
+The first 29 seconds are the splash and sign-in screens, and they show `localhost:8080` and a
+"DEVELOPMENT ENVIRONMENT: Local / Dev / Production" toggle. **That footage must never reach the
+marketing site.** The published file starts at 0:29, is scaled to 540px wide, and is committed
+at `public/assets/video/inspire-student-app.mp4` (730 KB, 1:31). The other four product videos
+are on YouTube; this one is not published there yet, so it is served from the repository.
+
+The existing `video` field renders a 16:9 YouTube iframe and could not hold a portrait file. A
+`phoneVideo` field on a `solutions.json` entry renders instead into a phone shape (`.phone` in
+`site.css`, `aspect-ratio: 1080/2400`), with `controls muted loop playsinline preload="none"`.
+
+**One thing to fix before launch:** the recording is a synthetic end-to-end test record
+(`UTA-E2E-2026-001`), and the Home card shows a **4.86 cumulative grade point average**, which is
+impossible on a four-point scale. A prospect will notice. Re-record with a plausible record, or
+crop the overview card out. The caption says the record is test data, which is honest but not
+enough.
+
+### The responsive defect this uncovered
+
+Reported by Peter, 2026-09-10: no navigation and no burger on a phone. Two causes, both fixed.
+
+1. **The prototype banner was covering the header.** `.proto` was `position: sticky; top: 0;
+   z-index: 30` and `.site-head` was `top: 31px; z-index: 25`. The 31px assumes the banner is one
+   line. On a phone its sentence wraps to three or four lines, so the banner sat over the whole
+   header as soon as the page scrolled. Below 980px the banner is now static and scrolls away,
+   the header sticks at `top: 0`, and the banner shows only the word "Prototype."
+2. **The burger did nothing.** The markup had a `☰` button and no panel and no script. There is
+   now a `.mnav` panel in `Header.astro` built from the same `nav.json` the desktop menu uses, so
+   the two cannot drift. A phone has no hover, so every group is a heading with its links open
+   under it. The button carries the state (`aria-expanded`), Escape closes the panel, tapping a
+   link closes it, and crossing back to the desktop width closes it.
+
+Below 560px the header CTA gets smaller rather than disappearing: on a small phone the logo, one
+coral "Book a demo" button, and the burger have to fit on one row, and the button is the reason
+the page exists.
+
+Item 2 in section 4's open work list ("Mobile menu behavior") is now done.

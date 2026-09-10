@@ -527,5 +527,39 @@
    "q": "Can we start with one use case?",
    "a": "Yes. Many institutions start with advising and retention, then extend to enrollment, completion, and career outcomes on the same data and the same models."
   }
+ ],
+ "/student-mobile-app/": [
+  {
+   "q": "What is the Civitas Learning student mobile app called?",
+   "a": "Inspire. It is the student face of the <a href=\"/platform/\">Institutional Impact Platform</a>, and it shows the student the courses, alerts, notes, messages, and calendar that the institution already holds."
+  },
+  {
+   "q": "What can a student do in the app?",
+   "a": "See the program, the credits, and the cumulative grade point average; read course history with the class average and the instructor for each course; answer an academic alert; read advisor messages and attachments; find a time and book advising; and ask the assistant about any of it."
+  },
+  {
+   "q": "How does a student sign in?",
+   "a": "With a one-time code sent to the institutional inbox. No password is required, and a code expires quickly and can only be used once."
+  },
+  {
+   "q": "What can the assistant see?",
+   "a": "Only records that are already available to that student. The account and the institution are resolved before any data is shown, and the app tells the student to confirm important academic decisions with an advisor."
+  },
+  {
+   "q": "Do students see every advising note?",
+   "a": "No. A student sees only the notes that the support team decided to share, and the app says so on the notes screen."
+  },
+  {
+   "q": "Do we have to replace our student information system to use it?",
+   "a": "No. Inspire reads the data that the platform already unifies from the systems you run, so grades, credits, and course history come from your systems of record. See <a href=\"/platform/\">how the platform connects them</a>."
+  },
+  {
+   "q": "How does the app help the institution, and not only the student?",
+   "a": "It puts the alert, the note, and the appointment where the student actually reads them, and what the student does becomes engagement data. Engagement is one of the six outcomes that Civitas models for each institution. See <a href=\"/analytics/\">the outcomes we model</a>."
+  },
+  {
+   "q": "Is the app included, or is it priced separately?",
+   "a": "Pricing depends on the size of the institution and the parts of the platform you use. See <a href=\"/pricing/\">how pricing works</a>."
+  }
  ]
 }
