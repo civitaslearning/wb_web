@@ -3,7 +3,7 @@
   "slug": "platform",
   "kind": "solutions",
   "name": "Student Impact Platform",
-  "eyebrow": "Student Impact Platform",
+  "eyebrow": "Institutional Impact Platform",
   "headline": "One platform. Every system you run. Outcomes you can prove.",
   "sub": "Unify data, connect systems, surface insights, enable action — and measure the result of every action against a comparison group.",
   "sections": [
@@ -18,7 +18,7 @@
     ]
    },
    {
-    "heading": "The Student Impact Platform",
+    "heading": "The Institutional Impact Platform",
     "body": "Equip Everyone to Impact Any Student Outcome",
     "bullets": [
      "Leaders: Student Outcome Analytics, Predictive Factors of Success, Initiative Analytics, Course Insights, Course Demand Analytics",
@@ -172,7 +172,7 @@
   "sections": [
    {
     "heading": "Unlock the Power of Actionable Insights",
-    "body": "Today's higher ed leaders and teams face a common challenge: disconnected data, limited insight into what works, and numerous siloed systems. The Civitas Learning Student Impact Platform changes that—equipping your institution with unified, real-time analytics that power smarter decisions, more proactive support, and measurable results.",
+    "body": "Today's higher ed leaders and teams face a common challenge: disconnected data, limited insight into what works, and numerous siloed systems. The Civitas Learning Institutional Impact Platform changes that—equipping your institution with unified, real-time analytics that power smarter decisions, more proactive support, and measurable results.",
     "bullets": []
    },
    {
@@ -570,7 +570,7 @@
   "name": "Strategic Services - Civitas Learning",
   "eyebrow": "Strategic Partnership & Services",
   "headline": "It's not just about technology. It's about making it work.",
-  "sub": "Close the loop between insight, action, and institutional outcomes across every team — integrated with the Student Impact Platform and guided by former higher education leaders who have done this work.",
+  "sub": "Close the loop between insight, action, and institutional outcomes across every team — integrated with the Institutional Impact Platform and guided by former higher education leaders who have done this work.",
   "sections": [
    {
     "heading": "Turn your institutional success investment into measurable institutional impact",
@@ -584,7 +584,7 @@
    },
    {
     "heading": "A flexible partnership built for sustained student impact",
-    "body": "We work with our partners to extend the Student Impact Platform beyond technology, embedding its intelligence into your workflows, strategy, and decision-making. Every Civitas Learning partnership includes strategic guidance, ongoing enablement, and dedicated support designed to help institutions turn insight into action. Built for institutions seeking deeper collaboration and faster progress toward institutional priorities, our Strategic Services offering expands that partnership by unlocking greater time with your strategic team and more dedicated, hands-on support tailored to your goals.",
+    "body": "We work with our partners to extend the Institutional Impact Platform beyond technology, embedding its intelligence into your workflows, strategy, and decision-making. Every Civitas Learning partnership includes strategic guidance, ongoing enablement, and dedicated support designed to help institutions turn insight into action. Built for institutions seeking deeper collaboration and faster progress toward institutional priorities, our Strategic Services offering expands that partnership by unlocking greater time with your strategic team and more dedicated, hands-on support tailored to your goals.",
     "bullets": [],
     "image": {
      "file": "strategic-services-1.webp",
@@ -598,7 +598,7 @@
    },
    {
     "heading": "Meet Your Strategic Team",
-    "body": "Every Civitas Learning partner is matched with a dedicated Strategic Director — a former higher education practitioner who has led student-facing teams, navigated accreditation cycles, and presented to boards. Working alongside your team, they help define priorities, guide execution, and ensure your use of the Student Impact Platform continues to evolve — translating insight into coordinated action across your institution.",
+    "body": "Every Civitas Learning partner is matched with a dedicated Strategic Director — a former higher education practitioner who has led student-facing teams, navigated accreditation cycles, and presented to boards. Working alongside your team, they help define priorities, guide execution, and ensure your use of the Institutional Impact Platform continues to evolve — translating insight into coordinated action across your institution.",
     "bullets": [
      "Meredith Baker",
      "Gina Chase, M.S.",
@@ -691,7 +691,7 @@
    }
   ],
   "integrations": [
-   "Student Impact Platform",
+   "Institutional Impact Platform",
    "Civitas Learning AI",
    "Actionable Analytics",
    "Connected Workflows",
@@ -1201,7 +1201,7 @@
    },
    {
     "heading": "Configure & Adapt the Platform Over Time",
-    "body": "Reduce administrative burden for Institutional Technology teams with regular product enhancements and support. Configure the Student Impact Platform to meet your institution's specific requirements to ensure that the platform supports your processes and can adapt to changing needs over time.",
+    "body": "Reduce administrative burden for Institutional Technology teams with regular product enhancements and support. Configure the Institutional Impact Platform to meet your institution's specific requirements to ensure that the platform supports your processes and can adapt to changing needs over time.",
     "bullets": [],
     "image": {
      "file": "screencapture_alertsummary_1440px.webp",

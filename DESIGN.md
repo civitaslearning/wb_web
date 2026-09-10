@@ -136,7 +136,7 @@ All ten moves are built on the `collegevine` branch (2026-09-09). Notes on two o
 1. "AI Built on Your Data" has the same shape as Element's headline. Two vendors saying "AI";
    the other one says it louder.
 2. Internal terms in headlines: "Institutional Impact Management", "Impact Platform",
-   "Data Lakehouse".
+   "Data Lakehouse". (The names stay; they belong in navigation and product copy, not the h1.)
 3. Proof in ranges ("3–11% lift"). A range is weaker than one number and one school.
 4. AI section lists verbs ("Chats, Plans, Builds, Acts") instead of what an agent does on Monday.
 5. Did not answer "does it run on my systems?" in the first screen. Element does.
@@ -179,6 +179,12 @@ Supporting moves, in order down the page:
   partners". The logo strip and the named outcomes carry the trust. Counts of measured
   initiatives and published stories are fine, because each one links to its evidence.
 - No internal jargon in headlines. Plain terms a president uses.
+- The product is the **Institutional Impact Platform** and the category is Institutional
+  Impact Management (Will, 2026-09-10; the live site made the change in 2026). "Student Impact
+  Platform" is the old name. Use the new name in navigation, product pages, and authored copy.
+  Keep it out of the h1. Title tags keep the old name where the live site still ranks on it
+  (the platform page title is still "Student Impact Platform | Civitas Learning"). Imported
+  articles keep the name they were written with.
 
 ### Voice
 
