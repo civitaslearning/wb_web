@@ -29,6 +29,12 @@ const outcomes = [
 ---
 <Base title={p.name} description={p.sub || p.headline}>
   <PageHero eyebrow={p.eyebrow} title={p.headline} sub={p.sub} crumbs={[{ text: 'Home', href: '/' }, root, { text: p.name }]} />
+  {'video' in p && p.video && (
+    <section class="tight video-sec"><div class="wrap">
+      <div class="embed video"><iframe src={`https://www.youtube-nocookie.com/embed/${p.video.youtube}`} title={p.video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      {p.video.caption && <p class="video-cap">{p.video.caption}</p>}
+    </div></section>
+  )}
   <Sections sections={p.sections} />
   {p.kind === 'usecases' && (
     <section class="tight"><div class="wrap">

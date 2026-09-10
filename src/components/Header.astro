@@ -1,6 +1,11 @@
 ---
+import { getCollection } from 'astro:content';
 import Logo from './Logo.astro';
 import nav from '../data/nav.json';
+// The Customers menu ends with the newest podcast episode, so a customer's
+// name is one click from every page.
+const eps = (await getCollection('podcast')).sort((a, b) => (b.data.date || '').localeCompare(a.data.date || '') || a.data.order - b.data.order);
+const latest = eps[0];
 ---
 <div class="proto">
   <div class="wrap">
@@ -24,6 +29,13 @@ import nav from '../data/nav.json';
                 ))}
               </>
             ))}
+            {'latestEpisode' in m && m.latestEpisode && latest && (
+              <a class="ep" href={`/podcast/${latest.id}/`}>
+                <span class="grp">Latest episode</span>
+                {latest.data.title}
+                {latest.data.guest && <small>with {latest.data.guest}</small>}
+              </a>
+            )}
           </div>
         </li>
       ))}

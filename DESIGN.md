@@ -288,4 +288,60 @@ left, outcome cards pinned right), three more stories, final CTA. Slugs match th
 4. Resource library filters, same.
 5. A real photo or two. The site is all type and data right now; one image of a campus or an
    advisor at work would lower the temperature without diluting the argument.
-6. Video embeds on the webinar and podcast pages.
+6. Video embeds on the podcast pages. (The platform page has the product video; the webinar
+   page gates its recording behind the HubSpot form, as the live site does.)
+
+---
+
+## 5. HubSpot, video, and what the live site loads
+
+Checked on www.civitaslearning.com on 2026-09-10. HubSpot on the live site is **forms only**:
+portal `47005231`, region `na1`. There is no tracking loader (`js.hs-scripts.com`) on the page
+or in the GTM container, so this site does not add one either. Add it in `Base.astro` if
+marketing wants visitor tracking.
+
+| Where | Form | Salesforce campaign |
+|---|---|---|
+| `/contact/` (every "Book a demo" lands here) | `a9cb8985-…` | `7010z000000mb8iAAA` |
+| `/subscribe/` Signals newsletter | `13901ac7-…` | — |
+| Impact Report download pages, 2023 and 2024 | `f6ef0318-…` | `701Uo00000KWVGUIA5` |
+| 2024 Impact Report webinar (gates the recording) | `eddb235c-…` | `701Uo0000097G2tIAE` |
+| `/impact-report-assessment-2026/` results gate | `d19a3e8e-…` | `701Uo00000KWVGUIA5` |
+
+How it is wired:
+
+- `src/lib/hubspot.ts` holds the IDs. `src/lib/hubspot-embed.ts` runs on every page from
+  `Base.astro`: if the page has a `[data-hs-form]` mount, it loads the HubSpot script once and
+  renders a form into each mount. After ten seconds with no form, the mount shows a fallback line.
+- Astro pages use `<HubSpotForm form="contact" />`. Markdown pages put the mount in raw HTML
+  (see the download pages). Styles for the inline form are in `site.css` under `.hs-form`:
+  site type, coral pill button.
+- The self-assessment is the live WPCode snippet ported as written: markup in
+  `src/pages/impact-report-assessment-2026.astro`, styles in `src/styles/assess.css` (brand
+  overrides at the end), logic in `src/scripts/impact-report-assessment.js`. It loads its own
+  form and fills five hidden fields (`assessment_score`, `_profile`, `_role`,
+  `_recommendations`, `_results_url`). The page is noindex, as on the live site.
+- The live `/ai-readiness-assessment/` is a "[TEST – Do Not Publish]" page with placeholder
+  IDs (`YOUR_PORTAL_ID`). Its imported stub stays noindex and is not wired.
+
+Not ported, on purpose: Google Tag Manager `GTM-WXN8XFP` (carries GA4 `G-5GJP94659P`), the
+LinkedIn Insight tag, and OneTrust cookie consent. Add them together when the site goes live;
+consent has to load before the tags.
+
+**Video.** The live site has four videos, all on YouTube. Each one now sits under the hero of
+the page it belongs to, from a `video` field on that entry in `solutions.json`. Any solution
+page can carry one. They embed from `youtube-nocookie.com`.
+
+| Page | Video | Length |
+|---|---|---|
+| `/platform/` (the live home page's video) | The Civitas Learning Student Impact Platform | 1:15 |
+| `/analytics/` | How Higher Education Leaders Drive Better Student Outcomes | 2:05 |
+| `/data-lakehouse/` | AI-Powered Data Access for Higher Ed | 2:36 |
+| `/ai-solutions/` (its own page, so the embed is inline) | Document Every Student Conversation in Seconds | 0:45 |
+
+The platform video still says "Student Impact Platform" on screen and in its YouTube title.
+Re-cut or re-title it when the rename reaches the video library.
+
+**Customers in the nav.** The header has a Customers menu between Use Cases and Resources:
+Customer Stories, Next Practices Podcast, and the newest episode by name and guest (read from
+the podcast collection in `Header.astro`). The footer has a matching Customers column.

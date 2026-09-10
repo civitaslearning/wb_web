@@ -52,4 +52,4 @@ Explore trends and insights from last year's report, including findings on the i
 
 Complete the form below so we can connect you with the right member of our team.
 
-Thanks for getting in touch! Someone from our team will be reaching out to respond shortly.
+<div class="hs-form" data-hs-form="f6ef0318-062a-412c-837a-17f7b95c01f7" data-hs-campaign="701Uo00000KWVGUIA5" aria-live="polite"><p class="hs-note">Loading form…</p><p class="hs-fallback" hidden>The form did not load. Some browser privacy settings block it. <a href="/contact/">Contact us</a> and we will connect you with the right person.</p></div>

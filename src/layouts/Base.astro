@@ -50,5 +50,8 @@ const ogImage = image ? new URL(image, Astro.site).toString() : undefined;
     <Header />
     <main><slot /></main>
     <Footer />
+    <script>
+      import '../lib/hubspot-embed';
+    </script>
   </body>
 </html>

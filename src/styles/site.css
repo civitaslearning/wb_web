@@ -40,6 +40,9 @@ img{max-width:100%;display:block}
 .menu .dd a small{display:block;color:var(--ink3);font-size:12.5px}
 .menu .dd a:hover{background:var(--cyan-soft)}
 .menu .dd .grp{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:8px 12px 2px}
+.menu .dd a.ep{margin-top:6px;background:var(--cyan-soft);border-radius:6px;padding:10px 12px;max-width:320px;font-weight:600}
+.menu .dd a.ep .grp{display:block;padding:0 0 4px;color:var(--cyan-ink)}
+.menu .dd a.ep:hover{background:#D3EEFB}
 .head-cta{display:flex;gap:10px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:var(--body);line-height:1}
 .btn-primary{background:var(--coral);color:#fff;border-color:var(--coral)}
@@ -359,15 +362,32 @@ section.tint{background:var(--tint)}
 a.sys{text-decoration:none;color:inherit}
 a.sys:hover{border-color:var(--cyan)}
 /* contact */
-.form{display:grid;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:28px}
-.form label{display:grid;gap:6px;font-size:13.5px;font-weight:700;color:var(--ink2)}
-.form input,.form select,.form textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:4px;background:var(--tint);color:var(--ink);width:100%}
-.form .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form small{color:var(--ink3);font-size:12.5px}
-@media (max-width:600px){.form .two{grid-template-columns:1fr}}
+/* HubSpot form mounts (src/components/HubSpotForm.astro, src/lib/hubspot-embed.ts).
+   The embed renders the form inline; these rules dress it in site type and the coral button. */
+.form-card{padding:28px}
+.form-card h3{margin-bottom:6px}
+.form-card>p{color:var(--ink2);margin-bottom:18px}
+.hs-form{min-height:80px}
+.hs-form .hs-note{color:var(--ink3);font-size:14px}
+.hs-form .hs-fallback{background:var(--tint);border:1px dashed var(--line);border-radius:8px;padding:14px 16px;font-size:14px}
+.hs-form form{display:grid;gap:14px}
+.hs-form .hs-form-field label,.hs-form label{display:block;font-size:13.5px;font-weight:700;color:var(--ink2);margin-bottom:6px}
+.hs-form .hs-input{font:inherit;font-size:15px;padding:11px 12px;border:1px solid var(--line);border-radius:4px;background:var(--tint);color:var(--ink);width:100%}
+.hs-form textarea.hs-input{min-height:110px}
+.hs-form input[type=checkbox].hs-input,.hs-form input[type=radio].hs-input{width:auto}
+.hs-form .hs-button{font:inherit;font-size:15px;font-weight:700;color:#fff;background:var(--coral);border:0;border-radius:999px;padding:13px 22px;cursor:pointer}
+.hs-form .hs-button:hover{background:var(--coral2)}
+.hs-form .hs-error-msgs{list-style:none;padding:4px 0 0;margin:0;color:#B3261E;font-size:13px}
+.hs-form .hs-richtext,.hs-form .legal-consent-container{font-size:13px;color:var(--ink3)}
+.hs-form .submitted-message{font-weight:700;color:var(--navy)}
+/* Product video under a page hero (src/data/solutions.json → "video") */
+.video-sec{padding-top:0}
+.video-sec .embed{max-width:960px;margin:0 auto 14px}
+.video-sec .embed iframe{border-radius:12px;box-shadow:0 12px 40px rgba(0,31,76,.16)}
+.video-cap{text-align:center;color:var(--ink2);font-size:15px;max-width:60ch;margin:0 auto}
 /* footer */
 footer{padding:56px 0 32px;background:var(--tint);border-top:1px solid var(--line);font-size:14px;color:var(--ink2)}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 1fr;gap:28px;margin-bottom:36px}
 .foot-grid h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px;font-family:var(--mono);font-weight:500}
 .foot-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .foot-grid a{text-decoration:none;color:var(--ink2)}

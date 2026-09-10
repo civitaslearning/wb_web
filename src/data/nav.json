@@ -43,14 +43,24 @@
       ]
     },
     {
+      "label": "Customers",
+      "latestEpisode": true,
+      "groups": [
+        {
+          "links": [
+            { "href": "/customer-success-stories/", "text": "Customer Stories", "small": "Measured outcomes, named institutions" },
+            { "href": "/podcast/", "text": "Next Practices Podcast", "small": "Leaders on what moved the numbers, in their own words" }
+          ]
+        }
+      ]
+    },
+    {
       "label": "Resources",
       "groups": [
         {
           "links": [
             { "href": "/resources/", "text": "Content Library" },
-            { "href": "/customer-success-stories/", "text": "Customer Stories" },
             { "href": "/blog/", "text": "Blog" },
-            { "href": "/podcast/", "text": "Next Practices Podcast" },
             { "href": "/subscribe/", "text": "Signals Newsletter" },
             { "href": "/leadership-workshops/", "text": "Leadership Workshops" },
             { "href": "/ai-vendor-checklist/", "text": "AI Vendor Checklist", "small": "Ten questions for any AI vendor" },
@@ -79,7 +89,8 @@
   "footer": [
     { "title": "Solutions", "links": [["/platform/", "Institutional Impact Platform"], ["/ai-solutions/", "Civitas Learning AI"], ["/analytics/", "Actionable Analytics"], ["/workflows/", "AI-Powered Workflows"], ["/data-lakehouse/", "Data Lakehouse"], ["/strategic-services-2/", "Strategic Services"]] },
     { "title": "Use cases", "links": [["/enrollment-management/", "Strategic Enrollment"], ["/advising-and-student-success/", "Advising & Student Success"], ["/academic-leaders-and-faculty/", "Academic Leaders & Faculty"], ["/institutional-research-effectiveness/", "IR & Effectiveness"], ["/institutional-technology/", "Institutional Technology"], ["/improve-on-time-completion/", "Graduation & Completion"], ["/career-outcomes/", "Career Outcomes & Accountability"], ["/ensure-initiative-efficacy-and-roi/", "Efficacy & ROI"]] },
-    { "title": "Resources", "links": [["/resources/", "Content Library"], ["/customer-success-stories/", "Customer Stories"], ["/blog/", "Blog"], ["/podcast/", "Next Practices Podcast"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/support/", "Technical Support"]] },
+    { "title": "Customers", "links": [["/customer-success-stories/", "Customer Stories"], ["/podcast/", "Next Practices Podcast"], ["/leadership-workshops/", "Leadership Workshops"]] },
+    { "title": "Resources", "links": [["/resources/", "Content Library"], ["/blog/", "Blog"], ["/subscribe/", "Signals Newsletter"], ["/ai-vendor-checklist/", "AI Vendor Checklist"], ["/support/", "Technical Support"]] },
     { "title": "Company", "links": [["/about/", "About"], ["/our-team/", "Leadership Team"], ["/careers/", "Careers"], ["/press/", "News"], ["/commitment/", "Our Commitment"], ["/contact/", "Contact"]] }
   ]
 }

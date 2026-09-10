@@ -1,0 +1,22 @@
+---
+/**
+ * A HubSpot form mount. The loader in src/lib/hubspot-embed.ts (imported by
+ * Base.astro) renders the form into it on the client. Pick a form by name
+ * from src/lib/hubspot.ts so every page uses the IDs the live site uses.
+ */
+import { FORMS, type FormName } from '../lib/hubspot';
+
+interface Props {
+  form: FormName;
+  id?: string;
+  /** Shown when the HubSpot script does not load. */
+  fallback?: string;
+}
+const { form, id, fallback = 'The form did not load. Some browser privacy settings block it. Call 512-692-7175 and we will help you directly.' } = Astro.props;
+const f = FORMS[form];
+---
+
+<div class="hs-form" id={id} data-hs-form={f.formId} data-hs-campaign={'campaign' in f ? f.campaign : undefined} aria-live="polite">
+  <p class="hs-note">Loading form…</p>
+  <p class="hs-fallback" hidden>{fallback}</p>
+</div>

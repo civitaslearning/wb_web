@@ -1,0 +1,79 @@
+---
+/**
+ * Impact Report self-assessment (2026). Ported from the live page, where it is
+ * a WPCode snippet in three tabs: markup here, styles in src/styles/assess.css,
+ * logic in src/scripts/impact-report-assessment.js. The results are gated by
+ * HubSpot form `assessment2026` (src/lib/hubspot.ts); the script loads that
+ * form itself and fills five hidden fields with the score and profile.
+ * The live page is noindex, so this one is too.
+ */
+import Base from '../layouts/Base.astro';
+import '../styles/assess.css';
+---
+<Base title="Impact Report Assessment" seoTitle="Impact Report Assessment - Civitas Learning" description="See what moves persistence at institutions like yours. Take the two-minute self check based on the 2026 Student Success Impact Report." noindex>
+  <section><div class="wrap">
+    <div class="cl-assess" id="cl-assess">
+
+      <!-- INTRO -->
+      <section class="cl-screen cl-active" id="cl-scr-intro">
+        <p class="cl-eyebrow">Two-minute self check</p>
+        <h2 class="cl-h1">Where does your institution stand on what moves persistence?</h2>
+        <span class="cl-badge">Based on findings from the 2026 Student Success Impact Report</span>
+        <p class="cl-sub">Answer seven questions to see where your institution stands, where the biggest opportunities are, and what to do next.</p>
+        <h3 class="cl-h3">First, which best describes your role?</h3>
+        <p class="cl-note">Your results will lead with the lens most relevant to your work. You’ll be able to view every role’s perspective.</p>
+        <div class="cl-roles" id="cl-role-grid"></div>
+        <button type="button" class="cl-btn" id="cl-btn-start" disabled>Start the self check</button>
+      </section>
+
+      <!-- QUESTIONS -->
+      <section class="cl-screen" id="cl-scr-question">
+        <div class="cl-progress" id="cl-progress"></div>
+        <p class="cl-qcount" id="cl-qcount"></p>
+        <h2 class="cl-qtitle" id="cl-qtitle"></h2>
+        <p class="cl-qsub" id="cl-qsub"></p>
+        <div class="cl-opts" id="cl-qopts"></div>
+        <div class="cl-nav">
+          <button type="button" class="cl-ghost" id="cl-btn-back">Back</button>
+          <button type="button" class="cl-btn" id="cl-btn-next" disabled>Next</button>
+        </div>
+      </section>
+
+      <!-- GATE (HubSpot form renders here) -->
+      <section class="cl-screen" id="cl-scr-gate">
+        <p class="cl-eyebrow">Almost there</p>
+        <h2 class="cl-h2">Your benchmark is ready</h2>
+        <p class="cl-sub">Tell us where to send your results and we’ll show your profile, how you compare with the 2026 Impact Report findings, and where to look first.</p>
+        <div class="cl-card">
+          <div id="cl-hs-form" aria-live="polite"><p class="cl-note">Loading form…</p></div>
+          <div id="cl-hs-fallback" class="cl-fallback" hidden>
+            <p>The form couldn’t load (this can happen with some browser privacy settings).</p>
+            <button type="button" class="cl-btn" id="cl-btn-fallback">View my results</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="cl-screen" id="cl-scr-results">
+        <p class="cl-eyebrow">Your result</p>
+        <h2 class="cl-h1" id="cl-r-profile"></h2>
+        <span class="cl-badge">Based on findings from the 2026 Student Success Impact Report</span>
+        <p class="cl-sub" id="cl-r-intro"></p>
+        <div class="cl-scorebar" id="cl-r-bar" aria-hidden="true"></div>
+        <p class="cl-score-caption" id="cl-r-score"></p>
+        <p class="cl-sub" id="cl-r-lede"></p>
+        <div id="cl-r-recs"></div>
+        <p class="cl-close">Your benchmark gives you a place to start. Bring the results to your team, compare what each group is seeing, and decide which opportunity deserves attention first.</p>
+        <div class="cl-ctas">
+          <a class="cl-btn" id="cl-cta-book" href="/contact/">Book a working session</a>
+          <button type="button" class="cl-btn cl-btn-secondary" id="cl-cta-share">Share with a colleague</button>
+        </div>
+        <p class="cl-restart"><button type="button" class="cl-ghost" id="cl-btn-restart">Start over</button></p>
+      </section>
+
+    </div>
+  </div></section>
+</Base>
+<script>
+  import '../scripts/impact-report-assessment.js';
+</script>

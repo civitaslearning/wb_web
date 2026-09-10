@@ -2,23 +2,20 @@
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import LogoBand from '../components/LogoBand.astro';
-const roles = ['President / Provost', 'Enrollment leader', 'Student success leader', 'Advisor', 'IR / IE', 'CIO / IT', 'Faculty', 'Other'];
+import HubSpotForm from '../components/HubSpotForm.astro';
 ---
 <Base title="Contact Us" description="Explore what Civitas Learning can bring to your institution.">
-  <PageHero eyebrow="Contact" title="Explore what Civitas Learning can bring to your institution." sub="Tell us what you are trying to move. We reply within one business day." crumbs={[{ text: 'Home', href: '/' }, { text: 'Contact' }]} ctas={false} />
+  <PageHero eyebrow="Contact" title="Explore what Civitas Learning can bring to your institution." sub="Ready to advance your institutional goals? Complete the form and our team will reach out to start the conversation." crumbs={[{ text: 'Home', href: '/' }, { text: 'Contact' }]} ctas={false} />
   <section><div class="wrap">
     <div class="grid2" style="align-items:start">
-      <form class="form" data-demo>
-        <div class="two"><label>First name<input required /></label><label>Last name<input required /></label></div>
-        <label>Work email<input type="email" required placeholder="you@institution.edu" /></label>
-        <div class="two"><label>Institution<input required /></label><label>Role<select>{roles.map((r) => <option>{r}</option>)}</select></label></div>
-        <label>What are you trying to move?<textarea rows="4" placeholder="Retention, completion, course demand, a board question…"></textarea></label>
-        <button class="btn btn-primary" type="submit">Book a demo</button>
-        <small>Prototype form — nothing is sent.</small>
-        <small class="ok" hidden style="color:var(--cyan-ink);font-weight:700">Thanks. A member of the team will be in touch.</small>
-      </form>
+      <div class="card form-card">
+        <h3>Book a demo</h3>
+        <p>Tell us what you are trying to move. We reply within one business day.</p>
+        <HubSpotForm form="contact" id="contact-form" />
+      </div>
       <div style="display:grid;gap:22px">
-        <div class="card"><h3>Current partners</h3><p>Open a ticket in the <a href="https://support.civitaslearning.com/">Customer Support Portal</a> or see <a href="/support/">Technical Support</a>.</p></div>
+        <div class="card"><h3>Need technical support?</h3><p>Current partners can email <a href="mailto:support@civitaslearning.com">support@civitaslearning.com</a>, open a ticket in the <a href="https://support.civitaslearning.com/">Customer Support Portal</a>, or see <a href="/support/">Technical Support</a>.</p></div>
+        <div class="card"><h3>Looking for partner resources?</h3><p>Visit the <a href="https://docs.civitaslearning.com/">Civitas Learning Hub</a> for product documentation and release notes.</p></div>
         <div class="card"><h3>Phone</h3><p><a href="tel:512-692-7175">512-692-7175</a></p></div>
         <div class="card"><h3>Office</h3><p>6705 W Highway 290, Suite 607 PMB 1205<br />Austin, TX 78735-8407</p></div>
       </div>
@@ -26,8 +23,3 @@ const roles = ['President / Provost', 'Enrollment leader', 'Student success lead
   </div></section>
   <LogoBand />
 </Base>
-<script>
-  document.querySelectorAll<HTMLFormElement>('form[data-demo]').forEach((f) =>
-    f.addEventListener('submit', (e) => { e.preventDefault(); f.querySelector<HTMLElement>('small.ok')!.hidden = false; })
-  );
-</script>
