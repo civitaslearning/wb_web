@@ -21,6 +21,11 @@
     "us": "A model trained on your own SIS, LMS, CRM, and aid history, weighing grades, credits, course patterns, aid status, and engagement together, retrained every term, at 89% accuracy on student outcomes, with the driving factors shown for each prediction."
    },
    {
+    "dimension": "What gets modeled",
+    "them": "EAB does not publish the list of outcomes its models predict. Its student success framing centers on risk and progression, so ask them to name every outcome they model.",
+    "us": "Six outcomes, each its own institution-specific model: persistence, graduation, engagement, thriving, grades, and career outcomes. End to end means the first term through what a graduate earns, on one dataset."
+   },
+   {
     "dimension": "How impact is proven",
     "them": "An Intervention Effectiveness Tool that compares student lists on metrics such as persistence. EAB publishes graduation gains of 3% to 15%, retention gains of 2% to 12%, and a typical 5:1 return, without publishing the matching method or a confidence interval.",
     "us": "Lift against a matched comparison group of your own students, with the population size and the confidence interval reported for each initiative. Across 220 measured initiatives, 40–60% produced a measurable outcome, and the ones that did not are reported too."
@@ -73,7 +78,7 @@
    },
    {
     "q": "Which one has better predictive analytics?",
-    "a": "Both build institution-specific models. EAB reports more than 200 custom models deployed, some on ten years of history. The questions that separate the two are how often the model is refreshed and whether the vendor publishes an accuracy figure your institutional research office can audit: Civitas retrains each term and publishes 89% accuracy on student outcomes."
+    "a": "Both build institution-specific models, so the question to press is how many outcomes each one models and how often. EAB reports more than 200 custom models deployed across its customer base; Civitas builds six per institution, covering persistence, graduation, engagement, thriving, grades, and career outcomes, and retrains them every term. Ask both vendors to name every outcome they predict and to publish an accuracy figure your institutional research office can audit."
    },
    {
     "q": "Can we run both?",
@@ -129,6 +134,11 @@
     "dimension": "Predictive analytics",
     "them": "Agentforce for Education provides pre-built agent skills and predictive insights on the Salesforce record. Salesforce does not publish a model accuracy figure or a refresh cadence.",
     "us": "Models trained on the institution's whole record across the SIS, LMS, CRM, and aid systems, retrained each term, at 89% accuracy on student outcomes."
+   },
+   {
+    "dimension": "What gets modeled",
+    "them": "Predictive insights on the Salesforce record. Salesforce does not publish a list of modeled student outcomes or a per-institution model count.",
+    "us": "Six outcomes, each its own institution-specific model: persistence, graduation, engagement, thriving, grades, and career outcomes, retrained every term."
    },
    {
     "dimension": "Proof of impact",
@@ -221,6 +231,11 @@
     "dimension": "What the AI is trained on",
     "them": "Element451 does not publish what its models are trained on. That is a question to put to them directly, and the answer is worth having in writing.",
     "us": "A model trained per institution on that institution's own SIS, LMS, CRM, and aid history, retrained each term, at 89% accuracy."
+   },
+   {
+    "dimension": "What gets modeled",
+    "them": "Risk signals and alerts driven by grades and LMS engagement. Element451 does not publish the outcomes its models predict.",
+    "us": "Six outcomes, each its own institution-specific model: persistence, graduation, engagement, thriving, grades, and career outcomes."
    },
    {
     "dimension": "What counts as proof",
@@ -325,7 +340,7 @@
    },
    {
     "dimension": "Measurement platform",
-    "them": "Institution-specific predictive models and comparison-group efficacy measurement, with advising, planning, and scheduling tools on the same dataset. This is what Civitas Learning is.",
+    "them": "Institution-specific predictive models across several student outcomes, plus comparison-group efficacy measurement, with advising, planning, and scheduling tools on the same dataset. This is what Civitas Learning is.",
     "us": "Buy it when you have to prove which initiatives moved persistence, completion, or revenue, and defend the number. It is also the only option in this list that lets you keep your CRM or use its own."
    }
   ],

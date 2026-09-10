@@ -34,6 +34,12 @@ export function organization() {
     knowsAbout: [
       'student success',
       'student retention',
+      'student persistence prediction',
+      'graduation and completion prediction',
+      'student engagement measurement',
+      'student thriving',
+      'academic performance prediction',
+      'graduate career outcomes and earnings',
       'institutional effectiveness',
       'higher education analytics',
       'predictive modeling in higher education',

@@ -26,8 +26,8 @@
    "a": "A generic agent predicts from national benchmarks or a vendor's pooled customer base; Civitas trains a separate model on each institution's own history and refreshes it each term. The difference shows up in the proof: an agent vendor reports activity such as open rates and hours saved, and Civitas reports persistence, completion, and revenue against a comparison group. <a href=\"/ai-vendor-checklist/\">Ten questions to ask any AI vendor →</a>"
   },
   {
-   "q": "How accurate are the predictions?",
-   "a": "Institution-specific models predict student outcomes with 89 percent accuracy. Accuracy comes from training on your SIS, LMS, and CRM history rather than on sector averages, and from retraining each term so the model matches the institution you are today."
+   "q": "What do you predict, and how accurate is it?",
+   "a": "Civitas models six student outcomes, each with its own institution-specific model: persistence, graduation, engagement, thriving, grades, and career outcomes. Accuracy is 89 percent on student outcomes, and it comes from training on your SIS, LMS, CRM, and aid history rather than on sector averages, then retraining each term so the model matches the institution you are today. <a href=\"/analytics/\">How the models work →</a>"
   },
   {
    "q": "How long does implementation take?",
@@ -61,7 +61,7 @@
   },
   {
    "q": "How is the platform different from a data warehouse or a BI dashboard?",
-   "a": "A warehouse stores the data and a dashboard displays it; neither predicts what will happen to a named student, nor measures whether an action changed the outcome. The platform adds an institution-specific model, the workflow where staff act on it, and the comparison-group measurement that closes the loop. <a href=\"/data-lakehouse/\">The data layer →</a>"
+   "a": "A warehouse stores the data and a dashboard displays it; neither predicts what will happen to a named student, nor measures whether an action changed the outcome. The platform adds six institution-specific models covering persistence, graduation, engagement, thriving, grades, and career outcomes, the workflow where staff act on them, and the comparison-group measurement that closes the loop. <a href=\"/data-lakehouse/\">The data layer →</a>"
   },
   {
    "q": "What results have institutions seen?",
@@ -79,7 +79,7 @@
  "/analytics/": [
   {
    "q": "What is an institution-specific predictive model?",
-   "a": "An institution-specific predictive model is trained on one college's own student records rather than on sector averages or a vendor's pooled customer data. It learns the patterns that predict outcomes at that institution, such as the 14-credit part-time student or the transfer with a gap in mathematics, and it is refreshed each term. Civitas models predict student outcomes with 89 percent accuracy."
+   "a": "An institution-specific predictive model is trained on one college's own student records rather than on sector averages or a vendor's pooled customer data. It learns the patterns that predict outcomes at that institution, such as the 14-credit part-time student or the transfer with a gap in mathematics, and it is retrained each term. Civitas builds one for each of six outcomes and predicts student outcomes with 89 percent accuracy."
   },
   {
    "q": "How is a predictive model different from an early alert rule?",
@@ -90,8 +90,12 @@
    "a": "Each term. A model built once at installation describes an institution that no longer exists, because the students, the curriculum, and the policies all change."
   },
   {
-   "q": "Which outcomes can you predict?",
-   "a": "Persistence, completion, and time to degree, plus course demand by section and term. Predictions are available by student population, so results can be broken out for part-time, transfer, online, and commuting students rather than reported as an institution-wide average."
+   "q": "Which student outcomes do you actually model?",
+   "a": "Six, each with its own institution-specific model: persistence, graduation, engagement, thriving, grades, and career outcomes. Most platforms in this category model one, the risk that a student does not return, so ask any vendor to list the outcomes they predict rather than accepting \"multi-outcome analytics\" as an answer. Course demand by section and term is forecast separately."
+  },
+  {
+   "q": "How many models does our institution get?",
+   "a": "One per outcome, per institution, so six, plus the course demand forecast. They are retrained every term on your own history. A vendor that gives every customer the same model is giving you a model of the sector, not of your students."
   },
   {
    "q": "Can we see why a student was flagged?",
@@ -311,7 +315,7 @@
   },
   {
    "q": "Can institutional research audit the predictive models?",
-   "a": "Yes. Each prediction carries the factors that drove it, the models are documented, and they are retrained each term on the institution's own data. IR can examine model behavior by student population rather than accepting a single accuracy figure."
+   "a": "Yes, and there are six of them to audit: persistence, graduation, engagement, thriving, grades, and career outcomes, each trained on your own data and retrained each term. Every prediction carries the factors that drove it and the models are documented, so IR can examine behavior by student population rather than accepting a single headline accuracy figure."
   },
   {
    "q": "How do you build the comparison group?",

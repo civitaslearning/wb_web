@@ -33,7 +33,7 @@
    },
    {
     "heading": "Actionable Analytics",
-    "body": "Equip stakeholders across campus with insight into multiple student outcomes powered by institution-specific models—spot risk patterns, forecast course demand, and assess initiative impact.",
+    "body": "Equip stakeholders across campus with insight into persistence, graduation, engagement, thriving, grades, and career outcomes, each powered by its own institution-specific model. Spot risk patterns, forecast course demand, and assess initiative impact from the same dataset.",
     "bullets": [],
     "image": {
      "file": "student-success-analytics.webp",
@@ -112,7 +112,7 @@
     "body": "",
     "bullets": [
      "Built with institution-specific predictive models",
-     "Insight into multiple student outcomes, not just GPA/retention metrics",
+     "Six modeled outcomes, not one risk score: persistence, graduation, engagement, thriving, grades, and career outcomes",
      "Real-time insights and AI assistance where work already happens",
      "Strategic guidance from dedicated higher ed experts and former practitioners"
     ],
@@ -172,8 +172,8 @@
   "kind": "solutions",
   "name": "Real-Time Analytics That Power the Student Impact Platform",
   "eyebrow": "Actionable Analytics",
-  "headline": "Predictions built on your students. Not on national averages.",
-  "sub": "Institution-specific models, multi-outcome analytics, and real-time views for every team — with 89% accuracy predicting student outcomes.",
+  "headline": "Six outcomes. A model for each. All of them yours.",
+  "sub": "Most platforms predict one thing: will this student come back. Civitas builds a separate institution-specific model for persistence, graduation, engagement, thriving, grades, and career outcomes, trained on your own history and retrained every term, at 89% accuracy.",
   "video": {
    "youtube": "oTErvIMAFz0",
    "title": "How Higher Education Leaders Drive Better Student Outcomes",
@@ -192,7 +192,7 @@
    },
    {
     "heading": "Institution-Specific Predictive Models",
-    "body": "AI-powered models built for your institution surface predictive insights—not just patterns from the past, but timely indicators of what's likely to happen next. By leveraging your unique student data, the platform reveals risks and opportunities that are truly relevant to your campus.",
+    "body": "Every model is built for your institution on your own student history, and none of them is trained on another school's data or on national averages. More models per institution than anyone else in the category, and every one of them custom: six outcomes, retrained each term as your students, curriculum, and policies change, at 89% accuracy on student outcomes.",
     "bullets": [],
     "image": {
      "file": "institution-specific-predictive-models.webp",
@@ -200,8 +200,8 @@
     }
    },
    {
-    "heading": "Multi Outcome Analytics",
-    "body": "Move beyond retention. Instantly track and forecast a range of outcomes—including completion, persistence, engagement, career readiness and more—so everyone on campus is equipped to support students along their journey.",
+    "heading": "Six outcomes, modeled end to end",
+    "body": "Move beyond retention. Civitas models persistence, graduation, engagement, thriving, grades, and career outcomes, each as its own institution-specific model, so a team can see what is likely to happen next on the outcome they are accountable for rather than reading one risk score and guessing. End to end means the first term through what a graduate earns.",
     "bullets": [],
     "image": {
      "file": "multi-outcome-analytics.webp",
@@ -293,9 +293,10 @@
     "heading": "Why Civitas Learning Analytics?",
     "body": "",
     "bullets": [
-     "Actionable, Not Overwhelming: Insights are surfaced daily directly in workflows, so teams can act in real-time, not just analyze in hindsight.",
+     "Actionable, Not Overwhelming: Insights are surfaced daily directly in workflows, so teams can act in real-time, not just report after the fact.",
      "Comprehensive, Not Fragmented: Unify all your data sources for a true 360° view of student progress and risk factors.",
-     "Insight Across Multiple Student Outcomes: Leaders and their teams can see precisely which factors are influencing outcomes across the student experience"
+     "Six Outcomes, Not One Risk Score: Persistence, graduation, engagement, thriving, grades, and career outcomes, each with its own institution-specific model, so every team sees the outcome it is accountable for.",
+     "Custom, Not Pooled: Every model is trained on your students and retrained each term. Your data is never pooled into a benchmark sold to another institution."
     ],
     "icons": [
      "Actionable.svg",

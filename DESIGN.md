@@ -470,9 +470,36 @@ student mobile app" and "Navigate360 becomes the advising system of record" as r
 them, when we ship both a mobile app and an advising CRM. Those rows are corrected, and the mobile
 app is no longer listed under "choose EAB when".
 
-**Before launch:** the student mobile app is new and is not yet on `www.civitaslearning.com`.
-Confirm its product name, its availability date, and what it does for students, then use that
-wording rather than the generic phrase used here.
+### Six outcomes, a model each, end to end
+
+The second half of the same correction. The site said "multiple student outcomes" and
+"multi-outcome analytics" and never named them, which is a claim a reader cannot check and an
+answer engine cannot quote. **Civitas models six outcomes per institution, each its own custom
+model: persistence, graduation, engagement, thriving, grades, and career outcomes.** End to end
+means the first term through what a graduate earns.
+
+The competitive point is countable rather than superlative, which is why it lands:
+
+> Most platforms in this category model one thing: will this student come back.
+
+That is checkable in a demo. It is also the answer to EAB's "more than 200 custom-built models"
+claim, which counts models across their whole customer base rather than outcomes per institution.
+The corrected EAB FAQ presses exactly there: ask both vendors to name every outcome they predict.
+
+Every comparison page now carries a "What gets modeled" row, and none of the three competitors
+publishes its list of modeled outcomes, so those cells say so and hand the buyer the question.
+The home comparison table gained an "Outcomes modeled" row for the same reason. `/analytics/` owns
+the claim and its headline is now "Six outcomes. A model for each. All of them yours."
+
+**Before launch, two things to confirm:**
+
+1. **The student mobile app** is new and is not yet on `www.civitaslearning.com`. Confirm its
+   product name, availability date, and what it does for students, then use that wording rather
+   than the generic phrase used here.
+2. **"More models per institution than anyone else in the category"** appears once, on
+   `/analytics/`. It is the one superlative on the site and it is Will's claim rather than a
+   sourced one. Either substantiate it or cut it; the countable version ("six outcomes, a model
+   each") carries the argument on its own and is not attackable.
 
 ---
 
