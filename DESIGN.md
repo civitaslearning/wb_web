@@ -200,12 +200,20 @@ The site keeps the live brand and tightens it. Nothing here should read as a reb
 | `--cyan` | `#02ADF2` | Brand accent. Primary buttons, measured lift, eyebrows on dark |
 | `--cyan-ink` | `#0077B6` | Cyan for text on white (AA contrast) |
 | `--cyan-soft` | `#E3F5FD` | Highlight fills, the "your model" column |
-| `--orange` | `#FF530C` | One semantic use: "not significant" in the ledger. Also the prototype banner. |
+| `--coral` / `--coral2` | `#FF530C` / `#FF6444` | Action. Every primary button, the accent line in the home h1. Hover is `--coral2`. Same coral as the live site. |
+| `--orange-soft` | `#FFEDE3` | The prototype banner only. |
 | `--ink / --ink2 / --ink3` | `#0E1B33 / #465873 / #7A879C` | Text, secondary, captions. Blue-biased greys, not neutral. |
 | `--paper / --tint / --line` | `#FFFFFF / #F5F7F9 / #DAE0E8` | Ground, alternating section ground, rules |
 
 Single light theme, by decision. The live site is light; a marketing site does not flip with
 the OS.
+
+Navy and coral are the brand (Will, 2026-09-10). The header is navy with white text and a
+coral pill button, the home hero is the same navy gradient as the inner-page heroes, and every
+primary button is a coral pill with white text, as on the live site. Ghost buttons are navy
+outlines on white and white outlines on navy. Cyan is the data color: eyebrows, measured
+lift, the "your model" column. Coral is the action color and nothing else, so "not
+significant" in the ledger is grey, not coral.
 
 ### Type
 
@@ -232,7 +240,7 @@ Numbers use `font-variant-numeric: tabular-nums` wherever they line up.
 ### Signature components
 
 - **Impact ledger** (hero): five interventions, bar = point estimate, whisker = 95% CI, zero
-  line at 8% of track. Cyan for significant lift, orange for not significant. This is the
+  line at 8% of track. Cyan for significant lift, grey for not significant. This is the
   brand's argument as a picture. Labeled "example".
 - **Flow diagram**: systems → Civitas → outcomes. Left and right columns are `.sys` cards,
   center is a navy `.core-box` with four steps on a cyan rule. Student success card is
